@@ -115,6 +115,7 @@ Record: Phase Completion (04-records/phases/)
 | Manifest | `03-sdk-release/METHOD-SDKR-05_*.md` |
 | Verification | `03-sdk-release/METHOD-SDKR-06_*.md` |
 | Incident | `03-sdk-release/METHOD-SDKR-07_*.md` |
+| Multi-Package | `03-sdk-release/METHOD-SDKR-08_*.md` |
 | Checklist | `03-sdk-release/CHECKLIST-SDK-RELEASE.md` |
 | Approval | `03-sdk-release/MPGC_APPROVAL_*.md` |
 

@@ -94,21 +94,22 @@ The following SDKs are maintained as **Reference Implementations** of the protoc
 
 | Package | Description | Version | Links |
 |:--------|:------------|:--------|:------|
-| **`@mplp/sdk-ts`** | Main Entry Point (Developer SDK) | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/sdk-ts) |
-| `@mplp/core` | L1 Protocol Primitives & Types | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/core) |
-| `@mplp/schema` | JSON Schema Validators | `v1.0.4` | [npm](https://www.npmjs.com/package/@mplp/schema) |
-| `@mplp/coordination` | L2 Coordination & State Machine | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/coordination) |
-| `@mplp/modules` | L2 Governance Modules | `v1.0.4` | [npm](https://www.npmjs.com/package/@mplp/modules) |
-| `@mplp/compliance` | Compliance & Audit Tools | `v1.0.4` | [npm](https://www.npmjs.com/package/@mplp/compliance) |
-| `@mplp/runtime-minimal` | Reference Runtime Implementation | `v1.0.4` | [npm](https://www.npmjs.com/package/@mplp/runtime-minimal) |
-| `@mplp/devtools` | CLI & Debugging Tools | `v1.0.4` | [npm](https://www.npmjs.com/package/@mplp/devtools) |
+| **`@mplp/sdk-ts`** | Main Entry Point (Developer SDK) | `v1.0.6` | [npm](https://www.npmjs.com/package/@mplp/sdk-ts) |
+| `@mplp/core` | L1 Protocol Primitives & Types | `v1.0.6` | [npm](https://www.npmjs.com/package/@mplp/core) |
+| `@mplp/schema` | JSON Schema Validators | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/schema) |
+| `@mplp/coordination` | L2 Coordination & State Machine | `v1.0.6` | [npm](https://www.npmjs.com/package/@mplp/coordination) |
+| `@mplp/modules` | L2 Governance Modules | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/modules) |
+| `@mplp/conformance` | Conformance Kit & Validation | `v1.0.0` | [npm](https://www.npmjs.com/package/@mplp/conformance) |
+| `@mplp/compliance` | [LEGACY] Use @mplp/conformance | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/compliance) |
+| `@mplp/runtime-minimal` | Reference Runtime Implementation | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/runtime-minimal) |
+| `@mplp/devtools` | CLI & Debugging Tools | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/devtools) |
 | `@mplp/validator` | Protocol Validator CLI | `v1.0.0` | *internal* |
 
 ### Python SDK
 
 | Package | Description | Version | Links |
 |:--------|:------------|:--------|:------|
-| **`mplp-sdk`** | Main Entry Point (Developer SDK) | `v1.0.3` | [PyPI](https://pypi.org/project/mplp-sdk/) |
+| **`mplp-sdk`** | Main Entry Point (Developer SDK) | `v1.0.4` | [PyPI](https://pypi.org/project/mplp-sdk/) |
 
 ---
 
@@ -165,7 +166,7 @@ Pull requests that introduce new protocol semantics, schema changes, or complian
 ## License
 
 Apache License 2.0  
-© 2025 Bangshi Beijing Network Technology Limited Company
+© 2026 Bangshi Beijing Network Technology Limited Company
 
 ---
 

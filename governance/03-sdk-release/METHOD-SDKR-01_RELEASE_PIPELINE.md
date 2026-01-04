@@ -45,6 +45,20 @@ All stages MUST be executed in order. No stage may be skipped.
 **Failure Condition**: Manifest incomplete or hash mismatch  
 **Skip Allowed**: NO
 
+### Stage 4.5: Multi-Package Gate (METHOD-SDKR-08)
+
+**Input**: All packages in workspace  
+**Output**: Publish Set, Gate Report, Bundle Manifest  
+**Failure Condition**: Any gate check fails (see METHOD-SDKR-08 §6)  
+**Skip Allowed**: NO
+
+This stage MUST execute:
+- npm Publish Gate (`gate-publish-set.mjs`)
+- PyPI Publish Gate (`gate_pypi_set`)
+- Generate `RELEASE_BUNDLE_MANIFEST.json`
+
+**Hash Evidence (§6.6)**: This stage MUST compute and record SHA-256 hashes for all Python artifacts (wheel + sdist) in DERIVATION_PROOF.yaml.
+
 ### Stage 5: Registry Publish
 
 **Input**: Signed package with manifest  

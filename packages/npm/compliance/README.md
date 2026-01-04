@@ -1,55 +1,47 @@
-# @mplp/compliance
+# @mplp/compliance (Legacy)
 
-**Protocol:** MPLP v1.0.0 (Frozen)
+> **⚠️ DEPRECATED: This package has been renamed to `@mplp/conformance`.**
+>
+> Please migrate to the new package for correct terminology alignment with MPLP governance.
+
+**Protocol:** MPLP v1.0.0 (Frozen)  
 **License:** Apache-2.0
 
-The **@mplp/compliance** package provides **Protocol compliance checking utilities** for the
-**Multi-Agent Lifecycle Protocol (MPLP)** �?the Agent OS Protocol for AI agent systems.
-
 ---
 
-## Scope & Guarantees (Important)
+## Migration Guide
 
-### �?What this package provides
-
-* **Protocol-compliant interfaces** aligned with MPLP v1.0.0
-* **Strict version alignment** with the frozen MPLP protocol specification
-* **Type-safe integration surface** for higher-level runtimes and tools
-
-### �?What this package does NOT provide
-
-* �?Full execution runtime (LLM orchestration, tool execution)
-* �?Golden Flow execution engines (Flow-01 ~ Flow-05)
-* �?Observability pipelines or distributed tracing backends
-* �?Production agent orchestration
-
-> These capabilities belong to **reference runtimes and products built *on top of* MPLP**,
-> not to the protocol SDK itself.
-
----
-
-## Installation
+This package is now **legacy**. Please use `@mplp/conformance` instead:
 
 ```bash
-npm install @mplp/compliance
+npm uninstall @mplp/compliance
+npm install @mplp/conformance
 ```
+
+Update your imports:
+
+```diff
+- import { runGoldenFlow01 } from '@mplp/compliance';
++ import { runGoldenFlow01 } from '@mplp/conformance';
+```
+
+The API is fully compatible - only the package name has changed.
+
+---
+
+## Why the rename?
+
+Per MPLP governance terminology standard, "**conformance**" is the correct term for protocol alignment verification. "Compliance" was used historically but has been deprecated in favor of the canonical terminology.
+
+See: [TERMINOLOGY_STANDARD_v1.0.md](https://docs.mplp.io/governance/terminology-standard)
 
 ---
 
 ## Protocol Documentation (Authoritative)
 
-* **Homepage:** [https://www.mplp.io](https://www.mplp.io)
-* **Specification & Docs:** [https://docs.mplp.io](https://docs.mplp.io)
-* **Source Repository:** [https://github.com/Coregentis/MPLP-Protocol](https://github.com/Coregentis/MPLP-Protocol)
-* **Issues:** [https://github.com/Coregentis/MPLP-Protocol/issues](https://github.com/Coregentis/MPLP-Protocol/issues)
-
----
-
-## Versioning & Compatibility
-
-* **Protocol version:** MPLP v1.0.0 (Frozen)
-* **SDK compatibility:** Guaranteed for v1.0.0 only
-* Breaking changes require a new protocol version.
+*   **Homepage:** [https://www.mplp.io](https://www.mplp.io)
+*   **Specification & Docs:** [https://docs.mplp.io](https://docs.mplp.io)
+*   **Source Repository:** [https://github.com/Coregentis/MPLP-Protocol](https://github.com/Coregentis/MPLP-Protocol)
 
 ---
 
@@ -57,5 +49,5 @@ npm install @mplp/compliance
 
 Apache License, Version 2.0
 
-© 2025 **Bangshi Beijing Network Technology Limited Company**
+© 2026 **Bangshi Beijing Network Technology Limited Company**  
 Coregentis AI

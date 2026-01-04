@@ -4,24 +4,24 @@
 **License:** Apache-2.0
 
 The **@mplp/integration-storage-fs** package provides **Filesystem storage integration** for the
-**Multi-Agent Lifecycle Protocol (MPLP)** �?the Agent OS Protocol for AI agent systems.
+**Multi-Agent Lifecycle Protocol (MPLP)** — the Agent OS Protocol for AI agent systems.
 
 ---
 
 ## Scope & Guarantees (Important)
 
-### �?What this package provides
+### ✅ What this package provides
 
 * **Protocol-compliant interfaces** aligned with MPLP v1.0.0
 * **Strict version alignment** with the frozen MPLP protocol specification
 * **Type-safe integration surface** for higher-level runtimes and tools
 
-### �?What this package does NOT provide
+### ❌ What this package does NOT provide
 
-* �?Full execution runtime (LLM orchestration, tool execution)
-* �?Golden Flow execution engines (Flow-01 ~ Flow-05)
-* �?Observability pipelines or distributed tracing backends
-* �?Production agent orchestration
+- ❌ Full execution runtime (LLM orchestration, tool execution)
+- ❌ Golden Flow execution engines (Flow-01 ~ Flow-05)
+- ❌ Observability pipelines or distributed tracing backends
+- ❌ Production agent orchestration
 
 > These capabilities belong to **reference runtimes and products built *on top of* MPLP**,
 > not to the protocol SDK itself.
@@ -57,5 +57,5 @@ npm install @mplp/integration-storage-fs
 
 Apache License, Version 2.0
 
-© 2025 **Bangshi Beijing Network Technology Limited Company**
+© 2026 **Bangshi Beijing Network Technology Limited Company**
 Coregentis AI

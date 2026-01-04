@@ -1,7 +1,7 @@
 # MPLP v1.0.0 FROZEN
 # Governance: MPGC
 
-# Copyright 2025 邦士（北京）网络科技有限公司.
+# Copyright 2026 邦士（北京）网络科技有限公司.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

@@ -1,7 +1,7 @@
 {
   "name": "@mplp/compliance",
-  "version": "1.0.4",
-  "description": "MPLP v1.0 Compliance & Validation - Golden Flow tests and invariant checks",
+  "version": "1.0.5",
+  "description": "[LEGACY] Use @mplp/conformance instead. This package has been renamed for correct terminology alignment.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -48,6 +48,7 @@
   },
   "exports": {
     ".": {
+      "require": "./dist/index.js",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }

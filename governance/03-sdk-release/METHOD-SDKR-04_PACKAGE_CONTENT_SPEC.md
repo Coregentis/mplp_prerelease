@@ -25,6 +25,7 @@ This method defines exactly what MUST and MUST NOT be included in SDK packages.
 | `README.md` | Usage documentation |
 | `LICENSE` | Apache 2.0 |
 | `RELEASE_MANIFEST.json` | Evidence binding (mandatory) |
+| `DERIVATION_PROOF.yaml` | Schema derivation proof (mandatory) |
 
 ### 2.2 Forbidden Contents (MANDATORY EXCLUSION LIST)
 
@@ -69,6 +70,7 @@ python -c "import tarfile; [print(f) for f in tarfile.open('dist/*.whl').getname
 | `README.md` | Usage documentation |
 | `LICENSE` | Apache 2.0 |
 | `RELEASE_MANIFEST.json` | Evidence binding (mandatory) |
+| `DERIVATION_PROOF.yaml` | Schema derivation proof (mandatory) |
 
 ### 3.2 Forbidden Contents
 
@@ -164,4 +166,14 @@ mplp-{version}/
 
 **Document Status**: Governance Method  
 **Supersedes**: None  
-**References**: README.md, METHOD-SDKR-02
+**References**: README.md, METHOD-SDKR-02, METHOD-SDKR-08
+
+---
+
+## 7. Multi-Package Mode
+
+When releasing multiple `@mplp/*` packages:
+
+- Each package MUST independently satisfy all requirements in this document
+- Bundle-level artifacts are governed by METHOD-SDKR-08
+- See METHOD-SDKR-08 for package classification and version synchronization rules

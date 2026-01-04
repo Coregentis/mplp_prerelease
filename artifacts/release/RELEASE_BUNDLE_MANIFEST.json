@@ -1,0 +1,117 @@
+{
+    "$comment": "RELEASE_BUNDLE_MANIFEST.json - Multi-Package Coordinated Release",
+    "bundle_id": "mplp-release-2026-01-05",
+    "bundle_version": "1.0.6",
+    "protocol_version": "1.0.0",
+    "release_timestamp": "2026-01-05T00:20:00Z",
+    "evidence_baseline": {
+        "reference": "governance/freeze/FREEZE_EVIDENCE_BASELINE_v1.0.md",
+        "version": "v1.0"
+    },
+    "governance": {
+        "method": "METHOD-SDKR-09",
+        "checklist": "CHECKLIST-SDK-RELEASE.md",
+        "freeze_record": "MPGC_APPROVAL_SDKR_v1.0.md"
+    },
+    "artifacts": {
+        "npm": {
+            "public": [
+                {
+                    "name": "@mplp/core",
+                    "version": "1.0.6"
+                },
+                {
+                    "name": "@mplp/schema",
+                    "version": "1.0.5"
+                },
+                {
+                    "name": "@mplp/sdk-ts",
+                    "version": "1.0.6"
+                },
+                {
+                    "name": "@mplp/coordination",
+                    "version": "1.0.6"
+                },
+                {
+                    "name": "@mplp/conformance",
+                    "version": "1.0.0"
+                },
+                {
+                    "name": "@mplp/compliance",
+                    "version": "1.0.5"
+                },
+                {
+                    "name": "@mplp/modules",
+                    "version": "1.0.5"
+                },
+                {
+                    "name": "@mplp/runtime-minimal",
+                    "version": "1.0.5"
+                },
+                {
+                    "name": "@mplp/devtools",
+                    "version": "1.0.5"
+                },
+                {
+                    "name": "@mplp/integration-llm-http",
+                    "version": "1.0.5"
+                },
+                {
+                    "name": "@mplp/integration-storage-fs",
+                    "version": "1.0.5"
+                },
+                {
+                    "name": "@mplp/integration-storage-kv",
+                    "version": "1.0.5"
+                },
+                {
+                    "name": "@mplp/integration-tools-generic",
+                    "version": "1.0.5"
+                }
+            ],
+            "deprecated": [
+                {
+                    "name": "@mplp/compliance",
+                    "version": "1.0.5",
+                    "migration": "@mplp/conformance"
+                }
+            ],
+            "blocked": [
+                {
+                    "name": "@mplp/validator",
+                    "reason": "CI-ONLY"
+                }
+            ]
+        },
+        "pypi": {
+            "public": [
+                {
+                    "name": "mplp-sdk",
+                    "version": "1.0.4"
+                }
+            ]
+        }
+    },
+    "gate_reports": {
+        "npm": "artifacts/release/publish-gate-report.json",
+        "pypi": "artifacts/release/pypi-gate-report.json"
+    },
+    "publish_sets": {
+        "npm": "artifacts/release/publish-set.json",
+        "pypi": "artifacts/release/pypi-set.json"
+    },
+    "evidence_artifacts": {
+        "release_intent": "artifacts/release/RELEASE_INTENT.md",
+        "version_justification": "artifacts/release/VERSION_CHANGE_JUSTIFICATION.md",
+        "dependency_check": "artifacts/release/DEPENDENCY_CHECK.md",
+        "verification_report": "artifacts/release/ISOLATED_VERIFICATION_REPORT.md"
+    },
+    "verification": {
+        "stage_0_intent": "PASS",
+        "stage_1_version": "PASS",
+        "stage_2_dependency": "PASS",
+        "stage_3_derivation": "PASS",
+        "stage_4_isolated": "PASS",
+        "stage_5_documentation": "PASS"
+    }
+}

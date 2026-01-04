@@ -28,6 +28,16 @@ This method defines the mandatory Release Manifest that MUST be included in ever
 | TypeScript | `RELEASE_MANIFEST.json` (package root) |
 | Python | `RELEASE_MANIFEST.json` (package root) |
 
+### 3.1 Bundle-Level Manifest (METHOD-SDKR-08)
+
+In multi-package mode, a **Release Bundle Manifest** is also required:
+
+| Artifact | Location |
+|:---|:---|
+| `RELEASE_BUNDLE_MANIFEST.json` | `artifacts/release/` |
+
+The Bundle Manifest records all packages in a coordinated release and references each package's individual proof. See METHOD-SDKR-08 §4 (V-SYNC-03) for details.
+
 ---
 
 ## 4. Mandatory Fields

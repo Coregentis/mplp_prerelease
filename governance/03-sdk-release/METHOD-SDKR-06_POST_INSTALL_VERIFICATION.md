@@ -27,10 +27,16 @@ This is **not** local repository testing. This is **user-level reality verificat
 
 ## 3. TypeScript Verification Steps
 
+> **Note**: In multi-package mode, verification applies to each `@mplp/*` package in the Publish Set.
+
 ### Step 1: Install
 
 ```bash
-npm install mplp-sdk-ts@{version}
+# Install facade package (includes all dependencies)
+npm install @mplp/sdk-ts@{version}
+
+# Or install individual packages
+npm install @mplp/core@{version} @mplp/schema@{version}
 ```
 
 **Failure**: Package not found or install error

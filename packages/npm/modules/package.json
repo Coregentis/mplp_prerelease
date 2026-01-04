@@ -1,6 +1,6 @@
 {
   "name": "@mplp/modules",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "MPLP v1.0 Module Interfaces & Helpers - 10 core modules and profile structures",
   "license": "Apache-2.0",
   "repository": {
@@ -30,7 +30,7 @@
     "typescript": "^5.0.0"
   },
   "author": "Bangshi Beijing Network Technology Limited Company",
-  "copyright": "© 2025 Bangshi Beijing Network Technology Limited Company",
+  "copyright": "© 2026 Bangshi Beijing Network Technology Limited Company",
   "mplp": {
     "protocolVersion": "1.0.0",
     "frozen": true,
@@ -43,6 +43,7 @@
   },
   "exports": {
     ".": {
+      "require": "./dist/index.js",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }

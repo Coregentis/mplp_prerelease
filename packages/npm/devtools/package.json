@@ -1,6 +1,6 @@
 {
   "name": "@mplp/devtools",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Developer tools and CLI for MPLP Protocol v1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,7 +28,7 @@
     "layer": "Tools"
   },
   "author": "Bangshi Beijing Network Technology Limited Company",
-  "copyright": "© 2025 Bangshi Beijing Network Technology Limited Company",
+  "copyright": "© 2026 Bangshi Beijing Network Technology Limited Company",
   "license": "Apache-2.0",
   "homepage": "https://www.mplp.io",
   "bugs": {
@@ -48,6 +48,7 @@
   ],
   "exports": {
     ".": {
+      "require": "./dist/index.js",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }

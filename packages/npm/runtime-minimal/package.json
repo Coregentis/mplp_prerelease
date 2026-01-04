@@ -1,6 +1,6 @@
 {
   "name": "@mplp/runtime-minimal",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Vendor-neutral reference runtime (L3) for MPLP Protocol v1.0",
   "license": "Apache-2.0",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
     "@types/node": "^20.0.0"
   },
   "author": "Bangshi Beijing Network Technology Limited Company",
-  "copyright": "© 2025 Bangshi Beijing Network Technology Limited Company",
+  "copyright": "© 2026 Bangshi Beijing Network Technology Limited Company",
   "mplp": {
     "protocolVersion": "1.0.0",
     "frozen": true,
@@ -41,6 +41,7 @@
   ],
   "exports": {
     ".": {
+      "require": "./dist/index.js",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }

@@ -12,7 +12,7 @@ FROZEN_MD_BLOCK = """
 
 COPYRIGHT_FOOTER = """
 ---
-© 2025 Coregentis. All Rights Reserved.
+© 2026 Coregentis. All Rights Reserved.
 MPLP Protocol - Multi-Agent Protocol for Learning & Planning
 """
 

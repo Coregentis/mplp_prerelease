@@ -1,6 +1,6 @@
 {
   "name": "@mplp/core",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "L1 Core Protocol models and validators for MPLP Protocol v1.0.0 (Multi-Agent Lifecycle Protocol).",
   "license": "Apache-2.0",
   "author": "Bangshi Beijing Network Technology Limited Company",
@@ -42,6 +42,7 @@
   },
   "exports": {
     ".": {
+      "require": "./dist/index.js",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }

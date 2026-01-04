@@ -4,10 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mplp-sdk"
-version = "1.0.3"
+version = "1.0.4"
 description = "Python SDK and reference runtime for the MPLP Protocol (Agent OS Protocol)."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 license = { text = "Apache-2.0" }
 
 authors = [

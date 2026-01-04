@@ -143,6 +143,23 @@ If `DERIVATION_PROOF.yaml` is missing or incomplete:
 - Release is **governance-illegal**
 - Release MUST NOT proceed
 
+### 6.4 Artifact Hash Requirements (METHOD-SDKR-08 §6.6)
+
+For Python packages, the derivation proof MUST include SHA-256 hashes for distribution artifacts:
+
+```yaml
+python:
+  dist:
+    - type: sdist
+      filename: "package-x.y.z.tar.gz"
+      sha256: "..."
+    - type: wheel
+      filename: "package-x.y.z-py3-none-any.whl"
+      sha256: "..."
+```
+
+Hashes MUST be computed at build time and recorded before publish.
+
 ### 6.4 Proof Verification
 
 The derivation proof MUST be validated by:

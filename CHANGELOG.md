@@ -1,4 +1,33 @@
-﻿## [internal-governance-fix] — 2025-12-26
+﻿## [sdk-release-2026-01-04] — 2026-01-04
+
+### 📦 Multi-Package SDK Release (npm + PyPI)
+
+#### SDK Packages Published
+- **npm**: 13 packages in `@mplp/*` scope (version bump from published)
+  - @mplp/core@1.0.6, @mplp/schema@1.0.5, @mplp/sdk-ts@1.0.6
+  - @mplp/conformance@1.0.0 (NEW - replaces compliance)
+  - @mplp/coordination@1.0.6, @mplp/modules@1.0.5, @mplp/runtime-minimal@1.0.5
+  - @mplp/devtools@1.0.5, @mplp/integration-*@1.0.5, @mplp/compliance@1.0.5 (DEPRECATED)
+- **PyPI**: mplp-sdk@1.0.4 (Python >=3.9 support)
+
+#### Governance Enhancements
+- **METHOD-SDKR-08**: Multi-Package Release Governance (FROZEN v1.0)
+  - §6.6 Hash Evidence Strategy (SHA-256 artifact verification)
+  - §6.7 Version Verification (registry duplicate check)
+  - §8.1 Python Profile (PyPI Release Governance)
+- **CHECKLIST-SDK-RELEASE.md**: Upgraded with METHOD references for every check item
+- **Gate Implementations**: npm (`gate-publish-set.mjs`) and PyPI (`gate_pypi_set/`)
+
+#### Deprecation
+- `@mplp/compliance` marked [LEGACY] → use `@mplp/conformance`
+
+#### Housekeeping
+- Copyright year updated 2025 → 2026
+- DERIVATION_PROOF.yaml present for all 14 packages
+
+---
+
+## [internal-governance-fix] — 2025-12-26
 
 ### 🔧 Internal Build System Fix (Non-User-Facing)
 

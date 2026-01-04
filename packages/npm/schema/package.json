@@ -1,6 +1,6 @@
 {
   "name": "@mplp/schema",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "MPLP Protocol v1.0 JSON Schemas - All protocol schema definitions",
   "license": "Apache-2.0",
   "repository": {
@@ -47,6 +47,7 @@
   },
   "exports": {
     ".": {
+      "require": "./dist/index.js",
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }

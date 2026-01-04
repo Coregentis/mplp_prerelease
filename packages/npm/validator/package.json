@@ -1,4 +1,4 @@
-﻿{
+{
     "name": "@mplp/validator",
     "version": "1.0.0",
     "private": true,
@@ -34,9 +34,7 @@
         "agent-os",
         "agent-os-protocol"
     ],
-    "publishConfig": {
-        "access": "public"
-    },
+    "__comment_publishConfig": "REMOVED: publishConfig.access conflicts with private:true. CI-only package.",
     "dependencies": {
         "ajv": "^8.12.0",
         "ajv-formats": "^2.1.1",
@@ -50,7 +48,9 @@
         "protocolVersion": "1.0.0",
         "frozen": true,
         "governance": "MPGC",
-        "layer": "Tool"
+        "layer": "Tool",
+        "ci_only": true,
+        "publishBlocked": true
     },
     "exports": {
         ".": {
@@ -64,7 +64,7 @@
     },
     "scripts": {
         "build": "tsc",
-        "prepublishOnly": "npm run sync-schemas && npm run build",
+        "ci:build": "npm run sync-schemas && npm run build",
         "sync-schemas": "node scripts/sync-schemas.mjs"
     }
 }

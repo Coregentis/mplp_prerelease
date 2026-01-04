@@ -86,7 +86,9 @@ SDK Release is **governance-illegal** unless all of the following are met:
 | METHOD-SDKR-05 | Release Manifest |
 | METHOD-SDKR-06 | Post-Install Verification |
 | METHOD-SDKR-07 | Incident and Rollback |
-| CHECKLIST | Release Audit Checklist |
+| METHOD-SDKR-08 | Multi-Package Release Governance |
+| **METHOD-SDKR-09** | **Release Readiness Governance (8-Stage Framework)** |
+| CHECKLIST | Release Audit Checklist (8-Stage) |
 
 ---
 
