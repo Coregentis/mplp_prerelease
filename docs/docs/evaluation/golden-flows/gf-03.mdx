@@ -1,0 +1,75 @@
+---
+entry_surface: documentation
+doc_type: informative
+status: draft
+authority: none
+protocol_version: "1.0.0"
+doc_id: "DOC-EVAL-GF-03-001"
+
+# UI metadata (non-normative; excluded from protocol semantics)
+title: "GF-03: Drift Detection"
+sidebar_label: "GF-03: Drift Detection"
+sidebar_position: 3
+---
+
+> [!IMPORTANT]
+> **Non-Normative Document**
+>
+> This document is informative only.
+> It MUST NOT be used as an authoritative specification.
+> All normative requirements are defined in the Specification documents.
+
+# GF-03: Drift Detection & Recovery
+
+> **Type**: Evaluation Scenario
+> **Profile**: SA (Single Agent)
+
+## Scope
+
+This evaluation scenario describes:
+- **Drift detection** when physical files are modified outside the protocol
+- **Trace** emission of `DriftDetected` events
+- **Recovery Plan** generation to realign state
+- **Extension** module usage for external state verification
+
+## Non-Goals
+
+This scenario does NOT evaluate:
+- Multi-agent coordination (see GF-02)
+- Initial plan creation (see GF-01)
+
+---
+
+## Modules Involved
+
+| Module | Role in Flow |
+|:-------|:-------------|
+| **Context** | Defines the "Expected State" anchor |
+| **Plan** | Generates the recovery strategy |
+| **Extension** | Provides the drift detection logic (e.g., file hasher) |
+| **Trace** | Records the drift event and recovery steps |
+
+---
+
+## Cross-Cutting Duties Exercised
+
+- Drift Detection
+- State Realignment
+- External Verification
+
+---
+
+## Evidence
+
+| Type | Location | Status |
+|:-----|:---------|:-------|
+| **Golden Flow** | `tests/golden/flows/flow-03-single-agent-with-tools/` | Passed |
+
+---
+
+## Expected Behavior
+
+- System detects the external change (e.g., file deletion)
+- `DriftDetected` event is present in the Trace
+- A recovery plan is proposed and successfully executed
+- Final state is consistent with the realigned reality

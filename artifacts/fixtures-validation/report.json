@@ -1,0 +1,141 @@
+{
+  "timestamp": "2026-01-01T17:21:05.049Z",
+  "fixtures_total": 22,
+  "fixtures_passed": 22,
+  "fixtures_failed": 0,
+  "fixtures_skipped": 0,
+  "details": [
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-01-single-agent-plan\\input\\context.json",
+      "schema": "mplp-context.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-01-single-agent-plan\\input\\plan.json",
+      "schema": "mplp-plan.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-02-single-agent-large-plan\\input\\context.json",
+      "schema": "mplp-context.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-02-single-agent-large-plan\\input\\plan.json",
+      "schema": "mplp-plan.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-03-single-agent-with-tools\\input\\context.json",
+      "schema": "mplp-context.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-03-single-agent-with-tools\\input\\plan.json",
+      "schema": "mplp-plan.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-04-single-agent-llm-enrichment\\input\\context.json",
+      "schema": "mplp-context.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-04-single-agent-llm-enrichment\\input\\plan.json",
+      "schema": "mplp-plan.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-05-single-agent-confirm-required\\input\\confirm.json",
+      "schema": "mplp-confirm.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-05-single-agent-confirm-required\\input\\context.json",
+      "schema": "mplp-context.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-05-single-agent-confirm-required\\input\\plan.json",
+      "schema": "mplp-plan.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\flow-05-single-agent-confirm-required\\input\\trace.json",
+      "schema": "mplp-trace.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\map-flow-01-turn-taking\\input\\collab.json",
+      "schema": "mplp-collab.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\map-flow-01-turn-taking\\input\\context.json",
+      "schema": "mplp-context.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\map-flow-01-turn-taking\\input\\plan.json",
+      "schema": "mplp-plan.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\map-flow-02-broadcast-fanout\\input\\collab.json",
+      "schema": "mplp-collab.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\map-flow-02-broadcast-fanout\\input\\context.json",
+      "schema": "mplp-context.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\map-flow-02-broadcast-fanout\\input\\plan.json",
+      "schema": "mplp-plan.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\sa-flow-01-basic\\input\\context.json",
+      "schema": "mplp-context.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\sa-flow-01-basic\\input\\plan.json",
+      "schema": "mplp-plan.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\sa-flow-02-step-evaluation\\input\\context.json",
+      "schema": "mplp-context.schema.json",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "fixture": "E:\\Coregentis\\MPLP\\mplp-v1.0\\V1.0-release\\tests\\golden\\flows\\sa-flow-02-step-evaluation\\input\\plan.json",
+      "schema": "mplp-plan.schema.json",
+      "status": "PASS",
+      "errors": []
+    }
+  ]
+}

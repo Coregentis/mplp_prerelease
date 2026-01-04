@@ -1,0 +1,76 @@
+---
+entry_surface: documentation
+doc_type: informative
+status: draft
+authority: none
+protocol_version: "1.0.0"
+doc_id: "DOC-EVAL-GF-02-001"
+
+# UI metadata (non-normative; excluded from protocol semantics)
+title: "GF-02: MAP Coordination"
+sidebar_label: "GF-02: MAP Coordination"
+sidebar_position: 2
+---
+
+> [!IMPORTANT]
+> **Non-Normative Document**
+>
+> This document is informative only.
+> It MUST NOT be used as an authoritative specification.
+> All normative requirements are defined in the Specification documents.
+
+# GF-02: Multi-Agent Coordination
+
+> **Type**: Evaluation Scenario
+> **Profile**: MAP (Multi-Agent)
+
+## Scope
+
+This evaluation scenario describes:
+- **Collab** session initialization
+- **Role** binding for multiple participants
+- **Turn-taking** logic between agents
+- **Broadcast** communication patterns
+
+## Non-Goals
+
+This scenario does NOT evaluate:
+- Single-agent lifecycle (see GF-01)
+- Drift detection (see GF-03)
+- Governance confirmation (see GF-05)
+
+---
+
+## Modules Involved
+
+| Module | Role in Flow |
+|:-------|:-------------|
+| **Collab** | Manages multi-agent session state |
+| **Role** | Defines participant capabilities |
+| **Dialog** | Handles message exchange |
+| **Network** | Manages topology and transport |
+
+---
+
+## Cross-Cutting Duties Exercised
+
+- Multi-Agent Sync
+- Message Ordering
+- Topology Enforcement
+
+---
+
+## Evidence
+
+| Type | Location | Status |
+|:-----|:---------|:-------|
+| **Golden Flow** | `tests/golden/flows/map-flow-01-turn-taking/` | Passed |
+| **Golden Flow** | `tests/golden/flows/map-flow-02-broadcast-fanout/` | Passed |
+
+---
+
+## Expected Behavior
+
+- All agents participate according to the Collab mode
+- Messages are delivered in the correct order
+- Session terminates gracefully with a final state snapshot

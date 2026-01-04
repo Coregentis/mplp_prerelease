@@ -1,0 +1,9 @@
+{
+  "freeze_date": "2025-12-03",
+  "frozen": true,
+  "governance": "MPGC",
+  "learning_taxonomy_sha256": "6dbc28bb2dd1fa3a5e1ec51c20a0cc94885ce22989c0f9eb550914482442464e",
+  "protocol_version": "1.0.0",
+  "schema_bundle_hash_method": "none",
+  "schema_bundle_sha256": null
+}

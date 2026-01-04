@@ -1,0 +1,152 @@
+{
+  "timestamp": "2026-01-01T17:21:10.729Z",
+  "total": 6,
+  "passed": 6,
+  "failed": 0,
+  "details": [
+    {
+      "fixture": "tests/cross-language/validation/fixtures/context_invalid_uuid.json",
+      "schema": "mplp-context.schema.json",
+      "expectedKeyword": "pattern",
+      "status": "PASS",
+      "actualKeywords": [
+        "pattern"
+      ],
+      "errors": [
+        {
+          "keyword": "pattern",
+          "path": "/context_id",
+          "message": "must match pattern \"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$\""
+        }
+      ],
+      "reason": "Correctly failed with expected keyword: pattern"
+    },
+    {
+      "fixture": "tests/cross-language/validation/fixtures/context_missing_required.json",
+      "schema": "mplp-context.schema.json",
+      "expectedKeyword": "required",
+      "status": "PASS",
+      "actualKeywords": [
+        "required"
+      ],
+      "errors": [
+        {
+          "keyword": "required",
+          "path": "",
+          "message": "must have required property 'context_id'"
+        }
+      ],
+      "reason": "Correctly failed with expected keyword: required"
+    },
+    {
+      "fixture": "tests/cross-language/validation/fixtures/context_extra_forbidden.json",
+      "schema": "mplp-context.schema.json",
+      "expectedKeyword": "additionalProperties",
+      "status": "PASS",
+      "actualKeywords": [
+        "additionalProperties",
+        "pattern"
+      ],
+      "errors": [
+        {
+          "keyword": "additionalProperties",
+          "path": "/meta",
+          "message": "must NOT have additional properties"
+        },
+        {
+          "keyword": "pattern",
+          "path": "/context_id",
+          "message": "must match pattern \"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$\""
+        }
+      ],
+      "reason": "Correctly failed with expected keyword: additionalProperties"
+    },
+    {
+      "fixture": "tests/cross-language/validation/fixtures/context_invalid_datetime.json",
+      "schema": "mplp-context.schema.json",
+      "expectedKeyword": "format",
+      "status": "PASS",
+      "actualKeywords": [
+        "format",
+        "pattern"
+      ],
+      "errors": [
+        {
+          "keyword": "format",
+          "path": "/meta/created_at",
+          "message": "must match format \"date-time\""
+        },
+        {
+          "keyword": "pattern",
+          "path": "/context_id",
+          "message": "must match pattern \"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$\""
+        }
+      ],
+      "reason": "Correctly failed with expected keyword: format"
+    },
+    {
+      "fixture": "tests/cross-language/validation/fixtures/confirm_invalid_enum.json",
+      "schema": "mplp-confirm.schema.json",
+      "expectedKeyword": "enum",
+      "status": "PASS",
+      "actualKeywords": [
+        "pattern",
+        "pattern",
+        "enum"
+      ],
+      "errors": [
+        {
+          "keyword": "pattern",
+          "path": "/confirm_id",
+          "message": "must match pattern \"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$\""
+        },
+        {
+          "keyword": "pattern",
+          "path": "/target_id",
+          "message": "must match pattern \"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$\""
+        },
+        {
+          "keyword": "enum",
+          "path": "/status",
+          "message": "must be equal to one of the allowed values"
+        }
+      ],
+      "reason": "Correctly failed with expected keyword: enum"
+    },
+    {
+      "fixture": "tests/cross-language/validation/fixtures/plan_step_missing_id.json",
+      "schema": "mplp-plan.schema.json",
+      "expectedKeyword": "required",
+      "status": "PASS",
+      "actualKeywords": [
+        "required",
+        "pattern",
+        "pattern",
+        "required"
+      ],
+      "errors": [
+        {
+          "keyword": "required",
+          "path": "",
+          "message": "must have required property 'objective'"
+        },
+        {
+          "keyword": "pattern",
+          "path": "/plan_id",
+          "message": "must match pattern \"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$\""
+        },
+        {
+          "keyword": "pattern",
+          "path": "/context_id",
+          "message": "must match pattern \"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$\""
+        },
+        {
+          "keyword": "required",
+          "path": "/steps/0",
+          "message": "must have required property 'step_id'"
+        }
+      ],
+      "reason": "Correctly failed with expected keyword: required"
+    }
+  ]
+}

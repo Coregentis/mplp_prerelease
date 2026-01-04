@@ -1,0 +1,64 @@
+---
+
+title: Runtime Authority & Scope
+sidebar_label: Authority & Scope
+sidebar_position: 1
+doc_type: normative
+status: frozen
+authority: MPGC
+audience: implementer
+
+---
+
+> Authority: project-governance/active/GOV-05_AI_EXECUTION_CONTRACT.md
+> This document mirrors the protocol definition for reference only.
+
+> [!FROZEN]
+> **MPLP Protocol v1.0.0 — Frozen Specification**
+> **Freeze Date**: 2025-12-03
+> **Status**: FROZEN (no breaking changes permitted)
+> **Governance**: MPLP Protocol Governance Committee (MPGC)
+> **License**: Apache-2.0
+> **Note**: Any normative change requires a new protocol version.
+
+
+# Runtime Authority & Scope
+
+> **Status**: Normative | FROZEN  
+> **Profile**: 14-Golden  
+> **Authority**: MPGC
+
+## Scope
+
+This document defines the **allowed authority and execution boundaries**
+of the MPLP L3 Runtime for **Golden Flow execution only (GF-01 ~ GF-05)**.
+
+## Allowed Capabilities
+
+The Runtime MAY perform **only** the following:
+
+- **A. Runtime Core**: Runtime execution and trace generation (Identity, Timeline, Trace).
+- **D. Tool Invocation**: Tool invocation with evidence events.
+- **E. File System**: File system updates with evidence events.
+- **H. Profiles**: SA / MAP profile runtime evidence emission.
+- **J. Invariants**: Evidence generation required for invariant evaluation.
+
+## Explicit Non-Goals
+
+The Runtime does NOT:
+
+- **B. Pipeline**: Implement pipeline or stage orchestration.
+- **C. Semantic Graph**: Update or manage semantic graphs (PSG).
+- **F. Git**: Integrate with Git systems.
+- **G. CI**: Integrate with CI systems.
+- **I. Learning**: Generate learning samples.
+- **Validation**: Perform invariant adjudication or validation.
+
+## Authority Boundaries
+
+The Runtime MUST NOT:
+
+- Modify schema semantics.
+- Implicitly repair or alter execution paths.
+- Claim validation, certification, or compliance outcomes.
+- Act as a Reference Implementation (it is a Reference Execution Substrate).

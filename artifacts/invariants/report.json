@@ -1,0 +1,560 @@
+{
+  "timestamp": "2026-01-01T17:21:06.505Z",
+  "protocol_version": "1.0.0",
+  "flows_total": 9,
+  "flows_passed": 9,
+  "flows_failed": 0,
+  "invariants_total": 95,
+  "invariants_passed": 95,
+  "invariants_failed": 0,
+  "invariants_not_evaluated": 0,
+  "flow_results": [
+    {
+      "flow": "flow-01-single-agent-plan",
+      "status": "PASS",
+      "invariants": [
+        {
+          "id": "INV-001",
+          "name": "Protocol Version Duty",
+          "status": "PASS"
+        },
+        {
+          "id": "INV-003",
+          "name": "Trace Completeness",
+          "status": "PASS",
+          "message": "Plan has 2 steps"
+        },
+        {
+          "id": "INV-006",
+          "name": "Non-Endorsement Boundary",
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "flow": "flow-02-single-agent-large-plan",
+      "status": "PASS",
+      "invariants": [
+        {
+          "id": "INV-001",
+          "name": "Protocol Version Duty",
+          "status": "PASS"
+        },
+        {
+          "id": "INV-003",
+          "name": "Trace Completeness",
+          "status": "PASS",
+          "message": "Plan has 25 steps"
+        },
+        {
+          "id": "INV-006",
+          "name": "Non-Endorsement Boundary",
+          "status": "PASS"
+        },
+        {
+          "id": "flow02_plan_minimum_steps",
+          "name": "Plan must contain at least 20 steps to validate large-scale handling",
+          "status": "PASS"
+        },
+        {
+          "id": "flow02_step_ids_are_uuid",
+          "name": "All step IDs must be valid UUID v4 format",
+          "status": "PASS"
+        },
+        {
+          "id": "flow02_step_descriptions_non_empty",
+          "name": "All step descriptions must be non-empty strings (tests wildcard at scale)",
+          "status": "PASS"
+        },
+        {
+          "id": "flow02_step_status_valid",
+          "name": "All step statuses must be valid protocol values",
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "flow": "flow-03-single-agent-with-tools",
+      "status": "PASS",
+      "invariants": [
+        {
+          "id": "INV-001",
+          "name": "Protocol Version Duty",
+          "status": "PASS"
+        },
+        {
+          "id": "INV-003",
+          "name": "Trace Completeness",
+          "status": "PASS",
+          "message": "Plan has 8 steps"
+        },
+        {
+          "id": "INV-006",
+          "name": "Non-Endorsement Boundary",
+          "status": "PASS"
+        },
+        {
+          "id": "flow03_plan_minimum_steps",
+          "name": "flow03_plan_minimum_steps",
+          "status": "PASS"
+        },
+        {
+          "id": "flow03_step_ids_are_uuid",
+          "name": "flow03_step_ids_are_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "flow03_step_descriptions_non_empty",
+          "name": "flow03_step_descriptions_non_empty",
+          "status": "PASS"
+        },
+        {
+          "id": "flow03_step_status_valid",
+          "name": "flow03_step_status_valid",
+          "status": "PASS"
+        },
+        {
+          "id": "flow03_agent_role_non_empty",
+          "name": "flow03_agent_role_non_empty",
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "flow": "flow-04-single-agent-llm-enrichment",
+      "status": "PASS",
+      "invariants": [
+        {
+          "id": "INV-001",
+          "name": "Protocol Version Duty",
+          "status": "PASS"
+        },
+        {
+          "id": "INV-003",
+          "name": "Trace Completeness",
+          "status": "PASS",
+          "message": "Plan has 6 steps"
+        },
+        {
+          "id": "INV-006",
+          "name": "Non-Endorsement Boundary",
+          "status": "PASS"
+        },
+        {
+          "id": "flow04_plan_minimum_steps",
+          "name": "flow04_plan_minimum_steps",
+          "status": "PASS"
+        },
+        {
+          "id": "flow04_step_ids_are_uuid",
+          "name": "flow04_step_ids_are_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "flow04_step_descriptions_non_empty",
+          "name": "flow04_step_descriptions_non_empty",
+          "status": "PASS"
+        },
+        {
+          "id": "flow04_step_status_valid",
+          "name": "flow04_step_status_valid",
+          "status": "PASS"
+        },
+        {
+          "id": "flow04_agent_role_non_empty",
+          "name": "flow04_agent_role_non_empty",
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "flow": "flow-05-single-agent-confirm-required",
+      "status": "PASS",
+      "invariants": [
+        {
+          "id": "INV-001",
+          "name": "Protocol Version Duty",
+          "status": "PASS"
+        },
+        {
+          "id": "INV-003",
+          "name": "Trace Completeness",
+          "status": "PASS",
+          "message": "Plan has 3 steps"
+        },
+        {
+          "id": "INV-006",
+          "name": "Non-Endorsement Boundary",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_plan_minimum_steps",
+          "name": "flow05_plan_minimum_steps",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_plan_id_is_uuid",
+          "name": "flow05_plan_id_is_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_plan_context_matches",
+          "name": "flow05_plan_context_matches",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_confirm_target_matches_plan",
+          "name": "flow05_confirm_target_matches_plan",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_trace_context_matches",
+          "name": "flow05_trace_context_matches",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_trace_plan_matches",
+          "name": "flow05_trace_plan_matches",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_confirm_status_valid",
+          "name": "flow05_confirm_status_valid",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_confirm_target_type_is_plan",
+          "name": "flow05_confirm_target_type_is_plan",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_confirm_has_decisions",
+          "name": "flow05_confirm_has_decisions",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_decisions_have_uuid",
+          "name": "flow05_decisions_have_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_decisions_have_valid_status",
+          "name": "flow05_decisions_have_valid_status",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_decision_reasons_non_empty",
+          "name": "flow05_decision_reasons_non_empty",
+          "status": "PASS"
+        },
+        {
+          "id": "flow05_trace_has_events",
+          "name": "flow05_trace_has_events",
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "flow": "map-flow-01-turn-taking",
+      "status": "PASS",
+      "invariants": [
+        {
+          "id": "INV-001",
+          "name": "Protocol Version Duty",
+          "status": "PASS"
+        },
+        {
+          "id": "INV-003",
+          "name": "Trace Completeness",
+          "status": "PASS",
+          "message": "Plan has 3 steps"
+        },
+        {
+          "id": "INV-006",
+          "name": "Non-Endorsement Boundary",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_context_uuid",
+          "name": "map01_context_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_context_active",
+          "name": "map01_context_active",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_plan_uuid",
+          "name": "map01_plan_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_plan_context_binding",
+          "name": "map01_plan_context_binding",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_plan_has_multiple_steps",
+          "name": "map01_plan_has_multiple_steps",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_steps_have_agent_roles",
+          "name": "map01_steps_have_agent_roles",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_collab_uuid",
+          "name": "map01_collab_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_collab_context_binding",
+          "name": "map01_collab_context_binding",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_collab_mode_round_robin",
+          "name": "map01_collab_mode_round_robin",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_collab_has_multiple_participants",
+          "name": "map01_collab_has_multiple_participants",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_participants_have_role_ids",
+          "name": "map01_participants_have_role_ids",
+          "status": "PASS"
+        },
+        {
+          "id": "map01_participant_kind_valid",
+          "name": "map01_participant_kind_valid",
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "flow": "map-flow-02-broadcast-fanout",
+      "status": "PASS",
+      "invariants": [
+        {
+          "id": "INV-001",
+          "name": "Protocol Version Duty",
+          "status": "PASS"
+        },
+        {
+          "id": "INV-003",
+          "name": "Trace Completeness",
+          "status": "PASS",
+          "message": "Plan has 5 steps"
+        },
+        {
+          "id": "INV-006",
+          "name": "Non-Endorsement Boundary",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_context_uuid",
+          "name": "map02_context_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_context_active",
+          "name": "map02_context_active",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_plan_uuid",
+          "name": "map02_plan_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_plan_context_binding",
+          "name": "map02_plan_context_binding",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_plan_has_broadcast_steps",
+          "name": "map02_plan_has_broadcast_steps",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_steps_have_agent_roles",
+          "name": "map02_steps_have_agent_roles",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_steps_have_uuids",
+          "name": "map02_steps_have_uuids",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_collab_uuid",
+          "name": "map02_collab_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_collab_context_binding",
+          "name": "map02_collab_context_binding",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_collab_mode_broadcast",
+          "name": "map02_collab_mode_broadcast",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_collab_has_multiple_participants",
+          "name": "map02_collab_has_multiple_participants",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_participants_have_role_ids",
+          "name": "map02_participants_have_role_ids",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_participant_kind_valid",
+          "name": "map02_participant_kind_valid",
+          "status": "PASS"
+        },
+        {
+          "id": "map02_participant_ids_non_empty",
+          "name": "map02_participant_ids_non_empty",
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "flow": "sa-flow-01-basic",
+      "status": "PASS",
+      "invariants": [
+        {
+          "id": "INV-001",
+          "name": "Protocol Version Duty",
+          "status": "PASS"
+        },
+        {
+          "id": "INV-003",
+          "name": "Trace Completeness",
+          "status": "PASS",
+          "message": "Plan has 1 steps"
+        },
+        {
+          "id": "INV-006",
+          "name": "Non-Endorsement Boundary",
+          "status": "PASS"
+        },
+        {
+          "id": "flow01_context_has_uuid",
+          "name": "flow01_context_has_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "flow01_context_active",
+          "name": "flow01_context_active",
+          "status": "PASS"
+        },
+        {
+          "id": "flow01_plan_has_uuid",
+          "name": "flow01_plan_has_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "flow01_plan_context_matches",
+          "name": "flow01_plan_context_matches",
+          "status": "PASS"
+        },
+        {
+          "id": "sa01_plan_has_steps",
+          "name": "sa01_plan_has_steps",
+          "status": "PASS"
+        },
+        {
+          "id": "sa01_step_has_agent_role",
+          "name": "sa01_step_has_agent_role",
+          "status": "PASS"
+        },
+        {
+          "id": "sa01_step_ids_uuid",
+          "name": "sa01_step_ids_uuid",
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "flow": "sa-flow-02-step-evaluation",
+      "status": "PASS",
+      "invariants": [
+        {
+          "id": "INV-001",
+          "name": "Protocol Version Duty",
+          "status": "PASS"
+        },
+        {
+          "id": "INV-003",
+          "name": "Trace Completeness",
+          "status": "PASS",
+          "message": "Plan has 4 steps"
+        },
+        {
+          "id": "INV-006",
+          "name": "Non-Endorsement Boundary",
+          "status": "PASS"
+        },
+        {
+          "id": "sa02_context_uuid",
+          "name": "sa02_context_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "sa02_context_active",
+          "name": "sa02_context_active",
+          "status": "PASS"
+        },
+        {
+          "id": "sa02_plan_uuid",
+          "name": "sa02_plan_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "sa02_plan_context_binding",
+          "name": "sa02_plan_context_binding",
+          "status": "PASS"
+        },
+        {
+          "id": "sa02_plan_has_multiple_steps",
+          "name": "sa02_plan_has_multiple_steps",
+          "status": "PASS"
+        },
+        {
+          "id": "sa02_step_ids_uuid",
+          "name": "sa02_step_ids_uuid",
+          "status": "PASS"
+        },
+        {
+          "id": "sa02_steps_have_agent_role",
+          "name": "sa02_steps_have_agent_role",
+          "status": "PASS"
+        },
+        {
+          "id": "sa02_steps_have_descriptions",
+          "name": "sa02_steps_have_descriptions",
+          "status": "PASS"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

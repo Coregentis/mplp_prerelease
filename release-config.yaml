@@ -1,0 +1,64 @@
+# MPLP Protocol v1.0.0 — Frozen Specification
+# Freeze Date: 2025-12-03
+# Status: FROZEN (no breaking changes permitted)
+# Governance: MPLP Protocol Governance Committee (MPGC)
+# © 2025 邦士（北京）网络科技有限公司
+# License: Apache-2.0
+# Any normative change requires a new protocol version.
+
+# MPLP v1.0 Release Packaging Config
+
+# Protocol Version (Frozen)
+version: "1.0.0"
+
+include:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "LICENSE.txt"
+  - "CODE_OF_CONDUCT.md"
+  - "CONTRIBUTING.md"
+  - "SECURITY.md"
+  - "GOVERNANCE.md"
+  - "MAINTAINERS.md"
+  - "RELEASE_NOTES.md"
+  - "VERSION.txt"
+  - "schemas/v2/**"
+  - "docs/**"
+  - "assets/**"
+  - "tests/golden/**"
+  - "packages/**"
+  - "examples/**"
+  - ".github/ISSUE_TEMPLATE/**"
+  - ".github/PULL_REQUEST_TEMPLATE.md"
+  - ".github/workflows/deploy-docs.yml"
+  - ".github/workflows/semantic-lint.yml"
+  - ".github/workflows/link-health.yml"
+  - ".github/workflows/ci-release.yml"
+  - ".eslintrc.json"
+  - "scripts/semantic/**"
+  # Governance Specifications (DGP-*) - Public
+  - "project-governance/DGP-*.md"
+  - "project-governance/DGP-*.yaml"
+  - "project-governance/README.md"
+  - "project-governance/public-surface/PSG-CROSSLINK-SSOT.yaml"
+  - "project-governance/RELEASE_ATTESTATION_*.md"
+
+exclude:
+  - "MPLP_website/**"
+  - "internal/**"
+  - ".git/**"
+  - "**/node_modules/**"
+  - "**/dist/**"
+  - "**/build/**"
+  - "scripts/release/**"
+  # Governance - Operational Artifacts (Internal)
+  - "project-governance/archive/**"
+  - "project-governance/internal-ops/**"
+  - "project-governance/*_AUDIT_REPORT.*"
+  - "project-governance/*_WAIVERS.yaml"
+  - "project-governance/*_FREEZE_RECORD_*.md"
+  - "docs-upgrade-kit/**"
+  - "docs-backup-corrupted/**"
+  - ".archive/**"
+  - "tools/**"
+  - "reports/**"

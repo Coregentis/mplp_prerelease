@@ -1,0 +1,65 @@
+---
+entry_surface: documentation
+doc_type: informative
+status: draft
+authority: none
+protocol_version: "1.0.0"
+doc_id: "DOC-EVAL-GF-INDEX-001"
+
+# UI metadata (non-normative; excluded from protocol semantics)
+title: Golden Flows Overview
+sidebar_label: Golden Flows
+---
+
+> [!IMPORTANT]
+> **Non-Normative Document**
+>
+> This document is informative only.
+> It MUST NOT be used as an authoritative specification.
+> All normative requirements are defined in the Specification documents.
+
+# Golden Flows Overview
+
+Golden Flows are **evaluation scenarios** that describe expected behavior for MPLP implementations.
+
+## How to Use This Section
+
+| Your Goal | Start Here |
+|:---|:---|
+| **Verify implementation** | [GF-01: SA Lifecycle](./gf-01.mdx) |
+| **Understand coordination** | [GF-02: MAP Coordination](./gf-02.mdx) |
+| **Test drift detection** | [GF-03: Drift Detection](./gf-03.mdx) |
+| **Validate delta-intent** | [GF-04: Delta-Intent](./gf-04.mdx) |
+| **Check governance** | [GF-05: Governance](./gf-05.mdx) |
+
+## The Five Golden Flows
+
+| Flow | Name | Purpose | Modules Involved |
+|:---|:---|:---|:---|
+| **GF-01** | [SA Lifecycle](./gf-01.mdx) | Single-agent lifecycle correctness | Context, Plan, Trace |
+| **GF-02** | [MAP Coordination](./gf-02.mdx) | Multi-agent coordination | Collab, Role, Dialog |
+| **GF-03** | [Drift Detection](./gf-03.mdx) | Plan-execution divergence | Plan, Trace, Confirm |
+| **GF-04** | [Delta-Intent](./gf-04.mdx) | Incremental state update | Context, Trace |
+| **GF-05** | [Governance](./gf-05.mdx) | Policy enforcement | Confirm, Role |
+
+## Traceability
+
+All Golden Flows are mapped to:
+- **Modules** they validate
+- **Cross-Cutting Duties** they exercise
+- **Test files** in the repository
+
+See: [Repo-Docs-Code Alignment](/docs/meta/index/REPO_DOCS_CODE_ALIGNMENT)
+
+## Change Policy
+
+Golden Flows are **Normative**:
+- Semantic changes require MPGC approval
+- Test files must reflect current flow definitions
+- Evidence must be updated when flows change
+
+---
+
+**Document Status**: Normative (Validation Scenarios)  
+**Total Flows**: 5  
+**Required for Compliance**: All 5 flows must pass
