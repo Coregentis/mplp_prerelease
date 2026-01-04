@@ -34,7 +34,7 @@ sidebar_position: 4
 
 This specification defines the **optional integration layer** for external systems, including:
 - 4 Integration event schemas (File, Git, CI, Tool)
-- 17 Invariant rules for integration events
+- 19 Invariant rules for integration events
 - Adapter patterns and event routing
 
 **Note:** L4 is OPTIONAL for v1.0 compliance. Implementations can achieve conformance without any L4 support.
@@ -56,7 +56,7 @@ The **L4 Integration Infrastructure** layer defines standard interfaces for exte
 Based on actual schemas (`schemas/v2/integration/`) and integration docs (`docs/07-integration/`):
 
 1.  **4 Integration Event Schemas**: File, Git, CI, Tool events
-2.  **17 Invariant Rules**: From `schemas/v2/invariants/integration-invariants.yaml`
+2.  **19 Invariant Rules**: From `schemas/v2/invariants/integration-invariants.yaml`
 3.  **Adapter Specifications**: How external systems translate native events to MPLP format
 4.  **Event Routing**: How L3 Runtime consumes integration events
 
@@ -280,7 +280,7 @@ From `docs/07-integration/integration-spec.md`:
 }
 ```
 
-## 5. Integration Invariants (17 Rules)
+## 5. Integration Invariants (19 Rules)
 
 From `schemas/v2/invariants/integration-invariants.yaml` (4,489 bytes, 138 lines):
 
@@ -306,7 +306,7 @@ From `schemas/v2/invariants/integration-invariants.yaml` (4,489 bytes, 138 lines
 - `integration_ci_status_valid`: {pending, running, succeeded, failed, cancelled}
 - - Optional timestamp rules for `started_at`, `completed_at`
 
-**Total**: 17 rules
+**Total**: 19 rules (5 tool + 3 file + 5 git + 6 CI)
 
 ## 6. Adapter Architecture
 
@@ -549,7 +549,7 @@ services:
 - [07-integration/integration-spec.md](../integration/integration-spec.md)
 
 **Invariants**:
-- `schemas/v2/invariants/integration-invariants.yaml` (17 rules)
+- `schemas/v2/invariants/integration-invariants.yaml` (19 rules)
 
 **Schemas**:
 - `schemas/v2/integration/mplp-file-update-event.schema.json` (2,132 bytes)
@@ -562,5 +562,5 @@ services:
 **Document Status**: Optional (Non-Normative for v1.0 compliance)  
 **Integration Categories**: 4 (IDE, Git, CI, Tool)  
 **Event Schemas**: 4 (file_update, git, ci, tool)  
-**Invariant Rules**: 17 (5 tool + 3 file + 5 git + 4 CI)  
+**Invariant Rules**: 19 (5 tool + 3 file + 5 git + 6 CI)  
 **Event Flow**: External Systems Adapters L3 Event Bus PSG Updates

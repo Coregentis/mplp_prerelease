@@ -1,9 +1,11 @@
 # MPLP v1.0.0 FROZEN
 # Governance: MPGC
 
-from typing import Optional, Dict, Any, List
+from typing import Optional, List
 from pydantic import BaseModel, Field
 from datetime import datetime, timezone
+
+from mplp.generated.cross_cutting import CrossCuttingConcern
 
 class Metadata(BaseModel):
     protocol_version: str
@@ -13,8 +15,9 @@ class Metadata(BaseModel):
     created_by: Optional[str] = None
     updated_by: Optional[str] = None
     tags: Optional[List[str]] = None
-    cross_cutting: Optional[Dict[str, Any]] = None
-    # REMOVED: extra field - not in metadata.schema.json
+    cross_cutting: Optional[List[CrossCuttingConcern]] = None
+    # Type fixed: List[Literal[...]] matches schema#/properties/cross_cutting
 
     class Config:
-        extra = "forbid"  # Changed from "allow" to match schema additionalProperties: false
+        extra = "forbid"  # Matches schema additionalProperties: false
+

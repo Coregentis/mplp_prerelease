@@ -58,8 +58,8 @@ All schemas located in `schemas/v2/`:
 - `common/learning-sample.schema.json`
 
 ### Invariants
-- `invariants/sa-invariants.yaml` (8 SA rules)
-- `invariants/map-invariants.yaml` (7 MAP rules)
+- `invariants/sa-invariants.yaml` (9 SA rules)
+- `invariants/map-invariants.yaml` (9 MAP rules)
 - `invariants/observability-invariants.yaml`
 - `invariants/integration-invariants.yaml`
 - `invariants/learning-invariants.yaml`

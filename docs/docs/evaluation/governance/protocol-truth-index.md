@@ -151,7 +151,7 @@ decision_status_enum:
 | `sa_plan_context_binding` | plan | eq(context.context_id) | Plan.context_id matches |
 | `sa_plan_has_steps` | plan | min-length(1) | Plan has ≥1 step |
 | `sa_steps_have_valid_ids` | plan | uuid-v4 | All steps need UUID v4 |
-| `sa_steps_have_agent_role` | plan | non-empty-string | Steps specify agent_role |
+| `sa_steps_agent_role_if_present` | plan | non-empty-string | If agent_role present, must be non-empty |
 | `sa_trace_not_empty` | trace | min-length(1) | Trace emits ≥1 event |
 | `sa_trace_context_binding` | trace | eq(context.context_id) | Trace.context_id matches |
 | `sa_trace_plan_binding` | trace | eq(plan.plan_id) | Trace.plan_id matches |
@@ -193,7 +193,7 @@ event_family:
 
 | ID | Scope | Rule | Description |
 |:---|:---|:---|:---|
-| `map_session_requires_multiple_participants` | collab | min-length(2) | Session needs ≥2 participants |
+| `map_session_requires_participants` | collab | min-length(1) | Session needs ≥1 participant |
 | `map_collab_mode_valid` | collab | enum | Mode is valid |
 | `map_participants_have_role_ids` | collab | non-empty | All participants need role bindings |
 

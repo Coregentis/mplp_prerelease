@@ -1,11 +1,9 @@
-# MPLP v1.0.0 FROZEN – Invariant Set
-# © 2025 Bangshi Beijing Network Technology Limited Company – Apache-2.0
+# MPLP Protocol v1.0.0 — Frozen Specification
+# Freeze Date: 2025-12-03
+# Status: FROZEN (no breaking changes permitted)
 # Governance: MPLP Protocol Governance Committee (MPGC)
-
-# MPLP Protocol 1.0.0 — Frozen Specification
-# Status: Frozen as of 2025-11-30
-# Copyright: © 2025 邦士（北京）网络科技有限公司
-# License: Apache-2.0 (see LICENSE at repository root)
+# © 2025 Bangshi (Beijing) Network Technology Co., Ltd.
+# License: Apache-2.0
 # Any normative change requires a new protocol version.
 
 invariants:
@@ -39,11 +37,12 @@ invariants:
     rule: uuid-v4
     description: "All plan steps must have valid UUID v4 identifiers"
 
-  - id: sa_steps_have_agent_role
+  - id: sa_steps_agent_role_if_present
     scope: plan
     path: steps[*].agent_role
     rule: non-empty-string
-    description: "All steps must specify an agent_role for executor selection"
+    description: "If agent_role present, must be non-empty string (per schema type constraint)"
+    note: "agent_role is optional per plan_step_core schema; validate only when present"
 
   - id: sa_trace_not_empty
     scope: trace

@@ -1,11 +1,9 @@
-# MPLP v1.0.0 FROZEN – Invariant Set
-# © 2025 Bangshi Beijing Network Technology Limited Company – Apache-2.0
+# MPLP Protocol v1.0.0 — Frozen Specification
+# Freeze Date: 2025-12-03
+# Status: FROZEN (no breaking changes permitted)
 # Governance: MPLP Protocol Governance Committee (MPGC)
-
-# MPLP Protocol 1.0.0 — Frozen Specification
-# Status: Frozen as of 2025-11-30
-# Copyright: © 2025 邦士（北京）网络科技有限公司
-# License: Apache-2.0 (see LICENSE at repository root)
+# © 2025 Bangshi (Beijing) Network Technology Co., Ltd.
+# License: Apache-2.0
 # Any normative change requires a new protocol version.
 
 invariants:

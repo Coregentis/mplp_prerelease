@@ -98,7 +98,7 @@ It does not imply runtime execution, validation, or coverage completion. Verific
 | All Modules have Evaluation mapping | Mapped | Via conformance-model (pending Phase E/F verification) |
 | All Profiles have Golden Flow mapping | Mapped | SA→GF-01, MAP→GF-02 (pending Phase E/F verification) |
 | All Layers have Evidence mapping | Mapped | Via Golden Flows (not runtime-validated) |
-| All Invariants have Dimension mapping | Declared | 59 rules → 6 dimensions (not runtime-validated) |
+| All Invariants have Dimension mapping | Declared | 61 rules → 6 dimensions (not runtime-validated) |
 
 ---
 

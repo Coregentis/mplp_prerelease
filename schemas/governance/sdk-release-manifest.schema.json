@@ -1,0 +1,103 @@
+{
+    "$comment": "SDK Release Manifest Schema - Governance Use Only",
+    "$id": "https://schemas.mplp.dev/governance/sdk-release-manifest.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "MPLP SDK Release Manifest",
+    "description": "Schema for validating SDK Release Manifest files. This is a governance schema, not a protocol schema.",
+    "type": "object",
+    "properties": {
+        "protocol_version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+            "description": "MPLP protocol version this SDK implements"
+        },
+        "evidence_baseline_tag": {
+            "type": "string",
+            "pattern": "^evidence-baseline-v[0-9]+\\.[0-9]+$",
+            "description": "Git tag of the frozen Evidence Baseline"
+        },
+        "truth_source_bundle_hash": {
+            "type": "string",
+            "pattern": "^sha256:[a-f0-9]{64}$",
+            "description": "SHA256 hash of the Truth Source bundle"
+        },
+        "sdk_package": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Package name (e.g., mplp-sdk-ts, mplp)"
+                },
+                "version": {
+                    "type": "string",
+                    "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[a-z]+\\.[0-9]+)?$",
+                    "description": "Semantic version of the SDK"
+                },
+                "language": {
+                    "type": "string",
+                    "enum": [
+                        "ts",
+                        "py"
+                    ],
+                    "description": "SDK language"
+                }
+            },
+            "required": [
+                "name",
+                "version",
+                "language"
+            ],
+            "additionalProperties": false
+        },
+        "generation": {
+            "type": "object",
+            "properties": {
+                "tool": {
+                    "type": "string",
+                    "description": "Code generation tool name"
+                },
+                "version": {
+                    "type": "string",
+                    "description": "Code generation tool version"
+                },
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "ISO 8601 timestamp of generation"
+                }
+            },
+            "required": [
+                "tool",
+                "version",
+                "timestamp"
+            ],
+            "additionalProperties": false
+        },
+        "derived_surfaces_checksum": {
+            "type": "string",
+            "pattern": "^sha256:[a-f0-9]{64}$",
+            "description": "SHA256 checksum of all derived surfaces"
+        },
+        "derived_schema_refs": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "List of schema files used for derivation"
+        }
+    },
+    "required": [
+        "protocol_version",
+        "evidence_baseline_tag",
+        "truth_source_bundle_hash",
+        "sdk_package",
+        "generation"
+    ],
+    "additionalProperties": false,
+    "x-mplp-meta": {
+        "protocolVersion": "1.0.0",
+        "governance": true,
+        "nonNormative": true,
+        "purpose": "SDK Release Governance validation only"
+    }
+}

@@ -1,5 +1,5 @@
 {
-  "$comment": "MPLP v1.0.0 FROZEN – © 2025 邦士（北京）网络科技有限公司 – Apache-2.0 – Governance: MPGC",
+  "$comment": "MPLP v1.0.0 FROZEN – © 2025 Bangshi Beijing Network Technology Limited Company – Apache-2.0 – Governance: MPGC",
   "$id": "https://schemas.mplp.dev/v1.0/common/metadata.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "MPLP Metadata",
@@ -77,16 +77,18 @@
     },
     "cross_cutting": {
       "type": "array",
-      "description": "Declares cross-cutting concerns enabled for the current object (one of the 9 concerns in Governance Plane).",
+      "description": "Declares cross-cutting concerns enabled for the current object (one of the 11 concerns in Governance Plane).",
       "items": {
         "type": "string",
         "enum": [
           "coordination",
           "error-handling",
           "event-bus",
+          "learning-feedback",
+          "observability",
           "orchestration",
           "performance",
-          "protocol-version",
+          "protocol-versioning",
           "security",
           "state-sync",
           "transaction"

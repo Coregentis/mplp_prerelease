@@ -1,9 +1,9 @@
 {
-  "$comment": "MPLP v1.0.0 FROZEN – © 2025 邦士（北京）网络科技有限公司 – Apache-2.0 – Governance: MPGC",
+  "$comment": "MPLP v1.0.0 FROZEN – © 2025 Bangshi Beijing Network Technology Limited Company – Apache-2.0 – Governance: MPGC – NOTE: Informative base schema. Derived schemas (mplp-sa-event, mplp-map-event) are self-contained and do not $ref this schema.",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://mplp.dev/schemas/v1.0/events/mplp-event-core.schema.json",
-  "title": "MPLP Core Event v1.0",
-  "description": "Base structure for MPLP observability events - provides common fields inherited by all event families",
+  "title": "MPLP Core Event v1.0 (Informative)",
+  "description": "INFORMATIVE: Base structure for MPLP observability events. Derived event schemas (mplp-sa-event.schema.json, mplp-map-event.schema.json) are self-contained definitions and do not inherit from this schema.",
   "type": "object",
   "properties": {
     "event_id": {

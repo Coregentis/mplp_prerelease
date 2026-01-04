@@ -34,7 +34,7 @@ sidebar_position: 2
 
 This specification defines the normative **behavioral layer** of MPLP v1.0, including:
 - 10 Module lifecycles and state machines
-- SA Profile (8 invariants) and MAP Profile (9 invariants)
+- SA Profile (9 invariants) and MAP Profile (9 invariants)
 - Coordination patterns and module interactions
 
 ## Non-Goals
@@ -62,7 +62,7 @@ L2 encompasses:
 Based on actual schemas ( `schemas/v2/mplp-*.schema.json`) and module documents (`docs/02-modules/*.md`):
 
 1.  **Module Lifecycles**: State machines for all 10 modules with normative transitions
-2.  **Execution Profiles**: SA (8 invariants) and MAP (9 invariants) from `schemas/v2/invariants/`
+2.  **Execution Profiles**: SA (9 invariants) and MAP (9 invariants) from `schemas/v2/invariants/`
 3.  **Coordination Patterns**: 5 multi-agent modes from `mplp-collab.schema.json`
 4.  **Cross-Module Logic**: Dependencies, bindings, ref integrity
 5.  **Governance Metadata**: From `metadata.schema.json` and `governance` blocks in schemas
@@ -171,10 +171,10 @@ Profiles define higher-level execution patterns that span multiple modules.
 ### 4.1 SA Profile (Single-Agent) **REQUIRED**
 
 **Status**: **REQUIRED** for MPLP v1.0 conformance  
-**Normative Specification**: `schemas/v2/invariants/sa-invariants.yaml` (8 rules)  
+**Normative Specification**: `schemas/v2/invariants/sa-invariants.yaml` (9 rules)  
 **Reference Implementation**: `packages/sources/sdk-ts/src/runtime-minimal/index.ts`
 
-#### 4.1.1 SA Invariants (8 Rules)
+#### 4.1.1 SA Invariants (9 Rules)
 
 From `schemas/v2/invariants/sa-invariants.yaml`:
 
@@ -189,7 +189,7 @@ From `schemas/v2/invariants/sa-invariants.yaml`:
 | `sa_trace_context_binding` | `trace.context_id` | eq(context.context_id) | Trace context_id must match |
 | `sa_trace_plan_binding` | `trace.plan_id` | eq(plan.plan_id) | Trace plan_id must match |
 
-**Note**: Last two listed as separate rules in YAML, total = 8
+**Total**: 9 rules (context binding + plan structure + trace binding)
 
 #### 4.1.2 SA Minimal Flow
 

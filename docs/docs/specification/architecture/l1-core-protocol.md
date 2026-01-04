@@ -34,7 +34,7 @@ sidebar_position: 1
 
 This specification defines the normative **data layer** of MPLP v1.0, including:
 - 29 JSON Schemas (Draft-07)
-- 59 Invariant Rules (5 YAML files)
+- 61 Invariant Rules (5 YAML files)
 - Type definitions and validation requirements
 
 ## Non-Goals
@@ -67,12 +67,12 @@ Based on actual implementation in `schemas/v2/` and SDK validation layers:
     - **4 Integration Schemas**: L4 external system event structures
     - **3 Learning Schemas**: Learning sample structures for RLHF/SFT
 
-2.  **59 Invariant Rules** (encoded in 5 YAML files):
-    - **SA Invariants**: 8 rules (Single-Agent profile)
+2.  **61 Invariant Rules** (encoded in 5 YAML files):
+    - **SA Invariants**: 9 rules (Single-Agent profile)
     - **MAP Invariants**: 9 rules (Multi-Agent profile)
     - **Observability Invariants**: 12 rules (event structure)
-    - **Integration Invariants**: 17 rules (L4 events)
-    - **Learning Invariants**: 13 rules (learning samples)
+    - **Integration Invariants**: 19 rules (L4 events)
+    - **Learning Invariants**: 12 rules (learning samples)
 
 3.  **Type System** (implemented in SDKs):
     - TypeScript interfaces (`packages/sdk-ts/src/core/index.ts`)
@@ -257,11 +257,11 @@ Learning loop infrastructure in `schemas/v2/learning/`:
 | **mplp-learning-sample-intent.schema.json** | Intent Plan mappings | Extends core with `input.intent_id`, `output.resolution_quality_label` {good, acceptable, bad, unknown} |
 | **mplp-learning-sample-delta.schema.json** | Delta Impact predictions | Extends core with `input.delta_id`, `output.impact_scope` {local, module, system, global}, `state.risk_level` {low, medium, high, critical} |
 
-## 4. Invariant Rules (59 Total Across 5 Files)
+## 4. Invariant Rules (61 Total Across 5 Files)
 
 L1 enforces formal validation rules stored in `schemas/v2/invariants/` as YAML files. These rules are **normative** and MUST be validated by conformant implementations.
 
-### 4.1 SA Profile Invariants (sa-invariants.yaml) - 8 Rules
+### 4.1 SA Profile Invariants (sa-invariants.yaml) - 9 Rules
 
 **File**: `schemas/v2/invariants/sa-invariants.yaml` (1,860 bytes, 63 lines)
 
@@ -279,7 +279,7 @@ L1 enforces formal validation rules stored in `schemas/v2/invariants/` as YAML f
 | `sa_trace_context_binding` | trace | `context_id` | eq(context.context_id) | Trace context_id must match |
 | `sa_trace_plan_binding` | trace | `plan_id` | eq(plan.plan_id) | Trace plan_id must match |
 
-**Note**: Last two rules are actually listed as separate in the file, total = 8 rules
+**Total**: 9 rules (context + plan + trace binding)
 
 ### 4.2 MAP Profile Invariants (map-invariants.yaml) - 9 Rules
 
@@ -331,7 +331,7 @@ L1 enforces formal validation rules stored in `schemas/v2/invariants/` as YAML f
 
 **Total**: 12 rules (4 core + 3 pipeline + 2 graph + 3 runtime)
 
-### 4.4 Integration Invariants (integration-invariants.yaml) - 17 Rules
+### 4.4 Integration Invariants (integration-invariants.yaml) - 19 Rules
 
 **File**: `schemas/v2/invariants/integration-invariants.yaml` (4,489 bytes, 138 lines)
 
@@ -347,9 +347,9 @@ L1 enforces formal validation rules stored in `schemas/v2/invariants/` as YAML f
 **CI Events** (4 rules):
 - `integration_ci_provider_non_empty`, `integration_ci_pipeline_id_non_empty`, `integration_ci_run_id_non_empty`, `integration_ci_status_valid` {pending, running, succeeded, failed, cancelled}, (plus optional timestamp rules for started_at/completed_at)
 
-**Total**: 17 rules (5 tool + 3 file + 5 git + 4 CI)
+**Total**: 19 rules (5 tool + 3 file + 5 git + 6 CI)
 
-### 4.5 Learning Invariants (learning-invariants.yaml) - 13 Rules
+### 4.5 Learning Invariants (learning-invariants.yaml) - 12 Rules
 
 **File**: `schemas/v2/invariants/learning-invariants.yaml` (3,735 bytes, 97 lines)
 
@@ -365,7 +365,7 @@ L1 enforces formal validation rules stored in `schemas/v2/invariants/` as YAML f
 **Delta Impact Family** (4 rules):
 - `learning_delta_has_delta_id`, `learning_delta_scope_valid` {local, module, system, global}, `learning_delta_risk_valid` {low, medium, high, critical}
 
-**Total**: 13 rules
+**Total**: 12 rules (7 core + 2 intent + 3 delta)
 
 ## 5. Validation Requirements
 
@@ -443,7 +443,7 @@ To claim **L1 Compliance**, implementations MUST:
 | **Validate ALL inputs against schemas** | Code review + test coverage | AJV/Pydantic integration |
 | **Reject invalid data with descriptive errors** | Error handling tests | Error message samples |
 | **Support JSON serialization** | Serialization tests | JSON.stringify/json.dumps |
-| **Enforce SA invariants (8 rules)** | SA golden flow tests | `tests/golden/flows/sa-*` |
+| **Enforce SA invariants (9 rules)** | SA golden flow tests | `tests/golden/flows/sa-*` |
 | **Validate UUID v4 format** | Regex pattern tests | `identifiers.schema.json` |
 | **Validate ISO 8601 timestamps** | Datetime parsing tests | `metadata.schema.json`, event schemas |
 | **Support W3C Trace Context** | Distributed tracing tests | `trace-base.schema.json` |
@@ -557,15 +557,15 @@ Each schema includes `x-mplp-meta`:
 - [Conformance Checklist](/docs/guides/conformance-checklist.md)
 
 **Invariants Source**:
-- `schemas/v2/invariants/sa-invariants.yaml` (8 rules)
+- `schemas/v2/invariants/sa-invariants.yaml` (9 rules)
 - `schemas/v2/invariants/map-invariants.yaml` (9 rules)
 - `schemas/v2/invariants/observability-invariants.yaml` (12 rules)
-- `schemas/v2/invariants/integration-invariants.yaml` (17 rules)
-- `schemas/v2/invariants/learning-invariants.yaml` (13 rules)
+- `schemas/v2/invariants/integration-invariants.yaml` (19 rules)
+- `schemas/v2/invariants/learning-invariants.yaml` (12 rules)
 
 ---
 
 **Document Status**: Normative  
-**Total Rules**: 59 invariants across 5 files  
+**Total Rules**: 61 invariants across 5 files  
 **Total Schemas**: 29 JSON Schema files (10+6+6+4+3)  
 **Validation Libraries**: AJV v8.12.0 (TypeScript), Pydantic v2.0+ (Python)
