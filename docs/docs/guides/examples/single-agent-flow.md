@@ -220,8 +220,8 @@ To turn this into a production application:
 ## 7. Related Documentation
 
 - [TypeScript SDK Guide](/docs/guides/sdk/ts-sdk-guide.md)
-- [SA Profile Specification](../profiles/sa-profile.md)
-- [Golden Flow Registry](/docs/evaluation/tests/golden-flow-registry.md)
+- [SA Profile Specification](/docs/specification/profiles/sa-profile.md)
+- [Golden Flow Registry](/docs/evaluation/golden-flows/index.mdx)
 
 ---
 

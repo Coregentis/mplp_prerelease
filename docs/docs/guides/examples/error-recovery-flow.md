@@ -90,6 +90,6 @@ When a `Rollback` is triggered, the runtime must use the `Value State Layer (VSL
 
 ## 5. Related Documentation
 
-- [Trace Module Specification](../modules/trace-module.md)
+- [Trace Module Specification](/docs/specification/modules/trace-module.md)
 - [L3 Error Handling & Drift](/docs/specification/architecture/index)
 - [Golden Flow: Resilient Execution](/docs/evaluation/golden-flows/index)

@@ -545,7 +545,7 @@ Each schema includes `x-mplp-meta`:
 ## 10. Related Documents
 
 **Architecture**:
-- [Architecture Overview](architecture-overview.md)
+- [Architecture Overview](index.mdx)
 - [L2 Coordination & Governance](l2-coordination-governance.md)
 - [Schema Conventions](schema-conventions.md)
 

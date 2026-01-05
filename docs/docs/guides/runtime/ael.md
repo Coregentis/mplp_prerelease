@@ -582,7 +582,7 @@ class RetryableAEL implements ActionExecutionLayer {
 - [PSG (Project Semantic Graph)](psg.md)
 
 **Kernel Duties**:
-- [Observability](../observability/observability-overview.md)
+- [Observability](/docs/specification/observability/observability-overview.md)
 - [Security](/docs/specification/architecture/cross-cutting-kernel-duties/index)
 
 **Invariants**:

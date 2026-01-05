@@ -97,6 +97,6 @@ The `Confirm` object is cryptographically linked to the `Trace` via the `trace_i
 
 ## 5. Related Documentation
 
-- [Confirm Module Specification](../modules/confirm-module.md)
+- [Confirm Module Specification](/docs/specification/modules/confirm-module.md)
 - [L3 Execution Loop](/docs/specification/architecture/index)
 - [Golden Flow: HITL Patterns](/docs/evaluation/golden-flows/index)

@@ -88,7 +88,7 @@ pnpm start
 
 ## 6. Related Documentation
 
-- [MAP Profile Specification](../profiles/map-profile.md)
-- [Collab Module](../modules/collab-module.md)
-- [Network Module](../modules/network-module.md)
-- [Golden Flow Registry](/docs/evaluation/tests/golden-flow-registry.md)
+- [MAP Profile Specification](/docs/specification/profiles/map-profile.md)
+- [Collab Module](/docs/specification/modules/collab-module.md)
+- [Network Module](/docs/specification/modules/network-module.md)
+- [Golden Flow Registry](/docs/evaluation/golden-flows/index.mdx)

@@ -541,7 +541,7 @@ services:
 ## 12. Related Documents
 
 **Architecture**:
-- [Architecture Overview](architecture-overview.md)
+- [Architecture Overview](index.mdx)
 - [L1 Core Protocol](l1-core-protocol.md)
 - [L3 Execution & Orchestration](l3-execution-orchestration.md)
 

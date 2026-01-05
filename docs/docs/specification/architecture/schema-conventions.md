@@ -583,7 +583,7 @@ if (!valid) {
 
 **Architecture**:
 - [L1 Core Protocol](l1-core-protocol.md) - Complete schema catalog
-- [Architecture Overview](architecture-overview.md) - Layer structure
+- [Architecture Overview](index.mdx) - Layer structure
 
 **Module Docs**:
 - `docs/02-modules/` - All 10 module specifications

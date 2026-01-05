@@ -464,7 +464,7 @@ const result = await runSingleAgentFlow({
 ## 12. Related Documents
 
 **Architecture**:
-- [Architecture Overview](architecture-overview.md)
+- [Architecture Overview](index.mdx)
 - [L1 Core Protocol](l1-core-protocol.md)
 - [L2 Coordination & Governance](l2-coordination-governance.md)
 - [L4 Integration Infrastructure](l4-integration-infra.md)

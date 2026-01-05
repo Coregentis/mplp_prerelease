@@ -443,7 +443,7 @@ async function detectDrift(psg: PSG, expectedHash: string): Promise<DriftResult>
 - [Module-PSG Paths](module-psg-paths.md)
 
 **Observability**:
-- [Graph Update Events](../observability/event-taxonomy.md)
+- [Graph Update Events](/docs/specification/observability/event-taxonomy.md)
 
 ---
 

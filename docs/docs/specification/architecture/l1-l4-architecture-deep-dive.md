@@ -682,7 +682,7 @@ async function parallelAELExecution(
 ## 10. Related Documents
 
 **Layer Specifications**:
-- [Architecture Overview](architecture-overview.md)
+- [Architecture Overview](index.mdx)
 - [L1 Core Protocol](l1-core-protocol.md)
 - [L2 Coordination & Governance](l2-coordination-governance.md)
 - [L3 Execution & Orchestration](l3-execution-orchestration.md)

@@ -207,13 +207,13 @@ MPLP is NOT a framework; it is a **protocol** that frameworks can implement:
 
 - **Architecture Details**: [Architecture Overview](/docs/specification/architecture/index)
 - **Module Specifications**:
-  - [Context Module](../modules/context-module.md)
-  - [Plan Module](../modules/plan-module.md)
-  - [Trace Module](../modules/trace-module.md)
+  - [Context Module](/docs/specification/modules/context-module.md)
+  - [Plan Module](/docs/specification/modules/plan-module.md)
+  - [Trace Module](/docs/specification/modules/trace-module.md)
 - **Execution Profiles**:
-  - [SA Profile](../profiles/sa-profile.md)
-  - [MAP Profile](../profiles/map-profile.md)
-- **Observability**: [Event Taxonomy](../observability/event-taxonomy.md)
+  - [SA Profile](/docs/specification/profiles/sa-profile.md)
+  - [MAP Profile](/docs/specification/profiles/map-profile.md)
+- **Observability**: [Event Taxonomy](/docs/specification/observability/event-taxonomy.md)
 - **Conformance**: [Conformance Guide](/docs/guides/conformance-guide.md)
 - **SDK Documentation**:
   - [TypeScript SDK Guide](/docs/guides/sdk/ts-sdk-guide.md)
