@@ -25,9 +25,11 @@
 
 | Check | Coverage | Result | Status |
 |:---|:---|:---|:---:|
-| Layer/Entry (1.2.1-1.2.2) | 24/24 | 23 PASS / 1 REVIEW | ✅ PASS |
-| Subject/Action (1.2.3) | 24/24 | 23 PASS / 1 REVIEW | ✅ PASS |
+| Layer/Entry (1.2.1-1.2.2) | 24/24 | 23 PASS / 1 REVIEW | ⚠️ PASS_WITH_REVIEW_NOTES |
+| Subject/Action (1.2.3) | 24/24 | 23 PASS / 1 REVIEW | ⚠️ PASS_WITH_REVIEW_NOTES |
 | Assertion Index (3.0) | 24/24 | 100% classified | ✅ PASS |
+
+> **Note**: The single REVIEW item was adjudicated as ACCEPTED with no remediation required; therefore Track 1 is treated as PASS.
 
 ### Track 1b — Deferred
 
@@ -95,6 +97,8 @@
 
 **Verdict**: Accepted. Explicit disclaimer present in document.
 
+> This REVIEW item was adjudicated as ACCEPTED with no remediation required; therefore Track 1 is considered PASS.
+
 ---
 
 ## VI. Freeze Declaration
@@ -107,8 +111,8 @@ I hereby declare that:
    - Subject/Action: 100%
    - Assertion Index: 100%
 3. **Track 1b** deferrals are limited to non-high-risk assertion indexing and properly registered in Waiver Registry.
-4. No **REWORD/MOVE/REMOVE** remediation was required.
-5. The documentation corpus at commit `4c0bb3b3` is **certified for v1.0 release** per CHECKLIST-DOCS-GOV-01 v2.1.0.
+4. No **REWORD/MOVE/REMOVE** remediation was required. *(Note: One page was marked REVIEW and adjudicated as ACCEPTED without remediation—see Section V.)*
+5. The documentation corpus at commit `4c0bb3b3` is approved as **FREEZE READY** for the v1.0 release process, pending MPGC sign-off, per CHECKLIST-DOCS-GOV-01 v2.1.0.
 
 ---
 
