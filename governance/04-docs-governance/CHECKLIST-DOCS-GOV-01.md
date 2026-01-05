@@ -5,7 +5,7 @@ status: ready
 authority: MPGC
 entry_surface: repository
 doc_type: governance
-version: 2.0.0
+version: 2.1.0
 effective: 2026-01-05
 ---
 
@@ -105,6 +105,14 @@ effective: 2026-01-05
 - **Output**: `outputs/<RUN_ID>__DGA_ADJUDICATION_TABLE.md`
 - **Ref**: CONST-006 §3; METHOD-DGA-01 §2.2
 
+### 1.2.3 Subject/Action Grammar Test (Gap Fix #2)
+- [ ] **Subject Test**: Paragraph subject must be protocol/specification/schema/invariant, NOT system/platform/framework/runtime
+- [ ] **Action Test**: Action executor must NOT be "MPLP" (MPLP only defines constraints, does not execute)
+- **PASS**: All paragraphs pass both tests
+- **FAIL**: Verdict REWORD (change subject/action framing)
+- **Output**: `outputs/<RUN_ID>__DGA_SUBJECT_ACTION_TEST.md`
+- **Ref**: CONST-006 §1; METHOD-DGA-01 §2.2
+
 > **Gate Exit**: No unresolved FINDING; all pages PASS or have REWORD/MOVE plan
 
 ---
@@ -139,11 +147,20 @@ effective: 2026-01-05
 
 # Phase 3 — DTV Gate (Truth Verification) [Hard Gate]
 
-## 3.0 Assertion Classification (REQUIRED)
-- [ ] Extract factual assertions (at least all sentences containing: is/are/defines/requires/includes/consists of)
+## 3.0 Assertion Classification (REQUIRED) (Gap Fix #1)
+
+### 3.0.1 Assertion Extraction Rules
+- [ ] **Numeric assertions**: ALL sentences containing numbers/counts (10 modules, 11 duties, 5 flows, versions, dates)
+- [ ] **Normative assertions**: ALL sentences with MUST/SHALL/SHOULD/MAY or equivalent expressions
+- [ ] **Definitional assertions**: ALL sentences with is/are/defines/requires/includes/consists of
+- **Coverage**: assertion_coverage = 100% of (numeric + normative + definitional)
+
+### 3.0.2 Classification
 - [ ] Classify each assertion into Evidence Type:
   - Schema / Invariant / Constitutional / Method / Implementation / Test / Interpretive
-- [ ] Any assertion without an Evidence Type is INVALID and must be downgraded to interpretive + disclaimer.
+- [ ] Any assertion without valid Evidence Type → downgrade to Interpretive + add disclaimer
+
+- **PASS**: assertion_coverage = 100%; all classified
 - **Output**: `outputs/<RUN_ID>__DTV_ASSERTION_INDEX.md`
 - **Ref**: METHOD-DTV-01 §1 (Evidence Types)
 
@@ -160,10 +177,20 @@ effective: 2026-01-05
 - **Output**: `outputs/<RUN_ID>__DTV_EXAMPLE_VALIDITY.md`
 - **Ref**: METHOD-DTV-01 §2.2
 
-## 3.3 Implementation Reference Validity
-- [ ] SDK/code references exist
-- [ ] Version matches
-- **PASS**: All resolvable or disclaimed
+## 3.3 Implementation Reference Validity (Gap Fix #3)
+
+### Claim Types (v1.0 scope)
+| Type | Description | v1.0 Scope |
+|:---|:---|:---|
+| **A** | Existence (file/symbol exists) | ✅ Required |
+| **B** | Signature consistency (types/params) | ✅ Best-effort |
+| **C** | Behavior consistency | ❌ Out of scope (requires test evidence) |
+
+### Checks
+- [ ] Type A: SDK/code references exist
+- [ ] Type B: Version/signature matches (best-effort)
+- [ ] All Implementation claims MUST include disclaimer: "non-normative / best-effort / may diverge"
+- **PASS**: All resolvable (Type A) + disclaimed
 - **Output**: `outputs/<RUN_ID>__DTV_IMPLEMENTATION_REF_VALIDITY.md`
 - **Ref**: METHOD-DTV-01 §2.3
 
@@ -324,14 +351,24 @@ File: `outputs/<RUN_ID>__REMEDIATION_LOG.md`
 
 ---
 
-## T10) DOCS_GOV_FREEZE_DECLARATION Template
+## T10) DOCS_GOV_FREEZE_DECLARATION Template (Gap Fix #4)
 File: `outputs/<RUN_ID>__DOCS_GOV_FREEZE_DECLARATION.md`
 
 ### Required Content
 - Scope table (files, directories)
 - Evidence artifact inventory (with paths)
 - Gate metrics: drift=0, semantic=0, pointer=100%, examples=100%
+- **Delta vs previous run** (counts diff, if not first run)
+- **Allowlist/Waiver** (if any tolerances applied, must log waiver_id; default: none)
 - Sign-off table
+
+### Delta Table (if applicable)
+| Metric | Previous | Current | Delta | Status |
+|:---|:---:|:---:|:---:|:---|
+| drift | | | | |
+| semantic | | | | |
+| pointer | | | | |
+| examples | | | | |
 
 ---
 
@@ -343,5 +380,16 @@ File: `outputs/<RUN_ID>__DGA_FLAGS_ENTRY_SEMANTICS.md`
 
 ---
 
-**Document Status**: Ready for Execution (v2.0.0)
+**Document Status**: Ready for Execution (v2.1.0)
 **References**: CONST-001~006, METHOD-DGA-01, METHOD-DTAA-01, METHOD-DTV-01, SOP-DTAA-06
+
+---
+
+# Appendix C — Gap Fixes Applied (v2.1.0)
+
+| Gap | Issue | Fix |
+|:---|:---|:---|
+| #1 | DTV assertion coverage insufficient | Expanded 3.0 to require numeric+normative+definitional |
+| #2 | DGA can be evaded by narrative framing | Added 1.2.3 Subject/Action Grammar Test |
+| #3 | Impl ref only verifies existence | Added Claim Types A/B/C + mandatory disclaimer |
+| #4 | Freeze lacks baseline comparison | Added Delta table + Waiver registry to T10 |
