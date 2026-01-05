@@ -30,25 +30,51 @@ Phase 6 supports only:
 
 ---
 
-## 2. Step A — Frozen Header Remediation (P1)
+## 2. Step A1 — Authority Block for Informative Docs (P1)
 
-**Scope**: 19 files in `DTAA_FLAGS_HEADERS.md`
+**Scope**: Informative files in `DTAA_FLAGS_HEADERS.md`
+
+> Per CONST-003 §7.1: Informative documents cannot be frozen.
+
+### Rules
+
+1. Do NOT add Frozen Header
+2. Add **Authoritative Reference (Non-Normative)** block:
+
+```markdown
+> **Authoritative Reference (Non-Normative)**
+>
+> Document Type: Informative
+> Authority Source: MPLP Schemas v1.0.0
+> Governance: MPGC
+>
+> This document is **informative and non-normative**.
+> It does not define protocol obligations.
+> All MUST/SHALL statements are **schema-derived restatements** for explanatory purposes only.
+```
+
+3. Do NOT change body content
+
+### Output
+
+- Updated informative files with authority block
+- Commit: `dtaa: add authority blocks for informative specs (phase6.1a)`
+
+---
+
+## 2b. Step A2 — Frozen Header for Normative Docs (P1b)
+
+**Scope**: Normative files (doc_type: normative) missing frozen header
 
 ### Rules
 
 1. Use exact CONST-003 frozen header template
-2. Must include:
-   - Protocol Version: 1.0.0
-   - Status: FROZEN
-   - Authority: MPGC
-   - Effective date (YYYY-MM-DD)
-3. Do NOT change body content in Step A
+2. Must include Protocol Version, Status, Authority, Effective date
 
 ### Output
 
-- Updated 19 files
-- Update `DTAA_FLAGS_HEADERS.md` → "0 remaining"
-- Commit: `dtaa: add frozen headers (phase6.1)`
+- Updated normative files (if any)
+- Commit: `dtaa: add frozen headers for normative specs (phase6.1b)`
 
 ---
 

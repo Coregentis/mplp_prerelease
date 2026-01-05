@@ -12,10 +12,15 @@ sidebar_label: Integration Spec
 sidebar_position: 1
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
+> **Authoritative Reference (Non-Normative)**
 >
-> This document is informative only.
+> Document Type: Informative
+> Authority Source: MPLP Schemas v1.0.0
+> Governance: MPGC
+>
+> This document is **informative and non-normative**.
+> It does not define protocol obligations.
+> All MUST/SHALL statements are **schema-derived restatements** for explanatory purposes only.
 
 # Integration Spec
 

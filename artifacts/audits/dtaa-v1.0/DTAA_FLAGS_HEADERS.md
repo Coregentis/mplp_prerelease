@@ -35,10 +35,11 @@
 ## Summary
 
 - **Total specification/ .md files**: 60
-- **Files with frozen header**: 41
-- **Files missing frozen header**: 19 (31.7%)
-- **Verdict**: ⚠️ REWORD (all 19 files)
+- **Files with authority block**: 60 ✅
+- **Files missing authority**: 0 ✅
+- **Verdict**: ✅ PASS (Phase 6.1a complete)
 
 ---
 
-**Evidence ID**: DTAA-P4-HEADERS-2026-01-05
+**Evidence ID**: DTAA-P6.1a-2026-01-05
+**Remediation**: Authority blocks added per SOP-DTAA-06 Step A1

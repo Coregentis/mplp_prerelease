@@ -15,8 +15,11 @@ sidebar_label: Module Interactions
 sidebar_position: 0
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
+> **Authoritative Reference (Non-Normative)**
+>
+> Document Type: Informative
+> Authority Source: MPLP Schemas v1.0.0
+> Governance: MPGC
 >
 > This document is informative only.
 

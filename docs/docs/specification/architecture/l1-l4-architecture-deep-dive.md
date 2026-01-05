@@ -14,10 +14,15 @@ sidebar_position: 6
 
 # L1-L4 Architecture Deep Dive
 
-> [!IMPORTANT]
-> **Non-Normative Document**
+> **Authoritative Reference (Non-Normative)**
 >
-> This document is informative only.
+> Document Type: Informative (Deep Dive)
+> Authority Source: MPLP Schemas v1.0.0
+> Governance: MPGC
+>
+> This document is **informative and non-normative**.
+> It does not define protocol obligations.
+> All MUST/SHALL statements in §6 are **schema-derived restatements** for explanatory purposes only.
 
 ## Scope
 

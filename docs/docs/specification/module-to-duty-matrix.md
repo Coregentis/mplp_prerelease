@@ -11,8 +11,11 @@ title: Module to Kernel Duty Matrix
 sidebar_label: Module-Duty Matrix
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
+> **Authoritative Reference (Non-Normative)**
+>
+> Document Type: Informative
+> Authority Source: MPLP Schemas v1.0.0
+> Governance: MPGC
 >
 > This document is informative only.
 > It maps Modules to Kernel Duties for semantic alignment.

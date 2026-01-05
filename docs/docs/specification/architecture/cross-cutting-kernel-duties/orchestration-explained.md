@@ -13,8 +13,9 @@ sidebar_position: 12
 ---
 
 
-> [!IMPORTANT]
-> **Non-Normative Document**
+> **Authoritative Reference (Non-Normative)**
+>
+> Document Type: Informative
 >
 > This document is informative only.
 

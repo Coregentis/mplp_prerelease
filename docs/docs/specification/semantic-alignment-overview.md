@@ -11,8 +11,11 @@ title: Semantic Alignment Overview
 sidebar_label: Semantic Alignment
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
+> **Authoritative Reference (Non-Normative)**
+>
+> Document Type: Informative
+> Authority Source: MPLP Schemas v1.0.0
+> Governance: MPGC
 >
 > This document does not define protocol requirements, impose obligations, or serve as a compliance or certification basis.
 > It describes how MPLP ensures semantic consistency between specification and evaluation.
