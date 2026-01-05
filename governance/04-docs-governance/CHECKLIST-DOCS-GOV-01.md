@@ -5,13 +5,13 @@ status: ready
 authority: MPGC
 entry_surface: repository
 doc_type: governance
-version: 2.2.0
+version: 2.3.0
 effective: 2026-01-05
 ---
 
 # CHECKLIST-DOCS-GOV-01 — Docs Governance Execution
 
-**Gate Order**: DGA → DTAA → DTV → Freeze Draft → **PDA** → Freeze OK  
+**Gate Order**: DGA → DTAA → DTV → Freeze Draft → **PDA** → **ECCA** → Freeze OK  
 **Default Scope**: `docs/docs/specification/**` (100%)  
 **Evidence Root**: `artifacts/audits/docs-gov/<RUN_ID>/`
 
@@ -29,7 +29,9 @@ effective: 2026-01-05
 | METHOD-DTAA-01 | Truth Alignment | Semantic purity |
 | METHOD-DTV-01 | Truth Verification | Evidence binding |
 | METHOD-PDA-01 | Per-Document Audit | Execution enforcement |
+| METHOD-ECCA-01 | Editorial Clarity Audit | Slot/term/pronoun gates |
 | SOP-AUDIT-01 | Audit SOP | Step-by-step execution |
+| SOP-ECCA-01 | ECCA SOP | Clarity audit execution |
 | SOP-DTAA-06 | Remediation SOP | Patch logging |
 
 > **Rule**: Any checklist step that cannot cite one of the above is invalid.
@@ -293,6 +295,90 @@ For EACH document, execute:
 - [ ] Add PDA evidence artifacts to artifact list
 - [ ] MPGC sign-off on effective Freeze
 - **Output**: Updated `outputs/<RUN_ID>__DOCS_GOV_FREEZE_DECLARATION.md`
+
+> [!IMPORTANT]
+> Phase 6 PDA completion enables Freeze Draft → Phase 7 ECCA is required for Freeze OK.
+
+---
+
+# Phase 7 — ECCA Gate (Clarity & Completeness) [Hard Gate for High-Risk]
+
+> **Ref**: METHOD-ECCA-01; SOP-ECCA-01
+
+**Default Scope**: `docs/docs/specification/**` (100%)
+**Evidence Root**: `artifacts/audits/docs-gov/<RUN_ID>/ecca/`
+
+## 7.0 ECCA Prerequisites
+- [ ] Phase 6 PDA complete (100% PASS)
+- [ ] All specification files available
+- [ ] RUN_ID established (same or new)
+
+## 7.1 ECCA-H — Structural Slot Completeness (Hard)
+
+- [ ] Verify each doc has required slots per doc_type (METHOD-ECCA-01 §4.1)
+- [ ] Normative docs: Purpose, Scope, Non-Goals, Interfaces/Boundaries, Authority, Misread Guard
+- [ ] Module docs: Purpose, Protocol Role, Schema Reference, Constraints, Lifecycle, See Also
+- [ ] Informative explained: What it is, Why, What it is NOT, Normative anchor, Common Misreads
+- [ ] Golden Flows: Scenario, Evidence, PASS/FAIL Criteria, Non-Endorsement, Anchors
+- **PASS**: missing_slots = 0
+- **FAIL**: Any missing slot (normative/golden-flows)
+- **REWORD**: Missing slot in informative (if no interpretive drift)
+- **Output**: `outputs/<RUN_ID>__ECCA_AUDIT_<filename>.md`
+
+## 7.2 ECCA-H — Term & Reference Consistency (Hard)
+
+- [ ] Abbreviation expansion: First occurrence must expand
+- [ ] Canonical baseline: 10 modules, 11 duties, 5 flows, v1.0.0
+- [ ] Cross-references: All See Also / repo_refs / schema refs exist
+- **PASS**: 0 inconsistencies, 0 broken refs
+- **FAIL**: Any mismatch or broken ref
+- **Ref**: METHOD-ECCA-01 §4.2
+
+## 7.3 ECCA-H — Pronoun / Subject Clarity (Hard)
+
+- [ ] Paragraph subject test: First sentence has explicit subject noun
+- [ ] Pronoun resolution: it/this/they resolvable within same paragraph
+- **PASS**: 0 ambiguous findings
+- **FAIL**: Any ambiguity
+- **Ref**: METHOD-ECCA-01 §4.3
+
+## 7.4 ECCA-S — Reader Path & Usability (Soft, Mandatory Logging)
+
+- [ ] Reading order guidance present?
+- [ ] Minimal comprehension aid (diagram/table/example) present?
+- **PASS**: Present (or not applicable by doc_type)
+- **LOG**: Missing items → `outputs/<RUN_ID>__ECCA_BACKLOG.md`
+- **Note**: Non-blocking but must be logged
+- **Ref**: METHOD-ECCA-01 §5
+
+## 7.5 Gate Rules
+
+| Batch | ECCA-H Rule | ECCA-S Rule | REWORD Handling |
+|:---:|:---|:---|:---|
+| 1-4 (High-Risk) | 100% PASS | Backlog logged | Treated as FAIL |
+| 5-6 (Standard) | No FAIL | Backlog logged | Must remediate before Freeze OK |
+
+- **Gate Exit**: All ECCA-H PASS for Batch 1-4; no FAIL for Batch 5-6
+
+> [!CAUTION]
+> **Freeze OK is INVALID until Phase 7 ECCA Gate Exit is achieved.**
+
+## 7.6 Finalize Freeze OK
+
+- [ ] ECCA-H 100% PASS (all 50 files)
+- [ ] ECCA-S backlog generated
+- [ ] Update Freeze Declaration with ECCA completion status
+- [ ] MPGC sign-off on Freeze OK
+- **Output**: Final `outputs/<RUN_ID>__DOCS_GOV_FREEZE_DECLARATION.md`
+
+## 7.7 Required Artifacts
+
+| Template ID | Artifact | Scope |
+|:---|:---|:---|
+| T12 | `<RUN_ID>__ECCA_AUDIT_<filename>.md` | Per document |
+| T13 | `<RUN_ID>__ECCA_BATCH_<N>_SUMMARY.md` | Per batch |
+| T14 | `<RUN_ID>__ECCA_FINAL_SUMMARY.md` | Per run |
+| T15 | `<RUN_ID>__ECCA_BACKLOG.md` | Per run |
 
 ---
 
