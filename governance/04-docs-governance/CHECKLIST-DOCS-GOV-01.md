@@ -5,13 +5,13 @@ status: ready
 authority: MPGC
 entry_surface: repository
 doc_type: governance
-version: 2.1.0
+version: 2.2.0
 effective: 2026-01-05
 ---
 
 # CHECKLIST-DOCS-GOV-01 — Docs Governance Execution
 
-**Gate Order**: DGA → DTAA → DTV → Freeze OK  
+**Gate Order**: DGA → DTAA → DTV → Freeze Draft → **PDA** → Freeze OK  
 **Default Scope**: `docs/docs/specification/**` (100%)  
 **Evidence Root**: `artifacts/audits/docs-gov/<RUN_ID>/`
 
@@ -28,6 +28,8 @@ effective: 2026-01-05
 | METHOD-DGA-01 | Narrative Audit | Drift fingerprints |
 | METHOD-DTAA-01 | Truth Alignment | Semantic purity |
 | METHOD-DTV-01 | Truth Verification | Evidence binding |
+| METHOD-PDA-01 | Per-Document Audit | Execution enforcement |
+| SOP-AUDIT-01 | Audit SOP | Step-by-step execution |
 | SOP-DTAA-06 | Remediation SOP | Patch logging |
 
 > **Rule**: Any checklist step that cannot cite one of the above is invalid.
@@ -222,6 +224,75 @@ effective: 2026-01-05
 |:---|:---|:---|
 | Auditor | | |
 | Reviewer (MPGC) | | |
+
+> [!IMPORTANT]
+> Phase 5 generates DRAFT Freeze. Freeze becomes EFFECTIVE only after Phase 6 completes.
+
+---
+
+# Phase 6 — Per-Document Audit Execution (PDA) [Hard Gate]
+
+> **Ref**: METHOD-PDA-01; SOP-AUDIT-01
+
+## 6.0 PDA Prerequisites
+- [ ] Phase 1-5 complete (Freeze Draft exists)
+- [ ] HIGH_RISK_PAGES_REGISTRY available
+- [ ] RUN_ID established
+
+## 6.1 Batch Execution Order (Mandatory)
+
+| Batch | Directory | Priority | Waiver |
+|:---:|:---|:---|:---:|
+| 1 | `architecture/*.md` | 🔴 Critical | ❌ |
+| 2 | `architecture/cross-cutting-kernel-duties/*.md` | 🔴 Critical | ❌ |
+| 3 | `golden-flows/*.md` | 🔴 Critical | ❌ |
+| 4 | `evaluation/*.md`, `semantic-alignment-*.md` | 🟠 High | ❌ |
+| 5 | `modules/*.md` | 🟡 Medium | ✅ |
+| 6 | Other specification files | 🟢 Standard | ✅ |
+
+## 6.2 Per-Document Audit Steps
+
+For EACH document, execute:
+
+1. [ ] **Step 1**: Extract metadata (doc_type, layer, entry_surface, authority)
+2. [ ] **Step 2**: DGA Structural Check (Sections, F1-F4, Subject/Action)
+3. [ ] **Step 3**: DTAA Semantic Check (New concepts, Normative language)
+4. [ ] **Step 4**: DTV Assertion Index (Numeric/Normative/Definitional → Evidence Type)
+5. [ ] **Step 5**: Issue Verdict (PASS/REWORD/MOVE/REMOVE)
+
+**Outputs per document**:
+- `outputs/<RUN_ID>__AUDIT_<filename>.md`
+
+**Outputs per batch**:
+- `outputs/<RUN_ID>__PDA_VERDICT_TABLE.md`
+- `outputs/<RUN_ID>__PDA_BATCH_SUMMARY.md`
+
+## 6.3 Auditor Constraints
+
+| Permitted | Forbidden |
+|:---|:---|
+| Extract metadata | Modify content |
+| Scan patterns | Interpret MPLP |
+| Classify assertions | Optimize style |
+| Issue Verdict | Skip sentences |
+| Generate patch | Give PASS without tables |
+
+## 6.4 Gate Rules
+
+- [ ] 100% of Batch 1-4 (Critical/High) files audited
+- [ ] 100% of Batch 1-4 files have Verdict = PASS (or remediated)
+- [ ] All REWORD patches applied and re-audited
+- **Gate Exit**: No FAIL in Critical/High batches; waivers only for Batch 5-6
+
+> [!CAUTION]
+> **Phase 5 Freeze Declaration is INVALID until Phase 6 Gate Exit is achieved for Batch 1-4.**
+
+## 6.5 Finalize Freeze
+
+- [ ] Update Freeze Declaration with PDA completion status
+- [ ] Add PDA evidence artifacts to artifact list
+- [ ] MPGC sign-off on effective Freeze
+- **Output**: Updated `outputs/<RUN_ID>__DOCS_GOV_FREEZE_DECLARATION.md`
 
 ---
 
