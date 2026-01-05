@@ -5,7 +5,7 @@ status: ready
 authority: MPGC
 entry_surface: repository
 doc_type: governance
-version: 1.0.0
+version: 2.0.0
 effective: 2026-01-05
 ---
 
@@ -63,14 +63,14 @@ effective: 2026-01-05
 - [ ] Check: every doc has `doc_type`, `entry_surface`, `authority`, `status`
 - [ ] Rule: values consistent with location
 - **PASS**: 100% present & valid
-- **FAIL**: Flag to `outputs/DGA_FLAGS_FRONTMATTER.md`
+- **FAIL**: Flag to `outputs/<RUN_ID>__DGA_FLAGS_FRONTMATTER.md`
 - **Ref**: CONST-006 §3; METHOD-DGA-01 §2.1
 
 ### 1.1.2 Mandatory Sections Present
 - [ ] Check: required sections exist per doc_type
 - **PASS**: missing=0
 - **FAIL**: Log missing sections
-- **Output**: `outputs/DGA_FLAGS_SECTIONS.md`
+- **Output**: `outputs/<RUN_ID>__DGA_FLAGS_SECTIONS.md`
 - **Ref**: CONST-006 §2; METHOD-DGA-01 §2.1
 
 ### 1.1.3 Forbidden Narrative Patterns (F1–F4)
@@ -80,8 +80,15 @@ effective: 2026-01-05
 - [ ] F4: Authority Inversion (definitions in prose)
 - **PASS**: 0 hard hits
 - **FAIL**: Produce drift findings with excerpt
-- **Outputs**: `outputs/DGA_SCAN_REPORT.md`, `outputs/DGA_DRIFT_FINDINGS.md`
+- **Outputs**: `outputs/<RUN_ID>__DGA_SCAN_REPORT.md`, `outputs/<RUN_ID>__DGA_DRIFT_FINDINGS.md`
 - **Ref**: CONST-006 §4; METHOD-DGA-01 §3
+
+### 1.1.4 SEO / Entry-Surface Boundary Checks
+- [ ] Docs pages MUST NOT contain JSON-LD blocks or marketing CTA sections
+- [ ] Docs pages MUST NOT claim certification/endorsement/guarantee
+- [ ] Website-only positioning language must not appear in docs structure (features/benefits/pricing)
+- **Output**: `outputs/<RUN_ID>__DGA_FLAGS_ENTRY_SEMANTICS.md`
+- **Ref**: CONST-001; CONST-006 §3; CONST-006 §4 (F2/F3)
 
 ## 1.2 Track B — Narrative Adjudication (Manual)
 
@@ -95,7 +102,7 @@ effective: 2026-01-05
 - [ ] Docs ≠ Website ≠ Repo narrative
 - **PASS**: No marketing/certification narrative
 - **FAIL**: Verdict MOVE/REWORD
-- **Output**: `outputs/DGA_ADJUDICATION_TABLE.md`
+- **Output**: `outputs/<RUN_ID>__DGA_ADJUDICATION_TABLE.md`
 - **Ref**: CONST-006 §3; METHOD-DGA-01 §2.2
 
 > **Gate Exit**: No unresolved FINDING; all pages PASS or have REWORD/MOVE plan
@@ -108,7 +115,7 @@ effective: 2026-01-05
 - [ ] Informative docs: no frozen header (use Authority Block)
 - [ ] Normative docs: meet CONST-003 preconditions
 - **PASS**: 100% legal
-- **Output**: `outputs/DTAA_FLAGS_AUTHORITY.md`
+- **Output**: `outputs/<RUN_ID>__DTAA_FLAGS_AUTHORITY.md`
 - **Ref**: CONST-003 §4, §7.1; CONST-005
 
 ## 2.2 Semantic Violations Scan
@@ -116,14 +123,14 @@ effective: 2026-01-05
 - [ ] No new layers/modules/flows
 - [ ] No normative claims without evidence
 - **PASS**: 0 violations
-- **Output**: `outputs/DTAA_SCAN_REPORT.md`
+- **Output**: `outputs/<RUN_ID>__DTAA_SCAN_REPORT.md`
 - **Ref**: METHOD-DTAA-01; CONST-005
 
 ## 2.3 Normative Language Control (MUST/SHALL)
 - [ ] MUST/SHALL only if schema-derived + anchored
 - [ ] Informative: downgrade or add disclaimer
 - **PASS**: 0 unanchored MUST/SHALL
-- **Outputs**: `outputs/DTAA_POINTER_MAP.md`, `outputs/DTAA_POINTERS_PATCHLOG.md`
+- **Outputs**: `outputs/<RUN_ID>__DTAA_POINTER_MAP.md`, `outputs/<RUN_ID>__DTAA_POINTERS_PATCHLOG.md`
 - **Ref**: METHOD-DTAA-01; SOP-DTAA-06
 
 > **Gate Exit**: Semantic violations=0; authority legality=100%
@@ -132,27 +139,35 @@ effective: 2026-01-05
 
 # Phase 3 — DTV Gate (Truth Verification) [Hard Gate]
 
+## 3.0 Assertion Classification (REQUIRED)
+- [ ] Extract factual assertions (at least all sentences containing: is/are/defines/requires/includes/consists of)
+- [ ] Classify each assertion into Evidence Type:
+  - Schema / Invariant / Constitutional / Method / Implementation / Test / Interpretive
+- [ ] Any assertion without an Evidence Type is INVALID and must be downgraded to interpretive + disclaimer.
+- **Output**: `outputs/<RUN_ID>__DTV_ASSERTION_INDEX.md`
+- **Ref**: METHOD-DTV-01 §1 (Evidence Types)
+
 ## 3.1 Pointer Existence Verification
 - [ ] Every evidence block: schema file exists
 - [ ] JSON Pointer resolves
 - **PASS**: resolved=100%
-- **Output**: `outputs/DTV_POINTER_VALIDITY.md`
+- **Output**: `outputs/<RUN_ID>__DTV_POINTER_VALIDITY.md`
 - **Ref**: METHOD-DTV-01 §2.1
 
 ## 3.2 Example Validity Verification
 - [ ] JSON/YAML examples validate against schema
 - **PASS**: FAIL=0 or marked non-normative
-- **Output**: `outputs/DTV_EXAMPLE_VALIDITY.md`
+- **Output**: `outputs/<RUN_ID>__DTV_EXAMPLE_VALIDITY.md`
 - **Ref**: METHOD-DTV-01 §2.2
 
 ## 3.3 Implementation Reference Validity
 - [ ] SDK/code references exist
 - [ ] Version matches
 - **PASS**: All resolvable or disclaimed
-- **Output**: `outputs/DTV_IMPLEMENTATION_REF_VALIDITY.md`
+- **Output**: `outputs/<RUN_ID>__DTV_IMPLEMENTATION_REF_VALIDITY.md`
 - **Ref**: METHOD-DTV-01 §2.3
 
-> **Gate Exit**: Pointer 100%; examples 100%; refs verifiable
+> **Gate Exit**: Pointer 100%; examples 100%; refs verifiable; all assertions classified
 
 ---
 
@@ -163,7 +178,7 @@ effective: 2026-01-05
 2. [ ] Fix DTAA (authority, anchoring)
 3. [ ] Fix DTV (pointer/example validity)
 4. [ ] Re-run Phase 1–3
-- **Output**: `outputs/REMEDIATION_LOG.md`
+- **Output**: `outputs/<RUN_ID>__REMEDIATION_LOG.md`
 - **Ref**: SOP-DTAA-06; CONST-005 §9
 
 ---
@@ -171,7 +186,7 @@ effective: 2026-01-05
 # Phase 5 — Freeze Declaration
 
 ## 5.1 Generate Freeze Record
-- [ ] Output: `outputs/DOCS_GOV_FREEZE_DECLARATION.md`
+- [ ] Output: `outputs/<RUN_ID>__DOCS_GOV_FREEZE_DECLARATION.md`
 - [ ] Include: scope, counts, artifact list, metrics
 - **Ref**: CONST-003; CONST-005; METHOD-DTAA-01
 
@@ -183,7 +198,7 @@ effective: 2026-01-05
 
 ---
 
-# Appendix — Verdict Vocabulary
+# Appendix A — Verdict Vocabulary
 
 | Verdict | Meaning |
 |:---|:---|
@@ -195,5 +210,138 @@ effective: 2026-01-05
 
 ---
 
-**Document Status**: Ready for Execution
+# Appendix B — Required Output Templates (MUST FOLLOW)
+
+## T0) DTV_ASSERTION_INDEX Template
+File: `outputs/<RUN_ID>__DTV_ASSERTION_INDEX.md`
+
+| Doc | Assertion (short) | Evidence Type | Source | Pointer/Ref | Verifiable | Action |
+|:---|:---|:---|:---|:---|:---:|:---|
+
+---
+
+## T1) DGA_SCAN_REPORT Template
+File: `outputs/<RUN_ID>__DGA_SCAN_REPORT.md`
+
+### Required Fields
+- Run ID
+- Commit / Branch
+- Scope
+- Total files scanned
+- Flags summary (counts)
+- Tooling / scripts used (if any)
+
+### Required Tables
+**A. Frontmatter Flags**
+| File | Missing Keys | Invalid Values | Notes |
+|:---|:---|:---|:---|
+
+**B. Section Flags**
+| File | Doc Type | Missing Sections | Severity | Notes |
+|:---|:---|:---|:---:|:---|
+
+**C. Drift Fingerprints (Auto-detected)**
+| File | Fingerprint (F1–F4) | Evidence Excerpt | Verdict | Remediation |
+|:---|:---|:---|:---|:---|
+
+PASS condition: all tables present, counts consistent.
+
+---
+
+## T2) DGA_DRIFT_FINDINGS Template
+File: `outputs/<RUN_ID>__DGA_DRIFT_FINDINGS.md`
+
+| Finding ID | File | Fingerprint | Evidence (excerpt ≤ 40 words) | Why Drift | Verdict | Fix |
+|:---|:---|:---|:---|:---|:---|:---|
+
+---
+
+## T3) DGA_ADJUDICATION_TABLE Template
+File: `outputs/<RUN_ID>__DGA_ADJUDICATION_TABLE.md`
+
+| File | Claimed Layer | Actual Layer | Doc Type | Entry Contract OK | Drift (F1–F4) | Verdict | Notes |
+|:---|:---|:---|:---|:---:|:---|:---|:---|
+
+---
+
+## T4) DTAA_SCAN_REPORT Template
+File: `outputs/<RUN_ID>__DTAA_SCAN_REPORT.md`
+
+### Required Tables
+**A. Semantic Violations**
+| ID | File | Violation Type | Evidence | Verdict | Remediation |
+|:---|:---|:---|:---|:---|:---|
+
+**B. MUST/SHALL Without Anchor**
+| File | Statement | Evidence Block Present | Schema/Pointer | Action |
+|:---|:---|:---:|:---|:---|
+
+PASS condition: violations=0, unanchored MUST/SHALL=0.
+
+---
+
+## T5) DTAA_POINTERS_PATCHLOG Template
+File: `outputs/<RUN_ID>__DTAA_POINTERS_PATCHLOG.md`
+
+| File | Original Text | Change Type | Evidence Type | Source | Pointer/Ref |
+|:---|:---|:---|:---|:---|:---|
+
+Change Type: ADD_POINTER / DOWNGRADE / DISCLAIMER
+
+---
+
+## T6) DTV_POINTER_VALIDITY Template
+File: `outputs/<RUN_ID>__DTV_POINTER_VALIDITY.md`
+
+| Schema File | Pointer | Used By (doc path) | Resolves | Notes |
+|:---|:---|:---|:---:|:---|
+
+PASS condition: Resolves=true for all rows.
+
+---
+
+## T7) DTV_EXAMPLE_VALIDITY Template
+File: `outputs/<RUN_ID>__DTV_EXAMPLE_VALIDITY.md`
+
+| Doc | Example Block ID | Declared Schema | Validates | Error (if fail) | Action |
+|:---|:---|:---|:---:|:---|:---|
+
+---
+
+## T8) DTV_IMPLEMENTATION_REF_VALIDITY Template
+File: `outputs/<RUN_ID>__DTV_IMPLEMENTATION_REF_VALIDITY.md`
+
+| Doc | Claim | Evidence Type | Source Path / Package | Verifiable | Disclaimer Added |
+|:---|:---|:---|:---|:---:|:---:|
+
+---
+
+## T9) REMEDIATION_LOG Template
+File: `outputs/<RUN_ID>__REMEDIATION_LOG.md`
+
+| Phase | File | Finding ID | Fix Applied | Commit | Re-run Result |
+|:---|:---|:---|:---|:---|:---|
+
+---
+
+## T10) DOCS_GOV_FREEZE_DECLARATION Template
+File: `outputs/<RUN_ID>__DOCS_GOV_FREEZE_DECLARATION.md`
+
+### Required Content
+- Scope table (files, directories)
+- Evidence artifact inventory (with paths)
+- Gate metrics: drift=0, semantic=0, pointer=100%, examples=100%
+- Sign-off table
+
+---
+
+## T11) DGA_FLAGS_ENTRY_SEMANTICS Template
+File: `outputs/<RUN_ID>__DGA_FLAGS_ENTRY_SEMANTICS.md`
+
+| File | JSON-LD Present | Marketing CTA | Certification Claim | Verdict | Action |
+|:---|:---:|:---:|:---:|:---|:---|
+
+---
+
+**Document Status**: Ready for Execution (v2.0.0)
 **References**: CONST-001~006, METHOD-DGA-01, METHOD-DTAA-01, METHOD-DTV-01, SOP-DTAA-06
