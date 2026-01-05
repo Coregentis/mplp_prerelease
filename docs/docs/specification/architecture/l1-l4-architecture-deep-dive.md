@@ -389,11 +389,17 @@ async def round_robin_coordination(collab_session, plan, ael):
     update_psg_node(step)
 ```
 
-## 6. Normative Requirements (MUST/SHALL)
+## 6. Schema-Derived Constraints (Informative)
+
+> **Note**: The following constraints are schema-derived restatements for explanatory purposes.
+> They do not define protocol obligations. See source schemas for normative definitions.
 
 ### 6.1 Atomic State Transitions
 
-**Requirement**: The VSL MUST ensure that PSG updates are atomic to prevent inconsistent states.
+**Constraint**: The VSL is expected to ensure that PSG updates are atomic to prevent inconsistent states.
+
+> **Schema**: `runtime-minimal interface`
+> **Note**: Informative restatement. Not a protocol obligation.
 
 **Implementation** (for ACID VSL):
 ```typescript
@@ -450,7 +456,9 @@ def deterministic_step_order(plan: Plan) -> List[Step]:
 
 ### 6.3 Event Causality
 
-**Requirement**: The runtime MUST preserve the causal ordering of events (e.g., a Plan cannot be executed before it is created).
+**Constraint**: The runtime is expected to preserve the causal ordering of events (e.g., a Plan cannot be executed before it is created).
+
+> **Note**: Informative restatement. Not a protocol obligation.
 
 **Implementation** (Lamport timestamps):
 ```typescript
@@ -528,7 +536,9 @@ async function migratePSG_v1_to_v1_1(vsl: VSL): Promise<void> {
 
 ### 8.1 AEL Sandboxing
 
-**Requirement**: In multi-tenant environments, the AEL MUST enforce strict resource limits on agent execution.
+**Constraint**: In multi-tenant environments, the AEL is expected to enforce strict resource limits on agent execution.
+
+> **Note**: Informative restatement. Not a protocol obligation.
 
 **Implementation** (using Docker containers):
 ```yaml

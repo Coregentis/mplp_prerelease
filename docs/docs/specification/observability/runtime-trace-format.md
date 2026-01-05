@@ -119,11 +119,14 @@ MPLP traces can be correlated with W3C Trace Context headers. However, the ID fo
 
 ### 4.2 ID Conversion Requirements
 
-When exporting to W3C-compatible systems, implementations MUST:
+For interoperability with W3C Trace Context, implementations SHOULD:
 
 1. Convert MPLP `trace_id` to 32-character hex by removing hyphens
 2. Truncate or hash `segment_id` to 16-character hex for `parent-id`
 3. Preserve original MPLP IDs in `tracestate` for round-trip
+
+> **Note**: W3C Trace Context integration is for interoperability purposes.
+> This is not a protocol obligation. MPLP does not require W3C compatibility.
 
 **Conversion Formula:**
 ```
