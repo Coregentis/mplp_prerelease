@@ -65,9 +65,7 @@ DGA Gate → DTAA Gate → DTV Gate → Freeze OK
 
 Audit artifacts are stored in:
 ```
-artifacts/audits/dtaa-v1.0/
-artifacts/audits/dga-v1.0/
-artifacts/audits/dtv-v1.0/
+governance/06-artifacts/
 ```
 
 ---
