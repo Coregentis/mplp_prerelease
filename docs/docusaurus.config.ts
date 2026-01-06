@@ -3,7 +3,7 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'MPLP Protocol',
+  title: 'MPLP Documentation',
   tagline: 'Multi-Agent Lifecycle Protocol - Observable, Interoperable, Governed AI Agents',
   favicon: 'img/favicon.png',
 
@@ -119,7 +119,7 @@ const config: Config = {
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org/',
         '@type': 'SoftwareSourceCode',
-        name: 'MPLP Protocol',
+        name: 'MPLP',
         description: 'Multi-Agent Lifecycle Protocol for building observable, interoperable, and governed AI agent systems',
         url: 'https://docs.mplp.io',
         codeRepository: 'https://github.com/Coregentis/MPLP-Protocol',
@@ -164,7 +164,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'MPLP Protocol',
+      title: 'MPLP',
       logo: {
         alt: 'MPLP Logo',
         src: 'img/logo.png', // Using PNG for better rendering in navbar
@@ -179,32 +179,32 @@ const config: Config = {
           position: 'left',
         },
         {
-          to: '/docs/01-architecture/architecture-overview',
+          to: '/docs/specification/architecture',
           label: 'Architecture',
           position: 'left',
         },
         {
-          to: '/docs/02-modules/module-interactions',
+          to: '/docs/specification/modules/module-interactions',
           label: 'Modules',
           position: 'left',
         },
         {
-          to: '/docs/03-profiles/sa-profile',
+          to: '/docs/specification/profiles/sa-profile',
           label: 'Profiles',
           position: 'left',
         },
         {
-          to: '/docs/04-observability/observability-overview',
+          to: '/docs/specification/observability/observability-overview',
           label: 'Observability',
           position: 'left',
         },
         {
-          to: '/docs/06-golden-flows',
+          to: '/docs/evaluation/golden-flows',
           label: 'Golden Flows',
           position: 'left',
         },
         {
-          to: '/docs/10-sdk/ts-sdk-guide',
+          to: '/docs/guides/sdk/ts-sdk-guide',
           label: 'SDK',
           position: 'left',
         },
@@ -253,10 +253,10 @@ const config: Config = {
           // Column 2: SPECIFICATION (T1/T2)
           title: 'Specification',
           items: [
-            { label: 'Architecture', to: '/docs/01-architecture/architecture-overview' },
-            { label: 'Modules', to: '/docs/02-modules/module-interactions' },
-            { label: 'Golden Flows', to: '/docs/06-golden-flows' },
-            { label: 'SDK Guide', to: '/docs/10-sdk/ts-sdk-guide' },
+            { label: 'Architecture', to: '/docs/specification/architecture' },
+            { label: 'Modules', to: '/docs/specification/modules/module-interactions' },
+            { label: 'Golden Flows', to: '/docs/evaluation/golden-flows' },
+            { label: 'SDK Guide', to: '/docs/guides/sdk/ts-sdk-guide' },
           ],
         },
         {

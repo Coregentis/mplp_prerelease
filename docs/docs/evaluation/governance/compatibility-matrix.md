@@ -1,4 +1,5 @@
 ---
+sidebar_position: 7
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -67,5 +68,5 @@ MPLP runtimes aligned to v1.0.0 are expected to accept all v1.0.x messages witho
 
 | Version | Support Status | End of Support |
 |:---|:---|:---|
-| v1.0.x | ✅ Supported | TBD |
+| v1.0.x | ✅ Supported | N/A (Ongoing) |
 | v0.x | ❌ Deprecated | 2025-12-03 |

@@ -1,23 +1,19 @@
 ---
+sidebar_position: 4
 
 doc_type: governance
 status: frozen
 authority: Documentation Governance
-description: ""
+description: "Known issues and limitations in MPLP v1.0.0 with workarounds and planned fixes."
 title: v1.0.0 Known Issues
 
 ---
 
-> Authority: project-governance/active/GOV-03_CHANGE_PROTOCOL.md
-> This document mirrors the protocol definition for reference only.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
 
-> [!FROZEN]
-> **MPLP Protocol v1.0.0 — Frozen Specification**
-> **Freeze Date**: 2025-12-03
-> **Status**: FROZEN (no breaking changes permitted)
-> **Governance**: MPLP Protocol Governance Committee (MPGC)
-> **License**: Apache-2.0
-> **Note**: Any normative change requires a new protocol version.
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 
 > **Scope**: Inherited (from /docs/meta/release/mplp-v1.0.0-release-notes)
@@ -25,7 +21,7 @@ title: v1.0.0 Known Issues
 
 # v1.0.0 Known Issues
 
-**ID**: DGP-XX
+
 **Version**: 1.0
 **Status**: FROZEN
 **Authority**: Documentation Governance

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 6
 
 doc_type: reference
 title: Multi-Agent Collaboration Flow

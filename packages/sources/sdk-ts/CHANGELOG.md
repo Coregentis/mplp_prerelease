@@ -1,13 +1,5 @@
 # Changelog
 
-## [1.0.6] - 2025-12-29
-### Added
-- **SA Profile Implementation**: Added `validateSAProfile` and updated `ExecutionEngine` to enforce 9 normative invariants and emit full event lifecycle.
-- **MAP Profile Implementation**: Added `validateMAPProfile` and `CoordinationEngine` to support multi-agent sessions, turn-taking, and invariant enforcement.
-- **Type Definitions**: Comprehensive types for `SAContext`, `SAPlan`, `MAPSession`, `MAPParticipant`, and related events.
-
-
-
 This package follows the global MPLP Protocol changelog.
 
 See: https://github.com/coregentis/MPLP-Protocol/blob/main/CHANGELOG.md

@@ -14,19 +14,16 @@ external_standards:
   opentelemetry: none
 
 # UI metadata (non-normative; excluded from protocol semantics)
-title: L1 Core Protocol
-sidebar_label: L1 Core Protocol
+title: L1 Core Protocol — Specification (v1.0.0 Frozen)
+sidebar_label: L1 Core (State)
 sidebar_position: 1
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # L1 Core Protocol
 

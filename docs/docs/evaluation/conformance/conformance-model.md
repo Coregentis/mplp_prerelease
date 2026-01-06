@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -162,7 +163,7 @@ Conformance only guarantees: **The system follows the protocol's structural and 
 
 - [Evidence Model](./evidence-model.md) — What constitutes valid evidence
 - [Conformance Guide](/docs/guides/conformance-guide) — Practical evaluation steps
-- [Golden Flows](/docs/evaluation/golden-flows/index) — Reference behavior definitions
+- [Golden Flows](/docs/evaluation/golden-flows) — Reference behavior definitions
 
 ---
 

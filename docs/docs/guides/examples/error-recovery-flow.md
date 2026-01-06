@@ -1,9 +1,10 @@
 ---
+sidebar_position: 5
 
 doc_type: reference
 status: active
 authority: Documentation Governance
-description: ""
+description: "Example flow demonstrating error handling and recovery patterns in MPLP."
 title: Error Recovery Flow
 
 ---
@@ -91,5 +92,5 @@ When a `Rollback` is triggered, the runtime must use the `Value State Layer (VSL
 ## 5. Related Documentation
 
 - [Trace Module Specification](/docs/specification/modules/trace-module.md)
-- [L3 Error Handling & Drift](/docs/specification/architecture/index)
-- [Golden Flow: Resilient Execution](/docs/evaluation/golden-flows/index)
+- [L3 Error Handling & Drift](/docs/specification/architecture)
+- [Golden Flow: Resilient Execution](/docs/evaluation/golden-flows)

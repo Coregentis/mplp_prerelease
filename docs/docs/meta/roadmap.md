@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 
 doc_type: informative
 status: active
@@ -9,11 +10,11 @@ sidebar_label: Evolution
 
 ---
 
-> Authority: project-governance/active/GOV-01_SCOPE_AND_AUTHORITY.md
-> This document mirrors the protocol definition for reference only.
+:::warning[Non-Normative]
+**Document Type**: Informative • **Authority**: Documentation Governance
 
-> **Scope**: Inherited (from /docs/meta/)
-> **Non-Goals**: Inherited (from /docs/meta/)
+This document is informative only.
+:::
 
 # Protocol Evolution
 
@@ -21,11 +22,10 @@ sidebar_label: Evolution
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 
-> [!IMPORTANT]
-> **Non-Binding Statement**
->
-> This document is **non-binding**, **non-normative**, and **does not represent commitments**.
-> All protocol evolution requires approval through the [MIP Process](/docs/evaluation/governance/protocol-governance).
+:::warning[Non-Binding Statement]
+This document is **non-binding**, **non-normative**, and **does not represent commitments**.
+All protocol evolution requires approval through the [MIP Process](/docs/evaluation/governance/protocol-governance).
+:::
 
 ## 1. Historical Record
 
@@ -60,7 +60,7 @@ MPLP evolves through the **MIP (MPLP Improvement Proposal)** process.
 4. **Implementation**: Reference implementation update
 5. **Freeze**: Version freeze
 
-See [Governance Overview](/docs/evaluation/governance/index) for details.
+See [Governance Overview](/docs/evaluation/governance) for details.
 
 ## 4. Related Documents
 

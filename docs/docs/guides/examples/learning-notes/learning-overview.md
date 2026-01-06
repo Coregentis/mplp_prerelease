@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 
 doc_type: informative
 status: active
@@ -211,7 +212,7 @@ These are **product implementation decisions** for TracePilot, Coregentis, or ot
 ## 8. Related Documents
 
 **Core Documentation**:
-- [LearningSample Taxonomy](../../../schemas/v2/taxonomy/learning-taxonomy.yaml) - 6 families + triggers
+- [LearningSample Taxonomy](https://github.com/Coregentis/MPLP-Protocol/blob/main/schemas/v2/taxonomy/learning-taxonomy.yaml) - 6 families + triggers
 - [Collection Points](learning-collection-points.md) - When to generate samples
 - [Learning Invariants](learning-invariants.md) - Validation rules
 - [Learning Sample Schema](learning-sample-schema.md) - Schema details

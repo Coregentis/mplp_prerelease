@@ -1,9 +1,10 @@
 ---
+sidebar_position: 1
 
 doc_type: informative
 status: active
 authority: Documentation Governance
-description: ""
+description: "Step-by-step guide for achieving MPLP protocol conformance at L1, L2, and L3 levels."
 title: Conformance Guide
 
 ---

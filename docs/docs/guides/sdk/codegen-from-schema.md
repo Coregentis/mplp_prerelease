@@ -1,9 +1,10 @@
 ---
+sidebar_position: 6
 
 doc_type: reference
 status: active
 authority: Documentation Governance
-description: ""
+description: "Guide for generating type-safe code from MPLP JSON schemas in multiple languages."
 title: Codegen From Schema
 
 ---

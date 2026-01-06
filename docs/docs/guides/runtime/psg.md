@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 
 doc_type: normative
 status: frozen
@@ -6,7 +7,7 @@ authority: MPGC
 description: "The Project Semantic Graph (PSG) is the runtime state substrate of MPLP."
 title: PSG – Project Semantic Graph
 keywords: [MPLP, PSG, Project Semantic Graph, Runtime, State Graph]
-sidebar_label: PSG
+sidebar_label: PSG - Project Semantic Graph
 
 ---
 
@@ -433,8 +434,8 @@ async function detectDrift(psg: PSG, expectedHash: string): Promise<DriftResult>
 ## 11. Related Documents
 
 **Architecture**:
-- [L3 Execution & Orchestration](/docs/specification/architecture/index)
-- [L1-L4 Deep Dive](/docs/specification/architecture/index)
+- [L3 Execution & Orchestration](/docs/specification/architecture)
+- [L1-L4 Deep Dive](/docs/specification/architecture)
 
 **Runtime Components**:
 - [VSL (Value State Layer)](vsl.md)

@@ -12,14 +12,11 @@ sidebar_label: Observability Invariants
 sidebar_position: 3
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Observability Invariants
 
@@ -30,9 +27,6 @@ This specification defines the invariant rules for MPLP observability correctnes
 ## Non-Goals
 
 This specification does not define validation implementations or SDK behavior.
-
-
-# Observability Invariants Reference
 
 ## 1. Purpose
 

@@ -11,14 +11,11 @@ sidebar_position: 0
 title: Single-Agent Profile (SA)
 sidebar_label: SA Profile
 ---
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Single-Agent Profile (SA)
 
@@ -99,7 +96,7 @@ The normative definition of the SA Profile is declared in:
 - [SA Events](sa-events.md) — Event specification
 
 **Architecture**:
-- [L3 Execution & Orchestration](/docs/specification/architecture/index)
+- [L3 Execution & Orchestration](/docs/specification/architecture)
 
 **Normative Artifacts**:
 - `schemas/v2/profiles/sa-profile.yaml`

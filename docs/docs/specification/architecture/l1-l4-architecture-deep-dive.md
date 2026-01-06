@@ -14,15 +14,11 @@ sidebar_position: 6
 
 # L1-L4 Architecture Deep Dive
 
-> **Authoritative Reference (Non-Normative)**
->
-> Document Type: Informative (Deep Dive)
-> Authority Source: MPLP Schemas v1.0.0
-> Governance: MPGC
->
-> This document is **informative and non-normative**.
-> It does not define protocol obligations.
-> All MUST/SHALL statements in §6 are **schema-derived restatements** for explanatory purposes only.
+:::warning[Non-Normative]
+**Document Type**: Informative (Deep Dive) • **Authority Source**: MPLP Schemas v1.0.0
+
+This document is for explanatory purposes only.
+:::
 
 ## Scope
 
@@ -41,7 +37,42 @@ This document does not define normative obligations. It provides explanatory con
 
 ## 1. Purpose & Scope
 
+This document serves as the **implementation guide** for MPLP runtime developers. It bridges the gap between the abstract specifications (L1-L4 layer documents) and production-grade implementations.
+
+**What This Document Covers**:
+- Detailed interface contracts for AEL, VSL, and PSG
+- Algorithmic patterns for orchestration and coordination
+- Implementation examples with code snippets
+- Advanced topics: drift detection, encryption, caching, parallelization
+
+**What This Document Does NOT Cover**:
+- Normative protocol obligations (see L1-L4 layer documents)
+- Conformance testing procedures (see Golden Flows)
+- SDK usage tutorials (see SDK documentation)
+
 ## 2. Architecture Review (Quick Reference)
+
+| Layer | Name | Responsibility | Key Modules |
+|:------|:-----|:---------------|:------------|
+| **L1** | Core Protocol | Schema definitions, data types | Context, Plan, Trace, Confirm |
+| **L2** | Coordination & Governance | State machines, lifecycle rules | Role, Collab, Dialog |
+| **L3** | Execution & Orchestration | Runtime abstraction | AEL, VSL, PSG, Orchestrator |
+| **L4** | Integration Infrastructure | External system binding | Extension, Network |
+
+**Key Runtime Abstractions**:
+
+```
+┌─────────────────────────────────────────────────┐
+│                  Orchestrator                    │
+│         (Scheduling & Coordination)              │
+├──────────────────┬──────────────────────────────┤
+│       AEL        │            VSL               │
+│  (Action Layer)  │       (State Layer)          │
+├──────────────────┴──────────────────────────────┤
+│                      PSG                         │
+│           (Project Semantic Graph)               │
+└─────────────────────────────────────────────────┘
+```
 
 ## 3. Core Abstractions
 

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -138,7 +139,7 @@ The following dimensions are **not evaluated in v1.0.0** but may be added in fut
 
 - [Conformance Model](./conformance-model.md) — Conformance classes and outcomes
 - [Evidence Model](./evidence-model.md) — Evidence validity requirements
-- [Golden Flows](/docs/evaluation/golden-flows/index) — Reference test cases
+- [Golden Flows](/docs/evaluation/golden-flows) — Reference test cases
 
 ---
 

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 
 doc_type: informative
 title: Conformance Checklist

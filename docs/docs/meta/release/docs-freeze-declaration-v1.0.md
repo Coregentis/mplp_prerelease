@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 
 doc_type: governance
 status: frozen
@@ -7,16 +8,11 @@ title: Docs Freeze Declaration v1.0
 
 ---
 
-> Authority: project-governance/active/GOV-03_CHANGE_PROTOCOL.md
-> This document mirrors the protocol definition for reference only.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
 
-> [!FROZEN]
-> **MPLP Protocol v1.0.0 — Frozen Specification**
-> **Freeze Date**: 2025-12-03
-> **Status**: FROZEN (no breaking changes permitted)
-> **Governance**: MPLP Protocol Governance Committee (MPGC)
-> **License**: Apache-2.0
-> **Note**: Any normative change requires a new protocol version.
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 
 > **Scope**: Inherited (from /docs/meta/release/mplp-v1.0.0-release-notes)

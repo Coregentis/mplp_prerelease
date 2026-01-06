@@ -18,14 +18,11 @@ sidebar_label: Dialog Module
 sidebar_position: 7
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Dialog Module
 
@@ -419,7 +416,7 @@ dialog.add_message(DialogRole.USER, 'Fix the login bug')
 ## 9. Related Documents
 
 **Architecture**:
-- [Architecture Overview](/docs/specification/architecture/index)
+- [Architecture Overview](/docs/specification/architecture)
 - [L1 Core Protocol](/docs/specification/architecture/l1-core-protocol)
 
 **Modules**:

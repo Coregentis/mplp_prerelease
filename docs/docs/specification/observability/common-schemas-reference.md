@@ -12,17 +12,25 @@ sidebar_label: Common Schemas Reference
 sidebar_position: 5
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Common Schemas Reference
 
+## Scope
+
+This specification defines the foundational schemas shared across MPLP modules:
+- Metadata schema (standard MPLP metadata fields)
+- Common types schema (shared type definitions)
+- Learning sample schema (runtime learning data)
+
+## Non-Goals
+
+- Module-specific schemas (covered in respective module docs)
+- Event schemas (covered in Event Taxonomy)
 
 ## 1. Purpose
 
@@ -32,18 +40,7 @@ It mirrors the protocol definition and does not create new semantics.
 **Claim Type:** Normative Quote  
 **Truth Source:** L1 (`schemas/v2/common/`)
 
-## 2. Scope
-
-This page covers:
-- Metadata schema (standard MPLP metadata fields)
-- Common types schema (shared type definitions)
-- Learning sample schema (runtime learning data)
-
-**Non-Goals:**
-- Module-specific schemas (covered in respective module docs)
-- Event schemas (covered in Event Taxonomy)
-
-## 3. Schema Inventory
+## 2. Schema Inventory
 
 | Schema File | Purpose | Section |
 |-------------|---------|---------|
@@ -53,7 +50,7 @@ This page covers:
 
 ---
 
-## 4. Metadata Schema
+## 3. Metadata Schema
 
 
 **File**: `metadata.schema.json`
@@ -98,7 +95,7 @@ performance, protocol-version, security, state-sync, transaction
 }
 ```
 
-## 5. Common Types Schema
+## 4. Common Types Schema
 
 **File**: `common-types.schema.json`
 
@@ -139,7 +136,7 @@ context, plan, confirm, trace, role, extension, dialog, collab, core, network
 }
 ```
 
-## 6. Learning Sample Schema
+## 5. Learning Sample Schema
 
 **File**: `learning-sample.schema.json`
 

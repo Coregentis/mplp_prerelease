@@ -18,14 +18,11 @@ sidebar_label: Core Module
 sidebar_position: 1
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Core Module
 
@@ -51,7 +48,7 @@ The Core Module represents the **protocol-level manifest** of an MPLP instance, 
 ## 2. Related Documents
 
 **Architecture**:
-- [Architecture Overview](/docs/specification/architecture/index)
+- [Architecture Overview](/docs/specification/architecture)
 - [L1 Core Protocol](/docs/specification/architecture/l1-core-protocol)
 
 **Schemas**:

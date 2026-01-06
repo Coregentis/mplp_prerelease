@@ -1,4 +1,5 @@
 ---
+sidebar_position: 93
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -11,14 +12,11 @@ title: Specification to Evaluation Matrix
 sidebar_label: Spec-Eval Matrix
 ---
 
-> **Authoritative Reference (Non-Normative)**
->
-> Document Type: Informative
-> Authority Source: MPLP Schemas v1.0.0
-> Governance: MPGC
->
-> This document is **informative and non-normative**.
-> It does not define protocol obligations.
+:::warning[Non-Normative]
+**Document Type**: Informative • **Authority**: MPGC
+
+This document is informative only.
+:::
 
 # Specification to Evaluation Matrix
 

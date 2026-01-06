@@ -1,4 +1,5 @@
 ---
+sidebar_position: 95
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -11,14 +12,12 @@ title: Golden Flow to Kernel Duty Matrix
 sidebar_label: Flow-Duty Matrix
 ---
 
-> **Authoritative Reference (Non-Normative)**
->
-> Document Type: Informative
-> Authority Source: MPLP Schemas v1.0.0
-> Governance: MPGC
->
-> This document is informative only.
-> It maps Golden Flows to Kernel Duties for evaluation alignment.
+:::warning[Non-Normative]
+**Document Type**: Informative • **Authority**: MPGC
+
+This document is informative only.
+It maps Golden Flows to Kernel Duties for evaluation alignment.
+:::
 
 # Golden Flow to Kernel Duty Matrix
 

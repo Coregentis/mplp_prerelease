@@ -65,7 +65,7 @@ It does **not** claim that MPLP satisfies, implements, or replaces any ISO stand
 | ISO 42001 Requirement | MPLP Support | MPLP Component |
 |:---|:---|:---|
 | 5.1 Leadership commitment | Confirm module ensures human oversight | `mplp-confirm.schema.json` |
-| 5.2 AI policy | Protocol governance defines policies | `12-governance/` |
+| 5.2 AI policy | Protocol governance defines policies | `/docs/evaluation/governance` |
 | 5.3 Roles and responsibilities | Role bindings in all schemas | `*_by_role` fields |
 
 ### 2.3 Planning (Clause 6)
@@ -91,14 +91,14 @@ It does **not** claim that MPLP satisfies, implements, or replaces any ISO stand
 |:---|:---|:---|
 | 8.1 Operational planning | Plan schema structures operations | `mplp-plan.schema.json` |
 | 8.2 AI system lifecycle | Full lifecycle coverage (L1-L4) | Architecture layers |
-| 8.3 Third-party considerations | Integration module | `07-integration/` |
+| 8.3 Third-party considerations | Integration module | `/docs/specification/integration` |
 | 8.4 AI system impact assessment | Delta intent and impact analysis | `delta_intent`, `impact_analysis` |
 
 ### 2.6 Performance Evaluation (Clause 9)
 
 | ISO 42001 Requirement | MPLP Support | MPLP Component |
 |:---|:---|:---|
-| 9.1 Monitoring and measurement | Full observability | `04-observability/` |
+| 9.1 Monitoring and measurement | Full observability | `/docs/specification/observability` |
 | 9.2 Internal audit | Trace provides audit evidence | `mplp-trace.schema.json` |
 | 9.3 Management review | Confirm module for approvals | `mplp-confirm.schema.json` |
 
@@ -107,7 +107,7 @@ It does **not** claim that MPLP satisfies, implements, or replaces any ISO stand
 | ISO 42001 Requirement | MPLP Support | MPLP Component |
 |:---|:---|:---|
 | 10.1 Nonconformity and corrective action | Status transitions track issues | `status` enums |
-| 10.2 Continual improvement | Learning module captures feedback | `05-learning/` |
+| 10.2 Continual improvement | Learning module captures feedback | `schemas/v2/learning/` |
 
 ---
 

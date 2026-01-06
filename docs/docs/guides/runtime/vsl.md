@@ -1,9 +1,10 @@
 ---
+sidebar_position: 4
 
 doc_type: normative
 status: frozen
 authority: MPGC
-description: ""
+description: "Value State Layer (VSL) reference for state persistence implementations."
 title: VSL - Value State Layer
 
 ---
@@ -654,16 +655,16 @@ class PostgresVSL implements VSLExtended {
 ## 12. Related Documents
 
 **Architecture**:
-- [L3 Execution & Orchestration](/docs/specification/architecture/index)
-- [L1-L4 Deep Dive](/docs/specification/architecture/index) (VSLExtended interface)
+- [L3 Execution & Orchestration](/docs/specification/architecture)
+- [L1-L4 Deep Dive](/docs/specification/architecture) (VSLExtended interface)
 
 **Runtime Components**:
 - [AEL (Action Execution Layer)](ael.md)
 - [PSG (Project Semantic Graph)](psg.md)
 
 **Kernel Duties**:
-- [Transaction](/docs/specification/architecture/cross-cutting-kernel-duties/index)
-- [State Sync](/docs/specification/architecture/cross-cutting-kernel-duties/index)
+- [Transaction](/docs/specification/architecture/cross-cutting-kernel-duties)
+- [State Sync](/docs/specification/architecture/cross-cutting-kernel-duties)
 
 **Reference Implementation**:
 - `packages/sdk-ts/src/runtime-minimal/index.ts` (lines 24-37)

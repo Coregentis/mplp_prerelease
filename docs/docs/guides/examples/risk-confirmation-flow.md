@@ -1,9 +1,10 @@
 ---
+sidebar_position: 4
 
 doc_type: reference
 status: active
 authority: Documentation Governance
-description: ""
+description: "Example flow demonstrating human-in-the-loop confirmation for high-risk actions."
 title: Risk Confirmation Flow
 
 ---
@@ -98,5 +99,5 @@ The `Confirm` object is cryptographically linked to the `Trace` via the `trace_i
 ## 5. Related Documentation
 
 - [Confirm Module Specification](/docs/specification/modules/confirm-module.md)
-- [L3 Execution Loop](/docs/specification/architecture/index)
-- [Golden Flow: HITL Patterns](/docs/evaluation/golden-flows/index)
+- [L3 Execution Loop](/docs/specification/architecture)
+- [Golden Flow: HITL Patterns](/docs/evaluation/golden-flows)

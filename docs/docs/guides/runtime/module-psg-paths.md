@@ -1,4 +1,5 @@
 ---
+sidebar_position: 6
 
 doc_type: normative
 status: frozen
@@ -489,8 +490,8 @@ When multiple modules claim ownership of a PSG area:
 
 - [Runtime Glue Overview](runtime-glue-overview.md)
 - [Crosscut PSG Event Binding](crosscut-psg-event-binding.md)
-- [Observability Event Taxonomy](../observability/event-taxonomy.yaml)
-- [Learning Sample Taxonomy](../../../schemas/v2/taxonomy/learning-taxonomy.yaml)
+- [Observability Event Taxonomy](https://github.com/Coregentis/MPLP-Protocol/blob/main/schemas/v2/taxonomy/event-taxonomy.yaml)
+- [Learning Sample Taxonomy](https://github.com/Coregentis/MPLP-Protocol/blob/main/schemas/v2/taxonomy/learning-taxonomy.yaml)
 
 ---
 

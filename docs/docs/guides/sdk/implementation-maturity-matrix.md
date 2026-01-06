@@ -1,4 +1,5 @@
 ---
+sidebar_position: 7
 
 doc_type: reference
 title: Implementation Maturity Matrix

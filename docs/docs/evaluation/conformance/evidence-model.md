@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -205,7 +206,7 @@ console.log('Exported:', pack.manifest.contents);
 
 - [Conformance Model](./conformance-model.md) — How MPLP defines conformance
 - [Evidence Authority](/docs/evaluation/governance) — Governance definition
-- [Schema Reference](/docs/meta/index/api-quick-reference) — Schema definitions
+- [Schema Reference](/docs/introduction/api-quick-reference) — Schema definitions
 
 ---
 

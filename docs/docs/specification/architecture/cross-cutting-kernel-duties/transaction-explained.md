@@ -13,11 +13,11 @@ sidebar_position: 22
 ---
 
 
-> **Authoritative Reference (Non-Normative)**
->
-> Document Type: Informative
->
-> This document is informative only.
+:::warning[Non-Normative]
+**Document Type**: Informative
+
+This document is informative only.
+:::
 
 # Transaction — Conceptual Overview
 

@@ -55,7 +55,7 @@ sidebar_position: 3
 
 | NIST Function | MPLP Support | MPLP Component |
 |:---|:---|:---|
-| **GOVERN 1** | Policies and processes | Protocol governance defines policies | `12-governance/` |
+| **GOVERN 1** | Policies and processes | Protocol governance defines policies | `/docs/evaluation/governance` |
 | **GOVERN 2** | Accountability structures | Confirm module ensures oversight | `mplp-confirm.schema.json` |
 | **GOVERN 3** | Workforce diversity/equity | Role module defines capabilities | `mplp-role.schema.json` |
 
@@ -83,9 +83,9 @@ sidebar_position: 3
 
 | NIST Function | MPLP Support | MPLP Component |
 |:---|:---|:---|
-| **MEASURE 1** | Methods and metrics | Observability standards | `04-observability/` |
+| **MEASURE 1** | Methods and metrics | Observability standards | `/docs/specification/observability` |
 | **MEASURE 2** | System evaluation | Trace replay & verification | `mplp-trace.schema.json` |
-| **MEASURE 3** | Feedback mechanisms | Learning module | `05-learning/` |
+| **MEASURE 3** | Feedback mechanisms | Learning module | `schemas/v2/learning/` |
 
 **MPLP Implementation**:
 *   **`Trace` Module**: Provides immutable, replayable logs for measurement and audit.

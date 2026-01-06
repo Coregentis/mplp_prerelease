@@ -12,25 +12,26 @@ sidebar_label: Runtime Trace Format
 sidebar_position: 4
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Runtime Trace Format
 
 ## Scope
 
-This specification defines the trace structure and export format for MPLP observability.
+This specification defines:
+- The JSON schema for MPLP trace export
+- Field requirements for traces, segments, and events
+- Attribute conventions for observability
 
 ## Non-Goals
 
-This specification does not define storage engines or vendor-specific export adapters.
-
+- Mandating specific transport protocols
+- Defining observability platform configurations
+- Specifying implementation internals
 
 ## 1. Purpose
 
@@ -41,34 +42,22 @@ The **Runtime Trace Format** defines the JSON structure for exporting execution 
 **Claim Type:** Normative  
 **Truth Source:** L1 (`schemas/v2/mplp-trace.schema.json`)
 
-## 2. Scope
+## 2. Trace Data Model
 
-This specification defines:
-- The JSON schema for MPLP trace export
-- Field requirements for traces, segments, and events
-- Attribute conventions for observability
-
-**Non-Goals:**
-- Mandating specific transport protocols
-- Defining observability platform configurations
-- Specifying implementation internals
-
-## 3. Trace Data Model
-
-### 3.1 Hierarchy
+### 2.1 Hierarchy
 
 ```
 Trace (root)
-鈹溾攢鈹€ Segment (unit of work)
-鈹?  鈹溾攢鈹€ Events (discrete points)
-鈹?  鈹斺攢鈹€ Attributes (metadata)
-鈹溾攢鈹€ Segment
-鈹?  鈹溾攢鈹€ Events
-鈹?  鈹斺攢鈹€ Attributes
-鈹斺攢鈹€ ...
+├── Segment (unit of work)
+│   ├── Events (discrete points)
+│   └── Attributes (metadata)
+├── Segment
+│   ├── Events
+│   └── Attributes
+└── ...
 ```
 
-### 3.2 Trace Object
+### 2.2 Trace Object
 
 Per `schemas/v2/mplp-trace.schema.json`:
 
@@ -88,7 +77,7 @@ Per `schemas/v2/mplp-trace.schema.json`:
 
 **status Enum**: `pending`, `running`, `completed`, `failed`, `cancelled`
 
-### 3.3 Segment Object
+### 2.3 Segment Object
 
 Per `schemas/v2/mplp-trace.schema.json#/$defs/trace_segment_core`:
 
@@ -104,9 +93,9 @@ Per `schemas/v2/mplp-trace.schema.json#/$defs/trace_segment_core`:
 
 **status Enum**: `pending`, `running`, `completed`, `failed`, `cancelled`, `skipped`
 
-## 4. External Standard Compatibility
+## 3. External Standard Compatibility
 
-### 4.1 W3C Trace Context Integration
+### 3.1 W3C Trace Context Integration
 
 MPLP traces can be correlated with W3C Trace Context headers. However, the ID formats differ:
 
@@ -117,7 +106,7 @@ MPLP traces can be correlated with W3C Trace Context headers. However, the ID fo
 | MPLP | `segment_id` | UUID v4 (with hyphens) | 36 chars |
 | W3C | `parent-id` | Hex (no hyphens) | 16 chars |
 
-### 4.2 ID Conversion Requirements
+### 3.2 ID Conversion Requirements
 
 For interoperability with W3C Trace Context, implementations SHOULD:
 
@@ -134,7 +123,7 @@ W3C trace-id = remove_hyphens(mplp_trace_id)
 W3C parent-id = first_16_chars(remove_hyphens(mplp_segment_id))
 ```
 
-### 4.3 W3C Header Format (Informative)
+### 3.3 W3C Header Format (Informative)
 
 ```http
 traceparent: 00-{w3c_trace_id}-{w3c_parent_id}-01
@@ -147,9 +136,9 @@ traceparent: 00-550e8400e29b41d4a716446655440000-a716446655440001-01
 tracestate: mplp=trace_id:550e8400-e29b-41d4-a716-446655440000;segment_id:a7164466-5544-0001-0000-000000000000
 ```
 
-## 5. Standard Attributes
+## 4. Standard Attributes
 
-### 5.1 Core Attributes
+### 4.1 Core Attributes
 
 | Attribute | Type | Description |
 |:---|:---|:---|
@@ -161,7 +150,7 @@ tracestate: mplp=trace_id:550e8400-e29b-41d4-a716-446655440000;segment_id:a71644
 | `mplp.tokens_used` | Number | LLM tokens consumed |
 | `mplp.duration_ms` | Number | Execution duration |
 
-### 5.2 Extended Attributes
+### 4.2 Extended Attributes
 
 | Attribute | Type | Description |
 |:---|:---|:---|
@@ -171,7 +160,7 @@ tracestate: mplp=trace_id:550e8400-e29b-41d4-a716-446655440000;segment_id:a71644
 | `mplp.llm.tokens_in` | Number | Input tokens |
 | `mplp.llm.tokens_out` | Number | Output tokens |
 
-## 6. Complete JSON Example
+## 5. Complete JSON Example
 
 ```json
 {
@@ -233,12 +222,12 @@ tracestate: mplp=trace_id:550e8400-e29b-41d4-a716-446655440000;segment_id:a71644
 }
 ```
 
-## 7. Export Formats (Informative)
+## 6. Export Formats (Informative)
 
 > [!NOTE]
 > This section provides implementation guidance only. It is not normative.
 
-### 7.1 JSON Lines (JSONL)
+### 6.1 JSON Lines (JSONL)
 
 For log aggregation and streaming, traces can be exported as JSONL:
 
@@ -247,7 +236,7 @@ For log aggregation and streaming, traces can be exported as JSONL:
 {"trace_id":"550e8400-...","segment_id":"990fc844-...","operation":"execute_step"}
 ```
 
-### 7.2 OpenTelemetry Protocol (OTLP)
+### 6.2 OpenTelemetry Protocol (OTLP)
 
 For integration with observability platforms, implementations may convert MPLP traces to OTLP format. Key considerations:
 
@@ -255,14 +244,14 @@ For integration with observability platforms, implementations may convert MPLP t
 - `spanId` must be 16-character hex (derive from segment_id)
 - MPLP-specific attributes should use `mplp.` prefix
 
-### 7.3 Jaeger Format
+### 6.3 Jaeger Format
 
 Jaeger integration requires:
 - `traceID`: 32-character hex
 - `spanID`: 16-character hex
 - Tags for MPLP attributes
 
-## 8. Related Documents
+## 7. Related Documents
 
 **Observability:**
 - [Observability Overview](observability-overview.md) - Architecture

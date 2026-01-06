@@ -12,14 +12,11 @@ sidebar_label: Physical Schemas Reference
 sidebar_position: 6
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Physical Schemas Reference
 
@@ -31,7 +28,6 @@ This specification defines the event schema structure for MPLP observability.
 
 This specification does not define storage formats or vendor-specific serialization.
 
-
 ## 1. Purpose
 
 This document provides a normative reference for the **Physical Event Schemas** used in MPLP runtime observability. These schemas define the JSON structures for discrete runtime events.
@@ -39,20 +35,7 @@ This document provides a normative reference for the **Physical Event Schemas** 
 **Claim Type:** Normative Quote  
 **Truth Source:** L1 (`schemas/v2/events/`)
 
-## 2. Scope
-
-This page covers:
-- EventCore base schema (all events inherit from this)
-- GraphUpdateEvent schema (REQUIRED)
-- PipelineStageEvent schema (REQUIRED)
-- RuntimeExecutionEvent schema (RECOMMENDED)
-
-**Non-Goals:**
-- Module-level schemas (covered in respective module docs)
-- Common shared types (covered in Common Schemas Reference)
-- Transport protocol definitions
-
-## 3. Schema Inventory
+## 2. Schema Inventory
 
 | Schema File | Compliance | Section |
 |-------------|------------|---------|
@@ -63,7 +46,7 @@ This page covers:
 
 ---
 
-## 4. EventCore Schema (Base)
+## 3. EventCore Schema (Base)
 
 **Path**: `schemas/v2/events/mplp-event-core.schema.json`
 
@@ -103,7 +86,7 @@ Per `/schemas/v2/events/mplp-event-core.schema.json`:
 
 ---
 
-## 5. GraphUpdateEvent Schema
+## 4. GraphUpdateEvent Schema
 
 **Path**: `schemas/v2/events/mplp-graph-update-event.schema.json`
 
@@ -157,7 +140,7 @@ Per `/schemas/v2/events/mplp-graph-update-event.schema.json`:
 
 ---
 
-## 6. PipelineStageEvent Schema
+## 5. PipelineStageEvent Schema
 
 **Path**: `schemas/v2/events/mplp-pipeline-stage-event.schema.json`
 
@@ -209,7 +192,7 @@ Per `/schemas/v2/events/mplp-pipeline-stage-event.schema.json`:
 
 ---
 
-## 7. RuntimeExecutionEvent Schema
+## 6. RuntimeExecutionEvent Schema
 
 **Path**: `schemas/v2/events/mplp-runtime-execution-event.schema.json`
 
@@ -269,7 +252,7 @@ Per `/schemas/v2/events/mplp-runtime-execution-event.schema.json`:
 
 ---
 
-## 8. Schema Relationships
+## 7. Schema Relationships
 
 ```mermaid
 graph TD
@@ -300,7 +283,7 @@ graph TD
     Core --> F4
 ```
 
-## 9. Related Documents
+## 8. Related Documents
 
 **Observability:**
 - [Observability Overview](observability-overview.md) - Architecture

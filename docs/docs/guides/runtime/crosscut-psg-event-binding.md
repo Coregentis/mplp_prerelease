@@ -1,4 +1,5 @@
 ---
+sidebar_position: 7
 
 doc_type: normative
 status: frozen
@@ -479,8 +480,8 @@ on transaction_abort(txn_id):
 
 - [Module PSG Paths](module-psg-paths.md)
 - [Runtime Glue Overview](runtime-glue-overview.md)
-- [Observability Event Taxonomy](../observability/event-taxonomy.yaml)
-- [Learning Sample Taxonomy](../../../schemas/v2/taxonomy/learning-taxonomy.yaml)
+- [Observability Event Taxonomy](https://github.com/Coregentis/MPLP-Protocol/blob/main/schemas/v2/taxonomy/event-taxonomy.yaml)
+- [Learning Sample Taxonomy](https://github.com/Coregentis/MPLP-Protocol/blob/main/schemas/v2/taxonomy/learning-taxonomy.yaml)
 
 ---
 

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 
 doc_type: informative
 status: active
@@ -136,8 +137,8 @@ This is **self-declared** — no external authority validates or certifies the r
 ## 7. Related Documentation
 
 - [Adoption Index](./index.mdx) — Adoption lifecycle definition
-- [Evidence Model](/docs/evaluation/conformance/index) — Evidence validity
-- [Conformance Model](/docs/evaluation/conformance/index) — Conformance classes
+- [Evidence Model](/docs/evaluation/conformance) — Evidence validity
+- [Conformance Model](/docs/evaluation/conformance) — Conformance classes
 
 ---
 

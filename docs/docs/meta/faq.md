@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 
 doc_type: informative
 status: active
@@ -8,11 +9,11 @@ title: FAQ
 
 ---
 
-> Authority: project-governance/active/GOV-01_SCOPE_AND_AUTHORITY.md
-> This document mirrors the protocol definition for reference only.
+:::warning[Non-Normative]
+**Document Type**: Informative • **Authority**: Documentation Governance
 
-> **Scope**: Inherited (from /docs/meta/)
-> **Non-Goals**: Inherited (from /docs/meta/)
+This document is informative only.
+:::
 
 # FAQ
 

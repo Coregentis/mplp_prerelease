@@ -1,4 +1,5 @@
 ---
+sidebar_position: 9
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -79,7 +80,7 @@ MPLP uses a **self-declaration model** for conformance:
 For detailed evaluation criteria, see:
 
 - [Evaluation Guide](/docs/guides/evaluation-guide.md)
-- [Evidence Model](/docs/evaluation/conformance/index)
+- [Evidence Model](/docs/evaluation/conformance)
 - [Compatibility Matrix](./compatibility-matrix.md)
 
 ## Related Documents

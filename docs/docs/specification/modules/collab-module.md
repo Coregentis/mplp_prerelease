@@ -18,14 +18,11 @@ sidebar_label: Collab Module
 sidebar_position: 8
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Collab Module
 
@@ -362,7 +359,7 @@ session = Collab(
 
 **Architecture**:
 - [L2 Coordination & Governance](/docs/specification/architecture/l2-coordination-governance)
-- [Coordination](/docs/specification/architecture/cross-cutting-kernel-duties/index) - MAP modes detail
+- [Coordination](/docs/specification/architecture/cross-cutting-kernel-duties) - MAP modes detail
 
 **Modules**:
 - [Context Module](context-module.md) - Parent Context binding

@@ -1,9 +1,10 @@
 ---
+sidebar_position: 3
 
 doc_type: normative
 status: frozen
 authority: MPGC
-description: ""
+description: "Action Execution Layer (AEL) reference for runtime implementers."
 title: AEL - Action Execution Layer
 
 ---
@@ -574,8 +575,8 @@ class RetryableAEL implements ActionExecutionLayer {
 ## 12. Related Documents
 
 **Architecture**:
-- [L3 Execution & Orchestration](/docs/specification/architecture/index)
-- [L1-L4 Deep Dive](/docs/specification/architecture/index)
+- [L3 Execution & Orchestration](/docs/specification/architecture)
+- [L1-L4 Deep Dive](/docs/specification/architecture)
 
 **Runtime Components**:
 - [VSL (Value State Layer)](vsl.md)
@@ -583,7 +584,7 @@ class RetryableAEL implements ActionExecutionLayer {
 
 **Kernel Duties**:
 - [Observability](/docs/specification/observability/observability-overview.md)
-- [Security](/docs/specification/architecture/cross-cutting-kernel-duties/index)
+- [Security](/docs/specification/architecture/cross-cutting-kernel-duties)
 
 **Invariants**:
 - `schemas/v2/invariants/observability-invariants.yaml` (lines 72-92)

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 
 doc_type: informative
 status: active
@@ -118,7 +119,7 @@ Adoption is the **organizational state**, not the technical state.
 - [Adoption Index](./index.mdx) — Adoption lifecycle
 - [Adoption Signals](./adoption-signals.md) — Signal definitions
 - [Enterprise Non-Goals](/docs/guides/enterprise/non-goals) — Enterprise exclusions
-- [Conformance Non-Goals](/docs/evaluation/conformance/index) — Conformance boundaries
+- [Conformance Non-Goals](/docs/evaluation/conformance) — Conformance boundaries
 
 ---
 

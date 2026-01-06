@@ -1,12 +1,11 @@
 ---
-
+sidebar_position: 3
 doc_type: governance
 status: frozen
 authority: Documentation Governance
-description: "**ID**: DGP-XX **Version**: 1.0 **Status**: FR..."
+description: "Guide for evaluating MPLP for enterprise architects and compliance reviewers."
 canonical: /docs/evaluation/governance/HOW_TO_EVALUATE_MPLP
 title: How to Evaluate MPLP
-
 ---
 
 > Authority: project-governance/active/GOV-01_SCOPE_AND_AUTHORITY.md
@@ -26,14 +25,6 @@ title: How to Evaluate MPLP
 
 # How to Evaluate MPLP
 
-**ID**: DGP-XX
-**Version**: 1.0
-**Status**: FROZEN
-**Authority**: Documentation Governance
-**Last Updated**: 2025-12-21
-# How to Evaluate MPLP
-
-**ID**: DGP-XX
 **Version**: 1.0
 **Status**: FROZEN
 **Authority**: Documentation Governance
@@ -44,9 +35,9 @@ title: How to Evaluate MPLP
 **Goal**: Assess technical fit and compliance posture
 
 **Reading Order** (30 minutes):
-1. [Architecture Overview](/docs/specification/architecture/index) — L1–L4 layer model
+1. [Architecture Overview](/docs/specification/architecture) — L1–L4 layer model
 2. [Modules](/docs/specification/modules/core-module) — 10 module specifications
-3. [Golden Flows](/docs/evaluation/golden-flows/index) — Validation scenarios
+3. [Golden Flows](/docs/evaluation/golden-flows) — Validation scenarios
 4. [Standards Mapping](/docs/evaluation/standards/positioning) — ISO/NIST/W3C alignment
 5. [Enterprise Evaluation](/docs/evaluation/governance/protocol-governance) — Assessment checklist
 
@@ -60,8 +51,8 @@ title: How to Evaluate MPLP
 **Goal**: Gather evidence and verify claims
 
 **Reading Order** (60 minutes):
-1. [Repo-Docs-Code Alignment](/docs/meta/index/REPO_DOCS_CODE_ALIGNMENT) — Traceability
-2. [Golden Flows](/docs/evaluation/golden-flows/index) — Validation evidence
+1. Repo-Docs-Code Alignment (TBD) — Traceability
+2. [Golden Flows](/docs/evaluation/golden-flows) — Validation evidence
 3. [Standards Mapping](/docs/evaluation/standards/positioning) — External alignment
 4. [External Consistency Summary](/docs/evaluation/governance/EXTERNAL_TRUST_OVERVIEW) — Controls
 5. [Phase G Verification](/docs/evaluation/governance/protocol-governance) — Surface consistency

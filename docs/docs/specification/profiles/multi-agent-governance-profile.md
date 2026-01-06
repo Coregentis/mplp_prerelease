@@ -12,14 +12,11 @@ title: Multi-Agent Governance Profile
 sidebar_label: Multi-Agent Governance
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Multi-Agent Governance Profile
 
@@ -359,8 +356,8 @@ sequenceDiagram
 - [SA Profile](sa-profile.md) - Single-agent base
 
 **Cross-Cutting**:
-- [Security](/docs/specification/architecture/cross-cutting-kernel-duties/index) - Security controls
-- [Coordination](/docs/specification/architecture/cross-cutting-kernel-duties/index) - Collaboration modes
+- [Security](/docs/specification/architecture/cross-cutting-kernel-duties) - Security controls
+- [Coordination](/docs/specification/architecture/cross-cutting-kernel-duties) - Collaboration modes
 
 **Modules**:
 - [Confirm Module](../modules/confirm-module.md) - Approval workflow

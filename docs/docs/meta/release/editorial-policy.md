@@ -1,23 +1,17 @@
 ---
-
+sidebar_position: 5
 doc_type: governance
 status: frozen
 authority: Documentation Governance
-description: ""
+description: "Editorial standards for MPLP documentation including writing style, formatting, terminology, and review process."
 title: Editorial Policy
-
 ---
 
-> Authority: project-governance/active/GOV-03_CHANGE_PROTOCOL.md
-> This document mirrors the protocol definition for reference only.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
 
-> [!FROZEN]
-> **MPLP Protocol v1.0.0 — Frozen Specification**
-> **Freeze Date**: 2025-12-03
-> **Status**: FROZEN (no breaking changes permitted)
-> **Governance**: MPLP Protocol Governance Committee (MPGC)
-> **License**: Apache-2.0
-> **Note**: Any normative change requires a new protocol version.
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 
 > **Scope**: Inherited (from /docs/meta/release/mplp-v1.0.0-release-notes)
@@ -25,43 +19,7 @@ title: Editorial Policy
 
 # Editorial Policy
 
-**ID**: DGP-XX
-**Version**: 1.0
-**Status**: FROZEN
-**Authority**: Documentation Governance
-**Last Updated**: 2025-12-21
-
-## 1. Purpose
-
-This document defines the editorial standards for MPLP documentation.
-
-## 2. Writing Style
-
-### 2.1 Tone
-
-- Technical but accessible
-- Concise and precise
-- Active voice preferred
-
-### 2.2 Formatting
-
-| Element | Standard |
-|:---|:---|
-| Headings | Title Case for H1, Sentence case for H2+ |
-| Code | Fenced blocks with language identifier |
-| Tables | Markdown tables with left-aligned headers |
-| Lists | Use `-` for unordered, `1.` for ordered |
-
-### 2.3 Terminology
-
-| Term | Usage |
-|:---|:---|
-| MPLP | Always uppercase |
-| Context, Plan, Trace | Capitalized when referring to protocol objects |
-| SDK | Uppercase |
-# Editorial Policy
-
-**ID**: DGP-XX
+**ID**: DGP-02
 **Version**: 1.0
 **Status**: FROZEN
 **Authority**: Documentation Governance
@@ -114,3 +72,16 @@ Each normative document MUST include:
 2. At least one maintainer reviews
 3. Check for technical accuracy and style compliance
 4. Merge after approval
+
+## 5. Versioning
+
+Documentation follows semantic versioning aligned with protocol versions:
+
+- **Major**: Breaking changes or restructures
+- **Minor**: New sections or significant additions
+- **Patch**: Typo fixes, clarifications
+
+---
+
+**Documentation Governance**
+**2025-12-21**

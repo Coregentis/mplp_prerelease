@@ -4,7 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "description": "Adoption Documentation"
+    "type": "doc",
+    "id": "guides/adoption/index"
   }
 }

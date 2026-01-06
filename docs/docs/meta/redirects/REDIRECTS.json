@@ -5,7 +5,7 @@
     "rules": [
         {
             "from_prefix": "/docs/meta/index/",
-            "to_prefix": "/docs/meta/index/"
+            "to_prefix": "/docs/introduction/"
         },
         {
             "from_prefix": "/docs/specification/architecture/",

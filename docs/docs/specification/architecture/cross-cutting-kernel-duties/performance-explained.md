@@ -13,11 +13,11 @@ sidebar_position: 14
 ---
 
 
-> **Authoritative Reference (Non-Normative)**
->
-> Document Type: Informative
->
-> This document is informative only.
+:::warning[Non-Normative]
+**Document Type**: Informative
+
+This document is informative only.
+:::
 
 # Performance — Conceptual Overview
 

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -7,10 +8,11 @@ protocol_version: "1.0.0"
 doc_id: DOC-GOV-EVIDENCE-BASELINE
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
+:::warning[Non-Normative]
+**Document Type**: Informative
+
+This document is informative only.
+:::
 
 # Evidence Baseline
 
@@ -44,5 +46,5 @@ MPLP maintains an Evidence Baseline system that provides machine-verifiable proo
 
 ## 4. Related Resources
 
-- [Verification Methods](../../governance/methods/)
-- [Git Tag: evidence-baseline-v1.0](https://github.com/mplp-protocol/mplp/releases/tag/evidence-baseline-v1.0)
+- [Verification Methods (TBD)](#) — Audit proceduresvidence-baseline-v1.0](https://github.com/mplp-protocol/mplp/releases/tag/evidence-baseline-v1.0)
+```

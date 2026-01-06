@@ -1,4 +1,5 @@
 ---
+sidebar_position: 94
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -11,14 +12,12 @@ title: Module to Kernel Duty Matrix
 sidebar_label: Module-Duty Matrix
 ---
 
-> **Authoritative Reference (Non-Normative)**
->
-> Document Type: Informative
-> Authority Source: MPLP Schemas v1.0.0
-> Governance: MPGC
->
-> This document is informative only.
-> It maps Modules to Kernel Duties for semantic alignment.
+:::warning[Non-Normative]
+**Document Type**: Informative • **Authority**: MPGC
+
+This document is informative only.
+It maps Modules to Kernel Duties for semantic alignment.
+:::
 
 # Module to Kernel Duty Matrix
 

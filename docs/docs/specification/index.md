@@ -11,14 +11,11 @@ title: Protocol Specification
 sidebar_position: 1
 ---
 
-> **Authoritative Reference (Non-Normative)**
->
-> Document Type: Informative (Navigation)
-> Authority Source: MPLP Schemas v1.0.0
-> Governance: MPGC
->
-> This document is **informative and non-normative**.
-> It provides navigation for the specification section.
+:::warning[Non-Normative]
+**Document Type**: Informative • **Authority**: MPGC
+
+This document is informative only.
+:::
 
 # Protocol Specification
 

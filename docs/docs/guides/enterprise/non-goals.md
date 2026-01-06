@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 
 doc_type: informative
 status: active
@@ -126,7 +127,7 @@ While we exclude commercial offerings, enterprise adopters can expect:
 ## 5. Related Documentation
 
 - [Enterprise Context](./index.mdx) — Enterprise scope definition
-- [Conformance Model](/docs/evaluation/conformance/index) — What we DO evaluate
+- [Conformance Model](/docs/evaluation/conformance) — What we DO evaluate
 - [Versioning Policy](/docs/evaluation/governance/versioning-policy) — Protocol stability
 
 ---

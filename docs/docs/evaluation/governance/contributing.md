@@ -1,4 +1,5 @@
 ---
+sidebar_position: 6
 entry_surface: documentation
 doc_type: informative
 status: draft

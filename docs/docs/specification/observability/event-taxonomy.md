@@ -12,14 +12,11 @@ sidebar_label: Event Taxonomy
 sidebar_position: 1
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Event Taxonomy
 
@@ -30,8 +27,6 @@ This specification defines the 12 event families for MPLP observability.
 ## Non-Goals
 
 This specification does not define event processing logic or SDK implementations.
-
-# Event Taxonomy
 
 ## 1. Purpose
 

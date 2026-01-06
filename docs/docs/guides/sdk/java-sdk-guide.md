@@ -1,9 +1,10 @@
 ---
+sidebar_position: 4
 
 doc_type: reference
 status: active
 authority: Documentation Governance
-description: ""
+description: "Java SDK guide for MPLP including Gradle/Maven setup and core APIs."
 title: Java SDK Guide
 
 ---

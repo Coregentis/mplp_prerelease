@@ -1,4 +1,5 @@
 ---
+sidebar_position: 4
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -20,7 +21,7 @@ sidebar_label: Flow Registry
 
 # Golden Flow Registry
 
-This registry lists the evaluation flows covered by the Golden Test Suite. For the detailed scenario definitions, refer to [Golden Flows](/docs/evaluation/golden-flows/index).
+This registry lists the evaluation flows covered by the Golden Test Suite. For the detailed scenario definitions, refer to [Golden Flows](/docs/evaluation/golden-flows).
 
 ## Covered Flows
 

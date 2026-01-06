@@ -3,26 +3,25 @@
 **Protocol:** MPLP v1.0.0 (Frozen)
 **License:** Apache-2.0
 
-The **@mplp/sdk-ts** package provides **the TypeScript SDK and reference runtime** for the
-**Multi-Agent Lifecycle Protocol (MPLP)** �?the Agent OS Protocol for AI agent systems.
+The **@mplp/sdk-ts** package provides **TypeScript SDK umbrella package** for the
+**Multi-Agent Lifecycle Protocol (MPLP)** — the Agent OS Protocol for AI agent systems.
 
 ---
 
 ## Scope & Guarantees (Important)
 
-### �?What this package provides
+### ✅ What this package provides
 
-* **Protocol-conformant interfaces** aligned with MPLP v1.0.0
+* **Protocol-compliant interfaces** aligned with MPLP v1.0.0
 * **Strict version alignment** with the frozen MPLP protocol specification
 * **Type-safe integration surface** for higher-level runtimes and tools
-* **Reference runtime implementation** (Minimal)
 
-### �?What this package does NOT provide
+### ❌ What this package does NOT provide
 
-* �?Production-grade execution engine
-* �?Golden Flow execution engines (Flow-01 ~ Flow-05)
-* �?Observability pipelines or distributed tracing backends
-* �?Production agent orchestration
+- ❌ Full execution runtime (LLM orchestration, tool execution)
+- ❌ Golden Flow execution engines (Flow-01 ~ Flow-05)
+- ❌ Observability pipelines or distributed tracing backends
+- ❌ Production agent orchestration
 
 > These capabilities belong to **reference runtimes and products built *on top of* MPLP**,
 > not to the protocol SDK itself.
@@ -31,9 +30,9 @@ The **@mplp/sdk-ts** package provides **the TypeScript SDK and reference runtime
 
 ## Installation
 
-\`\`\`bash
+```bash
 npm install @mplp/sdk-ts
-\`\`\`
+```
 
 ---
 
@@ -58,5 +57,5 @@ npm install @mplp/sdk-ts
 
 Apache License, Version 2.0
 
-© 2025 **Bangshi Beijing Network Technology Limited Company**
+© 2026 **Bangshi Beijing Network Technology Limited Company**
 Coregentis AI

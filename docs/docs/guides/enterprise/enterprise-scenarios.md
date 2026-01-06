@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 
 doc_type: informative
 status: active
@@ -151,9 +152,9 @@ Each card follows a strict format:
 ## Related Documentation
 
 - [Enterprise Context](./index.mdx) — Kernel-to-constraint mapping
-- [Conformance Model](/docs/evaluation/conformance/index) — Conformance classes
-- [Evidence Model](/docs/evaluation/conformance/index) — Evidence validity
-- [Golden Flows](/docs/evaluation/golden-flows/index) — Reference behaviors
+- [Conformance Model](/docs/evaluation/conformance) — Conformance classes
+- [Evidence Model](/docs/evaluation/conformance) — Evidence validity
+- [Golden Flows](/docs/evaluation/golden-flows) — Reference behaviors
 
 ---
 

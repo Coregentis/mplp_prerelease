@@ -1,81 +1,70 @@
 /*
- * MPLP Protocol Documentation - Unified World-Class Theme
- * Based on Docusaurus Classic Preset
+ * MPLP Protocol Documentation - Standards Body Theme
+ * Inspired by W3C, POSIX, and IETF specifications
  */
 
-/* 1. Typography Imports */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-
-/* 2. Global Variables & Branding */
+/* 1. Typography - System Stack for Native Feel */
 :root {
-  /* --- MPLP Brand Palette --- */
+  /* --- MPLP Brand Palette (Standards Edition) --- */
   --mplp-blue: #2563EB;
   --mplp-blue-dark: #1D4ED8;
-  --mplp-blue-light: #60A5FA;
-  --mplp-cyan: #06B6D4;
-  --mplp-indigo: #4F46E5;
-  --mplp-slate-50: #F8FAFC;
-  --mplp-slate-100: #F1F5F9;
-  --mplp-slate-200: #E2E8F0;
-  --mplp-slate-300: #CBD5E1;
-  --mplp-slate-400: #94A3B8;
-  --mplp-slate-500: #64748B;
-  --mplp-slate-600: #475569;
-  --mplp-slate-700: #334155;
-  --mplp-slate-800: #1E293B;
-  --mplp-slate-900: #0F172A;
-  --mplp-slate-950: #020617;
+
+  /* Slate Scale - High Contrast */
+  --mplp-slate-50: #F9FAFB;
+  --mplp-slate-100: #F3F4F6;
+  --mplp-slate-200: #E5E7EB;
+  --mplp-slate-300: #D1D5DB;
+  --mplp-slate-400: #9CA3AF;
+  --mplp-slate-500: #6B7280;
+  --mplp-slate-600: #4B5563;
+  --mplp-slate-700: #374151;
+  --mplp-slate-800: #1F2937;
+  --mplp-slate-900: #111827;
+  --mplp-slate-950: #030712;
 
   /* --- Docusaurus Overrides --- */
   --ifm-color-primary: var(--mplp-blue);
   --ifm-color-primary-dark: var(--mplp-blue-dark);
-  --ifm-color-primary-darker: #1e40af;
-  --ifm-color-primary-darkest: #1e3a8a;
-  --ifm-color-primary-light: var(--mplp-blue-light);
-  --ifm-color-primary-lighter: #93c5fd;
-  --ifm-color-primary-lightest: #dbeafe;
 
-  /* Typography */
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
-  --ifm-font-family-monospace: 'JetBrains Mono', monospace;
-  --ifm-heading-font-weight: 700;
+  /* Typography - Strict Technical */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --ifm-font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, "Liberation Mono", monospace;
+  --ifm-heading-font-weight: 600;
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.6;
 
   /* Layout */
   --ifm-container-width: 1280px;
-  --ifm-navbar-height: 64px;
+  --ifm-navbar-height: 60px;
   --ifm-spacing-horizontal: 1.5rem;
 
   /* Colors */
   --ifm-background-color: #ffffff;
-  --ifm-font-color-base: var(--mplp-slate-800);
+  --ifm-font-color-base: #111827;
+  /* Near black for max contrast */
   --ifm-link-color: var(--mplp-blue);
   --ifm-link-hover-color: var(--mplp-blue-dark);
-  --ifm-border-color: var(--mplp-slate-200);
+  --ifm-border-color: #E5E7EB;
 
   /* Code Blocks */
   --ifm-code-font-size: 0.9em;
-  --ifm-pre-background: var(--mplp-slate-50);
-  --ifm-pre-color: var(--mplp-slate-800);
+  --ifm-pre-background: #F9FAFB;
+  --ifm-pre-color: #1F2937;
 }
 
-/* 3. Dark Mode Overrides (Slate Palette) */
+/* 3. Dark Mode Overrides */
 [data-theme='dark'] {
-  --ifm-color-primary: var(--mplp-blue-light);
+  --ifm-color-primary: #60A5FA;
   --ifm-color-primary-dark: #3b82f6;
-  --ifm-color-primary-darker: #2563eb;
-  --ifm-color-primary-light: #93c5fd;
 
-  --ifm-background-color: var(--mplp-slate-950);
-  --ifm-font-color-base: var(--mplp-slate-100);
-  --ifm-border-color: var(--mplp-slate-800);
+  --ifm-background-color: #0B1120;
+  --ifm-font-color-base: #F9FAFB;
+  --ifm-border-color: #1F2937;
 
   --ifm-link-color: #60A5FA;
-  --ifm-link-hover-color: #93C5FD;
 
-  --ifm-pre-background: var(--mplp-slate-900);
-  --ifm-pre-color: var(--mplp-slate-100);
+  --ifm-pre-background: #111827;
+  --ifm-pre-color: #F3F4F6;
 }
 
 /* 4. Global Resets & Typography */
@@ -91,317 +80,261 @@ h4,
 h5,
 h6 {
   color: var(--ifm-font-color-base);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .markdown h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #111827;
+  border-bottom: 1px solid #E5E7EB;
+  padding-bottom: 1rem;
+}
+
+[data-theme='dark'] .markdown h1 {
+  color: #F9FAFB;
+  border-color: #1F2937;
 }
 
 .markdown h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-top: 2.5rem;
-  border-bottom: 1px solid var(--ifm-border-color);
-  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  border-bottom: none;
+  /* Removed secondary border */
 }
 
 .markdown h3 {
   font-size: 1.25rem;
   margin-top: 2rem;
+  font-weight: 600;
 }
 
-/* 5. Navbar Styling */
+/* 5. Navbar Styling - Utilitarian */
 .navbar {
   border-bottom: 1px solid var(--ifm-border-color);
-  backdrop-filter: blur(12px);
-  background-color: rgba(255, 255, 255, 0.85);
-}
-
-[data-theme='dark'] .navbar {
-  background-color: rgba(2, 6, 23, 0.85);
+  background-color: var(--ifm-background-color);
+  box-shadow: none;
+  /* Remove shadow for flat look */
 }
 
 .navbar__logo {
-  height: 2rem;
+  height: 1.75rem;
 }
 
 .navbar__title {
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 1rem;
 }
 
 .navbar__link {
   font-weight: 500;
   font-size: 0.95rem;
+  /* Increased nav size */
+  padding: 0.5rem 0.75rem;
 }
 
-/* 6. Sidebar Styling */
+/* 6. Sidebar Styling - Clean List */
 .theme-doc-sidebar-container {
   border-right: 1px solid var(--ifm-border-color) !important;
-  background-color: var(--ifm-background-color);
+  background-color: #F9FAFB;
+  /* Distinction from content */
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: #020617;
 }
 
 .menu__link {
-  border-radius: 6px;
-  font-size: 0.9rem;
-  padding: 0.5rem 0.75rem;
-  color: var(--mplp-slate-600);
+  border-radius: 4px;
+  /* Tighter radius */
+  font-size: 0.95rem;
+  /* Increased from 0.9rem for balance */
+  padding: 0.35rem 0.75rem;
+  color: #4B5563;
+  line-height: 1.5;
 }
 
 [data-theme='dark'] .menu__link {
-  color: var(--mplp-slate-400);
+  color: #9CA3AF;
 }
 
 .menu__link:hover {
-  background-color: var(--mplp-slate-100);
-  color: var(--mplp-slate-900);
+  background-color: #E5E7EB;
+  color: #111827;
 }
 
 [data-theme='dark'] .menu__link:hover {
-  background-color: var(--mplp-slate-800);
-  color: var(--mplp-slate-50);
+  background-color: #1F2937;
+  color: #F9FAFB;
 }
 
 .menu__link--active {
   background-color: #EFF6FF !important;
   color: var(--mplp-blue) !important;
   font-weight: 600;
+  box-shadow: none;
+  /* Removed marker for cleaner look */
+  border-left: 2px solid var(--mplp-blue);
+  /* Simple border */
+  border-radius: 0 4px 4px 0;
 }
 
 [data-theme='dark'] .menu__link--active {
-  background-color: rgba(37, 99, 235, 0.15) !important;
+  background-color: rgba(37, 99, 235, 0.1) !important;
   color: var(--mplp-blue-light) !important;
 }
 
-/* 7. Content Components */
+/* 7. Markdown Content - Technical Specification Style */
 
-/* Admonitions (Callouts) */
+/* Admonitions (Callouts) - Formal Block */
 .admonition {
-  border-radius: 8px;
-  border-left: 4px solid;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid;
+  border-left-width: 4px;
+  box-shadow: none;
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background-color: transparent;
 }
 
 .admonition-note {
-  background-color: #EFF6FF;
-  border-color: var(--mplp-blue);
-  color: var(--mplp-slate-800);
+  border-color: #E5E7EB;
+  border-left-color: var(--mplp-blue);
+  background-color: #F9FAFB;
 }
 
 [data-theme='dark'] .admonition-note {
-  background-color: rgba(37, 99, 235, 0.1);
-  color: var(--mplp-slate-100);
+  border-color: #1F2937;
+  border-left-color: var(--mplp-blue);
+  background-color: #111827;
 }
 
 .admonition-tip {
-  background-color: #ECFDF5;
-  border-color: var(--mplp-emerald);
-  color: var(--mplp-slate-800);
+  border-color: #E5E7EB;
+  border-left-color: #10B981;
+  background-color: #F0FDF4;
 }
 
 [data-theme='dark'] .admonition-tip {
-  background-color: rgba(16, 185, 129, 0.1);
-  color: var(--mplp-slate-100);
-}
-
-.admonition-info {
-  background-color: #F0F9FF;
-  border-color: var(--mplp-cyan);
-  color: var(--mplp-slate-800);
-}
-
-[data-theme='dark'] .admonition-info {
-  background-color: rgba(6, 182, 212, 0.1);
-  color: var(--mplp-slate-100);
+  border-color: #1F2937;
+  border-left-color: #10B981;
+  background-color: rgba(6, 78, 59, 0.2);
 }
 
 .admonition-warning {
+  border-color: #E5E7EB;
+  border-left-color: #F59E0B;
   background-color: #FFFBEB;
-  border-color: #F59E0B;
-  color: var(--mplp-slate-800);
 }
 
 [data-theme='dark'] .admonition-warning {
-  background-color: rgba(245, 158, 11, 0.1);
-  color: var(--mplp-slate-100);
+  border-color: #1F2937;
+  border-left-color: #F59E0B;
+  background-color: rgba(69, 26, 3, 0.2);
 }
 
 .admonition-danger {
+  border-color: #E5E7EB;
+  border-left-color: #EF4444;
   background-color: #FEF2F2;
-  border-color: #EF4444;
-  color: var(--mplp-slate-800);
 }
 
 [data-theme='dark'] .admonition-danger {
-  background-color: rgba(239, 68, 68, 0.1);
-  color: var(--mplp-slate-100);
+  border-color: #1F2937;
+  border-left-color: #EF4444;
+  background-color: rgba(69, 10, 10, 0.2);
 }
 
-/* Cards */
-.card {
-  border: 1px solid var(--ifm-border-color);
-  border-radius: 12px;
-  background-color: var(--ifm-background-color);
-  transition: all 0.2s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+.admonition-heading {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  border-color: var(--ifm-color-primary);
-}
-
-/* Tables */
+/* Tables - Data Dense */
 .markdown table {
-  border-collapse: separate;
-  border-spacing: 0;
+  border-collapse: collapse;
+  /* strict collapse */
   width: 100%;
   border: 1px solid var(--ifm-border-color);
-  border-radius: 8px;
-  overflow: hidden;
+  border-radius: 0;
   margin: 2rem 0;
+  font-size: 0.95rem;
 }
 
 .markdown th,
 .markdown td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--ifm-border-color);
+  padding: 0.5rem 0.75rem;
+  /* Tighter padding */
+  border: 1px solid var(--ifm-border-color);
 }
 
 .markdown th {
-  background-color: var(--mplp-slate-50);
+  background-color: #F9FAFB;
   font-weight: 600;
-  text-align: left;
-  color: var(--mplp-slate-700);
+  color: #111827;
+  text-transform: none;
+  font-size: 0.95rem;
 }
 
 [data-theme='dark'] .markdown th {
-  background-color: var(--mplp-slate-900);
-  color: var(--mplp-slate-300);
+  background-color: #1F2937;
+  color: #F9FAFB;
 }
 
-.markdown tr:last-child td {
-  border-bottom: none;
-}
-
-/* Code Blocks */
+/* Code Blocks - Sharp */
 .theme-code-block {
-  border-radius: 8px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-shadow: none;
   margin-bottom: 1.5rem;
+  border: 1px solid var(--mplp-slate-200);
 }
 
-/* Buttons */
-.button--primary {
-  background-color: var(--mplp-blue);
-  border-color: var(--mplp-blue);
-  border-radius: 9999px;
-  padding: 0.5rem 1.5rem;
+[data-theme='dark'] .theme-code-block {
+  border-color: var(--mplp-slate-800);
+}
+
+/* Breadcrumbs - Functional */
+.breadcrumbs {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+  background: transparent;
+  padding-left: 0;
+}
+
+.breadcrumbs__link {
+  background: transparent !important;
+  color: #6B7280;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #111827;
   font-weight: 600;
-  transition: all 0.2s;
 }
 
-.button--primary:hover {
-  background-color: var(--mplp-blue-dark);
-  border-color: var(--mplp-blue-dark);
-  transform: translateY(-1px);
+/* TOC - Minimal */
+.table-of-contents {
+  border-left: 1px solid var(--ifm-border-color);
+  font-size: 0.85rem;
 }
 
-.button--secondary-mplp:hover {
-  background-color: rgba(15, 23, 42, 1);
-  border-color: var(--mplp-text-muted);
-  color: white;
-  text-decoration: none;
+.table-of-contents__link--active {
+  color: var(--mplp-blue) !important;
+  font-weight: 600;
+  border-left: 2px solid var(--mplp-blue);
+  padding-left: calc(1rem - 2px);
+  margin-left: -1rem;
 }
 
-/* Card Grid Layout */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-/* Hero Section */
-.hero {
-  padding: 4rem 0;
-  text-align: center;
-  background: radial-gradient(circle at center, var(--mplp-slate-50) 0%, transparent 70%);
-}
-
-[data-theme='dark'] .hero {
-  background: radial-gradient(circle at center, var(--mplp-slate-900) 0%, transparent 70%);
-}
-
-.hero__title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  background: linear-gradient(to right, var(--mplp-blue), var(--mplp-indigo));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
-}
-
-.hero__subtitle {
-  font-size: 1.25rem;
-  color: var(--mplp-slate-600);
-  max-width: 800px;
-  margin: 0 auto 2rem;
-}
-
-[data-theme='dark'] .hero__subtitle {
-  color: var(--mplp-slate-400);
-}
-
-/* Footer */
+/* Footer - Hidden per user request for Standards Body style */
 .footer {
-  background-color: var(--mplp-slate-50);
-  border-top: 1px solid var(--ifm-border-color);
-}
-
-[data-theme='dark'] .footer {
-  background-color: var(--mplp-slate-950);
-}
-
-.footer__title {
-  color: var(--mplp-slate-900);
-  font-weight: 700;
-}
-
-[data-theme='dark'] .footer__title {
-  color: var(--mplp-slate-100);
-}
-
-.footer__link-item {
-  color: var(--mplp-slate-600);
-}
-
-[data-theme='dark'] .footer__link-item {
-  color: var(--mplp-slate-400);
-}
-
-.footer__link-item:hover {
-  color: var(--mplp-blue);
-  text-decoration: none;
-}
-
-/* 8. Governance Page Overrides */
-.governance-page blockquote {
-  font-size: 0.9em;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1.5rem;
-  background-color: var(--mplp-slate-50);
-  border-left: 4px solid var(--mplp-slate-300);
-  color: var(--mplp-slate-700);
-}
-
-[data-theme='dark'] .governance-page blockquote {
-  background-color: var(--mplp-slate-900);
-  border-color: var(--mplp-slate-700);
-  color: var(--mplp-slate-300);
+  display: none;
 }

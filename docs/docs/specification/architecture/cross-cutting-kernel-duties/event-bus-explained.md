@@ -13,11 +13,11 @@ sidebar_position: 6
 ---
 
 
-> **Authoritative Reference (Non-Normative)**
->
-> Document Type: Informative
->
-> This document is informative only.
+:::warning[Non-Normative]
+**Document Type**: Informative
+
+This document is informative only.
+:::
 
 # Event Bus — Conceptual Overview
 

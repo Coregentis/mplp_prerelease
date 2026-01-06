@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Redirect Manifest — Docs IA v1
 
 **Version:** B-2  
@@ -19,7 +23,7 @@ All old numeric-prefix URLs are redirected to their new 4-tier locations.
 
 | Old Path Prefix | New Path Prefix | Tier |
 |-----------------|-----------------|------|
-| `/docs/meta/index/` | `/docs/meta/index/` | META |
+| `/docs/meta/index/` | `/docs/introduction/` | META |
 | `/docs/specification/architecture/` | `/docs/specification/architecture/` | SPECIFICATION |
 | `/docs/specification/modules/` | `/docs/specification/modules/` | SPECIFICATION |
 | `/docs/specification/profiles/` | `/docs/specification/profiles/` | SPECIFICATION |

@@ -18,14 +18,11 @@ sidebar_label: Network Module
 sidebar_position: 10
 ---
 
-> **Frozen Specification**
->
-> Protocol Version: 1.0.0
-> Freeze Date: 2025-12-03
-> Authority: MPGC
->
-> This document is normative and frozen.
-> Changes require MPGC governance process.
+:::info[Frozen Specification]
+**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
+
+This document is normative and frozen. Changes require MPGC governance process.
+:::
 
 # Network Module
 
@@ -192,8 +189,9 @@ stateDiagram-v2
 
 ## 6. SDK Examples
 
-> [!NOTE]
-> The Network module is not yet included in the official SDK packages (`sdk-ts`, `sdk-py`). The following examples demonstrate schema-compliant usage patterns for reference implementations.
+:::note
+The Network module is not yet included in the official SDK packages (`sdk-ts`, `sdk-py`). The following examples demonstrate schema-compliant usage patterns for reference implementations.
+:::
 
 ### 6.1 TypeScript (Reference)
 

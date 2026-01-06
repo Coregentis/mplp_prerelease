@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -49,12 +50,12 @@ MAJOR.MINOR.PATCH
 
 ## 4. Current Versions
 
-| Component | Version | Status |
+| Component | Location | Status |
 |:---|:---|:---|
-| Protocol Specification | 1.0.0 | **FROZEN** |
-| JSON Schemas (`schemas/v2/`) | 1.0.0 | **FROZEN** |
-| TypeScript SDK (`@mplp/sdk-ts`) | 1.0.3 | Stable |
-| Python SDK (`mplp`) | 1.0.0 | Stable |
+| Protocol Specification | `schemas/v2/` | **FROZEN** |
+| JSON Schemas | [`schemas/v2/`](https://github.com/mplp-protocol/mplp/tree/main/schemas/v2) | **FROZEN** |
+| TypeScript SDK | [`packages/sources/sdk-ts`](https://github.com/mplp-protocol/mplp/tree/main/packages/sources/sdk-ts) | Stable |
+| Python SDK | [`packages/sources/sdk-py`](https://github.com/mplp-protocol/mplp/tree/main/packages/sources/sdk-py) | Stable |
 
 ## 5. Breaking Change Policy
 

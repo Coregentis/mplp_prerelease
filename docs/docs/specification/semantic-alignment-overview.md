@@ -1,4 +1,5 @@
 ---
+sidebar_position: 92
 entry_surface: documentation
 doc_type: informative
 status: draft
@@ -11,10 +12,11 @@ title: Semantic Alignment Overview
 sidebar_label: Semantic Alignment
 ---
 
-> **Authoritative Reference (Non-Normative)**
->
-> Document Type: Informative
-> Authority Source: MPLP Schemas v1.0.0
+:::warning[Non-Normative]
+**Document Type**: Informative • **Authority**: MPGC
+
+This document is informative only.
+:::
 > Governance: MPGC
 >
 > This document does not define protocol requirements, impose obligations, or serve as a compliance or certification basis.

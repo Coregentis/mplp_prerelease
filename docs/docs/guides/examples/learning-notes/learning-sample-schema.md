@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 
 doc_type: informative
 status: active
@@ -203,7 +204,7 @@ The following families use the **Core Schema** directly without extensions:
 | `graph_evolution` | PSG structural changes | `trigger_event_id`, `change_type` | `nodes_added`, `edges_added` |
 | `multi_agent_coordination` | SA/MAP collaboration | `session_id`, `coordination_mode` | `total_turns`, `outcome` |
 
-These families follow Core Schema structure but use field conventions documented in [Learning Taxonomy](../../../schemas/v2/taxonomy/learning-taxonomy.yaml).
+These families follow Core Schema structure but use field conventions documented inSee: [Learning Taxonomy](https://github.com/Coregentis/MPLP-Protocol/blob/main/schemas/v2/taxonomy/learning-taxonomy.yaml).
 
 ## 7. Sample Families Reference
 
