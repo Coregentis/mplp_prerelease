@@ -37,8 +37,10 @@ include:
   - ".github/workflows/gates.yml"
   - ".github/workflows/codeql.yml"
   - ".eslintrc.json"
+  - "scripts/03-docs/**"  # Doc build tools (render-mermaid, etc)
   - "scripts/semantic/**"
   - "scripts/gates/**"  # Governance gates for CI
+  - ".codeql/**"  # CodeQL configuration
   # Public Governance Specifications
   - "governance/DGP-*.md"
   - "governance/DGP-*.yaml"
@@ -46,6 +48,7 @@ include:
   - "governance/public-surface/PSG-CROSSLINK-SSOT.yaml"
   - "governance/RELEASE_ATTESTATION_*.md"
   # NOTE: .github/workflows/** EXCLUDED - OSS workflows in .github/oss-workflows/ (manual sync)
+
 
 
 exclude:
