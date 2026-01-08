@@ -111,37 +111,94 @@ function findDocsFiles(dir) {
     return results;
 }
 
-// Extract meaningful alt text from mermaid code or context
-function extractAltText(code, content, startIndex) {
-    // 1. Check for title in mermaid syntax (e.g., "%%{init: {'theme':'dark', 'themeVariables': { 'primaryColor': '#bb2528' }} }%%
-    // or "---\ntitle: Description\n---")
+// Extract meaningful alt text with MPLP protocol context for SEO/GEO
+function extractAltText(code, content, startIndex, filePath) {
+    // Extract context from file path
+    const pathContext = extractPathContext(filePath);
+
+    // 1. Check for title in mermaid syntax
     const titleMatch = code.match(/^---\s*\ntitle:\s*(.+?)\s*\n---/m) ||
         code.match(/%%.*title["']?:\s*["']?([^"',}]+)/i);
     if (titleMatch) {
-        return titleMatch[1].trim();
+        return `MPLP ${pathContext}: ${titleMatch[1].trim()}`;
     }
 
-    // 2. Extract graph type and first meaningful label
+    // 2. Extract graph type and build MPLP-specific description
     const graphTypeMatch = code.match(/^(graph|flowchart|sequenceDiagram|classDiagram|stateDiagram|erDiagram|gantt|pie)\s/i);
     if (graphTypeMatch) {
-        const type = graphTypeMatch[1];
-        // Try to extract first node label for context
+        const type = graphTypeMatch[1].toLowerCase();
+
+        // Map generic types to MPLP-specific descriptions
+        const typeMap = {
+            'graph': 'architecture',
+            'flowchart': 'flow',
+            'sequencediagram': 'interaction sequence',
+            'classdiagram': 'structure',
+            'statediagram': 'state machine',
+        };
+        const mplpType = typeMap[type] || type;
+
+        // Try to extract first meaningful node label
         const labelMatch = code.match(/[\[\(\{]([^\]\)\}\n]+)[\]\)\}]/);
-        if (labelMatch && labelMatch[1].length < 50) {
-            return `${type.charAt(0).toUpperCase() + type.slice(1)} diagram: ${labelMatch[1].trim()}`;
+        if (labelMatch && labelMatch[1].length < 50 && !labelMatch[1].match(/^[A-Z]$/)) {
+            return `MPLP ${pathContext} ${mplpType}: ${labelMatch[1].trim()}`;
         }
-        return `${type.charAt(0).toUpperCase() + type.slice(1)} diagram`;
+        return `MPLP ${pathContext} ${mplpType} diagram`;
     }
 
     // 3. Look for preceding heading in markdown
     const precedingText = content.substring(Math.max(0, startIndex - 500), startIndex);
     const headingMatch = precedingText.match(/#+\s+([^\n]+)\s*$/m);
     if (headingMatch) {
-        return `Diagram: ${headingMatch[1].trim()}`;
+        return `MPLP ${pathContext}: ${headingMatch[1].trim()}`;
     }
 
-    // 4. Default fallback
-    return 'Architecture diagram';
+    // 4. Default with protocol branding and context
+    return `MPLP ${pathContext} specification diagram`;
+}
+
+// Extract protocol context from file path for SEO/entity disambiguation
+function extractPathContext(filePath) {
+    const normalized = filePath.toLowerCase();
+
+    // Layer context (L1-L4)
+    if (normalized.includes('/l1-')) return 'L1 Core Protocol';
+    if (normalized.includes('/l2-')) return 'L2 Coordination';
+    if (normalized.includes('/l3-')) return 'L3 Observability';
+    if (normalized.includes('/l4-')) return 'L4 Integration';
+
+    // Module context
+    if (normalized.includes('/plan-module')) return 'Plan Module';
+    if (normalized.includes('/confirm-module')) return 'Confirmation Module';
+    if (normalized.includes('/trace-module')) return 'Trace Module';
+    if (normalized.includes('/context-module')) return 'Context Module';
+    if (normalized.includes('/collab-module')) return 'Collaboration Module';
+    if (normalized.includes('/dialog-module')) return 'Dialog Module';
+    if (normalized.includes('/network-module')) return 'Network Module';
+    if (normalized.includes('/extension-module')) return 'Extension Module';
+
+    // Profile context
+    if (normalized.includes('/sa-profile') || normalized.includes('/sa-events')) return 'Single-Agent Profile';
+    if (normalized.includes('/map-profile') || normalized.includes('/map-events')) return 'Multi-Agent Profile';
+    if (normalized.includes('/multi-agent-governance')) return 'Multi-Agent Governance';
+
+    // Architecture context
+    if (normalized.includes('/architecture')) return 'Protocol Architecture';
+    if (normalized.includes('/kernel-duties')) return 'Kernel Duties';
+
+    // Observability context
+    if (normalized.includes('/observability')) return 'Observability Layer';
+    if (normalized.includes('/event-taxonomy')) return 'Event Taxonomy';
+
+    // Governance context
+    if (normalized.includes('/governance')) return 'Protocol Governance';
+
+    // Guides/Examples
+    if (normalized.includes('/guides') || normalized.includes('/examples')) return 'Implementation Guide';
+    if (normalized.includes('/golden-flows')) return 'Golden Flow';
+
+    // Default
+    return 'Protocol v1.0';
 }
 
 // Extract mermaid blocks from content
@@ -236,8 +293,8 @@ function processFile(filePath) {
             }
         }
 
-        // Extract meaningful alt text
-        const altText = extractAltText(block.code, content, block.startIndex);
+        // Extract meaningful alt text with protocol context
+        const altText = extractAltText(block.code, content, block.startIndex, filePath);
 
         // Prepare replacement
         const replacement = `<MermaidDiagram id="${diagramId}" alt="${altText}" />`;
