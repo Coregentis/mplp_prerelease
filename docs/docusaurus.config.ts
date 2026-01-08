@@ -98,15 +98,20 @@ const config: Config = {
     {
       tagName: 'link',
       attributes: {
-        rel: 'preconnect',
-        href: 'https://fonts.googleapis.com',
+        rel: 'preload',
+        href: '/fonts/inter-500.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: 'anonymous',
       },
     },
     {
       tagName: 'link',
       attributes: {
-        rel: 'preconnect',
-        href: 'https://fonts.gstatic.com',
+        rel: 'preload',
+        href: '/fonts/jetbrains-mono-400.woff2',
+        as: 'font',
+        type: 'font/woff2',
         crossorigin: 'anonymous',
       },
     },
