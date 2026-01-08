@@ -107,7 +107,7 @@ This initiative explicitly **did not** address:
 
 ## Repro Steps
 
-From a clean checkout of commit `8bef80df`:
+From a clean checkout of commit `bab43f09` (V1.0release-20260104 branch):
 
 ```bash
 # 1. Install dependencies
@@ -169,8 +169,8 @@ The following statements are now enforced across all three entry points:
 
 ## Verification
 
-**Frozen Commit**: `8bef80df`  
-**Branch**: `chore/entity-alignment-geo-hardening`  
+**Frozen Commit**: `bab43f09`  
+**Branch**: `V1.0release-20260104`  
 **Verified By**: Automated CI Gates  
 **Verification Date**: 2026-01-08
 
