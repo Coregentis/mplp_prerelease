@@ -37,6 +37,8 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
+          # Use custom config to exclude build artifacts
+          config-file: ./.codeql/codeql-config.yml
           # Queries: security-extended includes more checks beyond default
           queries: security-extended
 
