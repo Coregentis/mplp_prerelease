@@ -5,8 +5,8 @@ const yaml = require('js-yaml');
 const CONFIG_FILE = 'release-config.yaml';
 const DIST_DIR = 'dist/mplp-v1.0';
 
-// Ensure rootDir is correctly resolved to the project root (V1.0-release)
-const rootDir = path.resolve(__dirname, '..');
+// Ensure rootDir is correctly resolved to the project root
+const rootDir = path.resolve(__dirname, '../..');
 console.log(`Project Root: ${rootDir}`);
 
 function loadConfig() {
