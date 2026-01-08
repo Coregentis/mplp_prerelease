@@ -50,12 +50,18 @@ exclude:
   # External repositories / submodules
   - "MPLP_website/**"
   
-  # Build artifacts and caches
+  # Build artifacts and caches (match directory names directly)
+  - "**/node_modules"
   - "**/node_modules/**"
+  - "**/dist"
   - "**/dist/**"
+  - "**/build"
   - "**/build/**"
+  - "docs/.docusaurus"
   - "docs/.docusaurus/**"
+  - "docs/.cache"
   - "docs/.cache/**"
+  - "docs/static/mermaid"
   - "docs/static/mermaid/**"  # Build-time generated SVGs (reproducible from source)
   
   # Version control
