@@ -9,12 +9,6 @@ title: FAQ
 
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: Documentation Governance
-
-This document is informative only.
-:::
-
 # FAQ
 
 > **Status**: Informative

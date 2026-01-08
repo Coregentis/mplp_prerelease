@@ -7,12 +7,6 @@ description: "Quick reference map for all MPLP schemas, modules, events, and inv
 title: Documentation Map
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: Documentation Governance
-
-This document is informative only.
-:::
-
 ## Schema Quick Reference
 
 All schemas located in `schemas/v2/`:

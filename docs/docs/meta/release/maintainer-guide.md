@@ -22,10 +22,6 @@ This document is normative and frozen. Changes require MPGC governance process.
 # Maintainer Guide
 
 
-**Version**: 1.0
-**Status**: FROZEN
-**Authority**: Documentation Governance
-**Last Updated**: 2025-12-21
 
 ## 1. Overview
 

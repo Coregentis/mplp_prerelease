@@ -17,8 +17,6 @@ keywords:
 
 # POSIX Analogy — Conceptual Mapping
 
-> **Normativity:** Non-Normative / Informative  
-> **Authority:** Documentation (for explanation only)
 
 This page provides a conceptual mapping between POSIX interface ideas and MPLP's schema-defined lifecycle governance. The analogy is intended to help readers understand MPLP's positioning by relating it to a well-known interface standard.
 

@@ -12,11 +12,6 @@ title: Semantic Alignment Overview
 sidebar_label: Semantic Alignment
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: MPGC
-
-This document is informative only.
-:::
 > Governance: MPGC
 >
 > This document does not define protocol requirements, impose obligations, or serve as a compliance or certification basis.

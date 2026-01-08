@@ -8,12 +8,6 @@ canonical: /docs/introduction/DOCS_IA_OVERVIEW
 title: Docs Information Architecture Overview
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: Documentation Governance
-
-This document is informative only.
-:::
-
 ## Path A — Specification Path (Implementers)
 
 **Audience**: Protocol implementers, SDK authors, runtime builders

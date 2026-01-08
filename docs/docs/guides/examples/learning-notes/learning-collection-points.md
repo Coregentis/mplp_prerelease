@@ -9,7 +9,6 @@ title: Learning Collection Points
 
 ---
 
-> Authority: project-governance/active/GOV-01_SCOPE_AND_AUTHORITY.md
 > This document mirrors the protocol definition for reference only.
 
 > [!IMPORTANT]

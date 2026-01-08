@@ -11,7 +11,6 @@ sidebar_label: Module PSG Paths
 
 ---
 
-> Authority: project-governance/active/GOV-05_AI_EXECUTION_CONTRACT.md
 > This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]

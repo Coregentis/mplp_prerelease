@@ -10,12 +10,6 @@ sidebar_label: Evolution
 
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: Documentation Governance
-
-This document is informative only.
-:::
-
 # Protocol Evolution
 
 > **Status**: Informative

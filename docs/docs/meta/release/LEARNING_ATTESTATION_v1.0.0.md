@@ -10,7 +10,6 @@ title: Learning Attestation v1.0.0
 ---
 
 :::info[Attestation]
-**Authority**: project-governance/active/GOV-03_CHANGE_PROTOCOL.md
 
 This document mirrors the protocol definition for reference only.
 :::

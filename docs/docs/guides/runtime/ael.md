@@ -9,7 +9,6 @@ title: AEL - Action Execution Layer
 
 ---
 
-> Authority: project-governance/active/GOV-05_AI_EXECUTION_CONTRACT.md
 > This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]

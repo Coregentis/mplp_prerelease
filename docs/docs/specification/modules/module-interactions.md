@@ -15,12 +15,6 @@ sidebar_label: Module Interactions
 sidebar_position: 0
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority Source**: MPLP Schemas v1.0.0 • **Governance**: MPGC
-
-This document is informative only.
-:::
-
 # Module Interactions
 
 ## Scope

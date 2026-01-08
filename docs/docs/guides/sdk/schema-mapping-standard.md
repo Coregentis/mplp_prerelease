@@ -9,7 +9,6 @@ title: Schema Mapping Standard
 
 ---
 
-> Authority: project-governance/active/GOV-02_THREE_SURFACE_MAPPING.md
 > This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]

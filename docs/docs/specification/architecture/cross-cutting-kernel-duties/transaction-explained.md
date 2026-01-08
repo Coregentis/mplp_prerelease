@@ -13,12 +13,6 @@ sidebar_position: 22
 ---
 
 
-:::warning[Non-Normative]
-**Document Type**: Informative
-
-This document is informative only.
-:::
-
 # Transaction — Conceptual Overview
 
 > **Status**: Informative (Non-Normative)

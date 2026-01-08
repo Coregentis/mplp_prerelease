@@ -12,12 +12,6 @@ sidebar_label: Observability Overview
 sidebar_position: 0
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority Source**: MPLP Schemas v1.0.0 • **Governance**: MPGC
-
-This document is informative only.
-:::
-
 # Observability Overview
 
 This page provides a navigational overview of MPLP observability specifications. It does not define normative requirements.

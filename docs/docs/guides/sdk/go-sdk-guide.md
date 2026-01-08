@@ -9,7 +9,6 @@ title: Go SDK Guide
 
 ---
 
-> Authority: project-governance/active/GOV-02_THREE_SURFACE_MAPPING.md
 > This document mirrors the protocol definition for reference only.
 
 > **Scope**: Inherited (from /docs/guides/sdk/)

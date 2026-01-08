@@ -12,12 +12,6 @@ title: Specification to Evaluation Matrix
 sidebar_label: Spec-Eval Matrix
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: MPGC
-
-This document is informative only.
-:::
-
 # Specification to Evaluation Matrix
 
 **Purpose**: Resolves whether Specification and Evaluation documents describe the same concepts.

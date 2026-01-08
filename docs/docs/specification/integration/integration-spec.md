@@ -12,13 +12,6 @@ sidebar_label: Integration Spec
 sidebar_position: 1
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Governance**: MPGC • **Authority**: None
-
-This document is **informative and non-normative**. It does not define protocol obligations.
-All MUST/SHALL statements are **schema-derived restatements** for explanatory purposes only.
-:::
-
 # Integration Spec
 
 ## Scope

@@ -22,10 +22,6 @@ This document is normative and frozen. Changes require MPGC governance process.
 # v1.0.0 Known Issues
 
 
-**Version**: 1.0
-**Status**: FROZEN
-**Authority**: Documentation Governance
-**Last Updated**: 2025-12-21
 
 ## 1. Overview
 
@@ -39,7 +35,6 @@ This document tracks known issues, limitations, and workarounds for MPLP v1.0.0.
 
 **Workaround**: SDK builders provide sensible defaults. Use builders instead of raw object construction.
 
-**Status**: Will be addressed in v1.1.0
 
 ## 3. SDK Issues
 

@@ -7,12 +7,6 @@ description: "Comprehensive overview of the Multi-Agent Lifecycle Protocol (MPLP
 title: Protocol Overview
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: Documentation Governance
-
-This document is informative only.
-:::
-
 ## 1. Purpose
 
 The **Multi-Agent Lifecycle Protocol (MPLP)** is the **Lifecycle Protocol** for AI agent systems. It is a vendor-neutral, schema-driven specification for defining, executing, and auditing multi-agent workflows.

@@ -11,7 +11,6 @@ sidebar_label: Non-Goals
 
 ---
 
-> Authority: governance/POSITIONING_MANIFESTO.md
 > This document mirrors the protocol definition for reference only.
 
 > **Scope**: Inherited (from /docs/guides/adoption/)

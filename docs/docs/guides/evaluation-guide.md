@@ -8,7 +8,6 @@ canonical: /docs/evaluation/governance/HOW_TO_EVALUATE_MPLP
 title: How to Evaluate MPLP
 ---
 
-> Authority: project-governance/active/GOV-01_SCOPE_AND_AUTHORITY.md
 > This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]

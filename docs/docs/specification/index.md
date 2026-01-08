@@ -11,12 +11,6 @@ title: Protocol Specification
 sidebar_position: 1
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: MPGC
-
-This document is informative only.
-:::
-
 # Protocol Specification
 
 This section provides a navigational overview of MPLP specification documentation.

@@ -14,12 +14,6 @@ sidebar_position: 6
 
 # L1-L4 Architecture Deep Dive
 
-:::warning[Non-Normative]
-**Document Type**: Informative (Deep Dive) • **Authority Source**: MPLP Schemas v1.0.0
-
-This document is for explanatory purposes only.
-:::
-
 ## Scope
 
 This document provides a comprehensive technical deep dive into the MPLP v1.0 four-layer architecture, focusing on advanced topics, internal mechanics, and complex inter-layer interactions.

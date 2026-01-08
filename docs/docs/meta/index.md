@@ -4,12 +4,6 @@ sidebar_position: 4
 
 # Meta
 
-:::warning[Non-Normative]
-**Surface**: Informative
-
-Site-level metadata, navigation, and release information.
-:::
-
 ## Contents
 
 - [Introduction](/docs/intro) - Documentation home

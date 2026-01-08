@@ -12,13 +12,6 @@ title: Golden Flow to Kernel Duty Matrix
 sidebar_label: Flow-Duty Matrix
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: MPGC
-
-This document is informative only.
-It maps Golden Flows to Kernel Duties for evaluation alignment.
-:::
-
 # Golden Flow to Kernel Duty Matrix
 
 **Purpose**: Resolves evaluation relationships between 5 Golden Flows and 11 Kernel Duties.

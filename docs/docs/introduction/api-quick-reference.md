@@ -7,13 +7,6 @@ description: "Quick reference for MPLP observability event families and invarian
 title: API Quick Reference
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Reference • **Authority**: Documentation Governance
-
-**Derived Artifact**: This document summarizes normative definitions from the Schemas.
-In case of discrepancy, the Schemas are the single source of truth.
-:::
-
 ## 12 Observability Event Families
 
 Based on `schemas/v2/events/mplp-event-core.schema.json`:

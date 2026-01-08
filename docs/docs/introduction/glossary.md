@@ -7,12 +7,6 @@ description: "Normative definitions for key terms used throughout the MPLP v1.0 
 title: Glossary
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: Documentation Governance
-
-This document is normative definitions derived from schema.
-:::
-
 This document provides normative definitions for key terms used throughout the Multi-Agent Lifecycle Protocol (MPLP) v1.0 specification. All definitions are based on actual schemas and implementations in the codebase.
 
 ## Core Modules (L2)

@@ -8,12 +8,6 @@ protocol_version: "1.0.0"
 doc_id: DOC-GOV-EVIDENCE-BASELINE
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative
-
-This document is informative only.
-:::
-
 # Evidence Baseline
 
 ## 1. Overview

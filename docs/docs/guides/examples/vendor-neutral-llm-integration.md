@@ -11,7 +11,6 @@ canonical: /docs/guides/examples/vendor-neutral-llm-integration
 
 ---
 
-> Authority: governance/CONFORMANCE_MODEL.md
 > This document mirrors the protocol definition for reference only.
 
 > **Scope**: Inherited (from /docs/guides/examples/)

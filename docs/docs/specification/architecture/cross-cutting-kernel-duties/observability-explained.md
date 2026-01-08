@@ -13,12 +13,6 @@ sidebar_position: 10
 ---
 
 
-:::warning[Non-Normative]
-**Document Type**: Informative
-
-This document is informative only.
-:::
-
 # Observability — Conceptual Overview
 
 > **Status**: Informative (Non-Normative)

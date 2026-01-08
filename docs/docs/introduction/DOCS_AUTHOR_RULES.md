@@ -8,12 +8,6 @@ canonical: /docs/introduction/DOCS_AUTHOR_RULES
 title: Docs Author Rules
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: Documentation Governance
-
-This document is informative only.
-:::
-
 ## 1. Before You Write
 
 Before creating or modifying documentation:

@@ -12,13 +12,6 @@ title: Module to Kernel Duty Matrix
 sidebar_label: Module-Duty Matrix
 ---
 
-:::warning[Non-Normative]
-**Document Type**: Informative • **Authority**: MPGC
-
-This document is informative only.
-It maps Modules to Kernel Duties for semantic alignment.
-:::
-
 # Module to Kernel Duty Matrix
 
 **Purpose**: Resolves semantic relationships between 10 Modules and 11 Kernel Duties.

@@ -11,7 +11,6 @@ sidebar_position: 1
 
 ---
 
-> Authority: governance/CONFORMANCE_MODEL.md
 > This document mirrors the protocol definition for reference only.
 
 > **Scope**: Inherited (from /docs/guides/examples/)

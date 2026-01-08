@@ -13,12 +13,6 @@ sidebar_position: 6
 ---
 
 
-:::warning[Non-Normative]
-**Document Type**: Informative
-
-This document is informative only.
-:::
-
 # Event Bus — Conceptual Overview
 
 > **Status**: Informative (Non-Normative)
