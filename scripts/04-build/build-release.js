@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
+const minimatch = require('minimatch');
 
 const CONFIG_FILE = 'release-config.yaml';
 const DIST_DIR = 'dist/mplp-v1.0';
@@ -34,64 +35,112 @@ function cleanDist() {
 function processIncludes(config) {
     const distPath = path.join(rootDir, DIST_DIR);
 
-    // Helper to copy files/dirs
-    const copy = (src, dest) => {
-        try {
-            const stat = fs.statSync(src);
-            if (stat.isDirectory()) {
-                fs.cpSync(src, dest, { recursive: true });
-            } else {
-                fs.copyFileSync(src, dest);
-            }
-        } catch (e) {
-            console.warn(`Skipping ${src}: ${e.message}`);
-        }
+    // Normalize exclude patterns for glob matching
+    const excludePatterns = (config.exclude || []).map(p => {
+        // Convert to glob pattern relative to root
+        return p.replace(/^\.\//, '').replace(/\/$/, '/**');
+    });
+
+    // Check if a path should be excluded
+    const isExcluded = (relativePath) => {
+        return excludePatterns.some(pattern => {
+            return minimatch(relativePath, pattern, { dot: true, matchBase: true });
+        });
     };
 
-    // Expand globs (simplified for this script, assuming direct paths or simple wildcards)
-    // In a real scenario, use 'glob' package. Here we handle the specific patterns in release-config.yaml
+    // Recursively copy with exclude filtering
+    const copyWithExcludes = (src, dest, relativePath = '') => {
+        const stat = fs.statSync(src);
 
-    config.include.forEach(pattern => {
-        let srcPattern = pattern;
-        if (pattern.endsWith('/**')) {
-            srcPattern = pattern.substring(0, pattern.length - 3);
-        } else if (pattern.endsWith('/*')) {
-            srcPattern = pattern.substring(0, pattern.length - 2);
-        }
+        if (stat.isDirectory()) {
+            // Check if directory itself should be excluded
+            if (isExcluded(relativePath)) {
+                console.log(`   Skipping excluded directory: ${relativePath}`);
+                return;
+            }
 
-        const srcPath = path.join(rootDir, srcPattern);
-        const destPath = path.join(distPath, srcPattern);
+            fs.mkdirSync(dest, { recursive: true });
+            const entries = fs.readdirSync(src);
 
-        if (fs.existsSync(srcPath)) {
-            console.log(`Copying ${srcPattern}...`);
-            // Ensure parent dir exists
-            fs.mkdirSync(path.dirname(destPath), { recursive: true });
+            for (const entry of entries) {
+                const srcPath = path.join(src, entry);
+                const destPath = path.join(dest, entry);
+                const entryRelPath = path.join(relativePath, entry);
+
+                copyWithExcludes(srcPath, destPath, entryRelPath);
+            }
+        } else {
+            // Check if file should be excluded
+            if (isExcluded(relativePath)) {
+                return; // Skip silently for files
+            }
 
             // Special handling for README.md to fix encoding
-            if (srcPattern === 'README.md') {
-                let content = fs.readFileSync(srcPath, 'utf8');
+            if (relativePath === 'README.md') {
+                let content = fs.readFileSync(src, 'utf8');
                 // Strip BOM if present
                 if (content.charCodeAt(0) === 0xFEFF) {
                     content = content.slice(1);
                 }
-                fs.writeFileSync(destPath, content, 'utf8');
+                fs.writeFileSync(dest, content, 'utf8');
+            } else {
+                fs.copyFileSync(src, dest);
             }
-            // Special handling for package.json - use OSS version without pnpm deps
-            else if (srcPattern === 'package.json') {
-                const ossPackageJsonPath = path.join(rootDir, 'scripts/release/oss-package.json');
-                if (fs.existsSync(ossPackageJsonPath)) {
-                    console.log('Using OSS-specific package.json (no pnpm deps)');
-                    fs.copyFileSync(ossPackageJsonPath, destPath);
+        }
+    };
+
+    console.log('Processing includes...');
+    (config.include || []).forEach(pattern => {
+        // Handle root-level files
+        if (!pattern.includes('*') && !pattern.includes('/')) {
+            const srcPath = path.join(rootDir, pattern);
+            const destPath = path.join(distPath, pattern);
+
+            if (fs.existsSync(srcPath)) {
+                console.log(`Copying ${pattern}...`);
+                const stat = fs.statSync(srcPath);
+                if (stat.isDirectory()) {
+                    copyWithExcludes(srcPath, destPath, pattern);
                 } else {
-                    copy(srcPath, destPath);
+                    copyWithExcludes(srcPath, destPath, pattern);
+                }
+            }
+        }
+        // Handle glob patterns like "docs/**"
+        else if (pattern.endsWith('/**')) {
+            const baseDir = pattern.replace('/**', '');
+            const srcPath = path.join(rootDir, baseDir);
+            const destPath = path.join(distPath, baseDir);
+
+            if (fs.existsSync(srcPath)) {
+                console.log(`Copying ${pattern}...`);
+                copyWithExcludes(srcPath, destPath, baseDir);
+            } else {
+                console.warn(`Warning: Source path not found: ${srcPath}`);
+            }
+        }
+        // Handle specific file patterns
+        else {
+            const srcPath = path.join(rootDir, pattern);
+
+            if (fs.existsSync(srcPath)) {
+                const relativePath = pattern;
+                const destPath = path.join(distPath, pattern);
+
+                if (!isExcluded(relativePath)) {
+                    console.log(`Copying ${pattern}...`);
+                    fs.mkdirSync(path.dirname(destPath), { recursive: true });
+
+                    const stat = fs.statSync(srcPath);
+                    if (stat.isDirectory()) {
+                        copyWithExcludes(srcPath, destPath, relativePath);
+                    } else {
+                        copyWithExcludes(srcPath, destPath, relativePath);
+                    }
                 }
             } else {
-                copy(srcPath, destPath);
+                console.warn(`Warning:Source path not found: ${srcPath}`);
             }
-        } else {
-            // Try globbing if it's a wildcard (very basic)
-            // For now, we assume the config lists directories or files explicitly enough
-            console.warn(`Warning: Source path not found: ${srcPath}`);
         }
     });
 }
