@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "prebuild": "node ../scripts/03-docs/render-mermaid.mjs",
     "build": "docusaurus build",
+    "prestart": "node ../scripts/03-docs/render-mermaid.mjs",
+    "start": "docusaurus start",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

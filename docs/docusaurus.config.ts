@@ -27,7 +27,8 @@ const config: Config = {
     require.resolve('docusaurus-lunr-search'),
   ],
 
-  themes: ['@docusaurus/theme-mermaid'],
+  // Mermaid diagrams are now pre-rendered to SVG at build time (P1-5)
+  // themes: ['@docusaurus/theme-mermaid'],
 
   // Fonts are now self-hosted in static/fonts/ - see custom.css
   // Removed external Google Fonts to eliminate render-blocking resources (P0-1)
@@ -64,7 +65,8 @@ const config: Config = {
   // Configure markdown processing
   markdown: {
     format: 'detect',
-    mermaid: true,
+    // Mermaid runtime disabled - diagrams pre-rendered to SVG (P1-5)
+    // mermaid: true,
     mdx1Compat: {
       comments: true,
       admonitions: true,
