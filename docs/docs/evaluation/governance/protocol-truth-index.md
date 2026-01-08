@@ -14,10 +14,6 @@ sidebar_label: Truth Index
 
 # Protocol Truth Index
 
-> [!IMPORTANT]
-> This document describes the **authoritative sources of protocol truth** for MPLP.
-> When evaluating claims about MPLP, this index provides the canonical reference.
-
 ---
 
 ## 1. L1 Core Schemas — Required Fields

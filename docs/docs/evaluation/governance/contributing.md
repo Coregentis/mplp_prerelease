@@ -16,11 +16,6 @@ sidebar_label: Contributing Guide
 
 ## Protocol Status: FROZEN
 
-> [!IMPORTANT]
-> **MPLP v1.0.0 is a FROZEN SPECIFICATION.**
-> 
-> Normative changes are NOT permitted in this repository branch. Any change to schemas, core logic, or normative documentation requires a new protocol version (e.g., v1.1 or v2.0) and must go through the formal RFC process.
-
 ## What You CAN Contribute
 
 | Contribution Type | Allowed | Process |

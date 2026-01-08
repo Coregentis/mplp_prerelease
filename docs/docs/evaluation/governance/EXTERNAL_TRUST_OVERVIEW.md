@@ -49,16 +49,6 @@ MPLP uses a **self-declaration model** for conformance:
 
 ### No "MPLP Certified" Claims
 
-> [!IMPORTANT]
-> **Forbidden Terms**
-> 
-> The following terms are NOT permitted in MPLP ecosystem:
-> - "MPLP Certified"
-> - "MPLP Approved"
-> - "MPLP Endorsed"
-> 
-> Valid terms: "MPLP-compatible", "MPLP-aligned", "Implements MPLP v1.0"
-
 ## Governance Transparency
 
 | Artifact | Location | Purpose |
