@@ -49,6 +49,31 @@ const MERMAID_CONFIG_DARK = {
 console.log('🎨 MPLP Mermaid Renderer - Build-Time SVG Generation');
 console.log('========================================\\n');
 
+// Extract concise caption for figure (different from alt - for SEO)
+function extractCaption(code, content, startIndex, filePath) {
+    // 1. Check for explicit title in mermaid frontmatter
+    const titleMatch = code.match(/^---\s*\ntitle:\s*(.+?)\s*\n---/m);
+    if (titleMatch) {
+        return titleMatch[1].trim();
+    }
+
+    // 2. Look for preceding heading (use as-is, without MPLP prefix)
+    const precedingText = content.substring(Math.max(0, startIndex - 500), startIndex);
+    const headingMatch = precedingText.match(/#+\s+([^\n]+)\s*$/m);
+    if (headingMatch) {
+        return headingMatch[1].trim();
+    }
+
+    // 3. Extract from first meaningful label in diagram
+    const labelMatch = code.match(/[\[\(\{]([^\]\)\}\n]+)[\]\)\}]/);
+    if (labelMatch && labelMatch[1].length < 60 && !labelMatch[1].match(/^[A-Z]$/)) {
+        return labelMatch[1].trim();
+    }
+
+    // 4. No caption (optional field)
+    return null;
+}
+
 // Ensure output directory exists
 if (!fs.existsSync(STATIC_MERMAID_DIR)) {
     fs.mkdirSync(STATIC_MERMAID_DIR, { recursive: true });
@@ -296,8 +321,16 @@ function processFile(filePath) {
         // Extract meaningful alt text with protocol context
         const altText = extractAltText(block.code, content, block.startIndex, filePath);
 
-        // Prepare replacement
-        const replacement = `<MermaidDiagram id="${diagramId}" alt="${altText}" />`;
+        // Extract caption (optional, for figcaption)
+        const caption = extractCaption(block.code, content, block.startIndex, filePath);
+
+        // Preserve source for machine readability (escaped for JSX)
+        const source = block.code.replace(/`/g, '\\`').replace(/\$/g, '\\$');
+
+        // Prepare replacement with all semantic layers
+        const replacement = caption
+            ? `<MermaidDiagram id="${diagramId}" alt="${altText}" caption="${caption}" source={\`${source}\`} />`
+            : `<MermaidDiagram id="${diagramId}" alt="${altText}" source={\`${source}\`} />`;
         replacements.push({
             original: block.fullMatch,
             replacement,
