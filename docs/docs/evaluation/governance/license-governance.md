@@ -3,7 +3,6 @@ sidebar_position: 5
 entry_surface: documentation
 doc_type: informative
 status: draft
-authority: none
 protocol_version: "1.0.0"
 doc_id: "DOC-EVAL-GOV-LICENSE-001"
 

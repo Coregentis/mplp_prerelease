@@ -2,7 +2,6 @@
 entry_surface: documentation
 doc_type: informative
 status: draft
-authority: none
 protocol_version: "1.0.0"
 doc_id: "DOC-MOD-INTERACTIONS-001"
 external_standards:
