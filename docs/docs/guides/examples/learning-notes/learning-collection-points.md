@@ -12,7 +12,6 @@ title: Learning Collection Points
 
 # Learning Collection Points
 
-> **Protocol**: MPLP v1.0.0 (Frozen)
 
 ## 1. Purpose
 

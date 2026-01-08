@@ -14,7 +14,6 @@ sidebar_label: MIP Process
 
 # MIP Process
 
-**Status**: Active
 
 
 ## 1. Purpose

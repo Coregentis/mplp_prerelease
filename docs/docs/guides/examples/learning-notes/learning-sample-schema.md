@@ -12,7 +12,6 @@ title: Learning Sample Schema
 
 # Learning Sample Schema
 
-> **Protocol**: MPLP v1.0.0 (Frozen)
 
 ## 1. Purpose
 

@@ -18,7 +18,6 @@ This document is normative and frozen. Changes require MPGC governance process.
 
 # Docs Freeze Declaration v1.0
 
-> **Status**: FROZEN
 > **Date**: 2025-12-27
 
 ## 1. Declaration

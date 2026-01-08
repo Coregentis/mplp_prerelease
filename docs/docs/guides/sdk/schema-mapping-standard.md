@@ -10,18 +10,8 @@ title: Schema Mapping Standard
 ---
 
 
-> [!FROZEN]
-> **MPLP Protocol v1.0.0 — Frozen Specification**
-> **Freeze Date**: 2025-12-03
-> **Status**: FROZEN (no breaking changes permitted)
-> **Governance**: MPLP Protocol Governance Committee (MPGC)
-> **License**: Apache-2.0
-> **Note**: Any normative change requires a new protocol version.
-
-
 # Schema Mapping Standard
 
-> **Status**: Normative
 
 ## 1. Introduction
 

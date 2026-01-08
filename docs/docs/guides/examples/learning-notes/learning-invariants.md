@@ -12,7 +12,6 @@ title: Learning Invariants
 
 # Learning Invariants
 
-> **Protocol**: MPLP v1.0.0 (Frozen)
 
 ## 1. Purpose
 

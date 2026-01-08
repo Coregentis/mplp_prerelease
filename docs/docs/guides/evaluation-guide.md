@@ -9,22 +9,8 @@ title: How to Evaluate MPLP
 ---
 
 
-> [!FROZEN]
-> **MPLP Protocol v1.0.0 — Frozen Specification**
-> **Freeze Date**: 2025-12-03
-> **Status**: FROZEN (no breaking changes permitted)
-> **Governance**: MPLP Protocol Governance Committee (MPGC)
-> **License**: Apache-2.0
-> **Note**: Any normative change requires a new protocol version.
-
-
-
 # How to Evaluate MPLP
 
-**Version**: 1.0
-**Status**: FROZEN
-**Authority**: Documentation Governance
-**Last Updated**: 2025-12-21
 
 ### If You Are an Enterprise Architect
 
