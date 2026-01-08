@@ -1,10 +1,13 @@
 ---
 entry_surface: documentation
-doc_type: informative
-status: draft
-authority: none
+doc_type: governance
+status: active
+authority: MPGC
+normativity: non-normative
+lifecycle_status: active
 protocol_version: "1.0.0"
 doc_id: "DOC-EVAL-GOV-INDEX-001"
+description: "Governance Constitution for the MPLP Protocol. Defines the 3-Layer Governance Model, MPGC authority, and governance processes."
 
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Governance Constitution
@@ -13,6 +16,10 @@ sidebar_label: Governance
 
 # Governance Constitution
 
+:::info[Disambiguation]
+**MPLP is not a software license** and does not define licensing terms.  
+This document is authoritative for **governance process and policy**, but non-normative for protocol technical requirements. All normative technical specifications are defined in the [Specification documents](/docs/specification).
+:::
 
 ## 1. The Supreme Authority
 
@@ -53,14 +60,25 @@ graph TD
 - **Process**: [Documentation Projection Governance](/docs/evaluation/governance/documentation-projection).
 - **Constraint**: Aligns with Layer 1 Truth.
 
-### Layer 3: Website Governance (Projection)
-**"How MPLP is PRESENTED"**
-- **Scope**: Marketing, Discovery, SEO.
+### Layer 3: Website Projection
+**"How MPLP is DISCOVERED"**
+- **Scope**: Discovery & Positioning (Protocol evaluation entry).
 - **Authority**: Website Maintainers.
-- **Process**: Website Truth Policy (See `website-governance/README.md` in repo root).
+- **Process**: Website Truth Policy (See `governance/05-website-governance/` in repo).
 - **Constraint**: Read-Only Projection of Layer 1 & 2.
+- **Boundaries**: No certification, no endorsement, no product claims.
 
-## 3. Governance Documents
+## 3. Relationship to Three-Entry Model
+
+The **3-Layer Governance Model** (responsibility) maps to the **Three-Entry Model** (discovery):
+
+| Three-Entry Model | 3-Layer Governance | Role |
+|:---|:---|:---|
+| **Website** (mplp.io) | Layer 3: Website Projection | Discovery & Positioning |
+| **Docs** (docs.mplp.io) | Layer 2: Docs Projection | Explanation & Reference |
+| **Repo** (GitHub) | Layer 1: Protocol Governance | Truth Source & Specification |
+
+## 4. Governance Documents
 
 | Document | Purpose |
 |:---|:---|
@@ -73,13 +91,14 @@ graph TD
 | [External Trust Overview](/docs/evaluation/governance/EXTERNAL_TRUST_OVERVIEW) | Trust model & forbidden claims |
 | [Protocol Truth Index](/docs/evaluation/governance/protocol-truth-index) | Authoritative truth sources |
 
-## 4. Release & Change History
+## 5. Release & Change History
 
 All protocol releases, freeze declarations, and change logs are maintained in:
 
 → [Release History](/docs/meta/release/mplp-v1.0.0-release-notes)
 
-## 5. External Trust
+## 6. External Trust
 
 MPLP is designed for **Zero-Trust** environments.
 See [External Trust Overview](/docs/evaluation/governance/EXTERNAL_TRUST_OVERVIEW) for the threat model and trust boundaries.
+
