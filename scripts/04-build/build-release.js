@@ -43,8 +43,23 @@ function processIncludes(config) {
 
     // Check if a path should be excluded
     const isExcluded = (relativePath) => {
+        // Normalize path separators
+        const normalized = relativePath.replace(/\\/g, '/');
+
         return excludePatterns.some(pattern => {
-            return minimatch(relativePath, pattern, { dot: true, matchBase: true });
+            // Direct match
+            if (minimatch(normalized, pattern, { dot: true })) {
+                return true;
+            }
+            // Also check if any parent path matches
+            const parts = normalized.split('/');
+            for (let i = 0; i < parts.length; i++) {
+                const partial = parts.slice(0, i + 1).join('/');
+                if (minimatch(partial, pattern, { dot: true })) {
+                    return true;
+                }
+            }
+            return false;
         });
     };
 
