@@ -111,6 +111,39 @@ function findDocsFiles(dir) {
     return results;
 }
 
+// Extract meaningful alt text from mermaid code or context
+function extractAltText(code, content, startIndex) {
+    // 1. Check for title in mermaid syntax (e.g., "%%{init: {'theme':'dark', 'themeVariables': { 'primaryColor': '#bb2528' }} }%%
+    // or "---\ntitle: Description\n---")
+    const titleMatch = code.match(/^---\s*\ntitle:\s*(.+?)\s*\n---/m) ||
+        code.match(/%%.*title["']?:\s*["']?([^"',}]+)/i);
+    if (titleMatch) {
+        return titleMatch[1].trim();
+    }
+
+    // 2. Extract graph type and first meaningful label
+    const graphTypeMatch = code.match(/^(graph|flowchart|sequenceDiagram|classDiagram|stateDiagram|erDiagram|gantt|pie)\s/i);
+    if (graphTypeMatch) {
+        const type = graphTypeMatch[1];
+        // Try to extract first node label for context
+        const labelMatch = code.match(/[\[\(\{]([^\]\)\}\n]+)[\]\)\}]/);
+        if (labelMatch && labelMatch[1].length < 50) {
+            return `${type.charAt(0).toUpperCase() + type.slice(1)} diagram: ${labelMatch[1].trim()}`;
+        }
+        return `${type.charAt(0).toUpperCase() + type.slice(1)} diagram`;
+    }
+
+    // 3. Look for preceding heading in markdown
+    const precedingText = content.substring(Math.max(0, startIndex - 500), startIndex);
+    const headingMatch = precedingText.match(/#+\s+([^\n]+)\s*$/m);
+    if (headingMatch) {
+        return `Diagram: ${headingMatch[1].trim()}`;
+    }
+
+    // 4. Default fallback
+    return 'Architecture diagram';
+}
+
 // Extract mermaid blocks from content
 function extractMermaidBlocks(content) {
     const blocks = [];
@@ -203,8 +236,11 @@ function processFile(filePath) {
             }
         }
 
+        // Extract meaningful alt text
+        const altText = extractAltText(block.code, content, block.startIndex);
+
         // Prepare replacement
-        const replacement = `<MermaidDiagram id="${diagramId}" />`;
+        const replacement = `<MermaidDiagram id="${diagramId}" alt="${altText}" />`;
         replacements.push({
             original: block.fullMatch,
             replacement,
