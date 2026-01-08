@@ -11,6 +11,7 @@ doc_id: "DOC-EVAL-GOV-LICENSE-001"
 title: License Governance
 sidebar_label: License
 description: "MPLP governance documentation: License Governance. Governance processes and policies."
+authority: Documentation Governance
 ---
 
 # License Governance

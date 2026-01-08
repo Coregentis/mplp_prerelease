@@ -11,6 +11,7 @@ title: Observability Overview
 sidebar_label: Observability Overview
 sidebar_position: 0
 description: "MPLP observability specification: Observability Overview. Defines event schemas and trace formats."
+authority: protocol
 ---
 
 # Observability Overview

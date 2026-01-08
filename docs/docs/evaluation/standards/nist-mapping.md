@@ -11,6 +11,7 @@ title: NIST AI RMF Mapping
 sidebar_label: NIST AI RMF Mapping
 sidebar_position: 3
 description: "MPLP standards mapping: NIST AI RMF Mapping. Relationship to external standards."
+authority: Documentation Governance
 ---
 
 # NIST AI RMF Mapping

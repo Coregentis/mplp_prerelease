@@ -11,6 +11,7 @@ doc_id: "DOC-EVAL-CONF-EVIDENCE-001"
 title: Evidence Model
 sidebar_label: Evidence Model
 description: "MPLP conformance evaluation: Evidence Model. Non-normative guidance for protocol conformance assessment."
+authority: Documentation Governance
 ---
 
 # Evidence Model

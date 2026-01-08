@@ -11,6 +11,7 @@ doc_id: "DOC-SEMANTIC-ANCHOR-REGISTRY-001"
 title: Semantic Anchor Registry
 sidebar_label: Semantic Anchors
 description: "MPLP specification: Semantic Anchor Registry. Normative protocol requirements."
+authority: Documentation Governance
 ---
 
 # Semantic Anchor Registry

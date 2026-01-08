@@ -11,6 +11,7 @@ title: "Transaction — Conceptual Overview"
 sidebar_label: "Transaction Explained"
 sidebar_position: 22
 description: "MPLP architecture documentation: Transaction — Conceptual Overview. Defines structural requirements and layer responsibilities."
+authority: protocol
 ---
 
 

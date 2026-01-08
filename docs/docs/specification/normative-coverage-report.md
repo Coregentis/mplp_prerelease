@@ -11,6 +11,7 @@ doc_id: "DOC-SEMANTIC-COVERAGE-REPORT-001"
 title: Normative Coverage Report
 sidebar_label: Coverage Report
 description: "MPLP specification: Normative Coverage Report. Normative protocol requirements."
+authority: Documentation Governance
 ---
 
 # Normative Coverage Report

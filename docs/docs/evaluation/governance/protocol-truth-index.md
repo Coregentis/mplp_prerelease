@@ -11,6 +11,7 @@ doc_id: "DOC-EVAL-GOV-TRUTH-001"
 title: Protocol Truth Index
 sidebar_label: Truth Index
 description: "MPLP governance documentation: Protocol Truth Index. Governance processes and policies."
+authority: Documentation Governance
 ---
 
 # Protocol Truth Index

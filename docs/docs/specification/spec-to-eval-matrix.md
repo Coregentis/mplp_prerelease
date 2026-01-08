@@ -11,6 +11,7 @@ doc_id: "DOC-SEMANTIC-SPEC-EVAL-MATRIX-001"
 title: Specification to Evaluation Matrix
 sidebar_label: Spec-Eval Matrix
 description: "MPLP specification: Specification to Evaluation Matrix. Normative protocol requirements."
+authority: Documentation Governance
 ---
 
 # Specification to Evaluation Matrix

@@ -11,6 +11,7 @@ doc_id: "DOC-EVAL-CONF-MODEL-001"
 title: Conformance Model
 sidebar_label: Conformance Model
 description: "MPLP conformance evaluation: Conformance Model. Non-normative guidance for protocol conformance assessment."
+authority: Documentation Governance
 ---
 
 # Conformance Model

@@ -11,6 +11,7 @@ title: Standards Positioning
 sidebar_label: Standards Positioning
 sidebar_position: 1
 description: "MPLP standards mapping: Standards Positioning. Relationship to external standards."
+authority: Documentation Governance
 ---
 
 # Standards Positioning

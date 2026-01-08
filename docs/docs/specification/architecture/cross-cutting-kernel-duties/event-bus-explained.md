@@ -11,6 +11,7 @@ title: "Event Bus — Conceptual Overview"
 sidebar_label: "Event Bus Explained"
 sidebar_position: 6
 description: "MPLP architecture documentation: Event Bus — Conceptual Overview. Defines structural requirements and layer responsibilities."
+authority: protocol
 ---
 
 

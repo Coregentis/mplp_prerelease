@@ -11,6 +11,7 @@ doc_id: "DOC-EVAL-TEST-OVERVIEW-001"
 title: Golden Test Suite Overview
 sidebar_label: Test Suite Overview
 description: "MPLP test documentation: Golden Test Suite Overview. Test suite structure and fixtures."
+authority: Documentation Governance
 ---
 
 # Golden Test Suite Overview

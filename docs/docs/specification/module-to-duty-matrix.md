@@ -11,6 +11,7 @@ doc_id: "DOC-SEMANTIC-MOD-DUTY-MATRIX-001"
 title: Module to Kernel Duty Matrix
 sidebar_label: Module-Duty Matrix
 description: "MPLP specification: Module to Kernel Duty Matrix. Normative protocol requirements."
+authority: Documentation Governance
 ---
 
 # Module to Kernel Duty Matrix

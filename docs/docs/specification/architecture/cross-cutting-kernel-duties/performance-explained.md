@@ -11,6 +11,7 @@ title: "Performance — Conceptual Overview"
 sidebar_label: "Performance Explained"
 sidebar_position: 14
 description: "MPLP architecture documentation: Performance — Conceptual Overview. Defines structural requirements and layer responsibilities."
+authority: protocol
 ---
 
 

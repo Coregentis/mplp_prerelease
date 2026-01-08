@@ -11,6 +11,7 @@ doc_id: "DOC-EVAL-GOV-DOC-PROJ-001"
 title: Documentation Projection Governance
 sidebar_label: Documentation Projection
 description: "MPLP governance documentation: Documentation Projection Governance. Governance processes and policies."
+authority: Documentation Governance
 ---
 
 # Documentation Projection Governance

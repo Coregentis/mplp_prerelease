@@ -11,6 +11,7 @@ doc_id: "DOC-SEMANTIC-ALIGNMENT-001"
 title: Semantic Alignment Overview
 sidebar_label: Semantic Alignment
 description: "MPLP specification: Semantic Alignment Overview. Normative protocol requirements."
+authority: Documentation Governance
 ---
 
 > Governance: MPGC

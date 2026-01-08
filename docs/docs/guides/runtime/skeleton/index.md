@@ -6,6 +6,7 @@ description: Interface-Level Contract for Profile-14-Golden Runtime
 status: frozen
 doc_type: normative
 
+authority: Documentation Governance
 ---
 
 

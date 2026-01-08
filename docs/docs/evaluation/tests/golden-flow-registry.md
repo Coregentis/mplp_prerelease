@@ -11,6 +11,7 @@ doc_id: "DOC-EVAL-TEST-REGISTRY-001"
 title: Golden Flow Registry
 sidebar_label: Flow Registry
 description: "MPLP test documentation: Golden Flow Registry. Test suite structure and fixtures."
+authority: Documentation Governance
 ---
 
 # Golden Flow Registry

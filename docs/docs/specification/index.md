@@ -10,6 +10,7 @@ doc_id: "DOC-SPEC-INDEX-001"
 title: Protocol Specification
 sidebar_position: 1
 description: "MPLP specification: Protocol Specification. Normative protocol requirements."
+authority: Documentation Governance
 ---
 
 # Protocol Specification

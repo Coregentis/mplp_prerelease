@@ -11,6 +11,7 @@ title: "Learning Feedback — Conceptual Overview"
 sidebar_label: "Learning Feedback Explained"
 sidebar_position: 8
 description: "MPLP architecture documentation: Learning Feedback — Conceptual Overview. Defines structural requirements and layer responsibilities."
+authority: protocol
 ---
 
 

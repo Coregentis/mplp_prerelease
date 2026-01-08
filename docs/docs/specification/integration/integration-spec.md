@@ -11,6 +11,7 @@ title: Integration Spec
 sidebar_label: Integration Spec
 sidebar_position: 1
 description: "MPLP integration specification: Integration Spec. Defines external system integration requirements."
+authority: Documentation Governance
 ---
 
 # Integration Spec

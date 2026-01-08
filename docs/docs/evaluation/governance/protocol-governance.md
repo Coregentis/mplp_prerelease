@@ -11,6 +11,7 @@ doc_id: "DOC-EVAL-GOV-MIP-001"
 title: MIP Process
 sidebar_label: MIP Process
 description: "MPLP governance documentation: MIP Process. Governance processes and policies."
+authority: Documentation Governance
 ---
 
 # MIP Process

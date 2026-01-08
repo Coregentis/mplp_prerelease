@@ -13,6 +13,7 @@ keywords:
   - portability
   - conformance
   - evidence
+authority: Documentation Governance
 ---
 
 # POSIX Analogy — Conceptual Mapping

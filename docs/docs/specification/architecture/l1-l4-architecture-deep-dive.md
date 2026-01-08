@@ -11,6 +11,7 @@ title: L1-L4 Architecture Deep Dive
 sidebar_label: Architecture Deep Dive
 sidebar_position: 6
 description: "MPLP architecture documentation: L1-L4 Architecture Deep Dive. Defines structural requirements and layer responsibilities."
+authority: Documentation Governance
 ---
 
 # L1-L4 Architecture Deep Dive

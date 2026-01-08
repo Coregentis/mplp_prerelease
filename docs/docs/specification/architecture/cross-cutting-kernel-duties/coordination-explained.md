@@ -11,6 +11,7 @@ title: "Coordination — Conceptual Overview"
 sidebar_label: "Coordination Explained"
 sidebar_position: 2
 description: "MPLP architecture documentation: Coordination — Conceptual Overview. Defines structural requirements and layer responsibilities."
+authority: protocol
 ---
 
 

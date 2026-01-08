@@ -11,6 +11,7 @@ title: "Observability — Conceptual Overview"
 sidebar_label: "Observability Explained"
 sidebar_position: 10
 description: "MPLP architecture documentation: Observability — Conceptual Overview. Defines structural requirements and layer responsibilities."
+authority: protocol
 ---
 
 

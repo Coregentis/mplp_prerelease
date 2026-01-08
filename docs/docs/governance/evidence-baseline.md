@@ -7,6 +7,7 @@ authority: none
 protocol_version: "1.0.0"
 doc_id: DOC-GOV-EVIDENCE-BASELINE
 description: "MPLP governance: Evidence Baseline. Protocol governance documentation."
+authority: Documentation Governance
 ---
 
 # Evidence Baseline
