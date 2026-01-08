@@ -45,6 +45,8 @@ include:
   - "governance/README.md"
   - "governance/public-surface/PSG-CROSSLINK-SSOT.yaml"
   - "governance/RELEASE_ATTESTATION_*.md"
+  # NOTE: .github/workflows/** EXCLUDED - OSS workflows in .github/oss-workflows/ (manual sync)
+
 
 exclude:
   # External repositories / submodules
