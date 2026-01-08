@@ -47,6 +47,11 @@ const FORBIDDEN_PATTERNS = [
     { pattern: /^>\s*\*\*Version\*\*:/gm, type: 'G', desc: '> **Version**: line' },
     { pattern: /^>\s*\*\*Scope\*\*:/gm, type: 'G', desc: '> **Scope**: line' },
     { pattern: /^>\s*\*\*Non-Goals\*\*:/gm, type: 'G', desc: '> **Non-Goals**: line' },
+
+    // Type H: FROZEN SPECIFICATION blocks and normative claims
+    { pattern: /:::info\[Frozen Specification\]/g, type: 'H', desc: ':::info[Frozen Specification] block' },
+    { pattern: /This document is normative and frozen/g, type: 'H', desc: 'Normative and frozen claim' },
+    { pattern: /\*\*Protocol Version\*\*:.*\*\*Freeze Date\*\*:/g, type: 'H', desc: 'Protocol Version + Freeze Date inline' },
 ];
 
 // Patterns to allow (Type D - explanation content, not metadata)
@@ -105,7 +110,7 @@ if (violations.length > 0) {
     console.log('\n❌ VIOLATIONS FOUND:\n');
 
     // Group by type
-    const byType = { A: [], B: [], C: [], E: [], F: [], G: [] };
+    const byType = { A: [], B: [], C: [], E: [], F: [], G: [], H: [] };
     violations.forEach(v => {
         if (byType[v.type]) byType[v.type].push(v);
     });

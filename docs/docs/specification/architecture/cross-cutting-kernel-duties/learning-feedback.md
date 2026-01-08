@@ -12,12 +12,6 @@ sidebar_label: Learning Feedback
 sidebar_position: 7
 ---
 
-:::info[Frozen Specification]
-**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
-
-This document is normative and frozen. Changes require MPGC governance process.
-:::
-
 # Learning Feedback
 
 ## Scope

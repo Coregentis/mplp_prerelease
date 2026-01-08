@@ -9,14 +9,6 @@ title: Maintainer Guide
 
 ---
 
-:::info[Frozen Specification]
-**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
-
-This document is normative and frozen. Changes require MPGC governance process.
-:::
-
-
-
 # Maintainer Guide
 
 

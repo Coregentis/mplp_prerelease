@@ -1,24 +1,24 @@
 ---
 sidebar_position: 3
-
 doc_type: governance
 status: frozen
-authority: MPGC
+authority: Documentation Governance
+normativity: informative
+lifecycle_status: frozen
+protocol_version: "1.0.0"
+description: "Documentation freeze declaration for MPLP v1.0.0. Records compliance audit and governance pivot."
 title: Docs Freeze Declaration v1.0
-
+sidebar_label: Freeze Declaration v1.0
 ---
-
-:::info[Frozen Specification]
-**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
-
-This document is normative and frozen. Changes require MPGC governance process.
-:::
-
-
 
 # Docs Freeze Declaration v1.0
 
-> **Date**: 2025-12-27
+:::info[Freeze Record]
+This document records the freeze declaration for MPLP v1.0.0 documentation.  
+**Freeze Date**: 2025-12-03 • **Governing Body**: MPGC • **Protocol Version**: 1.0.0
+:::
+
+> **Declaration Date**: 2025-12-27
 
 ## 1. Declaration
 
@@ -54,3 +54,4 @@ The following artifacts define the frozen state:
 
 **Signed,**
 *MPLP Protocol Governance Committee*
+

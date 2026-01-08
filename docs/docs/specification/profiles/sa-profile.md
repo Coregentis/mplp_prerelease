@@ -11,12 +11,6 @@ sidebar_position: 0
 title: Single-Agent Profile (SA)
 sidebar_label: SA Profile
 ---
-:::info[Frozen Specification]
-**Protocol Version**: 1.0.0 • **Freeze Date**: 2025-12-03 • **Authority**: MPGC
-
-This document is normative and frozen. Changes require MPGC governance process.
-:::
-
 # Single-Agent Profile (SA)
 
 ## Scope
