@@ -1,4 +1,37 @@
-﻿## [sdk-release-2026-01-04] — 2026-01-04
+﻿## [docs-meta-hardening] — 2026-01-09
+
+### 📋 Docs Meta Hardening & DocIdentityHeader Single Source
+
+#### Legacy Meta Cleanup
+- **Removed ~1200 lines** of duplicate/conflicting meta blocks from 161 pages
+- Deleted all `:::warning[Non-Normative]`, `FROZEN SPECIFICATION`, blockquote meta patterns
+- Gate v2 upgraded: detects 8 forbidden pattern types (A-H)
+
+#### Frontmatter Completeness Enforcement
+- **Gate v3**: Validates normativity enumeration (normative/informative/formative)
+- **Backfilled** normativity for 153 pages, description for 100 pages, authority for 55 pages
+- All 162 pages now have complete frontmatter (0 UNKNOWN)
+
+#### getDocIdentity.ts Hardening
+- Removed `doc_type` as `normativity` fallback (was causing UNKNOWN badges)
+- Added console warning for legacy doc_type usage
+- Only valid normativity enum values now accepted
+
+#### Scripts Added
+- `scripts/gates/docs-legacy-meta-gate.mjs` (Gate v2 - forbidden pattern detection)
+- `scripts/gates/docs-frontmatter-gate.mjs` (Gate v3 - normativity enum validation)
+- `scripts/gates/docs-description-backfill.mjs` (batch description generator)
+- `scripts/gates/docs-authority-backfill.mjs` (batch authority generator)
+- `scripts/gates/docs-normativity-backfill.mjs` (batch normativity generator)
+
+#### Gate Status
+- Gate 1-4: PASSED (Entity Alignment)
+- Gate v2: PASSED (0 legacy meta violations)
+- Gate v3: PASSED (162 complete, 0 UNKNOWN)
+
+---
+
+## [sdk-release-2026-01-04] — 2026-01-04
 
 ### 📦 Multi-Package SDK Release (npm + PyPI)
 

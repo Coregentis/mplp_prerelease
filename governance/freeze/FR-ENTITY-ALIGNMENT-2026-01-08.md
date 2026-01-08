@@ -16,7 +16,7 @@ This freeze record documents the completion of the Entity Alignment & GEO Harden
 3. **Docs Identity Headers** on all pages
 4. **Website Entity Alignment** (/what-is-mplp, entity card, JSON-LD)
 5. **Three-Entry Anchor Closure** (Website ↔ Docs ↔ Repo)
-6. **4 CI Gates** for continuous verification
+6. **6 CI Gates** for continuous verification (Gate 1-4 + Gate v2 + Gate v3)
 
 ---
 
@@ -103,6 +103,19 @@ This initiative explicitly **did not** address:
 **Checked**: 3 layering consistency signals  
 **Failures**: 0
 
+### Gate v2: Docs Legacy Meta Block Detection
+**Status**: ✅ PASSED  
+**Command**: `node scripts/gates/docs-legacy-meta-gate.mjs`  
+**Checked**: 162 markdown files for 8 forbidden pattern types (A-H)  
+**Violations**: 0
+
+### Gate v3: Docs Frontmatter Completeness
+**Status**: ✅ PASSED  
+**Command**: `node scripts/gates/docs-frontmatter-gate.mjs`  
+**Checked**: 162 pages for valid normativity enumeration  
+**Complete**: 162  
+**UNKNOWN**: 0
+
 ---
 
 ## Repro Steps
@@ -131,13 +144,15 @@ node scripts/gates/layering-consistency-gate.mjs
 ## Key Metrics
 
 - **Total PRs**: 8 (PR-0 through PR-7)
-- **Total Commits**: 7
-- **Docs Pages Covered**: 161
-- **Truth Source Injections**: 161 pages
+- **Total Commits**: 21 (Entity Alignment + Docs Meta Hardening)
+- **Docs Pages Covered**: 162
+- **Truth Source Injections**: 162 pages
 - **Entity Card Version**: protocol_version 1.0.0, schema_bundle_version 2.0.0
 - **Three-Entry Links**: 9 mutual links verified
 - **Disambiguation Blocks**: 4 standard blocks
-- **CI Gates**: 4 gates, all passing
+- **CI Gates**: 6 gates (Gate 1-4 + Gate v2 + Gate v3), all passing
+- **Legacy Meta Removed**: ~1200 lines
+- **Frontmatter Backfilled**: normativity (153), description (100), authority (55)
 
 ---
 
@@ -169,10 +184,10 @@ The following statements are now enforced across all three entry points:
 
 ## Verification
 
-**Frozen Commit**: `bab43f09`  
+**Frozen Commit**: `6306f973`  
 **Branch**: `V1.0release-20260104`  
-**Verified By**: Automated CI Gates  
-**Verification Date**: 2026-01-08
+**Verified By**: Automated CI Gates (6 gates)  
+**Verification Date**: 2026-01-09
 
 **Signature**: This freeze record is machine-verifiable via the 4 CI gates listed above.
 
