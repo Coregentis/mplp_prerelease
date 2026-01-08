@@ -4,7 +4,7 @@
 > **Protocol Version:** v1.0.0 — FROZEN  
 > **License:** Apache-2.0
 
-**MPLP is the lifecycle protocol for AI agent systems — defining how agents are created, operated, audited, and decommissioned.**
+**MPLP is a vendor-neutral lifecycle protocol for AI agent systems — defining how agents are created, operated, audited, and decommissioned.**
 
 *Not a framework. Not a runtime. Not a platform.*
 
@@ -18,10 +18,10 @@ It is the **single authoritative location** for:
 
 - Protocol schemas (frozen)
 - Reference SDK source packages
-- Cross-language and Golden Flow tests
+- Golden Flow tests & Cross-language validation
 - Documentation source (docs.mplp.io)
 - Governance constitution files
-- Conformance & Interoperability Definitions
+- Conformance & Interoperability definitions
 
 **This repository is not a marketing site and not a tutorial.**
 
@@ -49,13 +49,36 @@ MPLP uses a three-entry model. Each surface has a strict, non-overlapping role.
 
 ```
 .
-├── governance/           # Constitution files (Entry Model, Document Format, Frozen Header)
-├── docs/                 # Documentation source (docs.mplp.io)
-├── schemas/              # Frozen protocol schemas (L1/L2)
-├── packages/             # Reference SDKs (TypeScript / Python)
-├── examples/             # Usage examples (non-normative)
-├── tests/                # Golden Flows, cross-language & invariant tests
-└── tools/                # Linting, audit, and governance tooling
+├── schemas/                  # Frozen protocol schemas (v2)
+│   └── v2/                   # 10 module schemas + invariants + events
+├── packages/                 # Reference SDKs
+│   ├── npm/                  # TypeScript packages (@mplp/*)
+│   ├── pypi/                 # Python SDK (mplp-sdk)
+│   └── sources/              # SDK source code
+├── tests/                    # Protocol validation suites
+│   ├── golden/               # Golden Flow tests (9 flows)
+│   │   ├── flows/            # Flow implementations
+│   │   ├── harness/          # Test harness
+│   │   └── invariants/       # Invariant checks
+│   ├── cross-language/       # Cross-language validation
+│   │   ├── builders/         # Builder tests
+│   │   ├── runtime/          # Runtime tests
+│   │   └── validation/       # Validation tests
+│   ├── runtime-compat/       # Runtime compatibility tests
+│   └── schema-alignment/     # Schema alignment tests
+├── docs/                     # Documentation source (docs.mplp.io)
+├── governance/               # Constitution & governance files
+│   └── 01-constitutional/    # CONST-001 to CONST-006
+├── examples/                 # Usage examples (multi-language)
+│   ├── ts-single-agent-basic/
+│   ├── ts-multi-agent-collab/
+│   ├── py-basic-flow/
+│   ├── go-basic-flow/
+│   ├── java-basic-flow/
+│   └── integration/
+├── scripts/                  # Build & validation scripts
+│   └── semantic/             # Semantic linting tools
+└── assets/                   # Diagrams & brand resources
 ```
 
 ---
@@ -65,12 +88,38 @@ MPLP uses a three-entry model. Each surface has a strict, non-overlapping role.
 - **Protocol Version:** MPLP v1.0.0
 - **Specification State:** FROZEN (no breaking changes permitted)
 - **Schemas:** Frozen under `schemas/v2/`
-- **Golden Flows:** GF-01 – GF-05 verified via cross-language tests
+- **Golden Flows:** 9 flows verified (GF-01–05, SA-01–02, MAP-01–02)
 - **Reference Implementations:** Partial by design (non-normative)
 
 > **Note:**
 > Absence of a reference SDK implementation does not imply a module is experimental.
 > Protocol obligations are defined by schemas and specifications, not by SDK coverage.
+
+---
+
+## Test Suites
+
+MPLP provides comprehensive test suites for protocol validation:
+
+### Golden Flows
+
+| Flow ID | Name | Profile |
+|---------|------|---------|
+| `flow-01` | Single Agent – Happy Path | Core |
+| `flow-02` | Single Agent – Large Plan | Core |
+| `flow-03` | Single Agent – With Tools | Core |
+| `flow-04` | Single Agent – LLM Enrichment | Core |
+| `flow-05` | Single Agent – Confirm Required | Core |
+| `sa-flow-01` | SA Profile – Basic | SA Profile |
+| `sa-flow-02` | SA Profile – Step Evaluation | SA Profile |
+| `map-flow-01` | MAP Profile – Turn Taking | MAP Profile |
+| `map-flow-02` | MAP Profile – Broadcast Fanout | MAP Profile |
+
+### Validation Suites
+
+- **Cross-Language Tests:** Validate consistent behavior across TypeScript, Python, Go
+- **Runtime Compatibility:** Ensure runtime implementations conform to protocol
+- **Schema Alignment:** Verify schema consistency across modules
 
 ---
 
@@ -103,7 +152,6 @@ The following SDKs are maintained as **Reference Implementations** of the protoc
 | `@mplp/compliance` | [LEGACY] Use @mplp/conformance | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/compliance) |
 | `@mplp/runtime-minimal` | Reference Runtime Implementation | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/runtime-minimal) |
 | `@mplp/devtools` | CLI & Debugging Tools | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/devtools) |
-| `@mplp/validator` | Protocol Validator CLI | `v1.0.0` | *internal* |
 
 ### Python SDK
 
@@ -144,10 +192,13 @@ Documentation includes:
 ## Governance
 
 - **Protocol Governance:** MPGC (MPLP Protocol Governance Committee)
-- **Constitution Files:** Located in `governance/`
-  - `ENTRY_MODEL_SPEC.md` — Three-entry model definition
-  - `DOCUMENT_FORMAT_SPEC.md` — Document format requirements
-  - `FROZEN_HEADER_SPEC.md` — Frozen header specification
+- **Constitution Files:** Located in `governance/01-constitutional/`
+  - `CONST-001` — Entry Model Specification
+  - `CONST-002` — Document Format Specification
+  - `CONST-003` — Frozen Header Specification
+  - `CONST-004` — Doc Audit Methodology
+  - `CONST-005` — Authoring Constitution
+  - `CONST-006` — Document Type Outlines & Depth Rules
 
 Any change that affects schemas or protocol semantics follows the MPGC process.
 
@@ -157,7 +208,7 @@ Any change that affects schemas or protocol semantics follows the MPGC process.
 
 This repository accepts contributions within defined governance boundaries.
 
-Before proposing changes, review the constitution files in `governance/`.
+Before proposing changes, review the constitution files in `governance/01-constitutional/`.
 
 Pull requests that introduce new protocol semantics, schema changes, or compliance claims will be reviewed under MPGC governance.
 

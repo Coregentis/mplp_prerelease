@@ -1,1 +1,109 @@
-# Temporarily disabled for full backup
+# ============================================
+# MPLP Protocol v1.0.0 — Open Source .gitignore
+# Based on release-config.yaml
+# ============================================
+
+# Generated reports
+reports/
+*.log
+test_output.txt
+test_output_v2.txt
+test_output_py.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+
+# Node modules
+node_modules/
+.pnpm-store/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+/dist/
+/build/
+packages/sources/*/dist/
+packages/sources/*/build/
+
+# Keep publish-ready dist for npm packages
+!packages/npm/*/dist/
+
+# Docusaurus build and cache
+docs/.docusaurus/
+docs/build/
+docs/node_modules/
+
+# Documentation temporary and backup files
+docs/.cache/
+docs/*-backup*/
+docs/*-corrupted/
+docs/build-*.txt
+docs/*.ps1
+
+# Internal process files and scripts
+fix-*.ps1
+*.ps1
+
+# Backup and internal directories (anywhere)
+*-backup*/
+*-internal/
+*-draft/
+*-corrupted/
+
+# Debug and development scripts
+scripts/debug-*.ts
+
+# Test output and temporary files
+*-test-result.txt
+test-*.txt
+*_output.txt
+pnpm-test-result.txt
+
+# Lock files that may contain local paths
+package-lock.json
+
+# Antigravity/Agent artifacts
+.agent/
+.antigravityignore
+
+# Internal development directories
+docs-upgrade-kit/
+.archive/
+tools/
+
+# === OSS Release Exclusions (per release-config.yaml) ===
+
+# Website (separate repository)
+MPLP_website/
+
+# Internal governance artifacts (not for public release)
+governance/03-sdk-release/
+governance/05-website-governance/
+governance/06-artifacts/
+governance/99-archive/
+governance/script-audit/
+
+# Governance operational files
+*_AUDIT_REPORT.*
+*_WAIVERS.yaml
+*_FREEZE_RECORD_*.md
+
+# Release scripts (internal)
+scripts/release/
+
+# Temporary files to clean
+1.0.6
+.gitignore.backup
+DEPRECATED_GOVERNANCE_NOTICE.md
