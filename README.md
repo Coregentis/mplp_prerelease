@@ -61,6 +61,26 @@ MPLP uses a three-entry model. Each surface has a strict, non-overlapping role.
 
 > Note: MPLP Validation Lab (if present) is **evidence-based evaluation** only — it does not host execution and is not certification.
 
+### Anchor Closure
+
+Each entry point has stable anchors for cross-referencing:
+
+**Website Anchors**:
+- [What is MPLP?](https://www.mplp.io/what-is-mplp) — Definition & disambiguation
+- [Entity Card](https://www.mplp.io/assets/geo/mplp-entity.json) — Machine-readable definition
+- [POSIX Analogy](https://www.mplp.io/posix-analogy) — Conceptual lens (not compatibility)
+
+**Documentation Anchors**:
+- [Entry Points Reference](https://docs.mplp.io/docs/reference/entrypoints) — Three-entry model & anchors
+- [Specification](https://docs.mplp.io/docs/specification) — Normative requirements
+
+**Repository Anchors**:
+- [Schemas](./schemas/v2/) — JSON Schema definitions (authoritative)
+- [Tests](./tests/golden/flows/) — Golden flows & validators
+- [Entity Definition](./governance/entity/) — Canonical entity package
+
+**Disambiguation**: MPLP = Multi-Agent Lifecycle Protocol (not a license). MPLP is not POSIX (conceptual lens only).
+
 ---
 
 ## 4-Layer Architecture (L1–L4)

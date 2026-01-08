@@ -1,0 +1,639 @@
+[
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/conformance/conformance-model.md",
+    "line": 172,
+    "snippet": "**Exclusions**: Certification, legal compliance, quality guarantees"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/conformance/index.mdx",
+    "line": 30,
+    "snippet": "- **Certification**, endorsement, or compliance badges"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/conformance/index.mdx",
+    "line": 79,
+    "snippet": "### 4.3 Non-Certification"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/conformance/index.mdx",
+    "line": 82,
+    "snippet": "- Certification programs"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/conformance/index.mdx",
+    "line": 86,
+    "snippet": "Conformance is a **binary outcome** (conformant / non-conformant / incomplete-evidence), not a score"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/conformance/index.mdx",
+    "line": 122,
+    "snippet": "**Exclusions**: Certification, legal compliance, vendor endorsement"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "evaluation/conformance/index.mdx",
+    "line": 30,
+    "snippet": "- **Certification**, endorsement, or compliance badges"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "evaluation/conformance/index.mdx",
+    "line": 83,
+    "snippet": "- Compliance badges"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/conformance/roadmap.mdx",
+    "line": 53,
+    "snippet": "| Certification | ❌ Not planned | Outside scope |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/conformance/roadmap.mdx",
+    "line": 109,
+    "snippet": "| **Certification programs** | MPLP is not a certification body |"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "evaluation/conformance/roadmap.mdx",
+    "line": 54,
+    "snippet": "| Compliance badges | ❌ Not planned | Outside scope |"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "evaluation/conformance/roadmap.mdx",
+    "line": 110,
+    "snippet": "| **Compliance badges** | No endorsement or branding |"
+  },
+  {
+    "term": "certified",
+    "severity": "medium",
+    "file": "evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+    "line": 57,
+    "snippet": "### No \"MPLP Certified\" Claims"
+  },
+  {
+    "term": "certified",
+    "severity": "medium",
+    "file": "evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+    "line": 63,
+    "snippet": "> - \"MPLP Certified\""
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+    "line": 32,
+    "snippet": "| A Certification Body | MPLP does not certify vendors or issue compliance badges |"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+    "line": 32,
+    "snippet": "| A Certification Body | MPLP does not certify vendors or issue compliance badges |"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+    "line": 67,
+    "snippet": "> Valid terms: \"MPLP-compatible\", \"MPLP-aligned\", \"Implements MPLP v1.0\""
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "evaluation/governance/compatibility-matrix.md",
+    "line": 44,
+    "snippet": "MPLP ensures protocol objects are compatible across language SDKs:"
+  },
+  {
+    "term": "certified",
+    "severity": "medium",
+    "file": "evaluation/governance/protocol-truth-index.md",
+    "line": 243,
+    "snippet": "| \"MPLP certified\" | No certification program |"
+  },
+  {
+    "term": "certified",
+    "severity": "medium",
+    "file": "evaluation/governance/protocol-truth-index.md",
+    "line": 245,
+    "snippet": "| \"certified partner\" | No partnership program |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/governance/protocol-truth-index.md",
+    "line": 242,
+    "snippet": "| \"MPLP compliant\" | No certification authority |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/governance/protocol-truth-index.md",
+    "line": 243,
+    "snippet": "| \"MPLP certified\" | No certification program |"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "evaluation/governance/protocol-truth-index.md",
+    "line": 246,
+    "snippet": "| \"compliance badge\" | No badge system |"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "evaluation/governance/versioning-policy.md",
+    "line": 38,
+    "snippet": "| **MINOR** | Backward-compatible additions | 1.0.0 → 1.1.0 |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/standards/iso-mapping.md",
+    "line": 29,
+    "snippet": "> All mappings are illustrative only and do not imply certification, endorsement, or compliance with"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/standards/iso-mapping.md",
+    "line": 34,
+    "snippet": "It does **not** claim that MPLP satisfies, implements, or replaces any ISO standard or certification"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/standards/iso-mapping.md",
+    "line": 130,
+    "snippet": "This mapping is provided for **informational purposes only**. It does not constitute legal advice or"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/standards/iso-mapping.md",
+    "line": 132,
+    "snippet": "Organizations seeking ISO 42001 certification should:"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/standards/iso-mapping.md",
+    "line": 133,
+    "snippet": "1. Consult with accredited certification bodies"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/standards/nist-mapping.md",
+    "line": 29,
+    "snippet": "> All mappings are illustrative only and do not imply certification, endorsement, or compliance with"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/standards/nist-mapping.md",
+    "line": 122,
+    "snippet": "This mapping is provided for **informational purposes only**. It does not constitute legal advice or"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/tests/cross-language-overview.md",
+    "line": 6,
+    "snippet": "description: \"Cross-language test suite overview and inventory. Projection of Repo tests; non-certif"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/tests/cross-language-overview.md",
+    "line": 23,
+    "snippet": "- **Out-of-scope**: Certification, ranking, endorsement, vendor claims"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "evaluation/tests/cross-language-overview.md",
+    "line": 52,
+    "snippet": "- Does not issue badges"
+  },
+  {
+    "term": "ranking",
+    "severity": "medium",
+    "file": "evaluation/tests/cross-language-overview.md",
+    "line": 23,
+    "snippet": "- **Out-of-scope**: Certification, ranking, endorsement, vendor claims"
+  },
+  {
+    "term": "equivalent",
+    "severity": "low",
+    "file": "evaluation/tests/cross-language-overview.md",
+    "line": 34,
+    "snippet": "| CL-01 | Builder Output Equivalence | `tests/cross-language/builders/` | TS and Python SDK builders"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/tests/golden-test-suite-overview.md",
+    "line": 28,
+    "snippet": "It is **not** a certification tool or a compliance enforcement mechanism. It is a collection of data"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/tests/runtime-compat-overview.md",
+    "line": 6,
+    "snippet": "description: \"Runtime compatibility test suite overview and inventory. Projection of Repo tests; non"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/tests/runtime-compat-overview.md",
+    "line": 23,
+    "snippet": "- **Out-of-scope**: \"Official compatibility\" claims, certification, endorsements"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "evaluation/tests/runtime-compat-overview.md",
+    "line": 51,
+    "snippet": "- Does not issue compatibility badges"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/tests/schema-alignment-overview.md",
+    "line": 6,
+    "snippet": "description: \"Schema alignment test suite overview and inventory. Projection of Repo tests; non-cert"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "evaluation/tests/schema-alignment-overview.md",
+    "line": 23,
+    "snippet": "- **Out-of-scope**: Claims of regulatory compliance, certification, endorsements"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "evaluation/tests/schema-alignment-overview.md",
+    "line": 50,
+    "snippet": "- Does not issue badges"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/adoption/adoption-signals.md",
+    "line": 111,
+    "snippet": "| **Certifications** | No external validation |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/adoption/index.mdx",
+    "line": 29,
+    "snippet": "- A certification"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/adoption/index.mdx",
+    "line": 115,
+    "snippet": "| **Adoption certification** | Self-declared, no authority |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/adoption/index.mdx",
+    "line": 132,
+    "snippet": "**Key Insight**: Adoption = Lifecycle state, not certification"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "guides/adoption/index.mdx",
+    "line": 30,
+    "snippet": "- A badge or endorsement"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "guides/adoption/index.mdx",
+    "line": 116,
+    "snippet": "| **Adoption badges** | No endorsement |"
+  },
+  {
+    "term": "certified",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 83,
+    "snippet": "If MPLP tracked or certified adoption:"
+  },
+  {
+    "term": "certified",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 127,
+    "snippet": "**Key Principle**: Adoption is self-declared, not certified"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 34,
+    "snippet": "### 2.1 Adoption Certification"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 38,
+    "snippet": "| **\"MPLP Adopter\" certification** | No certification authority |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 41,
+    "snippet": "| **Adoption levels** | No tiered certification |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 85,
+    "snippet": "- We would make judgments (certification authority)"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 115,
+    "snippet": "| **Clear boundaries** | Adoption ≠ Conformance ≠ Certification |"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 45,
+    "snippet": "### 2.2 Adoption Badges"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 49,
+    "snippet": "| **\"Powered by MPLP\" badges** | No endorsement |"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 51,
+    "snippet": "| **Partner badges** | Not a partnership |"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "guides/adoption/non-goals.md",
+    "line": 53,
+    "snippet": "**Implication**: Organizations may state MPLP adoption, but MPLP does not provide official badges."
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/enterprise/index.mdx",
+    "line": 144,
+    "snippet": "| **Enterprise certification** | Not a certification body |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/enterprise/index.mdx",
+    "line": 173,
+    "snippet": "**Exclusions**: Certification, compliance guarantees, commercial offerings"
+  },
+  {
+    "term": "certified",
+    "severity": "medium",
+    "file": "guides/enterprise/non-goals.md",
+    "line": 39,
+    "snippet": "| **Certified Vendor** badges | No vendor endorsement |"
+  },
+  {
+    "term": "certified",
+    "severity": "medium",
+    "file": "guides/enterprise/non-goals.md",
+    "line": 40,
+    "snippet": "| **Certified Runtime** lists | Vendor-neutral |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/enterprise/non-goals.md",
+    "line": 34,
+    "snippet": "### 2.1 Certification Programs"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/enterprise/non-goals.md",
+    "line": 38,
+    "snippet": "| **MPLP Certification** | Not a certification body |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/enterprise/non-goals.md",
+    "line": 41,
+    "snippet": "| **Certification fees** | Not a commercial program |"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/enterprise/non-goals.md",
+    "line": 43,
+    "snippet": "**Implication**: Third parties may offer certification programs that reference MPLP. These are not e"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/enterprise/non-goals.md",
+    "line": 94,
+    "snippet": "- Certification → We pick winners"
+  },
+  {
+    "term": "badge",
+    "severity": "medium",
+    "file": "guides/enterprise/non-goals.md",
+    "line": 39,
+    "snippet": "| **Certified Vendor** badges | No vendor endorsement |"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "guides/examples/learning-notes/learning-overview.md",
+    "line": 162,
+    "snippet": "| Schemas are stable | **REQUIRED** | Frozen, backward-compatible |"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "guides/examples/vendor-neutral-llm-integration.md",
+    "line": 32,
+    "snippet": "- **Portability**: The same agent code runs with OpenAI, Anthropic, local Llama models, or any OpenA"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "guides/examples/vendor-neutral-llm-integration.md",
+    "line": 78,
+    "snippet": "The `HttpLlmClient` is a reference implementation that works with any OpenAI-compatible HTTP endpoin"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "guides/runtime/runtime-authority.md",
+    "line": 63,
+    "snippet": "- Claim validation, certification, or compliance outcomes."
+  },
+  {
+    "term": "equivalent",
+    "severity": "low",
+    "file": "guides/sdk/schema-mapping-standard.md",
+    "line": 382,
+    "snippet": "2. **Cross-Language Builder Tests** - Verify TS and Py produce equivalent JSON"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "intro.mdx",
+    "line": 63,
+    "snippet": "- a certification, endorsement, or compliance authority."
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "introduction/glossary.md",
+    "line": 40,
+    "snippet": "**Definition (Mirror):** Records immutable execution history using OpenTelemetry-compatible spans an"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "introduction/mplp-v1.0-protocol-overview.md",
+    "line": 70,
+    "snippet": "4.  **Trace**: Records immutable execution history with OpenTelemetry-compatible spans (`mplp-trace."
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "introduction/posix-analogy-mapping.md",
+    "line": 7,
+    "snippet": "description: \"A conceptual mapping (analogy) between POSIX interface ideas and MPLP's schema-defined"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "introduction/posix-analogy-mapping.md",
+    "line": 90,
+    "snippet": "**No.** MPLP provides evaluation mechanisms (Golden Flows, Validation Lab) but does not offer certif"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "introduction/posix-analogy-mapping.md",
+    "line": 80,
+    "snippet": "### Is MPLP compatible with POSIX?"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "meta/release/maintainer-guide.md",
+    "line": 66,
+    "snippet": "2. Backward compatible"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "specification/architecture/l1-core-protocol.md",
+    "line": 372,
+    "snippet": "- **JSON Schema Draft-07** compatible validator"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "specification/architecture/l1-core-protocol.md",
+    "line": 518,
+    "snippet": "- Adding **optional** fields (backward compatible)"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "specification/modules/dialog-module.md",
+    "line": 96,
+    "snippet": "**MPLP Dialog uses OpenAI-compatible format**:"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "specification/modules/dialog-module.md",
+    "line": 430,
+    "snippet": "**Message Format**: OpenAI/Anthropic compatible (role, content, timestamp)"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "specification/modules/trace-module.md",
+    "line": 125,
+    "snippet": "## 4. Span Hierarchy (W3C Compatible)"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "specification/modules/trace-module.md",
+    "line": 144,
+    "snippet": "**MPLP traces are compatible with W3C Trace Context**:"
+  },
+  {
+    "term": "compatible",
+    "severity": "low",
+    "file": "specification/observability/runtime-trace-format.md",
+    "line": 270,
+    "snippet": "**W3C Compatible**: Yes (with ID conversion)"
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "specification/semantic-alignment-overview.md",
+    "line": 22,
+    "snippet": "> This document does not define protocol requirements, impose obligations, or serve as a compliance "
+  },
+  {
+    "term": "certification",
+    "severity": "medium",
+    "file": "specification/semantic-alignment-overview.md",
+    "line": 148,
+    "snippet": "- Neither layer makes compliance or certification claims"
+  }
+]

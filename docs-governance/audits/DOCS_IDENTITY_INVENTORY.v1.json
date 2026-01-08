@@ -1,0 +1,2166 @@
+[
+  {
+    "path": "evaluation/conformance/conformance-model.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/conformance/conformance-model.md",
+    "doc_id": "DOC-EVAL-CONF-MODEL-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/conformance/evaluation-dimensions.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/conformance/evaluation-dimensions.md",
+    "doc_id": "DOC-EVAL-CONF-DIM-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/conformance/evidence-model.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/conformance/evidence-model.md",
+    "doc_id": "DOC-EVAL-CONF-EVIDENCE-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/conformance/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/conformance/index.mdx",
+    "doc_id": "DOC-EVAL-CONF-INDEX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/conformance/results-and-status.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/conformance/results-and-status.md",
+    "doc_id": "DOC-EVAL-CONF-RESULTS-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/conformance/roadmap.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/conformance/roadmap.mdx",
+    "doc_id": "DOC-EVAL-CONF-ROADMAP-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/gf-01.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/gf-01.mdx",
+    "doc_id": "DOC-EVAL-FLOW-01-001",
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/gf-02.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/gf-02.mdx",
+    "doc_id": "DOC-EVAL-FLOW-02-001",
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/gf-03.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/gf-03.mdx",
+    "doc_id": "DOC-EVAL-FLOW-03-001",
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/gf-04.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/gf-04.mdx",
+    "doc_id": "DOC-EVAL-FLOW-04-001",
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/gf-05.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/gf-05.mdx",
+    "doc_id": "DOC-EVAL-FLOW-05-001",
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/index.mdx",
+    "doc_id": "DOC-EVAL-GF-INDEX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/map-flow-01.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/map-flow-01.mdx",
+    "doc_id": "DOC-EVAL-MAP-FLOW-01-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/map-flow-02.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/map-flow-02.mdx",
+    "doc_id": "DOC-EVAL-MAP-FLOW-02-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/sa-flow-01.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/sa-flow-01.mdx",
+    "doc_id": "DOC-EVAL-SA-FLOW-01-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/golden-flows/sa-flow-02.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/golden-flows/sa-flow-02.mdx",
+    "doc_id": "DOC-EVAL-SA-FLOW-02-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+    "doc_id": "DOC-EVAL-GOV-TRUST-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/compatibility-matrix.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/compatibility-matrix.md",
+    "doc_id": "DOC-EVAL-GOV-COMPAT-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/contributing.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/contributing.md",
+    "doc_id": "DOC-EVAL-GOV-CONTRIB-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/documentation-projection.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/documentation-projection.md",
+    "doc_id": "DOC-EVAL-GOV-DOC-PROJ-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/index.mdx",
+    "doc_id": "DOC-EVAL-GOV-INDEX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/license-governance.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/license-governance.md",
+    "doc_id": "DOC-EVAL-GOV-LICENSE-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/protocol-governance.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/protocol-governance.md",
+    "doc_id": "DOC-EVAL-GOV-MIP-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/protocol-truth-index.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/protocol-truth-index.md",
+    "doc_id": "DOC-EVAL-GOV-TRUTH-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/security-policy.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/security-policy.md",
+    "doc_id": "DOC-EVAL-GOV-SECURITY-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/governance/versioning-policy.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/versioning-policy.md",
+    "doc_id": "DOC-EVAL-GOV-VERSION-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/index.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/index.md",
+    "doc_id": "DOC-EVAL-INDEX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/standards/iso-mapping.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/standards/iso-mapping.md",
+    "doc_id": "DOC-EVAL-STD-ISO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/standards/nist-mapping.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/standards/nist-mapping.md",
+    "doc_id": "DOC-EVAL-STD-NIST-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/standards/positioning.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/standards/positioning.md",
+    "doc_id": "DOC-EVAL-STD-POS-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/tests/cross-language-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/tests/cross-language-overview.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Cross-language test suite overview and inventory. Projection of Repo tests; non-certification.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/tests/golden-fixture-format.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/tests/golden-fixture-format.md",
+    "doc_id": "DOC-EVAL-TEST-FIXTURE-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/tests/golden-flow-registry.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/tests/golden-flow-registry.md",
+    "doc_id": "DOC-EVAL-TEST-REGISTRY-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/tests/golden-test-suite-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/tests/golden-test-suite-overview.md",
+    "doc_id": "DOC-EVAL-TEST-OVERVIEW-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "evaluation/tests/runtime-compat-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/tests/runtime-compat-overview.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Runtime compatibility test suite overview and inventory. Projection of Repo tests; non-certification.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/tests/schema-alignment-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/tests/schema-alignment-overview.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Schema alignment test suite overview and inventory. Projection of Repo tests; non-certification.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/tests/test-architecture-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/tests/test-architecture-overview.md",
+    "doc_id": "DOC-EVAL-TEST-ARCH-001",
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Overview of the MPLP testing architecture including test categories, locations, and evidence mapping.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "governance/evidence-baseline.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/governance/evidence-baseline.md",
+    "doc_id": "DOC-GOV-EVIDENCE-BASELINE",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "guides/adoption/adoption-signals.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/adoption/adoption-signals.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Defines signals that indicate MPLP adoption stages.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/adoption/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/adoption/index.mdx",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Defines what MPLP adoption means and the adoption lifecycle stages.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/adoption/non-goals.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/adoption/non-goals.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Explicit non-goals for MPLP Adoption.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/conformance-checklist.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/conformance-checklist.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Self-verification checklist for assessing MPLP v1.0 conformance levels (L1-L3).",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/conformance-guide.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/conformance-guide.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Step-by-step guide for achieving MPLP protocol conformance at L1, L2, and L3 levels.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/enterprise/enterprise-scenarios.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/enterprise/enterprise-scenarios.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Evidence-centered enterprise scenario cards showing constraint → evidence → conformance mapping.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/enterprise/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/enterprise/index.mdx",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Organizational, temporal, and governance constraints that emerge when agent systems operate at scale.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/enterprise/non-goals.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/enterprise/non-goals.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Explicit non-goals for MPLP Enterprise context.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/evaluation-guide.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/evaluation-guide.md",
+    "doc_id": null,
+    "doc_type": "governance",
+    "status": "frozen",
+    "authority": "Documentation Governance",
+    "description": "Guide for evaluating MPLP for enterprise architects and compliance reviewers.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/_merged_from_07a/example-01-minimal-sa-lifecycle.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/_merged_from_07a/example-01-minimal-sa-lifecycle.mdx",
+    "doc_id": null,
+    "doc_type": null,
+    "status": null,
+    "authority": null,
+    "description": "A non-normative example demonstrating a minimal Single-Agent lifecycle.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "normativity",
+      "lifecycle_status",
+      "authority"
+    ]
+  },
+  {
+    "path": "guides/examples/_merged_from_07a/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/_merged_from_07a/index.mdx",
+    "doc_id": null,
+    "doc_type": null,
+    "status": null,
+    "authority": null,
+    "description": "Non-normative executable examples demonstrating MPLP protocol semantics.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "normativity",
+      "lifecycle_status",
+      "authority"
+    ]
+  },
+  {
+    "path": "guides/examples/error-recovery-flow.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/error-recovery-flow.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Example flow demonstrating error handling and recovery patterns in MPLP.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/learning-notes/learning-collection-points.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/learning-notes/learning-collection-points.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Defines when and how to generate LearningSamples during MPLP execution.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/learning-notes/learning-feedback-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/learning-notes/learning-feedback-overview.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Overview of the MPLP learning feedback loop including sample collection and training.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/learning-notes/learning-invariants.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/learning-notes/learning-invariants.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Validation rules for LearningSamples, covering core and family-specific invariants.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/learning-notes/learning-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/learning-notes/learning-overview.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Overview of MPLP Learning module, covering LearningSample families, collection mechanisms, and compliance boundaries.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/learning-notes/learning-sample-schema.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/learning-notes/learning-sample-schema.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Documents the LearningSample schema structure, covering core and family-specific fields.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/multi-agent-collab-flow.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/multi-agent-collab-flow.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Example showing multi-agent collaboration patterns using MPLP MAP Profile.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/risk-confirmation-flow.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/risk-confirmation-flow.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Example flow demonstrating human-in-the-loop confirmation for high-risk actions.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/single-agent-flow.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/single-agent-flow.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Example showing a complete Single Agent (SA) flow using MPLP TypeScript SDK.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/tool-execution-integration.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/tool-execution-integration.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Example showing how agents integrate with external tools via MPLP Extension module.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/examples/vendor-neutral-llm-integration.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/vendor-neutral-llm-integration.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Example demonstrating vendor-neutral LLM integration through MPLP abstractions.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/index.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/index.md",
+    "doc_id": null,
+    "doc_type": null,
+    "status": null,
+    "authority": null,
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description",
+      "normativity",
+      "lifecycle_status",
+      "authority"
+    ]
+  },
+  {
+    "path": "guides/runtime/ael.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/ael.md",
+    "doc_id": null,
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "MPGC",
+    "description": "Action Execution Layer (AEL) reference for runtime implementers.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/runtime/crosscut-psg-event-binding.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/crosscut-psg-event-binding.md",
+    "doc_id": null,
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "MPGC",
+    "description": "Crosscut PSG and Observability Event Binding specification for MPLP runtime.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/runtime/drift-and-rollback.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/drift-and-rollback.md",
+    "doc_id": null,
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "MPGC",
+    "description": "Drift Detection and Rollback Mechanisms for MPLP runtimes.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/runtime/module-psg-paths.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/module-psg-paths.md",
+    "doc_id": null,
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "MPGC",
+    "description": "Module PSG Read/Write Path Matrix defining how each MPLP module interacts with the Protocol State Graph.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/runtime/psg.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/psg.md",
+    "doc_id": null,
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "MPGC",
+    "description": "The Project Semantic Graph (PSG) is the runtime state substrate of MPLP.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/runtime/runtime-authority.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/runtime-authority.md",
+    "doc_id": null,
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "MPGC",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "guides/runtime/runtime-capability-matrix.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/runtime-capability-matrix.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "guides/runtime/runtime-glue-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/runtime-glue-overview.md",
+    "doc_id": null,
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "MPGC",
+    "description": "Runtime Glue Overview - L3 specification layer for MPLP.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/runtime/skeleton/index.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/skeleton/index.md",
+    "doc_id": null,
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": null,
+    "description": "Interface-Level Contract for Profile-14-Golden Runtime",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "authority"
+    ]
+  },
+  {
+    "path": "guides/runtime/vsl.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/vsl.md",
+    "doc_id": null,
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "MPGC",
+    "description": "Value State Layer (VSL) reference for state persistence implementations.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/sdk/codegen-from-schema.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/sdk/codegen-from-schema.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Guide for generating type-safe code from MPLP JSON schemas in multiple languages.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/sdk/go-sdk-guide.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/sdk/go-sdk-guide.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Go SDK guide for MPLP including module installation and usage patterns.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/sdk/implementation-maturity-matrix.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/sdk/implementation-maturity-matrix.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Matrix showing feature implementation status across MPLP SDK implementations (TypeScript, Python, Go, Java).",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/sdk/java-sdk-guide.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/sdk/java-sdk-guide.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Java SDK guide for MPLP including Gradle/Maven setup and core APIs.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/sdk/py-sdk-guide.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/sdk/py-sdk-guide.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Python SDK guide for mplp package including installation, usage, and API reference.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/sdk/schema-mapping-standard.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/sdk/schema-mapping-standard.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "frozen",
+    "authority": "Documentation Governance",
+    "description": "Canonical mapping rules from MPLP JSON Schema v2 to TypeScript and Python models.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "guides/sdk/ts-sdk-guide.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/sdk/ts-sdk-guide.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Reference implementation guide for the MPLP TypeScript SDK.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "intro.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/intro.mdx",
+    "doc_id": "DOC-INTRO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "introduction/DOCS_AUTHOR_RULES.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/introduction/DOCS_AUTHOR_RULES.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "This document defines the rules for adding or modifying documentation in the MPLP docs site.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "introduction/DOCS_IA_OVERVIEW.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/introduction/DOCS_IA_OVERVIEW.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "This page defines how to read and navigate the MPLP documentation site, with recommended reading paths for different audiences.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "introduction/api-quick-reference.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/introduction/api-quick-reference.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Quick reference for MPLP observability event families and invariant rules.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "introduction/glossary.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/introduction/glossary.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Normative definitions for key terms used throughout the MPLP v1.0 specification.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "introduction/mplp-v1.0-docs-map.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/introduction/mplp-v1.0-docs-map.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Quick reference map for all MPLP schemas, modules, events, and invariants with their file locations.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "introduction/mplp-v1.0-protocol-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/introduction/mplp-v1.0-protocol-overview.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Comprehensive overview of the Multi-Agent Lifecycle Protocol (MPLP) v1.0, covering architecture, modules, events, and conformance levels.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "introduction/posix-analogy-mapping.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/introduction/posix-analogy-mapping.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": null,
+    "description": "A conceptual mapping (analogy) between POSIX interface ideas and MPLP's schema-defined lifecycle governance. Not a compatibility or certification claim.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "authority"
+    ]
+  },
+  {
+    "path": "meta/faq.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/faq.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Frequently Asked Questions about MPLP Protocol.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "meta/index.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/index.md",
+    "doc_id": null,
+    "doc_type": null,
+    "status": null,
+    "authority": null,
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description",
+      "normativity",
+      "lifecycle_status",
+      "authority"
+    ]
+  },
+  {
+    "path": "meta/redirects/LINK_FIX_LEDGER.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/redirects/LINK_FIX_LEDGER.md",
+    "doc_id": null,
+    "doc_type": null,
+    "status": null,
+    "authority": null,
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description",
+      "normativity",
+      "lifecycle_status",
+      "authority"
+    ]
+  },
+  {
+    "path": "meta/redirects/REDIRECT_MANIFEST.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/redirects/REDIRECT_MANIFEST.md",
+    "doc_id": null,
+    "doc_type": null,
+    "status": null,
+    "authority": null,
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description",
+      "normativity",
+      "lifecycle_status",
+      "authority"
+    ]
+  },
+  {
+    "path": "meta/release/LEARNING_ATTESTATION_v1.0.0.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/release/LEARNING_ATTESTATION_v1.0.0.md",
+    "doc_id": null,
+    "doc_type": "attestation",
+    "status": "active",
+    "authority": "MPGC",
+    "description": "Formal attestation of Learning Module capabilities for MPLP v1.0.0.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "meta/release/docs-freeze-declaration-v1.0.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/release/docs-freeze-declaration-v1.0.md",
+    "doc_id": null,
+    "doc_type": "governance",
+    "status": "frozen",
+    "authority": "MPGC",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "meta/release/editorial-policy.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/release/editorial-policy.md",
+    "doc_id": null,
+    "doc_type": "governance",
+    "status": "frozen",
+    "authority": "Documentation Governance",
+    "description": "Editorial standards for MPLP documentation including writing style, formatting, terminology, and review process.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "meta/release/maintainer-guide.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/release/maintainer-guide.md",
+    "doc_id": null,
+    "doc_type": "governance",
+    "status": "frozen",
+    "authority": "Documentation Governance",
+    "description": "Guide for MPLP maintainers covering release process, review guidelines, and frozen specification rules.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "meta/release/mplp-v0.9-to-v1.0-migration-guide.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/release/mplp-v0.9-to-v1.0-migration-guide.md",
+    "doc_id": null,
+    "doc_type": "governance",
+    "status": "frozen",
+    "authority": "Documentation Governance",
+    "description": "Migration guide for upgrading from MPLP v0.9 to v1.0, covering breaking changes, schema updates, and checklist.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "meta/release/mplp-v1.0-docs-governance-summary.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/release/mplp-v1.0-docs-governance-summary.md",
+    "doc_id": null,
+    "doc_type": "governance",
+    "status": "frozen",
+    "authority": "Documentation Governance",
+    "description": "Summary of documentation governance policies for MPLP v1.0 including structure and authority.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "meta/release/mplp-v1.0.0-known-issues.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/release/mplp-v1.0.0-known-issues.md",
+    "doc_id": null,
+    "doc_type": "governance",
+    "status": "frozen",
+    "authority": "Documentation Governance",
+    "description": "Known issues and limitations in MPLP v1.0.0 with workarounds and planned fixes.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "meta/release/mplp-v1.0.0-release-notes.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/release/mplp-v1.0.0-release-notes.md",
+    "doc_id": null,
+    "doc_type": "governance",
+    "status": "frozen",
+    "authority": "Documentation Governance",
+    "description": "Release notes for MPLP Protocol v1.0.0 including new features, breaking changes, and installation instructions.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "meta/roadmap.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/roadmap.md",
+    "doc_id": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Historical record and potential future exploration areas.",
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/coordination-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/coordination-explained.md",
+    "doc_id": "DOC-ARCH-CCK-COORD-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/coordination.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/coordination.md",
+    "doc_id": "DOC-ARCH-CCK-COORD-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/error-handling-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/error-handling-explained.md",
+    "doc_id": "DOC-ARCH-CCK-ERROR-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/error-handling.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/error-handling.md",
+    "doc_id": "DOC-ARCH-CCK-ERROR-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/event-bus-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/event-bus-explained.md",
+    "doc_id": "DOC-ARCH-CCK-EBUS-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/event-bus.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/event-bus.md",
+    "doc_id": "DOC-ARCH-CCK-EBUS-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/index.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/index.md",
+    "doc_id": "DOC-ARCH-CCK-INDEX-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/learning-feedback-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/learning-feedback-explained.md",
+    "doc_id": "DOC-ARCH-CCK-LEARN-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/learning-feedback.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/learning-feedback.md",
+    "doc_id": "DOC-ARCH-CCK-LEARN-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/observability-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/observability-explained.md",
+    "doc_id": "DOC-ARCH-CCK-OBS-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/observability.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/observability.md",
+    "doc_id": "DOC-ARCH-CCK-OBS-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/orchestration-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/orchestration-explained.md",
+    "doc_id": "DOC-ARCH-CCK-ORCH-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/orchestration.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/orchestration.md",
+    "doc_id": "DOC-ARCH-CCK-ORCH-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/performance-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/performance-explained.md",
+    "doc_id": "DOC-ARCH-CCK-PERF-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/performance.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/performance.md",
+    "doc_id": "DOC-ARCH-CCK-PERF-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/protocol-versioning-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/protocol-versioning-explained.md",
+    "doc_id": "DOC-ARCH-CCK-VERS-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/protocol-versioning.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/protocol-versioning.md",
+    "doc_id": "DOC-ARCH-CCK-VERS-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/security-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/security-explained.md",
+    "doc_id": "DOC-ARCH-CCK-SEC-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/security.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/security.md",
+    "doc_id": "DOC-ARCH-CCK-SEC-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/state-sync-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/state-sync-explained.md",
+    "doc_id": "DOC-ARCH-CCK-SYNC-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/state-sync.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/state-sync.md",
+    "doc_id": "DOC-ARCH-CCK-SYNC-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/transaction-explained.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/transaction-explained.md",
+    "doc_id": "DOC-ARCH-CCK-TXN-INFO-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/cross-cutting-kernel-duties/transaction.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/cross-cutting-kernel-duties/transaction.md",
+    "doc_id": "DOC-ARCH-CCK-TXN-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/index.mdx",
+    "doc_id": "DOC-ARCH-INDEX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/l1-core-protocol.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/l1-core-protocol.md",
+    "doc_id": "DOC-ARCH-L1-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/l1-l4-architecture-deep-dive.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/l1-l4-architecture-deep-dive.md",
+    "doc_id": "DOC-ARCH-DEEP-DIVE-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/l2-coordination-governance.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/l2-coordination-governance.md",
+    "doc_id": "DOC-ARCH-L2-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/l3-execution-orchestration.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/l3-execution-orchestration.md",
+    "doc_id": "DOC-ARCH-L3-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/l4-integration-infra.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/l4-integration-infra.md",
+    "doc_id": "DOC-ARCH-L4-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/architecture/schema-conventions.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/architecture/schema-conventions.md",
+    "doc_id": "DOC-ARCH-SCHEMA-CONV-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/flow-to-duty-matrix.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/flow-to-duty-matrix.md",
+    "doc_id": "DOC-SEMANTIC-FLOW-DUTY-MATRIX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/index.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/index.md",
+    "doc_id": "DOC-SPEC-INDEX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/integration/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/integration/index.mdx",
+    "doc_id": "DOC-INT-INDEX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/integration/integration-spec.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/integration/integration-spec.md",
+    "doc_id": "DOC-INT-SPEC-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/module-to-duty-matrix.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/module-to-duty-matrix.md",
+    "doc_id": "DOC-SEMANTIC-MOD-DUTY-MATRIX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/collab-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/collab-module.md",
+    "doc_id": "DOC-MOD-COLLAB-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/confirm-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/confirm-module.md",
+    "doc_id": "DOC-MOD-CONFIRM-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/context-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/context-module.md",
+    "doc_id": "DOC-MOD-CONTEXT-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/core-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/core-module.md",
+    "doc_id": "DOC-MOD-CORE-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/dialog-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/dialog-module.md",
+    "doc_id": "DOC-MOD-DIALOG-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/extension-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/extension-module.md",
+    "doc_id": "DOC-MOD-EXTENSION-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/module-interactions.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/module-interactions.md",
+    "doc_id": "DOC-MOD-INTERACTIONS-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/network-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/network-module.md",
+    "doc_id": "DOC-MOD-NETWORK-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/plan-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/plan-module.md",
+    "doc_id": "DOC-MOD-PLAN-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/role-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/role-module.md",
+    "doc_id": "DOC-MOD-ROLE-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/modules/trace-module.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/trace-module.md",
+    "doc_id": "DOC-MOD-TRACE-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/normative-coverage-report.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/normative-coverage-report.md",
+    "doc_id": "DOC-SEMANTIC-COVERAGE-REPORT-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/observability/common-schemas-reference.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/observability/common-schemas-reference.md",
+    "doc_id": "DOC-OBS-COMMON-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/observability/event-taxonomy.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/observability/event-taxonomy.md",
+    "doc_id": "DOC-OBS-TAXONOMY-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/observability/module-event-matrix.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/observability/module-event-matrix.md",
+    "doc_id": "DOC-OBS-MATRIX-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/observability/observability-invariants.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/observability/observability-invariants.md",
+    "doc_id": "DOC-OBS-INV-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/observability/observability-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/observability/observability-overview.md",
+    "doc_id": "DOC-OBS-OVERVIEW-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/observability/physical-schemas-reference.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/observability/physical-schemas-reference.md",
+    "doc_id": "DOC-OBS-PHYS-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/observability/runtime-trace-format.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/observability/runtime-trace-format.md",
+    "doc_id": "DOC-OBS-TRACE-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/profiles/map-events.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/profiles/map-events.md",
+    "doc_id": "DOC-PROF-MAP-EVENTS-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/profiles/map-profile.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/profiles/map-profile.md",
+    "doc_id": "DOC-PROF-MAP-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/profiles/multi-agent-governance-profile.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/profiles/multi-agent-governance-profile.md",
+    "doc_id": "DOC-PROF-MA-GOV-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/profiles/sa-events.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/profiles/sa-events.md",
+    "doc_id": "DOC-PROF-SA-EVENTS-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/profiles/sa-profile.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/profiles/sa-profile.md",
+    "doc_id": "DOC-PROF-SA-001",
+    "doc_type": "normative",
+    "status": "frozen",
+    "authority": "protocol",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/semantic-alignment-overview.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/semantic-alignment-overview.md",
+    "doc_id": "DOC-SEMANTIC-ALIGNMENT-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/semantic-anchor-registry.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/semantic-anchor-registry.md",
+    "doc_id": "DOC-SEMANTIC-ANCHOR-REGISTRY-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  },
+  {
+    "path": "specification/spec-to-eval-matrix.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/spec-to-eval-matrix.md",
+    "doc_id": "DOC-SEMANTIC-SPEC-EVAL-MATRIX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": null,
+    "normativity": null,
+    "lifecycle_status": null,
+    "missing_fields": [
+      "description"
+    ]
+  }
+]
