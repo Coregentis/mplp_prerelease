@@ -25,7 +25,7 @@ include:
   - "schemas/v2/**"
   - "docs/**"
   - "assets/**"
-  - "tests/golden/**"
+  - "tests/**"  # All test suites: golden, cross-language, runtime-compat, schema-alignment
   - "packages/**"
   - "examples/**"
   - ".github/ISSUE_TEMPLATE/**"
@@ -34,8 +34,11 @@ include:
   - ".github/workflows/semantic-lint.yml"
   - ".github/workflows/link-health.yml"
   - ".github/workflows/ci-release.yml"
+  - ".github/workflows/gates.yml"
+  - ".github/workflows/codeql.yml"
   - ".eslintrc.json"
   - "scripts/semantic/**"
+  - "scripts/gates/**"  # Governance gates for CI
   # Governance Specifications (DGP-*) - Public
   - "project-governance/DGP-*.md"
   - "project-governance/DGP-*.yaml"

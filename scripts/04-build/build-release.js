@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-const CONFIG_FILE = 'scripts/release/release-packaging.yaml';
-const DIST_DIR = 'dist/mplp-v1.1';
+const CONFIG_FILE = 'release-config.yaml';
+const DIST_DIR = 'dist/mplp-v1.0';
 
 // Ensure rootDir is correctly resolved to the project root (V1.0-release)
 const rootDir = path.resolve(__dirname, '..');
