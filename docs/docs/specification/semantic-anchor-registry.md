@@ -40,7 +40,7 @@ Core concept definitions. Each anchor corresponds to an indivisible protocol con
 | **CA-07** | Dialog | [dialog-module.md](/docs/specification/modules/dialog-module) | `mplp-dialog.schema.json` | Multi-turn conversation |
 | **CA-08** | Extension | [extension-module.md](/docs/specification/modules/extension-module) | `mplp-extension.schema.json` | Extension point registration |
 | **CA-09** | Network | [network-module.md](/docs/specification/modules/network-module) | `mplp-network.schema.json` | Communication topology |
-| **CA-10** | Event | [observability/](/docs/specification/observability/) | `mplp-*-event.schema.json` | Observability events |
+| **CA-10** | Event | [observability](/docs/specification/observability/observability-overview) | `mplp-*-event.schema.json` | Observability events |
 
 ### 1.1 Derived Concepts
 

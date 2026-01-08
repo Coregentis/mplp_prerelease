@@ -24,8 +24,8 @@ This section covers protocol evaluation, governance, and conformance documentati
 
 ## Contents
 
-- [Golden Flows](./golden-flows/) - 5 evaluation scenarios
-- [Governance](./governance/) - Protocol governance model
-- [Conformance](./conformance/) - Conformance evaluation
-- [Standards](./standards/) - External standards alignment
-- [Tests](./tests/) - Test specifications
+- [Golden Flows](/docs/evaluation/golden-flows) - 5 evaluation scenarios
+- [Governance](/docs/evaluation/governance) - Protocol governance model
+- [Conformance](/docs/evaluation/conformance) - Conformance evaluation
+- [Standards](/docs/evaluation/standards/positioning) - External standards alignment
+- [Tests](/docs/evaluation/tests/golden-test-suite-overview) - Test specifications

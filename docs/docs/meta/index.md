@@ -12,7 +12,7 @@ Site-level metadata, navigation, and release information.
 
 ## Contents
 
-- [Introduction](../introduction/) - Documentation home
-- [Release](./release/) - Changelog and versions
-- [FAQ](./faq.md) - Frequently asked questions
-- [Roadmap](./roadmap.md) - Future plans
+- [Introduction](/docs/intro) - Documentation home
+- [Release](/docs/meta/release/mplp-v1.0.0-release-notes) - Changelog and versions
+- [FAQ](/docs/meta/faq) - Frequently asked questions
+- [Roadmap](/docs/meta/roadmap) - Future plans

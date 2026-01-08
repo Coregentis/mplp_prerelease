@@ -1,14 +1,14 @@
 ---
 entry_surface: documentation
 doc_type: informative
-status: draft
-authority: none
+status: active
+authority: Documentation Governance
 protocol_version: "1.0.0"
-doc_id: "DOC-EVAL-GF-01-001"
+doc_id: "DOC-EVAL-FLOW-01-001"
 
 # UI metadata (non-normative; excluded from protocol semantics)
-title: "GF-01: SA Lifecycle"
-sidebar_label: "GF-01: SA Lifecycle"
+title: "FLOW-01: Single Agent – Happy Path"
+sidebar_label: "FLOW-01: Happy Path"
 sidebar_position: 1
 ---
 
@@ -19,44 +19,84 @@ sidebar_position: 1
 > It MUST NOT be used as an authoritative specification.
 > All normative requirements are defined in the Specification documents.
 
-# GF-01: Single-Agent Lifecycle
+# FLOW-01: Single Agent – Happy Path
 
-> **Type**: Evaluation Scenario
+> **Type**: Evaluation Scenario  
+> **Category**: A: Single Agent Basics  
 > **Profile**: SA (Single Agent)
+
+**Source of Truth:** `tests/golden/flows/flow-01-single-agent-plan/`
+
+## Purpose
+
+This is the baseline single-agent workflow. The agent receives context, generates a minimal 2-step plan, executes, and produces a trace.
 
 ## Scope
 
-This evaluation scenario describes:
+This evaluation scenario validates:
 - **Context** initialization from project configuration
-- **Plan** creation with step decomposition
+- **Plan** creation with a minimal 2-step execution sequence
+- **Confirm** single-pass approval (happy path)
 - **Trace** recording for each execution step
-- **State transitions** are deterministic and immutable
 
 ## Non-Goals
 
 This scenario does NOT evaluate:
-- Multi-agent coordination (see GF-02)
-- Human-in-the-loop confirmation workflows (see GF-05)
-- Drift detection and recovery (see GF-03)
+- Multi-agent coordination (see MAP-FLOW-01, MAP-FLOW-02)
+- Human-in-the-loop multi-round approval (see FLOW-05)
+- Tool integration (see FLOW-03)
+- LLM enrichment (see FLOW-04)
+- Large plan volumetrics (see FLOW-02)
 
 ---
 
-## Modules Involved
+## L2 Modules Exercised
 
 | Module | Role in Flow |
 |:-------|:-------------|
-| **Context** | Provides initial constraints and objectives |
-| **Plan** | Defines execution steps |
-| **Trace** | Records all state transitions |
-| **Confirm** | Validates governance at each step |
+| **Context** | Establishes problem domain and execution environment |
+| **Plan** | Defines 2-step execution strategy |
+| **Confirm** | Single-pass approval (approved immediately) |
+| **Trace** | Records all runtime events |
 
 ---
 
-## Cross-Cutting Duties Exercised
+## Key Protocol Fields
 
-- Trace Append
-- State Snapshot
-- Lifecycle Transition
+### Context
+- `context_id`: UUID v4
+- `root.domain`: "golden-test"
+- `root.environment`: "simulation"
+- `status`: "draft" → "active"
+- `owner_role`: "agent"
+
+### Plan
+- `plan_id`: UUID v4
+- `context_id`: Reference to parent context
+- `steps[]`: 2 steps with `step_id`, `description`, `status`
+- `meta.protocol_version`: "1.0.0"
+
+### Confirm
+- `confirm_id`: UUID v4
+- `status`: "pending" → "approved"
+- `approver_role`: "agent-self"
+
+### Trace
+- `trace_id`: UUID v4
+- `events[]`: Chronological execution events
+- `meta.total_duration_ms`: Total execution time
+
+---
+
+## Integration Dimensions (L3/L4)
+
+**None.** FLOW-01 deliberately excludes all L3/L4 integration:
+- No Tool Integration
+- No LLM Backend
+- No Storage Integration
+- No Multi-Agent Coordination
+
+This minimal footprint ensures validation failures are attributable to L2 protocol layer only.
 
 ---
 
@@ -64,15 +104,29 @@ This scenario does NOT evaluate:
 
 | Type | Location | Status |
 |:-----|:---------|:-------|
-| **SDK Test** | `packages/sources/sdk-ts/tests/runtime/single-agent.runtime.test.ts` | Passed |
-| **Golden Flow** | `tests/golden/flows/flow-01-single-agent-plan/` | Passed |
-| **Golden Flow** | `tests/golden/flows/sa-flow-01-basic/` | Passed |
-| **Golden Flow** | `tests/golden/flows/sa-flow-02-step-evaluation/` | Passed |
+| **Golden Flow** | `tests/golden/flows/flow-01-single-agent-plan/` | ✅ Passed |
+| **Input Fixtures** | `tests/golden/flows/flow-01-single-agent-plan/input/` | Available |
+| **Expected Fixtures** | `tests/golden/flows/flow-01-single-agent-plan/expected/` | Available |
 
 ---
 
 ## Expected Behavior
 
-- Agent completes lifecycle without error
-- All trace entries are immutable and ordered
-- Final state matches expected output
+- Context is created once and remains immutable
+- Plan with 2 steps is generated and approved
+- All trace entries are immutable and chronologically ordered
+- Final state matches expected output fixtures
+
+---
+
+## Invariants Tested
+
+- All `step_id` values must be unique UUID v4
+- All `description` fields must be non-empty
+- Timestamps must be ISO 8601 format
+- Context immutability preserved throughout flow
+
+---
+
+**Document Status**: Informative (Evaluation Scenario)  
+**Source of Truth**: `tests/golden/flows/flow-01-single-agent-plan/README.md`

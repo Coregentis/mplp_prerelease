@@ -10,6 +10,22 @@
 
 ---
 
+## Conceptual Positioning (POSIX Analogy, Informative)
+
+MPLP uses **POSIX** as a conceptual analogy for *protocol-level interface standardization*:
+
+- **POSIX "standard interface" → MPLP "schema-defined lifecycle interface"** (Context / Plan / Confirm / Trace)
+- **POSIX contracts → MPLP module contracts & kernel duties** (invariants, failure semantics, expected signals)
+- **POSIX conformance tests → MPLP Golden Flows & evidence-based verdicts** (evidence-only evaluation)
+- **POSIX portability → MPLP portability across substrates** (models / frameworks / runtimes / vendors)
+- **POSIX logging/debugging → MPLP Trace & Evidence Pack** (replayable, auditable artifacts)
+
+> **Boundary:** This is an analogy for conceptual positioning only. MPLP is not POSIX, does not implement an OS or runtime, and does not make any POSIX compatibility or certification claim.
+
+For the detailed mapping table, see the Documentation (Non-Normative): **"POSIX Analogy — Conceptual Mapping"** at [docs.mplp.io](https://docs.mplp.io).
+
+---
+
 ## This Repository Is the Source of Truth
 
 This repository hosts the **canonical source artifacts** of MPLP.
@@ -18,10 +34,10 @@ It is the **single authoritative location** for:
 
 - Protocol schemas (frozen)
 - Reference SDK source packages
-- Golden Flow tests & Cross-language validation
+- Golden Flow tests & cross-language validation
 - Documentation source (docs.mplp.io)
 - Governance constitution files
-- Conformance & Interoperability definitions
+- Conformance & interoperability definitions
 
 **This repository is not a marketing site and not a tutorial.**
 
@@ -43,9 +59,28 @@ MPLP uses a three-entry model. Each surface has a strict, non-overlapping role.
 - 👉 **Implementing MPLP?** Read **[https://docs.mplp.io](https://docs.mplp.io)**
 - 👉 **Auditing or building against MPLP?** You are in the right place
 
+> Note: MPLP Validation Lab (if present) is **evidence-based evaluation** only — it does not host execution and is not certification.
+
 ---
 
-## Repository Structure
+## 4-Layer Architecture (L1–L4)
+
+MPLP is defined as a four-layer protocol topology:
+
+| Layer | Name | Scope |
+|-------|------|-------|
+| **L1** | Core Protocol (Normative) | Schemas, invariants, lifecycle primitives |
+| **L2** | Coordination & Governance (Normative) | Module semantics and kernel duties |
+| **L3** | Execution Runtime (Non-prescriptive) | Runtime realization (evidence-producing behaviors) |
+| **L4** | Integration Layer (Optional boundary) | Governed integration boundaries with external systems |
+
+> **Boundary:** L4 is optional and defines integration boundaries; it does not imply hosted execution, vendor endorsement, or certification.
+
+---
+
+## Repository Structure (High-Level)
+
+> This is a navigation overview. The authoritative boundaries are defined by the repo contents and governance documents.
 
 ```
 .
@@ -56,28 +91,15 @@ MPLP uses a three-entry model. Each surface has a strict, non-overlapping role.
 │   ├── pypi/                 # Python SDK (mplp-sdk)
 │   └── sources/              # SDK source code
 ├── tests/                    # Protocol validation suites
-│   ├── golden/               # Golden Flow tests (9 flows)
-│   │   ├── flows/            # Flow implementations
-│   │   ├── harness/          # Test harness
-│   │   └── invariants/       # Invariant checks
+│   ├── golden/               # Golden Flow tests (GF + profiles)
 │   ├── cross-language/       # Cross-language validation
-│   │   ├── builders/         # Builder tests
-│   │   ├── runtime/          # Runtime tests
-│   │   └── validation/       # Validation tests
 │   ├── runtime-compat/       # Runtime compatibility tests
 │   └── schema-alignment/     # Schema alignment tests
 ├── docs/                     # Documentation source (docs.mplp.io)
 ├── governance/               # Constitution & governance files
 │   └── 01-constitutional/    # CONST-001 to CONST-006
 ├── examples/                 # Usage examples (multi-language)
-│   ├── ts-single-agent-basic/
-│   ├── ts-multi-agent-collab/
-│   ├── py-basic-flow/
-│   ├── go-basic-flow/
-│   ├── java-basic-flow/
-│   └── integration/
 ├── scripts/                  # Build & validation scripts
-│   └── semantic/             # Semantic linting tools
 └── assets/                   # Diagrams & brand resources
 ```
 
@@ -86,87 +108,89 @@ MPLP uses a three-entry model. Each surface has a strict, non-overlapping role.
 ## Protocol Status
 
 - **Protocol Version:** MPLP v1.0.0
-- **Specification State:** FROZEN (no breaking changes permitted)
+- **Specification State:** **FROZEN** (no breaking changes permitted)
 - **Schemas:** Frozen under `schemas/v2/`
-- **Golden Flows:** 9 flows verified (GF-01–05, SA-01–02, MAP-01–02)
+- **Golden Flows:** Implemented as protocol evaluation scenarios (Core + profile flows)
 - **Reference Implementations:** Partial by design (non-normative)
 
-> **Note:**
-> Absence of a reference SDK implementation does not imply a module is experimental.
-> Protocol obligations are defined by schemas and specifications, not by SDK coverage.
+> **Note:** Absence of a reference SDK implementation does not imply a module is experimental.
+> Protocol obligations are defined by **schemas and specifications**, not by SDK coverage.
 
 ---
 
-## Test Suites
+## Test Suites (Protocol Validation)
 
-MPLP provides comprehensive test suites for protocol validation:
+MPLP provides test suites for protocol validation and interoperability evidence:
 
-### Golden Flows
+### Golden Flows (Evaluation Scenarios)
 
-| Flow ID | Name | Profile |
-|---------|------|---------|
-| `flow-01` | Single Agent – Happy Path | Core |
-| `flow-02` | Single Agent – Large Plan | Core |
-| `flow-03` | Single Agent – With Tools | Core |
-| `flow-04` | Single Agent – LLM Enrichment | Core |
-| `flow-05` | Single Agent – Confirm Required | Core |
-| `sa-flow-01` | SA Profile – Basic | SA Profile |
-| `sa-flow-02` | SA Profile – Step Evaluation | SA Profile |
-| `map-flow-01` | MAP Profile – Turn Taking | MAP Profile |
-| `map-flow-02` | MAP Profile – Broadcast Fanout | MAP Profile |
+Golden Flows validate **lifecycle invariants** via replayable evidence (not via vendor endorsement).
+
+- Core Golden Flows: `flow-01` … `flow-05`
+- Profile Flows: `sa-flow-*`, `map-flow-*` (when applicable)
 
 ### Validation Suites
 
 - **Cross-Language Tests:** Validate consistent behavior across TypeScript, Python, Go
-- **Runtime Compatibility:** Ensure runtime implementations conform to protocol
-- **Schema Alignment:** Verify schema consistency across modules
+- **Runtime Compatibility:** Ensure runtime integrations produce evaluable evidence
+- **Schema Alignment:** Verify schema consistency across modules and consumers
 
 ---
 
-## Conformance & Interoperability
+## Interoperability Levels (IL1–IL3)
 
-MPLP defines **Interoperability Levels** (not certification tiers) to ensure consistent behavior across different runtimes.
+MPLP defines **Interoperability Levels** (not certification tiers) to describe evaluable evidence boundaries:
 
-- **L1 (Schema):** Data interoperability (valid JSON)
-- **L2 (Governance):** Module semantics & lifecycle interoperability
-- **L3 (Behavioral):** Runtime evidence & Golden Flow interoperability
+| Level | Name | Scope |
+|-------|------|-------|
+| **IL1** | Schema | Data interoperability (valid instances) |
+| **IL2** | Governance | Module semantics & lifecycle interoperability |
+| **IL3** | Behavioral | Runtime evidence & Golden Flow interoperability |
 
-Any claim of "MPLP Interoperability" should map to these definitions.
+Any claim of "MPLP interoperability" must map to these definitions and be backed by evidence.
+
+> **Disambiguation:** These interoperability levels (IL1–IL3) are intentionally **not** the same as the L1–L4 architecture layers.  
+> **L4 (Integration Layer)** is an optional boundary layer and is not an interoperability "tier"; it scopes how external systems are integrated without leaking concerns into the core protocol.
 
 ---
 
-## Reference SDKs
+## Reference SDKs (Non-Normative)
 
-The following SDKs are maintained as **Reference Implementations** of the protocol.
+SDKs are maintained as **reference consumers** of the protocol (schemas remain authoritative).
 
 ### TypeScript Standard Library (`@mplp/*`)
 
-| Package | Description | Version | Links |
-|:--------|:------------|:--------|:------|
-| **`@mplp/sdk-ts`** | Main Entry Point (Developer SDK) | `v1.0.6` | [npm](https://www.npmjs.com/package/@mplp/sdk-ts) |
-| `@mplp/core` | L1 Protocol Primitives & Types | `v1.0.6` | [npm](https://www.npmjs.com/package/@mplp/core) |
-| `@mplp/schema` | JSON Schema Validators | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/schema) |
-| `@mplp/coordination` | L2 Coordination & State Machine | `v1.0.6` | [npm](https://www.npmjs.com/package/@mplp/coordination) |
-| `@mplp/modules` | L2 Governance Modules | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/modules) |
-| `@mplp/conformance` | Conformance Kit & Validation | `v1.0.0` | [npm](https://www.npmjs.com/package/@mplp/conformance) |
-| `@mplp/compliance` | [LEGACY] Use @mplp/conformance | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/compliance) |
-| `@mplp/runtime-minimal` | Reference Runtime Implementation | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/runtime-minimal) |
-| `@mplp/devtools` | CLI & Debugging Tools | `v1.0.5` | [npm](https://www.npmjs.com/package/@mplp/devtools) |
+Primary packages include:
+
+| Package | Role |
+|---------|------|
+| `@mplp/sdk-ts` | Main developer entry |
+| `@mplp/core` | Protocol primitives & types |
+| `@mplp/schema` | Schema validators |
+| `@mplp/coordination` | Coordination & state-machine helpers |
+| `@mplp/modules` | L2 governance module helpers |
+| `@mplp/conformance` | Conformance kit & validation tooling |
+| `@mplp/runtime-minimal` | Minimal reference runtime (evidence producer) |
+| `@mplp/devtools` | CLI & debugging tools |
+
+> For current published versions, refer to [npm package listings](https://www.npmjs.com/org/mplp) and/or the repository's version governance records.
 
 ### Python SDK
 
-| Package | Description | Version | Links |
-|:--------|:------------|:--------|:------|
-| **`mplp-sdk`** | Main Entry Point (Developer SDK) | `v1.0.4` | [PyPI](https://pypi.org/project/mplp-sdk/) |
+| Package | Role |
+|---------|------|
+| `mplp-sdk` | Main developer entry |
+
+> For current published version, refer to [PyPI](https://pypi.org/project/mplp-sdk/).
 
 ---
 
 ## What This Repository Does NOT Do
 
-To maintain clear boundaries, this repository explicitly does not:
+To maintain strict boundaries, this repository does **not**:
 
-- Provide marketing or positioning narratives
-- Replace the official documentation site
+- Provide marketing or positioning narratives (use the Website)
+- Replace the official documentation site (use Documentation)
 - Offer certification or compliance guarantees
 - Endorse vendors, runtimes, or agent frameworks
 - Act as a tutorial or learning platform
@@ -186,6 +210,7 @@ Documentation includes:
 - Golden Flows (evaluation scenarios)
 - Standards mappings (ISO / NIST / W3C — informative only)
 - Governance, versioning, and change control
+- POSIX analogy mapping (informative / non-normative)
 
 ---
 
@@ -210,7 +235,7 @@ This repository accepts contributions within defined governance boundaries.
 
 Before proposing changes, review the constitution files in `governance/01-constitutional/`.
 
-Pull requests that introduce new protocol semantics, schema changes, or compliance claims will be reviewed under MPGC governance.
+Pull requests that introduce new protocol semantics, schema changes, or compliance/certification claims will be reviewed under MPGC governance.
 
 ---
 

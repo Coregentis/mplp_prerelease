@@ -23,8 +23,8 @@ This section provides a navigational overview of MPLP specification documentatio
 
 ## Contents
 
-- [Architecture](./architecture/) - L1-L4 layer definitions
-- [Modules](./modules/) - 10 normative modules
-- [Profiles](./profiles/) - SA/MAP execution profiles
-- [Observability](./observability/) - Tracing and events
-- [Integration](./integration/) - L4 integration layer
+- [Architecture](/docs/specification/architecture) - L1-L4 layer definitions
+- [Modules](/docs/specification/modules/module-interactions) - 10 normative modules
+- [Profiles](/docs/specification/profiles/sa-profile) - SA/MAP execution profiles
+- [Observability](/docs/specification/observability/observability-overview) - Tracing and events
+- [Integration](/docs/specification/integration) - L4 integration layer

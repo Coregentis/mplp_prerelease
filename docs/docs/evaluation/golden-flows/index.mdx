@@ -26,40 +26,54 @@ Golden Flows are **evaluation scenarios** that describe expected behavior for MP
 
 | Your Goal | Start Here |
 |:---|:---|
-| **Verify implementation** | [GF-01: SA Lifecycle](./gf-01.mdx) |
-| **Understand coordination** | [GF-02: MAP Coordination](./gf-02.mdx) |
-| **Test drift detection** | [GF-03: Drift Detection](./gf-03.mdx) |
-| **Validate delta-intent** | [GF-04: Delta-Intent](./gf-04.mdx) |
-| **Check governance** | [GF-05: Governance](./gf-05.mdx) |
+| **Verify single-agent implementation** | [FLOW-01: Single Agent – Happy Path](./gf-01.mdx) |
+| **Test tool integration** | [FLOW-03: Single Agent – With Tools](./gf-03.mdx) |
+| **Validate confirmation flows** | [FLOW-05: Single Agent with Confirm Required](./gf-05.mdx) |
+| **Understand SA profile** | [SA-FLOW-01: SA Basic Execution](./sa-flow-01.mdx) |
+| **Understand MAP coordination** | [MAP-FLOW-01: MAP Turn-Taking Session](./map-flow-01.mdx) |
 
-## The Five Golden Flows
+## Core Flows (v1.0 Compliance Boundary)
 
 | Flow | Name | Purpose | Modules Involved |
 |:---|:---|:---|:---|
-| **GF-01** | [SA Lifecycle](./gf-01.mdx) | Single-agent lifecycle correctness | Context, Plan, Trace |
-| **GF-02** | [MAP Coordination](./gf-02.mdx) | Multi-agent coordination | Collab, Role, Dialog |
-| **GF-03** | [Drift Detection](./gf-03.mdx) | Plan-execution divergence | Plan, Trace, Confirm |
-| **GF-04** | [Delta-Intent](./gf-04.mdx) | Incremental state update | Context, Trace |
-| **GF-05** | [Governance](./gf-05.mdx) | Policy enforcement | Confirm, Role |
+| **FLOW-01** | [Single Agent – Happy Path](./gf-01.mdx) | Baseline 2-step plan execution | Context, Plan, Trace |
+| **FLOW-02** | [Single Agent – Large Plan](./gf-02.mdx) | Volumetric 20+ step validation | Context, Plan, Trace |
+| **FLOW-03** | [Single Agent – With Tools](./gf-03.mdx) | Tool integration via agent_role | Context, Plan, Trace |
+| **FLOW-04** | [Single Agent with LLM Enrichment](./gf-04.mdx) | AEL reasoning integration | Context, Plan, Trace, Core |
+| **FLOW-05** | [Single Agent with Confirm Required](./gf-05.mdx) | Multi-round approval | Context, Plan, Confirm, Trace |
+
+## SA Profile Flows
+
+| Flow | Name | Purpose | Modules Involved |
+|:---|:---|:---|:---|
+| **SA-FLOW-01** | SA Basic Execution | Single-step SA lifecycle | Context, Plan |
+| **SA-FLOW-02** | SA Multi-Step Evaluation | Multi-step SA validation | Context, Plan |
+
+## MAP Profile Flows
+
+| Flow | Name | Purpose | Modules Involved |
+|:---|:---|:---|:---|
+| **MAP-FLOW-01** | MAP Turn-Taking Session | Sequential multi-agent coordination | Context, Plan, Collab, Role |
+| **MAP-FLOW-02** | MAP Broadcast Fan-out | Parallel multi-agent dispatch | Context, Plan, Collab, Role |
 
 ## Traceability
 
 All Golden Flows are mapped to:
 - **Modules** they validate
 - **Cross-Cutting Duties** they exercise
-- **Test files** in the repository
+- **Test files** in `tests/golden/flows/`
 
-See: Repo-Docs-Code Alignment (TBD)
+
 
 ## Change Policy
 
 Golden Flows are **Normative**:
 - Semantic changes require MPGC approval
-- Test files must reflect current flow definitions
-- Evidence must be updated when flows change
+- Test files in `tests/golden/flows/` are the source of truth
+- All downstream content must align with source of truth
 
 ---
 
 **Document Status**: Normative (Validation Scenarios)  
-**Total Flows**: 5  
-**Required for Compliance**: All 5 flows must pass
+**Total Flows**: 9 (5 Core + 2 SA + 2 MAP)  
+**Source of Truth**: `tests/golden/flows/`

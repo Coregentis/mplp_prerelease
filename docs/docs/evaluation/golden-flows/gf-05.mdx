@@ -1,14 +1,14 @@
 ---
 entry_surface: documentation
 doc_type: informative
-status: draft
-authority: none
+status: active
+authority: Documentation Governance
 protocol_version: "1.0.0"
-doc_id: "DOC-EVAL-GF-05-001"
+doc_id: "DOC-EVAL-FLOW-05-001"
 
 # UI metadata (non-normative; excluded from protocol semantics)
-title: "GF-05: Governance"
-sidebar_label: "GF-05: Governance"
+title: "FLOW-05: Single Agent with Confirm Required"
+sidebar_label: "FLOW-05: Confirm Required"
 sidebar_position: 5
 ---
 
@@ -19,43 +19,78 @@ sidebar_position: 5
 > It MUST NOT be used as an authoritative specification.
 > All normative requirements are defined in the Specification documents.
 
-# GF-05: Governance (Confirmation)
+# FLOW-05: Single Agent with Confirm Required
 
-> **Type**: Evaluation Scenario
+> **Type**: Evaluation Scenario  
+> **Category**: A: Single Agent Basics  
 > **Profile**: SA (Single Agent)
+
+**Source of Truth:** `tests/golden/flows/flow-05-single-agent-confirm-required/`
+
+## Purpose
+
+Multi-round approval workflow. Validates Confirm module integration where plans require explicit approval before execution.
 
 ## Scope
 
-This evaluation scenario describes:
-- **Confirmation** module's multi-round approval process
-- **Human-in-the-loop** (HITL) decision recording
-- **Trace** emission of governance events
-- **Plan** execution blocking until approval is received
+This evaluation scenario validates:
+- **Confirm** module with `decisions[]` array for multi-round approval
+- Plan `status` transitions based on Confirm decisions
+- **Trace** recording of confirmation lifecycle events
+- ID binding relationships across modules
 
 ## Non-Goals
 
 This scenario does NOT evaluate:
-- Multi-agent coordination (see GF-02)
-- Drift detection (see GF-03)
+- Single-pass approval (see FLOW-01 for happy path)
+- Tool integration (see FLOW-03)
+- LLM enrichment (see FLOW-04)
+- Actual plan execution (focuses on confirmation semantics)
 
 ---
 
-## Modules Involved
+## L2 Modules Exercised
 
 | Module | Role in Flow |
 |:-------|:-------------|
-| **Confirm** | Manages the approval lifecycle and decisions |
-| **Plan** | Subject of the confirmation request |
-| **Trace** | Records the audit trail of approvals/rejections |
-| **Role** | Defines who has authority to confirm |
+| **Context** | Immutable anchor for Plan and Confirm |
+| **Plan** | Contains execution strategy requiring approval |
+| **Confirm** | Records approval/rejection decisions |
+| **Trace** | Records all confirmation lifecycle events |
 
 ---
 
-## Cross-Cutting Duties Exercised
+## Key Protocol Fields
 
-- Governance Gate
-- Decision Audit
-- Authority Verification
+### Confirm (Multi-Round)
+- `confirm_id`: UUID v4
+- `target_type`: "plan"
+- `target_id`: References `plan_id`
+- `status`: pending → rejected → approved
+- `requested_by_role`: Who requested approval
+- `requested_at`: When requested
+- `decisions[]`: Array of decision records
+  - `decision_id`: UUID v4
+  - `status`: "approved" | "rejected" | "cancelled"
+  - `decided_by_role`: Who made the decision
+  - `decided_at`: When decided
+  - `reason`: Decision justification
+
+### Trace (Confirm Events)
+- `events[]`: Chronological confirmation events
+  - `confirm_submitted`: Initial request
+  - `decision_rejected`: First rejection
+  - `decision_approved`: Final approval
+- All events reference `confirm_id` and `decision_id`
+
+---
+
+## Integration Dimensions (L3/L4)
+
+**Minimal Integration** for FLOW-05:
+- No Tool Integration (simple agent steps only)
+- No LLM Backend (pure confirmation semantics)
+- No Runtime Execution (trace contains confirmation events, not execution events)
 
 ---
 
@@ -63,13 +98,43 @@ This scenario does NOT evaluate:
 
 | Type | Location | Status |
 |:-----|:---------|:-------|
-| **Golden Flow** | `tests/golden/flows/flow-05-single-agent-confirm-required/` | Passed |
+| **Golden Flow** | `tests/golden/flows/flow-05-single-agent-confirm-required/` | ✅ Passed |
+| **Input Fixtures** | `tests/golden/flows/flow-05-single-agent-confirm-required/input/` | Available |
+| **Expected Fixtures** | `tests/golden/flows/flow-05-single-agent-confirm-required/expected/` | Available |
 
 ---
 
 ## Expected Behavior
 
-- Agent pauses execution at the governance gate
-- Human/System provides a decision (e.g., Approve)
-- Agent resumes execution only after valid approval
-- All decisions are permanently recorded in the Trace
+- ONE Confirm object tracks full approval lifecycle
+- Multiple `decisions` added sequentially (reject, then approve)
+- `decisions[0].status: "rejected"` with rejection reason
+- `decisions[1].status: "approved"` with approval notes
+- Trace captures: confirm_submitted, reject_decision, approve_decision
+- Full audit trail via trace events
+
+---
+
+## Invariants Tested
+
+- ID bindings validated via `eq()` rule:
+  - `plan.context_id == context.context_id`
+  - `confirm.target_id == plan.plan_id`
+  - `trace.context_id == context.context_id`
+  - `trace.plan_id == plan.plan_id`
+- Confirm `status` valid enum
+- Confirm `target_type` is "plan"
+- Decisions array has at least 1 entry
+- All `decision_id` values UUID v4
+- All `reason` fields non-empty
+
+---
+
+## Protocol Invariant Milestone
+
+FLOW-05 completion locks down Context, Plan, Confirm, and Trace minimum behavioral invariants for MPLP v1.0.
+
+---
+
+**Document Status**: Informative (Evaluation Scenario)  
+**Source of Truth**: `tests/golden/flows/flow-05-single-agent-confirm-required/README.md`
