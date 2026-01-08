@@ -2,6 +2,7 @@
 sidebar_position: 2
 
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Python SDK guide for mplp package including installation, usage, and API reference."

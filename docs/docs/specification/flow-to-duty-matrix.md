@@ -2,6 +2,7 @@
 sidebar_position: 95
 entry_surface: documentation
 doc_type: informative
+normativity: informative
 status: draft
 protocol_version: "1.0.0"
 doc_id: "DOC-SEMANTIC-FLOW-DUTY-MATRIX-001"

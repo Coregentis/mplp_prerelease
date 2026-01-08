@@ -1,6 +1,7 @@
 ---
 entry_surface: documentation
 doc_type: normative
+normativity: normative
 status: frozen
 authority: protocol
 protocol_version: "1.0.0"

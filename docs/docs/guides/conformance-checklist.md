@@ -2,6 +2,7 @@
 sidebar_position: 2
 
 doc_type: informative
+normativity: informative
 title: Conformance Checklist
 description: Self-verification checklist for assessing MPLP v1.0 conformance levels (L1-L3).
 sidebar_label: Conformance Checklist

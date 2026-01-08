@@ -2,6 +2,7 @@
 sidebar_position: 4
 
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Validation rules for LearningSamples, covering core and family-specific invariants."

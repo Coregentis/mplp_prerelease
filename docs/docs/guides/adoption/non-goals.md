@@ -2,6 +2,7 @@
 sidebar_position: 2
 
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Explicit non-goals for MPLP Adoption."

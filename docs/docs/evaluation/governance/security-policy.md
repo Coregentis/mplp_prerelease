@@ -2,6 +2,7 @@
 sidebar_position: 4
 entry_surface: documentation
 doc_type: informative
+normativity: informative
 status: draft
 protocol_version: "1.0.0"
 doc_id: "DOC-EVAL-GOV-SECURITY-001"

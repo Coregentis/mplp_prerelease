@@ -3,6 +3,7 @@ title: "POSIX Analogy — Conceptual Mapping"
 sidebar_label: "POSIX Analogy"
 sidebar_position: 20
 doc_type: reference
+normativity: informative
 status: active
 description: "A conceptual mapping (analogy) between POSIX interface ideas and MPLP's schema-defined lifecycle governance. Not a compatibility or certification claim."
 keywords:

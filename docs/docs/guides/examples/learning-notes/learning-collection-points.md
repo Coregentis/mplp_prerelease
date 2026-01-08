@@ -2,6 +2,7 @@
 sidebar_position: 3
 
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Defines when and how to generate LearningSamples during MPLP execution."

@@ -2,6 +2,7 @@
 sidebar_position: 5
 
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Overview of the MPLP learning feedback loop including sample collection and training."

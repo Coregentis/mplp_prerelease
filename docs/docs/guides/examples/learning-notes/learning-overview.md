@@ -2,6 +2,7 @@
 sidebar_position: 1
 
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Overview of MPLP Learning module, covering LearningSample families, collection mechanisms, and compliance boundaries."

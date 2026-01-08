@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Comprehensive overview of the Multi-Agent Lifecycle Protocol (MPLP) v1.0, covering architecture, modules, events, and conformance levels."

@@ -2,6 +2,7 @@
 sidebar_position: 2
 
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Documents the LearningSample schema structure, covering core and family-specific fields."

@@ -2,6 +2,7 @@
 sidebar_position: 1
 
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Frequently Asked Questions about MPLP Protocol."

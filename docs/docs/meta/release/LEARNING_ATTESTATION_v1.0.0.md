@@ -2,6 +2,7 @@
 sidebar_position: 8
 
 doc_type: attestation
+normativity: informative
 status: active
 authority: MPGC
 description: "Formal attestation of Learning Module capabilities for MPLP v1.0.0."

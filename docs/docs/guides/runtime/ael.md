@@ -2,6 +2,7 @@
 sidebar_position: 3
 
 doc_type: normative
+normativity: normative
 status: frozen
 authority: MPGC
 description: "Action Execution Layer (AEL) reference for runtime implementers."

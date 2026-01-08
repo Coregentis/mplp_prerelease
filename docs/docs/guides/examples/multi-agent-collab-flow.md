@@ -2,6 +2,7 @@
 sidebar_position: 6
 
 doc_type: reference
+normativity: informative
 title: Multi-Agent Collaboration Flow
 description: Example showing multi-agent collaboration patterns using MPLP MAP Profile.
 sidebar_label: Multi-Agent Collaboration

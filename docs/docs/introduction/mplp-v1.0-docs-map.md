@@ -1,6 +1,7 @@
 ---
 sidebar_position: 4
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Quick reference map for all MPLP schemas, modules, events, and invariants with their file locations."

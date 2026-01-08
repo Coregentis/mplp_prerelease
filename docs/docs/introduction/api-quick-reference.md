@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Quick reference for MPLP observability event families and invariant rules."

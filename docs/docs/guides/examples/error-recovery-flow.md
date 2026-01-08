@@ -2,6 +2,7 @@
 sidebar_position: 5
 
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Example flow demonstrating error handling and recovery patterns in MPLP."

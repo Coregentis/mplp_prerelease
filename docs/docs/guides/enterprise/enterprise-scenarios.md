@@ -2,6 +2,7 @@
 sidebar_position: 1
 
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Evidence-centered enterprise scenario cards showing constraint → evidence → conformance mapping."

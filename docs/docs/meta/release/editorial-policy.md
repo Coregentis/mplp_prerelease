@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 doc_type: governance
+normativity: informative
 status: frozen
 authority: Documentation Governance
 description: "Editorial standards for MPLP documentation including writing style, formatting, terminology, and review process."

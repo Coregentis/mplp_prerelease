@@ -2,6 +2,7 @@
 sidebar_position: 7
 
 doc_type: reference
+normativity: informative
 title: Implementation Maturity Matrix
 description: Matrix showing feature implementation status across MPLP SDK implementations (TypeScript, Python, Go, Java).
 sidebar_label: Maturity Matrix

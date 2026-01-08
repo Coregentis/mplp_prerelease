@@ -2,6 +2,7 @@
 sidebar_position: 2
 
 doc_type: reference
+normativity: informative
 title: Vendor-Neutral LLM Integration
 description: Example demonstrating vendor-neutral LLM integration through MPLP abstractions.
 sidebar_label: Vendor-Neutral LLM

@@ -4,6 +4,7 @@ title: Runtime Capability Matrix
 sidebar_label: Capability Matrix
 sidebar_position: 2
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 

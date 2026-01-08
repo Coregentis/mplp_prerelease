@@ -2,6 +2,7 @@
 sidebar_position: 1
 entry_surface: documentation
 doc_type: informative
+normativity: informative
 status: draft
 protocol_version: "1.0.0"
 doc_id: "DOC-EVAL-CONF-MODEL-001"

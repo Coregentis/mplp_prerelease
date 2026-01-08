@@ -1,6 +1,7 @@
 ---
 entry_surface: documentation
 doc_type: informative
+normativity: informative
 status: draft
 protocol_version: "1.0.0"
 doc_id: "DOC-ARCH-CCK-ERROR-INFO-001"

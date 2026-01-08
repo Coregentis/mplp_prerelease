@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "This document defines the rules for adding or modifying documentation in the MPLP docs site."

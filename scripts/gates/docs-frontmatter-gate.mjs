@@ -45,8 +45,10 @@ function parseFrontmatter(content) {
 const REQUIRED_FIELDS = ['normativity', 'authority'];
 const RECOMMENDED_FIELDS = ['lifecycle_status', 'description', 'protocol_version'];
 
-// Fallback mappings from getDocIdentity.ts
-const FALLBACK_NORMATIVITY = ['doc_type'];
+// Valid normativity values (doc_type is NOT a substitute)
+const VALID_NORMATIVITY = ['normative', 'informative', 'non-normative', 'formative'];
+
+// Fallback mappings (for lifecycle_status only, NOT normativity)
 const FALLBACK_LIFECYCLE = ['status'];
 
 let results = {
@@ -64,8 +66,14 @@ function auditFile(filePath) {
         const fm = parseFrontmatter(content);
         results.total++;
 
-        // Check for normativity (with fallback)
-        const hasNormativity = fm.normativity || fm.doc_type;
+        // Check for normativity (MUST be explicit, doc_type is NOT valid)
+        const hasNormativity = fm.normativity;
+        const validNormativity = hasNormativity && VALID_NORMATIVITY.includes(fm.normativity);
+
+        // Warn if using doc_type without normativity
+        if (!hasNormativity && fm.doc_type) {
+            console.warn(`  WARN: ${relativePath} has doc_type but no normativity`);
+        }
 
         // Check for authority
         const hasAuthority = fm.authority;
@@ -74,7 +82,7 @@ function auditFile(filePath) {
         const hasLifecycle = fm.lifecycle_status || fm.status;
 
         // Will this show UNKNOWN?
-        const willBeUnknown = !hasNormativity;
+        const willBeUnknown = !validNormativity;
 
         if (willBeUnknown) {
             results.unknown.push({

@@ -2,6 +2,7 @@
 sidebar_position: 4
 
 doc_type: normative
+normativity: normative
 status: frozen
 authority: MPGC
 description: "Value State Layer (VSL) reference for state persistence implementations."

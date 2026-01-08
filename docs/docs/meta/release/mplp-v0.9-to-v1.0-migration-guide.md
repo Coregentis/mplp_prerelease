@@ -2,6 +2,7 @@
 sidebar_position: 2
 
 doc_type: governance
+normativity: informative
 status: frozen
 authority: Documentation Governance
 description: "Migration guide for upgrading from MPLP v0.9 to v1.0, covering breaking changes, schema updates, and checklist."

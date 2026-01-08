@@ -1,6 +1,7 @@
 ---
 sidebar_position: 6
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Normative definitions for key terms used throughout the MPLP v1.0 specification."

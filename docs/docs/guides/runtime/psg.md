@@ -2,6 +2,7 @@
 sidebar_position: 2
 
 doc_type: normative
+normativity: normative
 status: frozen
 authority: MPGC
 description: "The Project Semantic Graph (PSG) is the runtime state substrate of MPLP."

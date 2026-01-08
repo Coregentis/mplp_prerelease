@@ -2,6 +2,7 @@
 sidebar_position: 2
 
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Historical record and potential future exploration areas."

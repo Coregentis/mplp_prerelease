@@ -2,6 +2,7 @@
 sidebar_position: 4
 
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Example flow demonstrating human-in-the-loop confirmation for high-risk actions."

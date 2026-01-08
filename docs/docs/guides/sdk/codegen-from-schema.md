@@ -2,6 +2,7 @@
 sidebar_position: 6
 
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Guide for generating type-safe code from MPLP JSON schemas in multiple languages."

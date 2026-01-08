@@ -2,6 +2,7 @@
 sidebar_position: 3
 
 doc_type: reference
+normativity: informative
 title: Tool Execution Integration
 description: Example showing how agents integrate with external tools via MPLP Extension module.
 sidebar_label: Tool Execution

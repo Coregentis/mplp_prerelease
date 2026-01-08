@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "This page defines how to read and navigate the MPLP documentation site, with recommended reading paths for different audiences."

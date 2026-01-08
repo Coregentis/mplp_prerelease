@@ -2,6 +2,7 @@
 sidebar_position: 1
 
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Reference implementation guide for the MPLP TypeScript SDK."

@@ -1,6 +1,7 @@
 ---
 
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Example showing a complete Single Agent (SA) flow using MPLP TypeScript SDK."

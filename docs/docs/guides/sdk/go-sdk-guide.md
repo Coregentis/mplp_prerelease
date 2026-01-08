@@ -2,6 +2,7 @@
 sidebar_position: 3
 
 doc_type: reference
+normativity: informative
 status: active
 authority: Documentation Governance
 description: "Go SDK guide for MPLP including module installation and usage patterns."

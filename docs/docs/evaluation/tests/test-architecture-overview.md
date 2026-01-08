@@ -2,6 +2,7 @@
 sidebar_position: 2
 entry_surface: documentation
 doc_type: informative
+normativity: informative
 status: active
 authority: Documentation Governance
 protocol_version: "1.0.0"

@@ -2,6 +2,7 @@
 sidebar_position: 1
 
 doc_type: normative
+normativity: normative
 status: frozen
 authority: MPGC
 description: "Runtime Glue Overview - L3 specification layer for MPLP."

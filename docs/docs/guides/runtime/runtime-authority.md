@@ -4,6 +4,7 @@ title: Runtime Authority & Scope
 sidebar_label: Authority & Scope
 sidebar_position: 1
 doc_type: normative
+normativity: normative
 status: frozen
 authority: MPGC
 audience: implementer
