@@ -26,7 +26,7 @@ jobs:
             echo "No root package.json - skipping"
           fi
 
-      -name: Install docs dependencies
+      - name: Install docs dependencies
         run: cd docs && npm ci
 
       - name: Build Docs

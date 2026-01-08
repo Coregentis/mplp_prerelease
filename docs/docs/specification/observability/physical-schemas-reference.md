@@ -250,34 +250,7 @@ Per `/schemas/v2/events/mplp-runtime-execution-event.schema.json`:
 
 ## 7. Schema Relationships
 
-```mermaid
-graph TD
-    subgraph "Base Schema"
-        Core[mplp-event-core.schema.json]
-    end
-    
-    subgraph "Specific Schemas (extends Core)"
-        GU[mplp-graph-update-event.schema.json]
-        PS[mplp-pipeline-stage-event.schema.json]
-        RE[mplp-runtime-execution-event.schema.json]
-    end
-    
-    Core --> GU
-    Core --> PS
-    Core --> RE
-    
-    subgraph "Event Families"
-        F1[graph_update<br/>REQUIRED]
-        F2[pipeline_stage<br/>REQUIRED]
-        F3[runtime_execution<br/>RECOMMENDED]
-        F4[intent, cost_budget,<br/>etc. - use Core]
-    end
-    
-    GU --> F1
-    PS --> F2
-    RE --> F3
-    Core --> F4
-```
+<MermaidDiagram id="50c478d3011a0924" />
 
 ## 8. Related Documents
 

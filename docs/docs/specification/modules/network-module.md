@@ -97,23 +97,10 @@ The **Network Module** defines the topology and node collection for multi-agent 
 ### 3.2 Topology Diagrams
 
 **Hub-Spoke** (orchestrated mode):
-```mermaid
-flowchart TB
-    Hub[Hub] --> A[Node A]
-    Hub --> B[Node B]
-    Hub --> C[Node C]
-```
+<MermaidDiagram id="9d1da9da1f786fc7" />
 
 **Mesh** (swarm mode):
-```mermaid
-flowchart LR
-    A[Node A] --- B[Node B]
-    B --- C[Node C]
-    C --- D[Node D]
-    A --- C
-    A --- D
-    B --- D
-```
+<MermaidDiagram id="bbea2c23ef5c7672" />
 
 ## 4. Lifecycle State Machine
 
@@ -121,17 +108,7 @@ flowchart LR
 
 **From schema**: `["draft", "provisioning", "active", "degraded", "maintenance", "retired"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> draft: Create
-    draft --> provisioning: Deploy
-    provisioning --> active: Ready
-    active --> degraded: Partial Failure
-    degraded --> active: Recover
-    active --> maintenance: Planned Downtime
-    maintenance --> active: Resume
-    active --> retired: Decommission
-```
+<MermaidDiagram id="6fa8ed6a705962cd" />
 
 ### 4.2 Status Semantics
 

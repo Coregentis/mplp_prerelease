@@ -58,28 +58,7 @@ The SA Profile utilizes the following Event Families:
 
 ### 3.2 Event Lifecycle Flow
 
-```mermaid
-sequenceDiagram
-    participant SA as SA Runtime
-    participant EventBus
-    
-    SA->>EventBus: SAInitialized
-    SA->>EventBus: SAContextLoaded
-    SA->>EventBus: SAPlanEvaluated
-    
-    loop For each step
-        SA->>EventBus: SAStepStarted
-        Note over SA: Execute step
-        alt Success
-            SA->>EventBus: SAStepCompleted
-        else Failure
-            SA->>EventBus: SAStepFailed
-        end
-        SA->>EventBus: SATraceEmitted
-    end
-    
-    SA->>EventBus: SACompleted
-```
+<MermaidDiagram id="372f3dfcf3e186ce" />
 
 ## 4. Recommended Events (Normative - SHOULD)
 

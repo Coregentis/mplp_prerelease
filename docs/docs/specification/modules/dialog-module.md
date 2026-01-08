@@ -126,15 +126,7 @@ function toAnthropicMessages(dialog: Dialog): AnthropicMessage[] {
 
 **From schema**: `["active", "paused", "completed", "cancelled"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> active: Start Dialog
-    active --> paused: Pause
-    paused --> active: Resume
-    active --> completed: End Normally
-    active --> cancelled: Abort
-    paused --> cancelled: Abort
-```
+<MermaidDiagram id="beaf633e2a40766b" />
 
 ### 4.2 Status Semantics
 

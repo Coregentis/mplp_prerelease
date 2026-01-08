@@ -52,13 +52,7 @@ Observability is **not a monitoring tool**. It is a **conceptual area** for stru
 
 ## 5. Conceptual Relationships
 
-```mermaid
-graph TD
-    Trace --> Observability
-    EventFamilies --> Observability
-    W3CTraceContext --> Observability
-    Observability --> ExternalSystems
-```
+<MermaidDiagram id="ac41416d7498f164" />
 
 ## 6. Reading Path
 

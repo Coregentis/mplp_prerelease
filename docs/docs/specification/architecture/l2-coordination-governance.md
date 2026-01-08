@@ -92,20 +92,7 @@ Each module governs a specific domain with defined state machines. Status enums 
 
 **7 Status States**:
 
-```mermaid
-stateDiagram-v2
-    [*] --> draft
-    draft --> proposed
-    proposed --> approved: Confirm.approved
-    proposed --> draft: Confirm.rejected
-    approved --> in_progress
-    in_progress --> completed: All steps completed
-    in_progress --> failed: Critical step failed
-    in_progress --> cancelled: User abort
-    completed --> [*]
-    failed --> [*]
-    cancelled --> [*]
-```
+<MermaidDiagram id="d24923eeabd17e96" />
 
 **Transitions** (normative logic):
 - `draft` `proposed` (requires validation)
@@ -275,16 +262,7 @@ Beyond SA's {Context, Plan, Trace}, MAP adds:
 
 ### 5.1 Core Dependencies (All Profiles)
 
-```mermaid
-graph TD
-    Context[Context<br/>Root Scope] -->|context_id| Plan[Plan<br/>Executable Steps]
-    Context -->|context_id| Dialog[Dialog<br/>Conversations]
-    Plan -->|plan_id| Confirm[Confirm<br/>Approvals]
-    Plan -->|plan_id| Trace[Trace<br/>Audit Log]
-    Confirm -->|approval decision| Plan
-    Role[Role<br/>Capabilities] -->|role_id| Plan
-    Extension[Extension<br/>Tools] -->|tool references| Plan
-```
+<MermaidDiagram id="a82ad6d1de57acb9" />
 
 **Binding Rules** (normative):
 1. Plan MUST reference valid `context_id` (SA invariant `sa_plan_context_binding`)
@@ -294,13 +272,7 @@ graph TD
 
 ### 5.2 MAP Extensions
 
-```mermaid
-graph TD
-    Collab[Collab<br/>Session] -->|participants[]| Role[Role<br/>Capabilities]
-    Collab -->|collab_id| Dialog[Dialog<br/>Coordination Messages]
-    Collab -->|session context| Plan[Plan<br/>Collaborative Work]
-    Network[Network<br/>Topology] -->|node assignments| Role
-```
+<MermaidDiagram id="f3ebe7814dd5d959" />
 
 **Additional Binding Rules** (MAP-specific):
 1. Collab MUST have  participants (invariant `map_session_requires_multiple_participants`)
@@ -309,12 +281,7 @@ graph TD
 
 ### 5.3 Tool Integration (Extension Module)
 
-```mermaid
-graph LR
-    Plan[Plan] -->|steps[].tool_id| Extension[Extension Registry]
-    Extension -->|capability injection| Runtime[L3 Runtime]
-    Runtime -->|invocation logs| Trace[Trace]
-```
+<MermaidDiagram id="7b19b7746ee67589" />
 
 **Integration Pattern**:
 1. Extensions register in Extension module with `extension_type` {capability, policy, integration, transformation, validation}

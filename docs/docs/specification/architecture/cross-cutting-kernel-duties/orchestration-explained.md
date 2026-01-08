@@ -67,15 +67,7 @@ They are distributed across:
 
 Orchestration **interacts with** the following protocol elements:
 
-```mermaid
-graph TD
-    Plan --> Orchestration
-    Context --> Orchestration
-    Confirm --> Orchestration
-    Orchestration --> PSG
-    Orchestration --> EventBus
-    Orchestration --> Trace
-```
+<MermaidDiagram id="1dee506904af5221" />
 
 ## 6. Reading Path
 

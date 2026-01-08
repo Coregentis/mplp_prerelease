@@ -96,13 +96,7 @@ The **Confirm Module** provides the Human-in-the-Loop (HITL) approval workflow f
 
 **From schema**: `["pending", "approved", "rejected", "cancelled"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> pending: Create Request
-    pending --> approved: User Approves
-    pending --> rejected: User Rejects
-    pending --> cancelled: User/System Cancels
-```
+<MermaidDiagram id="46eb8cc753f5fa48" />
 
 ### 3.2 Status Semantics
 
@@ -117,29 +111,7 @@ stateDiagram-v2
 
 ### 4.1 Plan Approval Flow
 
-```mermaid
-sequenceDiagram
-    participant Agent
-    participant Runtime
-    participant Confirm
-    participant User
-    participant Plan
-    
-    Agent->>Plan: Create Plan (status=draft)
-    Agent->>Plan: Submit (status=proposed)
-    Runtime->>Confirm: Create Confirm Request
-    Confirm->>User: Notify: Approval Required
-    
-    alt User Approves
-        User->>Confirm: Approve
-        Confirm->>Plan: status=approved
-        Runtime->>Plan: Execute
-    else User Rejects
-        User->>Confirm: Reject (with feedback)
-        Confirm->>Plan: status=draft
-        Agent->>Plan: Modify based on feedback
-    end
-```
+<MermaidDiagram id="813af8a6e20c87ca" />
 
 ### 4.2 Approval Trigger
 

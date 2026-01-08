@@ -83,29 +83,13 @@ The **Trace Module** provides the observability backbone for MPLP. It captures *
 
 **From schema**: `["pending", "running", "completed", "failed", "cancelled"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> pending: Create
-    pending --> running: Start Execution
-    running --> completed: All Segments Done
-    running --> failed: Critical Failure
-    running --> cancelled: User Cancels
-    pending --> cancelled: Abort Before Start
-```
+<MermaidDiagram id="9df2eaa43052bdf9" />
 
 ### 3.2 Segment Status
 
 **From schema**: `["pending", "running", "completed", "failed", "cancelled", "skipped"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> pending: Create
-    pending --> running: Begin
-    running --> completed: Success
-    running --> failed: Error
-    pending --> skipped: Conditional Skip
-    running --> cancelled: Abort
-```
+<MermaidDiagram id="7cbc7eb0aad8c11b" />
 
 ### 3.3 Status Semantics
 
@@ -124,16 +108,7 @@ stateDiagram-v2
 
 **From**: `common/trace-base.schema.json`
 
-```mermaid
-flowchart TB
-    Trace[Trace root] --> RootSpan[root_span]
-    RootSpan --> seg1[segment_1: Step 1 execution]
-    RootSpan --> seg2[segment_2: Step 2 execution]
-    RootSpan --> seg3[segment_3: Step 3 execution]
-    seg1 --> seg1a[sub_segment_1a: LLM call]
-    seg1 --> seg1b[sub_segment_1b: Tool call]
-    seg2 --> seg2a[sub_segment_2a: File write]
-```
+<MermaidDiagram id="d7ebb8b48e29e83b" />
 
 ### 4.2 W3C Trace Context Compatibility
 
@@ -251,18 +226,7 @@ async function recordEvent(
 
 ### 7.1 Dependency Map
 
-```mermaid
-flowchart LR
-    Trace[Trace Module] --> Context[Context Module]
-    Trace --> Plan[Plan Module]
-    Trace --> Obs[Observability]
-    Trace --> Learning[Learning Module]
-    
-    Trace -->|context_id MUST reference valid Context| Context
-    Trace -->|plan_id references associated Plan| Plan
-    Trace -->|Receives all observability events| Obs
-    Trace -->|Completed traces → learning sample extraction| Learning
-```
+<MermaidDiagram id="7b45b30fac58fcf1" />
 
 ## 8. SDK Examples
 

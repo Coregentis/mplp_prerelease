@@ -46,15 +46,7 @@ MPLP supports multiple governance models:
 
 ### 2.2 Centralized (Dictator)
 
-```mermaid
-graph TD
-    Root[Root Agent / Human]
-    Root --> A[Agent A]
-    Root --> B[Agent B]
-    Root --> C[Agent C]
-    
-    style Root fill:#f96,stroke:#333
-```
+<MermaidDiagram id="b985fd791fbcb213" />
 
 **Rules**:
 - Single "Root Agent" or Human has absolute authority
@@ -63,20 +55,7 @@ graph TD
 
 ### 2.3 Federated (Committee)
 
-```mermaid
-graph TD
-    subgraph Committee
-        M1[Member 1]
-        M2[Member 2]
-        M3[Member 3]
-    end
-    
-    M1 -->|Vote| D[Decision]
-    M2 -->|Vote| D
-    M3 -->|Vote| D
-    
-    D --> Action
-```
+<MermaidDiagram id="7109580d1f77ebfc" />
 
 **Rules**:
 - Decisions require consensus (e.g., 2/3 majority)
@@ -85,20 +64,7 @@ graph TD
 
 ### 2.4 Hierarchical
 
-```mermaid
-graph TD
-    L1[Level 1: Architect]
-    L2a[Level 2: Coder A]
-    L2b[Level 2: Coder B]
-    L3a[Level 3: Tester]
-    
-    L1 --> L2a
-    L1 --> L2b
-    L2a --> L3a
-    L2b --> L3a
-    
-    style L1 fill:#f96
-```
+<MermaidDiagram id="f676ffe4e91ae2bd" />
 
 **Rules**:
 - Higher rank overrides lower rank
@@ -120,19 +86,7 @@ When agents disagree (e.g., Agent A wants to delete a file, Agent B wants to kee
 
 ### 3.2 Conflict Resolution Flow
 
-```mermaid
-flowchart TD
-    A[Conflict Detected] --> B{Same Rank?}
-    B -->|No| C[Higher Rank Wins]
-    B -->|Yes| D{Policy Allows Voting?}
-    D -->|Yes| E[Voting]
-    D -->|No| F{LWW Enabled?}
-    F -->|Yes| G[Latest Timestamp Wins]
-    F -->|No| H[Escalate to Human]
-    E --> I{Majority?}
-    I -->|Yes| J[Apply Winner]
-    I -->|Tie| H
-```
+<MermaidDiagram id="d99a12c6ff5589fb" />
 
 ### 3.3 Implementation
 
@@ -281,27 +235,7 @@ async function enforcePolicy(
 
 ### 5.2 HITL Flow
 
-```mermaid
-sequenceDiagram
-    participant Agent
-    participant Policy
-    participant Confirm
-    participant Human
-    
-    Agent->>Policy: Request action
-    Policy->>Policy: Check rules
-    Policy-->>Agent: Requires approval
-    Agent->>Confirm: Create request
-    Confirm->>Human: Notify
-    Human->>Confirm: Approve/Reject
-    Confirm-->>Agent: Decision
-    
-    alt Approved
-        Agent->>Agent: Execute action
-    else Rejected
-        Agent->>Agent: Abort action
-    end
-```
+<MermaidDiagram id="c3da52705df75d92" />
 
 ## 6. Safety Examples
 

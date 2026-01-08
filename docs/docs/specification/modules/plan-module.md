@@ -80,33 +80,13 @@ The **Plan Module** is the engine of agency. It provides the standard structure 
 
 **From schema**: `["draft", "proposed", "approved", "in_progress", "completed", "cancelled", "failed"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> draft: Create
-    draft --> proposed: Submit for Review
-    proposed --> approved: User Approves (Confirm)
-    proposed --> draft: User Requests Changes
-    approved --> in_progress: Start Execution
-    in_progress --> completed: All Steps Done
-    in_progress --> failed: Critical Step Failed
-    in_progress --> cancelled: User Cancels
-    draft --> cancelled: Abandon
-```
+<MermaidDiagram id="fe61fa5dc7c27657" />
 
 ### 3.2 Step Status
 
 **From schema**: `["pending", "in_progress", "completed", "blocked", "skipped", "failed"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> pending: Create
-    pending --> in_progress: Dependencies Met
-    in_progress --> completed: Success
-    in_progress --> failed: Error
-    pending --> blocked: Dependency Failed
-    pending --> skipped: Conditional Skip
-    blocked --> pending: Dependency Resolved
-```
+<MermaidDiagram id="83fa0e9e559b8ea2" />
 
 ### 3.3 Valid Transitions
 
@@ -189,14 +169,7 @@ function validatePlanDAG(plan: Plan): ValidationResult {
 
 ### 4.3 Example DAG
 
-```mermaid
-flowchart LR
-    s1[s1: Analyze Requirements] --> s2[s2: Design Architecture]
-    s1 --> s3[s3: Setup Testing]
-    s2 --> s4[s4: Implement Core]
-    s3 --> s5[s5: Integration Test]
-    s4 --> s5
-```
+<MermaidDiagram id="3823eeb044d6f498" />
 
 ```json
 {
@@ -234,18 +207,7 @@ flowchart LR
 
 ### 6.1 Dependency Map
 
-```mermaid
-flowchart LR
-    Plan[Plan Module] --> Context[Context Module]
-    Plan --> Confirm[Confirm Module]
-    Plan --> Trace[Trace Module]
-    Plan --> Role[Role Module]
-    
-    Plan -->|context_id MUST reference| Context
-    Plan -->|proposed→approved requires Confirm.approved=true| Confirm
-    Plan -->|Each step execution emits Trace Span| Trace
-    Plan -->|step.agent_role references role_id| Role
-```
+<MermaidDiagram id="5cd6cf2e8cb9f239" />
 
 ## 7. SDK Examples
 

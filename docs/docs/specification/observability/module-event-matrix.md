@@ -47,48 +47,7 @@ The **Module Event Matrix** defines which L2 Modules are responsible for emittin
 
 ### 2.2 Visual Matrix
 
-```mermaid
-graph LR
-    subgraph Modules
-        M1[Context]
-        M2[Plan]
-        M3[Trace]
-        M4[Role]
-        M5[Confirm]
-        M6[Dialog]
-        M7[Collab]
-        M8[Extension]
-        M9[Network]
-        M10[Core]
-    end
-    
-    subgraph "Required Events"
-        E1[graph_update]
-        E2[pipeline_stage]
-    end
-    
-    subgraph "Recommended Events"
-        E3[runtime_execution]
-        E4[import_process]
-        E5[intent]
-        E6[cost_budget]
-    end
-    
-    M1 --> E1
-    M1 --> E4
-    M2 --> E1
-    M2 --> E2
-    M4 --> E1
-    M5 --> E2
-    M5 --> E1
-    M6 --> E5
-    M7 --> E2
-    M7 --> E3
-    M8 --> E3
-    M9 --> E1
-    M10 --> E2
-    M10 --> E6
-```
+<MermaidDiagram id="5968b52d0c6e020d" />
 
 ## 3. Trigger Points
 
@@ -152,39 +111,7 @@ graph LR
 
 ### 4.1 Plan Execution Flow
 
-```mermaid
-sequenceDiagram
-    participant Plan
-    participant Trace
-    participant EventBus
-    
-    Note over Plan: Plan created
-    Plan->>EventBus: graph_update (plan_created)
-    EventBus->>Trace: Persist event
-    
-    Note over Plan: Plan approved
-    Plan->>EventBus: pipeline_stage (plan_approved)
-    EventBus->>Trace: Persist event
-    
-    loop For each step
-        Note over Plan: Step execution
-        Plan->>EventBus: pipeline_stage (step_started)
-        EventBus->>Trace: Persist event
-        
-        Plan->>EventBus: runtime_execution (llm_call)
-        EventBus->>Trace: Persist event
-        
-        Plan->>EventBus: pipeline_stage (step_completed)
-        EventBus->>Trace: Persist event
-        
-        Plan->>EventBus: graph_update (step_status_changed)
-        EventBus->>Trace: Persist event
-    end
-    
-    Note over Plan: Plan completed
-    Plan->>EventBus: pipeline_stage (plan_completed)
-    EventBus->>Trace: Persist event
-```
+<MermaidDiagram id="add665e10c0bdbf5" />
 
 ## 5. Compliance Requirements
 

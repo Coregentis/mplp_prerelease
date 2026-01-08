@@ -288,6 +288,7 @@ function main() {
         const config = loadConfig();
         cleanDist();
         processIncludes(config);
+        copyOSSPackageJson();  // Install minimal package.json
 
         // Validate and generate manifest
         const stats = validateRelease(config);
@@ -304,3 +305,16 @@ function main() {
 }
 
 main();
+
+function copyOSSPackageJson() {
+    const ossPackageJson = path.join(__dirname, 'oss-package.json');
+    const distPackageJson = path.join(rootDir, DIST_DIR, 'package.json');
+    
+    if (fs.existsSync(ossPackageJson)) {
+        console.log('\nCopying OSS package.json...');
+        fs.copyFileSync(ossPackageJson, distPackageJson);
+        console.log('✓ OSS package.json installed');
+    } else {
+        console.warn('⚠ Warning: oss-package.json not found, skipping');
+    }
+}

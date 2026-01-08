@@ -82,15 +82,7 @@ The **Extension Module** provides the plugin system for MPLP. It enables capabil
 
 **From schema**: `["registered", "active", "inactive", "deprecated"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> registered: Register
-    registered --> active: Activate
-    active --> inactive: Deactivate
-    inactive --> active: Reactivate
-    active --> deprecated: Deprecate
-    deprecated --> inactive: Disable
-```
+<MermaidDiagram id="6a6ea3139e594005" />
 
 ### 3.2 Status Semantics
 

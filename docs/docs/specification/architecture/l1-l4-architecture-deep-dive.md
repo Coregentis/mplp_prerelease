@@ -282,28 +282,7 @@ eventBus.on('integration.file_update', async (event) => {
 **From** `docs/14-runtime/drift-and-rollback.md` + implementation analysis:
 
 **Passive Strategy** (Event-Driven):
-```mermaid
-sequenceDiagram
-    participant IDE as VS Code
-    participant L4 as L4 Adapter
-    participant EventBus as Event Bus
-    participant Runtime as L3 Runtime
-    participant PSG as PSG
-    
-    IDE->>L4: File saved (native event)
-    L4->>EventBus: file_update_event {file_path, timestamp}
-    EventBus->>Runtime: Dispatch event
-    Runtime->>PSG: Get file metadata
-    PSG-->>Runtime: {last_modified, content_hash}
-    Runtime->>Runtime: Compare timestamps
-    alt Drift Detected
-        Runtime->>EventBus: Emit drift_event
-        Runtime->>PSG: Update metadata
-        Runtime->>EventBus: Emit graph_update
-    else No Drift
-        Runtime->>PSG: Update timestamp only
-    end
-```
+<MermaidDiagram id="2d4ae71db41b70f6" />
 
 **Active Strategy** (Polling):
 ```python

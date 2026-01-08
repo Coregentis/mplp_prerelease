@@ -53,13 +53,7 @@ Error Handling is **not an exception framework**. It is a **conceptual area** fo
 
 ## 5. Conceptual Relationships
 
-```mermaid
-graph TD
-    Plan --> ErrorHandling
-    Trace --> ErrorHandling
-    ErrorHandling --> Compensation
-    ErrorHandling --> Rollback
-```
+<MermaidDiagram id="852eba31132f70ba" />
 
 ## 6. Reading Path
 

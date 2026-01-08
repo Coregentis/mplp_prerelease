@@ -51,13 +51,7 @@ State Sync is **not a synchronization service**. It is a **conceptual area** des
 
 ## 5. Conceptual Relationships
 
-```mermaid
-graph TD
-    VSL --> StateSync
-    PSG --> StateSync
-    DriftDetection --> StateSync
-    Snapshot --> StateSync
-```
+<MermaidDiagram id="25e4b645ffd43def" />
 
 ## 6. Reading Path
 

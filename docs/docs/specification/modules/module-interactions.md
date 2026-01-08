@@ -64,52 +64,7 @@ This document describes the relationships and dependencies between MPLP L2 modul
 
 ### 3.1 Complete Dependency Map
 
-```mermaid
-graph TD
-    subgraph Core_Layer["Core Layer (Required)"]
-        Core[Core Module]
-        Context[Context Module]
-        Role[Role Module]
-    end
-    
-    subgraph Execution_Layer["Execution Layer"]
-        Plan[Plan Module]
-        Trace[Trace Module]
-    end
-    
-    subgraph Coordination_Layer["Coordination Layer"]
-        Collab[Collab Module]
-        Confirm[Confirm Module]
-        Dialog[Dialog Module]
-    end
-    
-    subgraph Extension_Layer["Extension Layer"]
-        Extension[Extension Module]
-        Network[Network Module]
-    end
-    
-    %% Dependencies
-    Core --> Context
-    Context --> Plan
-    Context --> Trace
-    Context --> Role
-    Context --> Collab
-    Context --> Extension
-    Context --> Network
-    
-    Plan --> Trace
-    Plan --> Role
-    Plan --> Confirm
-    
-    Collab --> Role
-    Collab --> Dialog
-    Collab --> Trace
-    
-    Confirm --> Role
-    Confirm --> Trace
-    
-    Network --> Role
-```
+<MermaidDiagram id="203e3ff10debbc59" />
 
 ### 3.2 Reference Bindings
 
@@ -133,58 +88,11 @@ graph TD
 
 ### 4.1 SA Profile (Single-Agent)
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant Dialog
-    participant Context
-    participant Plan
-    participant Confirm
-    participant Trace
-    
-    User->>Dialog: "Fix the login bug"
-    Dialog->>Context: Load project context
-    Context->>Plan: Create Plan (draft)
-    Plan->>Plan: Add steps
-    Plan->>Confirm: Submit for approval
-    Confirm->>User: Request approval
-    User->>Confirm: Approve
-    Confirm->>Plan: status=approved
-    Plan->>Trace: Start execution trace
-    loop Each Step
-        Plan->>Trace: Execute step create segment
-    end
-    Trace->>Plan: All completed
-    Plan->>User: Done!
-```
+<MermaidDiagram id="760030f7572a6f27" />
 
 ### 4.2 MAP Profile (Multi-Agent)
 
-```mermaid
-sequenceDiagram
-    participant Orchestrator
-    participant Collab
-    participant Agent1
-    participant Agent2
-    participant Plan
-    participant Trace
-    
-    Orchestrator->>Collab: Create session
-    Collab->>Agent1: Join session
-    Collab->>Agent2: Join session
-    
-    Orchestrator->>Plan: Create collaborative plan
-    Plan->>Agent1: Assign step 1
-    Plan->>Agent2: Assign step 2
-    
-    par Parallel Execution
-        Agent1->>Trace: Execute step 1
-        Agent2->>Trace: Execute step 2
-    end
-    
-    Trace->>Orchestrator: Report completion
-    Orchestrator->>Collab: End session
-```
+<MermaidDiagram id="bc65d25db4e24586" />
 
 ## 5. Module Coupling
 
@@ -283,15 +191,7 @@ function validateTraceContextBinding(trace: Trace, context: Context): boolean {
 
 ### 7.2 Event Propagation
 
-```mermaid
-flowchart LR
-    A[Plan: proposed] --> B[Confirm: create request]
-    B --> C[User: approve/reject]
-    C --> D[Confirm: decided]
-    D --> E[Plan: status update]
-    D --> F[Trace: record decision]
-    D --> G[Learning: capture sample]
-```
+<MermaidDiagram id="a3553a40a5e0cef2" />
 
 ## 8. Related Documents
 

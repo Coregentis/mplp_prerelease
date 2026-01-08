@@ -51,13 +51,7 @@ Transaction is **not a database feature**. It is a **conceptual boundary** for a
 
 ## 5. Conceptual Relationships
 
-```mermaid
-graph TD
-    VSL --> Transaction
-    Rollback --> Transaction
-    Compensation --> Transaction
-    PSG --> Transaction
-```
+<MermaidDiagram id="17d435b8a51f9f7a" />
 
 ## 6. Reading Path
 

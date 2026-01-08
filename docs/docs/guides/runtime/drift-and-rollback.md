@@ -124,21 +124,7 @@ A rollback is triggered by:
 
 ### 4.4 Rollback Procedure
 
-```mermaid
-sequenceDiagram
-    participant R as Runtime
-    participant PSG as PSG
-    participant T as Trace
-    participant FS as File System
-
-    R->>T: Emit RollbackInitiated
-    R->>PSG: Load snapshot state
-    R->>PSG: Revert nodes (project_root, plans, context)
-    R->>FS: Restore file backups (if applicable)
-    R->>R: Attempt compensation for side-effects
-    R->>T: Emit RollbackCompleted
-    R->>T: Create new Trace Span for re-execution
-```
+<MermaidDiagram id="7ff3e2ed31e8415f" />
 
 ### 4.5 Consistency Requirements
 

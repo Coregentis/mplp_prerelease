@@ -305,12 +305,7 @@ From `schemas/v2/invariants/integration-invariants.yaml` (4,489 bytes, 138 lines
 
 ### 6.1 Adapter Pattern
 
-```mermaid
-graph LR
-    External[External System<br/>e.g., VS Code] -->|Native Event| Adapter[MPLP Adapter<br/>e.g., vscode-plugin]
-    Adapter -->|MPLP Integration Event| EventBus[L3 Event Bus]
-    EventBus -->|Validated Event| PSG[PSG Update Logic]
-```
+<MermaidDiagram id="13d010945f38b1b8" />
 
 **Adapter Responsibilities**:
 1. **Subscribe** to native events from external system

@@ -94,18 +94,7 @@ The **Collab Module** provides the structure for multi-agent collaboration sessi
 
 ### 3.2 Mode Selection Guide
 
-```mermaid
-flowchart TD
-    A[Collaboration Need] --> B{How many participants?}
-    B -->|2| C[pair]
-    B -->|3+| D{Need central control?}
-    D -->|Yes| E[orchestrated]
-    D -->|No| F{Independent work?}
-    F -->|Yes| G[swarm]
-    F -->|No| H{Sequential turns?}
-    H -->|Yes| I[round_robin]
-    H -->|No| J[broadcast]
-```
+<MermaidDiagram id="6246257eb1ed66f2" />
 
 ## 4. Lifecycle State Machine
 
@@ -113,16 +102,7 @@ flowchart TD
 
 **From schema**: `["draft", "active", "suspended", "completed", "cancelled"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> draft: Create
-    draft --> active: Start
-    active --> suspended: Pause
-    suspended --> active: Resume
-    active --> completed: Finish
-    active --> cancelled: Abort
-    draft --> cancelled: Abandon
-```
+<MermaidDiagram id="9d97c50127e4ff52" />
 
 ### 4.2 Status Semantics
 
@@ -172,18 +152,7 @@ function advanceTurn(session: Collab, state: TurnState): string {
 
 ### 6.1 Dependency Map
 
-```mermaid
-flowchart LR
-    Collab[Collab Module] --> Context[Context Module]
-    Collab --> Role[Role Module]
-    Collab --> Plan[Plan Module]
-    Collab --> Trace[Trace Module]
-    
-    Collab -->|context_id MUST reference valid Context| Context
-    Collab -->|participant.role_id references Role| Role
-    Collab -->|Collaboration produces coordinated Plans| Plan
-    Collab -->|Session execution captured in Trace| Trace
-```
+<MermaidDiagram id="cfad987f3eb3f443" />
 
 ## 7. SDK Examples
 

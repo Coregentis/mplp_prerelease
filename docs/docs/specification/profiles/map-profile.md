@@ -66,15 +66,7 @@ The **Multi-Agent (MAP) Profile** extends the SA Profile to support collaboratio
 
 ### 4.2 Mode Selection
 
-```mermaid
-flowchart TD
-    A[Multi-Agent Task] --> B{Task Structure?}
-    B -->|Sequential pipeline| C[orchestrated]
-    B -->|Peer review| D[pair]
-    B -->|Voting/consensus| E[round_robin]
-    B -->|Independent parallel| F[swarm]
-    B -->|Fan-out announcement| G[broadcast]
-```
+<MermaidDiagram id="fe7aff159efce728" />
 
 ### 4.3 Mode Examples
 
@@ -164,73 +156,15 @@ function validateMAPProfile(session: Collab): ValidationResult {
 
 ### 6.1 Session State Machine
 
-```mermaid
-stateDiagram-v2
-    [*] --> draft: Create Session
-    draft --> active: Start Session
-    active --> active: Dispatch Turn
-    active --> active: Complete Turn
-    active --> suspended: Pause
-    suspended --> active: Resume
-    active --> completed: All Done
-    active --> cancelled: Abort
-    completed --> [*]
-    cancelled --> [*]
-```
+<MermaidDiagram id="8344e7078a03df0d" />
 
 ### 6.2 Turn-Taking Flow (Orchestrated)
 
-```mermaid
-sequenceDiagram
-    participant O as Orchestrator
-    participant A as Agent A
-    participant B as Agent B
-    participant Trace
-    
-    O->>O: MAPSessionStarted
-    O->>O: MAPRolesAssigned
-    
-    rect rgb(200, 230, 200)
-        Note over O,A: Turn 1
-        O->>A: MAPTurnDispatched
-        A->>A: Execute (SA sub-loop)
-        A->>O: MAPTurnCompleted
-        A->>Trace: Record result
-    end
-    
-    rect rgb(200, 200, 230)
-        Note over O,B: Turn 2
-        O->>B: MAPTurnDispatched
-        B->>B: Execute (SA sub-loop)
-        B->>O: MAPTurnCompleted
-        B->>Trace: Record result
-    end
-    
-    O->>O: MAPSessionCompleted
-```
+<MermaidDiagram id="6b3b207bb2aff734" />
 
 ### 6.3 Broadcast Flow
 
-```mermaid
-sequenceDiagram
-    participant O as Orchestrator
-    participant A as Agent A
-    participant B as Agent B
-    participant C as Agent C
-    
-    O->>O: MAPBroadcastSent
-    par Fan-out
-        O->>A: Task
-        O->>B: Task
-        O->>C: Task
-    end
-    par Fan-in
-        A->>O: MAPBroadcastReceived
-        B->>O: MAPBroadcastReceived
-        C->>O: MAPBroadcastReceived
-    end
-    O->>O: Aggregate results
-```
+<MermaidDiagram id="03f6a1c4ea3ae71b" />
 
 ## 7. Mandatory Events
 

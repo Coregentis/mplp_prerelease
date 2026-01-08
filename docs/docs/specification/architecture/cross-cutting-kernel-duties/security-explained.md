@@ -66,14 +66,7 @@ They are distributed across:
 
 Security **interacts with** the following protocol elements:
 
-```mermaid
-graph TD
-    Role --> Security
-    Confirm --> Security
-    Trace --> Security
-    Security --> L4Integration
-    Security --> PSG
-```
+<MermaidDiagram id="53381ce57a40fa2d" />
 
 ## 6. Reading Path
 

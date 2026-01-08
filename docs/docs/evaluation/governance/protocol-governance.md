@@ -32,16 +32,7 @@ The MIP (MPLP Improvement Proposal) process is the primary mechanism for proposi
 
 ## 3. MIP Status
 
-```mermaid
-stateDiagram-v2
-    [*] --> Draft
-    Draft --> Review
-    Review --> Accepted
-    Review --> Rejected
-    Accepted --> Final
-    Accepted --> Deferred
-    Final --> Replaced
-```
+<MermaidDiagram id="d460de40c79a91ba" />
 
 | Status | Description |
 |:---|:---|

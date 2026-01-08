@@ -55,14 +55,7 @@ Coordination **concerns** the following areas:
 
 ## 5. Conceptual Relationships
 
-```mermaid
-graph TD
-    Collab --> Coordination
-    Dialog --> Coordination
-    Network --> Coordination
-    Role --> Coordination
-    Coordination --> MAPProfile
-```
+<MermaidDiagram id="a91d9bc3493e7f5a" />
 
 ## 6. Reading Path
 

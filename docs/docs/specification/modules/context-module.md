@@ -100,17 +100,7 @@ The **Context Module** defines the "World State" of a project. It serves as the 
 
 **From schema**: `["draft", "active", "suspended", "archived", "closed"]`
 
-```mermaid
-stateDiagram-v2
-    [*] --> draft: Create
-    draft --> active: Activate
-    active --> suspended: Suspend
-    suspended --> active: Resume
-    active --> archived: Archive
-    archived --> closed: Close
-    suspended --> closed: Force Close
-    draft --> closed: Abandon
-```
+<MermaidDiagram id="d03a6dea7f89f987" />
 
 ### 3.2 Status Semantics
 
@@ -167,18 +157,7 @@ function validateContext(ctx: Context): ValidationResult {
 
 ### 5.1 Dependencies
 
-```mermaid
-flowchart LR
-    Context[Context Module] --> Plan[Plan Module]
-    Context --> Role[Role Module]
-    Context --> Trace[Trace Module]
-    Context --> Confirm[Confirm Module]
-    
-    Context -->|context_id binding: Every Plan MUST reference valid context_id| Plan
-    Context -->|owner_role links to role_id| Role
-    Context -->|Global trace for project-level observability| Trace
-    Context -->|governance.lastConfirmRef: Last approval decision reference| Confirm
-```
+<MermaidDiagram id="9a730e3846503302" />
 
 ### 5.2 Interaction Examples
 

@@ -49,29 +49,7 @@ The **Event Taxonomy** defines the classification system for all MPLP observabil
 
 ### 2.2 Family Groups
 
-```mermaid
-graph TD
-    subgraph "Group A: Intent & Planning (L2)"
-        A1[intent]
-        A2[delta_intent]
-        A3[methodology]
-        A4[reasoning_graph]
-    end
-    
-    subgraph "Group B: Execution & Lifecycle (L3)"
-        B1[pipeline_stage<br/>REQUIRED]
-        B2[runtime_execution]
-        B3[external_integration]
-        B4[cost_budget]
-    end
-    
-    subgraph "Group C: State & Safety (L3)"
-        C1[graph_update<br/>REQUIRED]
-        C2[impact_analysis]
-        C3[compensation_plan]
-        C4[import_process]
-    end
-```
+<MermaidDiagram id="6cdd6464bbfb3830" />
 
 ## 3. Group A: Intent & Planning
 
@@ -309,32 +287,7 @@ graph TD
 
 ## 6. Schema Mapping
 
-```mermaid
-flowchart LR
-    subgraph Specific Schemas
-        S1[graph-update-event]
-        S2[pipeline-stage-event]
-        S3[runtime-execution-event]
-    end
-    
-    subgraph Generic Schema
-        S4[event-core]
-    end
-    
-    S1 --> F1[graph_update]
-    S2 --> F2[pipeline_stage]
-    S3 --> F3[runtime_execution]
-    
-    S4 --> F4[intent]
-    S4 --> F5[delta_intent]
-    S4 --> F6[methodology]
-    S4 --> F7[reasoning_graph]
-    S4 --> F8[impact_analysis]
-    S4 --> F9[compensation_plan]
-    S4 --> F10[import_process]
-    S4 --> F11[cost_budget]
-    S4 --> F12[external_integration]
-```
+<MermaidDiagram id="ab48cd9eb15944b2" />
 
 ## 7. Related Documents
 

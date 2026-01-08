@@ -71,14 +71,7 @@ The PSG is a unified graph representation where:
 - **Edges**: Relationships (dependencies, ownership, causality)
 
 **PSG Structure**:
-```mermaid
-flowchart TB
-    Context["Context (root)<br/>context_id = ctx-123"] --> Plan["Plan (child)<br/>plan_id = plan-456<br/>context_id = ctx-123"]
-    Context --> Trace["Trace (child)<br/>trace_id = trace-789<br/>context_id = ctx-123<br/>plan_id = plan-456"]
-    Plan --> Step1["Step 1<br/>dependencies: []"]
-    Plan --> Step2["Step 2<br/>dependencies: [step-1]"]
-    Step1 -.->|edge| Step2
-```
+<MermaidDiagram id="381d99f56ab5380b" />
 
 **PSG Requirements** (normative):
 1. **Single Source of Truth**: PSG is authoritative, file system is secondary
@@ -256,40 +249,7 @@ export async function runSingleAgentFlow(
 
 **Detailed SA Execution Flow**:
 
-```mermaid
-sequenceDiagram
-    participant R as Runtime
-    participant VSL as Value State Layer
-    participant PSG as Project Semantic Graph
-    participant AEL as Action Execution Layer
-    participant EventBus as Event Bus
-
-    R->>VSL: Load Context
-    VSL-->>R: Context (status: active)
-    R->>PSG: Register Context node
-    PSG-->>EventBus: graph_update (node_add)
-
-    R->>VSL: Load Plan
-    VSL-->>R: Plan (status: approved)
-    R->>PSG: Register Plan node + edges
-    PSG-->>EventBus: graph_update (node_add, edge_add)
-    
-    R->>EventBus: pipeline_stage (Plan: approved in_progress)
-
-    loop For each Step
-        R->>PSG: Check dependencies
-        PSG-->>R: Dependencies satisfied
-        R->>EventBus: pipeline_stage (Step: pending in_progress)
-        R->>AEL: Execute step action
-        AEL-->>R: Action result
-        R->>PSG: Update step status
-        PSG-->>EventBus: graph_update (node_update)
-        R->>EventBus: pipeline_stage (Step: in_progress completed)
-    end
-
-    R->>EventBus: pipeline_stage (Plan: in_progress completed)
-    R->>VSL: Persist final state
-```
+<MermaidDiagram id="8a9b79cb83661ebe" />
 
 ## 5. Behavioral Requirements (Normative Outcomes)
 

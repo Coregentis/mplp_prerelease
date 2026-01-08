@@ -58,56 +58,11 @@ The MAP Profile utilizes the following Event Families:
 
 #### Orchestrated Mode
 
-```mermaid
-sequenceDiagram
-    participant O as Orchestrator
-    participant EventBus as Event Bus
-    participant A as Agent A
-    participant B as Agent B
-    
-    O->>EventBus: MAPSessionStarted
-    O->>EventBus: MAPRolesAssigned
-    
-    rect rgb(200, 230, 200)
-        Note over O,A: Turn 1
-        O->>EventBus: MAPTurnDispatched(A)
-        A->>A: Execute task
-        A->>EventBus: MAPTurnCompleted(A)
-    end
-    
-    rect rgb(200, 200, 230)
-        Note over O,B: Turn 2
-        O->>EventBus: MAPTurnDispatched(B)
-        B->>B: Execute task
-        B->>EventBus: MAPTurnCompleted(B)
-    end
-    
-    O->>EventBus: MAPSessionCompleted
-```
+<MermaidDiagram id="0b027f043a41dd74" />
 
 #### Broadcast Mode
 
-```mermaid
-sequenceDiagram
-    participant O as Orchestrator
-    participant EventBus as Event Bus
-    participant Workers as Agents A,B,C
-    
-    O->>EventBus: MAPSessionStarted
-    O->>EventBus: MAPBroadcastSent
-    
-    par Fan-out
-        EventBus->>Workers: Distribute task
-    end
-    
-    par Fan-in
-        Workers->>EventBus: MAPBroadcastReceived (A)
-        Workers->>EventBus: MAPBroadcastReceived (B)
-        Workers->>EventBus: MAPBroadcastReceived (C)
-    end
-    
-    O->>EventBus: MAPSessionCompleted
-```
+<MermaidDiagram id="9d16c09133c9e02b" />
 
 ## 4. Recommended Events (Normative - SHOULD)
 

@@ -52,13 +52,7 @@ Learning Feedback is **not a training pipeline**. It is a **conceptual area** fo
 
 ## 5. Conceptual Relationships
 
-```mermaid
-graph TD
-    Confirm --> LearningFeedback
-    Trace --> LearningFeedback
-    LearningSamples --> LearningFeedback
-    LearningFeedback --> MLPipelines
-```
+<MermaidDiagram id="ff768c08ae1fcb6d" />
 
 ## 6. Reading Path
 

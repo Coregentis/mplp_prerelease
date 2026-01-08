@@ -439,28 +439,7 @@ on Core.initialize(core_obj):
 
 ### 4.1 PSG Update Flow
 
-```mermaid
-flowchart LR
-    subgraph "Module Layer"
-        M1[Context]
-        M2[Plan]
-        M3[Trace]
-    end
-    
-    subgraph "PSG Layer"
-        PSG[(Protocol State Graph)]
-    end
-    
-    subgraph "Observability"
-        OBS[Event Emitter]
-    end
-    
-    M1 -->|WRITE| PSG
-    M2 -->|READ-WRITE| PSG
-    M3 -->|WRITE| PSG
-    
-    PSG -->|GraphUpdateEvent| OBS
-```
+<MermaidDiagram id="384e45a09987bbdc" />
 
 ### 4.2 Ownership Conflicts
 

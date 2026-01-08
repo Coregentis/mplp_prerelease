@@ -83,14 +83,7 @@ They are distributed across:
 
 Event Bus **interacts with** the following protocol elements:
 
-```mermaid
-graph TD
-    L4Adapters --> EventBus
-    Orchestration --> EventBus
-    PSG --> EventBus
-    EventBus --> Trace
-    EventBus --> ExternalMonitors
-```
+<MermaidDiagram id="88f38ec5e2bf4512" />
 
 ## 7. Reading Path
 
