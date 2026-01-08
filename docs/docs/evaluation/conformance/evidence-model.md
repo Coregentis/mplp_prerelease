@@ -12,13 +12,6 @@ title: Evidence Model
 sidebar_label: Evidence Model
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Evidence Model
 
 ## 1. Purpose
@@ -210,6 +203,5 @@ console.log('Exported:', pack.manifest.contents);
 
 ---
 
-**Document Status**: Informative (Evidence Definition)  
 **Scope**: Defines evidence types, validity requirements, pack structure  
 **Exclusions**: Implementation details, debug artifacts

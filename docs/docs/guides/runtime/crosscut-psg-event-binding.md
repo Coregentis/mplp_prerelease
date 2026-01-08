@@ -484,7 +484,6 @@ on transaction_abort(txn_id):
 
 ---
 
-**Document Status**: Normative  
 **Crosscutting Concerns**: 9  
 **Required Events**: PipelineStageEvent, GraphUpdateEvent
 

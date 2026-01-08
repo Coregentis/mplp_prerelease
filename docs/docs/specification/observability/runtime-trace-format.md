@@ -266,7 +266,6 @@ Jaeger integration requires:
 
 ---
 
-**Document Status**: Normative (Export Format)  
 **W3C Compatible**: Yes (with ID conversion)  
 **Export Formats**: JSON, JSONL, OTLP, Jaeger (informative)  
 **Standard Attributes**: 7 core + 5 extended

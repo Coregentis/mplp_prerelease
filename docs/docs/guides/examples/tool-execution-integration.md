@@ -18,7 +18,6 @@ canonical: /docs/guides/examples/tool-execution-integration
 
 # Tool Execution Integration
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 

@@ -165,6 +165,5 @@ When an invariant is violated:
 
 ---
 
-**Document Status**: Normative (Observability Invariants)  
 **Total Invariants**: 12 (4 core + 3 pipeline + 2 graph + 3 runtime)  
 **Enforcement**: Required for v1.0 conformant runtimes

@@ -18,7 +18,6 @@ sidebar_label: Scenarios
 
 # Enterprise Scenarios
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 
@@ -157,6 +156,5 @@ Each card follows a strict format:
 
 ---
 
-**Document Status**: Informative (Scenario Cards)  
 **Format**: Constraint → Evidence → Conformance  
 **Purpose**: Evidence-centered thought experiments, NOT implementation guides

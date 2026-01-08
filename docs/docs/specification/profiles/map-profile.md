@@ -419,7 +419,6 @@ async function runMAPSession(
 
 ---
 
-**Document Status**: Normative (Optional Profile)  
 **Profile ID**: `mplp:profile:map:1.0.0`  
 **Required Modules**: SA modules + Collab, Dialog, Network  
 **Invariant Count**: 9 normative rules  

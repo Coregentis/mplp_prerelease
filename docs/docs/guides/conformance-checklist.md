@@ -18,7 +18,6 @@ canonical: /docs/guides/conformance-checklist
 
 # Conformance Checklist
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 

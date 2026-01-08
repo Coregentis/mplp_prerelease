@@ -97,6 +97,5 @@ It does not imply runtime execution, validation, or coverage completion. Verific
 
 ---
 
-**Document Status**: Informative (Semantic Mapping)
 **Phase**: D-2 (Cross-Directory Semantic Mapping)
 **Coverage**: Mapping declared (subject to Phase E/F verification)

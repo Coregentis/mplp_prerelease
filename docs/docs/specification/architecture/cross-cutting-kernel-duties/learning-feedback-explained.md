@@ -15,7 +15,6 @@ sidebar_position: 8
 
 # Learning Feedback — Conceptual Overview
 
-> **Status**: Informative (Non-Normative)
 > **Audience**: Implementers, ML Engineers
 > **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
@@ -67,6 +66,5 @@ graph TD
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Governance Rule**: DGP-30
 **See Also**: [Learning Feedback Anchor](learning-feedback.md) (Normative)

@@ -372,7 +372,6 @@ session = Collab(
 
 ---
 
-**Document Status**: Normative (Core Module)  
 **Required Fields**: meta, collab_id, context_id, title, purpose, mode, status, participants, created_at  
 **Modes**: broadcast, round_robin, orchestrated, swarm, pair  
 **Status Enum**: draft active suspended/completed/cancelled  

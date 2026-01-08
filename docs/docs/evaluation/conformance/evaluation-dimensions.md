@@ -12,13 +12,6 @@ title: Evaluation Dimensions
 sidebar_label: Evaluation Dimensions
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Evaluation Dimensions
 
 ## 1. Purpose
@@ -143,6 +136,5 @@ The following dimensions are **not evaluated in v1.0.0** but may be added in fut
 
 ---
 
-**Document Status**: Informative (Evaluation Axes)  
 **Scope**: Defines 6 evaluation dimensions for v1.0.0  
 **Exclusions**: Scoring, weighting, future dimensions

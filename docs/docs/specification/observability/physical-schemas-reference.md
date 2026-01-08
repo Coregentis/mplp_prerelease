@@ -298,7 +298,6 @@ graph TD
 
 ---
 
-**Document Status**: Normative (Schema Reference)  
 **Physical Schemas**: 4 (1 base + 3 specific)  
 **Required Schemas**: GraphUpdateEvent, PipelineStageEvent  
 **Recommended Schemas**: RuntimeExecutionEvent

@@ -192,7 +192,6 @@ Runtime implementations **SHOULD**:
 
 ---
 
-**Document Status**: Normative (L3 Runtime Glue)  
 **Layer**: L3 (Specification)  
 **Key Events**: GraphUpdateEvent (REQUIRED), PipelineStageEvent (REQUIRED)
 

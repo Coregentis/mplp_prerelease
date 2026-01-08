@@ -11,15 +11,8 @@ title: Learning Invariants
 
 > This document mirrors the protocol definition for reference only.
 
-> [!IMPORTANT]
-> **Non-Normative Guard**
->
-> This document is informative. It explains the invariants defined in
-> `schemas/v2/invariants/learning-invariants.yaml`.
-
 # Learning Invariants
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 > **Protocol**: MPLP v1.0.0 (Frozen)
@@ -164,7 +157,6 @@ def validate_learning_sample(sample: dict) -> list[str]:
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Total Invariants**: 12 (7 core + 2 intent + 3 delta)
 **Validation**: Schema-level + runtime validation
 **Source**: `schemas/v2/invariants/learning-invariants.yaml`

@@ -18,7 +18,6 @@ sidebar_label: TypeScript SDK
 
 # TypeScript SDK Guide
 
-> **Status**: Informative
 > **Protocol Version**: 1.0.0 (Frozen)
 > **SDK Line**: v1.x (evolving)
 > **Authority**: Documentation Governance
@@ -174,7 +173,6 @@ const result = await orchestrator.executePlan(plan);
 
 ---
 
-**Document Status**: Reference (SDK Guide)  
 **Protocol**: MPLP v1.0.0 (Frozen)  
 **SDK**: @mplp/sdk-ts v1.x  
 **Import Policy**: Root import is stable

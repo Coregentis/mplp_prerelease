@@ -11,17 +11,8 @@ title: Learning Collection Points
 
 > This document mirrors the protocol definition for reference only.
 
-> [!IMPORTANT]
-> **Non-Normative Guard**
->
-> This document is informative. It provides guidance on collection point implementation.
-> All normative behavior is defined in the referenced schemas and invariants.
->
-> **Source of Truth**: `schemas/v2/taxonomy/learning-taxonomy.yaml`
-
 # Learning Collection Points
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 > **Protocol**: MPLP v1.0.0 (Frozen)
@@ -256,7 +247,6 @@ async function storeLearningSample(sample: LearningSample): Promise<void> {
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Collection Points**: 9 (as defined in `learning-taxonomy.yaml`)
 **Priority Levels**: HIGH (6), MEDIUM (3)
 **Source of Truth**: `schemas/v2/taxonomy/learning-taxonomy.yaml`

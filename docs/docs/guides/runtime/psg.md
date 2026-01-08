@@ -447,7 +447,6 @@ async function detectDrift(psg: PSG, expectedHash: string): Promise<DriftResult>
 
 ---
 
-**Document Status**: Specification (Normative)  
 **Core Interface**: `getNode()`, `putNode()`, `query()`  
 **Reference Implementation**: InMemoryPSG  
 **Invariants**: Parent existence, Terminal immutability, ID immutability  

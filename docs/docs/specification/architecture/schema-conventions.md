@@ -590,7 +590,6 @@ if (!valid) {
 
 ---
 
-**Document Status**: Normative  
 **JSON Schema Version**: Draft-07  
 **Total Schemas**: 29 (10 modules + 6 common + 6 events + 4 integration + 3 learning)  
 **Naming**: snake_case fields, kebab-case files, PascalCase docs  

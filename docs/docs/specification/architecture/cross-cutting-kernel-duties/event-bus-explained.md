@@ -15,7 +15,6 @@ sidebar_position: 6
 
 # Event Bus — Conceptual Overview
 
-> **Status**: Informative (Non-Normative)
 > **Audience**: Implementers, Architects, Runtime Authors
 > **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
@@ -103,6 +102,5 @@ To understand Event Bus-related normative semantics, read:
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Governance Rule**: DGP-30
 **See Also**: [Event Bus Anchor](event-bus.md) (Normative)

@@ -494,7 +494,6 @@ When multiple modules claim ownership of a PSG area:
 
 ---
 
-**Document Status**: Normative  
 **Total Modules**: 10 (Context, Plan, Confirm, Trace, Role, Extension, Dialog, Collab, Core, Network)  
 **Meta-Components**: 1 (Pipeline Controller)
 

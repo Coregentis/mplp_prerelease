@@ -18,7 +18,6 @@ sidebar_label: Signals
 
 # Adoption Signals
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 
@@ -141,6 +140,5 @@ This is **self-declared** — no external authority validates or certifies the r
 
 ---
 
-**Document Status**: Informative (Signal Definitions)  
 **Purpose**: Observable indicators of adoption stage  
 **Key Principle**: Signals are indicators, not requirements

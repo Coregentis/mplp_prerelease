@@ -443,7 +443,6 @@ plan = Plan(
 
 ---
 
-**Document Status**: Normative (Core Module)  
 **Required Fields**: meta, plan_id, context_id, title, objective, status, steps  
 **Plan Status**: draft proposed approved in_progress completed/failed/cancelled  
 **Step Status**: pending in_progress completed/failed/blocked/skipped  

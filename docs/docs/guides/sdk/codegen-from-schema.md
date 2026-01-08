@@ -16,7 +16,6 @@ title: Codegen From Schema
 
 # Codegen From Schema
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 

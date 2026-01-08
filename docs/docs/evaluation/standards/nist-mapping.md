@@ -12,13 +12,6 @@ sidebar_label: NIST AI RMF Mapping
 sidebar_position: 3
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # NIST AI RMF Mapping
 
 ## Normative Status
@@ -128,6 +121,5 @@ Organizations seeking NIST AI RMF alignment should:
 
 ---
 
-**Document Status**: Informative  
 **Related Standards**: NIST AI RMF 1.0  
 **See Also**: [ISO 42001 Mapping](./iso-mapping)

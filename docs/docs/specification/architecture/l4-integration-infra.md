@@ -556,7 +556,6 @@ services:
 
 ---
 
-**Document Status**: Optional (Non-Normative for v1.0 compliance)  
 **Integration Categories**: 4 (IDE, Git, CI, Tool)  
 **Event Schemas**: 4 (file_update, git, ci, tool)  
 **Invariant Rules**: 19 (5 tool + 3 file + 5 git + 6 CI)  

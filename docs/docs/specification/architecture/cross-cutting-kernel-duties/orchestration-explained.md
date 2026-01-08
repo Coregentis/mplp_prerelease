@@ -15,7 +15,6 @@ sidebar_position: 12
 
 # Orchestration — Conceptual Overview
 
-> **Status**: Informative (Non-Normative)
 > **Audience**: Implementers, Architects, SDK Authors
 > **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
@@ -98,6 +97,5 @@ To understand orchestration-related normative semantics, read:
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Governance Rule**: DGP-30
 **See Also**: [Orchestration Anchor](orchestration.md) (Normative)

@@ -15,7 +15,6 @@ sidebar_position: 4
 
 # Error Handling — Conceptual Overview
 
-> **Status**: Informative (Non-Normative)
 > **Audience**: Implementers, Architects
 > **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
@@ -69,6 +68,5 @@ graph TD
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Governance Rule**: DGP-30
 **See Also**: [Error Handling Anchor](error-handling.md) (Normative)

@@ -716,7 +716,6 @@ async function parallelAELExecution(
 [VSL](/docs/guides/runtime/vsl.md)
 ---
 
-**Document Status**: Deep Dive (Non-Normative structure, Normative principles)  
 **Core Abstractions**: AEL (execute), VSL (get/set/snapshot/restore), PSG (graph), Orchestrator (scheduler)  
 **Advanced Topics**: Drift detection algorithms (passive/active), MAP coordination (broadcast/round-robin), atomic transactions, encryption, caching, parallelization  
 **Reference Implementations**: InMemoryVSL (37 lines), InMemoryAEL (41 lines), EncryptedVSL (example), CachedVSL (example)

@@ -11,15 +11,8 @@ title: Learning Sample Schema
 
 > This document mirrors the protocol definition for reference only.
 
-> [!IMPORTANT]
-> **Non-Normative Guard**
->
-> This document is informative. It explains the schemas defined in
-> `schemas/v2/learning/*.schema.json`.
-
 # Learning Sample Schema
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 > **Protocol**: MPLP v1.0.0 (Frozen)
@@ -220,7 +213,6 @@ Based on Core Schema `sample_family` examples:
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Schemas**: 3 (1 core + 2 family-specific)
 **Sample Families**: 6
 **Source**: `schemas/v2/learning/*.schema.json`

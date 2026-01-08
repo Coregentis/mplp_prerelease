@@ -16,7 +16,6 @@ title: Risk Confirmation Flow
 
 # Risk Confirmation Flow
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 

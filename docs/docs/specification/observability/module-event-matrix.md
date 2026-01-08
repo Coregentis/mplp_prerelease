@@ -271,7 +271,6 @@ planEmitter.emitPipelineStage('plan', plan.plan_id, 'draft', 'proposed');
 
 ---
 
-**Document Status**: Normative (Implementation Guide)  
 **Modules Covered**: 10  
 **Required Events**: graph_update, pipeline_stage  
 **Trigger Points Documented**: 25+

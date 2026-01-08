@@ -425,7 +425,6 @@ dialog.add_message(DialogRole.USER, 'Fix the login bug')
 
 ---
 
-**Document Status**: Normative (Core Module)  
 **Required Fields**: meta, dialog_id, context_id, status, messages  
 **Message Format**: OpenAI/Anthropic compatible (role, content, timestamp)  
 **Roles**: user, assistant, system, agent  

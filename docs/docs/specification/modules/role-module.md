@@ -290,7 +290,6 @@ planner = Role(
 
 ---
 
-**Document Status**: Normative (Core Module)  
 **Required Fields**: meta, role_id, name  
 **Capabilities Format**: `resource.action` (e.g., `plan.create`)  
 **Key Usage**: owner_role, agent_role, requested_by_role, participant.role_id

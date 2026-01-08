@@ -12,13 +12,6 @@ title: Security Policy
 sidebar_label: Security Policy
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Security Policy
 
 ## Supported Versions
@@ -94,6 +87,5 @@ Once a vulnerability is resolved:
 
 ---
 
-**Document Status**: Governance (Security Policy)  
 **Contact**: security@coregentis.com  
 **Response SLA**: 48 hours acknowledgment

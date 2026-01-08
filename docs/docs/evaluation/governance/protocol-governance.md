@@ -12,13 +12,6 @@ title: MIP Process
 sidebar_label: MIP Process
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # MIP Process
 
 **Status**: Active

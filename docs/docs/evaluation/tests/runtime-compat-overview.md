@@ -60,5 +60,4 @@ pnpm test:runtime-compat
 
 ---
 
-**Document Status**: Reference (Test Suite Projection)  
 **Source of Truth**: `tests/runtime-compat/`

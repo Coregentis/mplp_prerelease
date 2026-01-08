@@ -84,6 +84,5 @@ sidebar_label: Flow-Duty Matrix
 
 ---
 
-**Document Status**: Informative (Semantic Mapping)
 **Phase**: D-2 (Cross-Directory Semantic Mapping)
 **Coverage**: 5 Flows × 11 Duties = 55 Cells (mapping declared)

@@ -482,7 +482,6 @@ const result = await runSingleAgentFlow({
 
 ---
 
-**Document Status**: Behavioral (Non-Normative structure, Normative outcomes)  
 **Core Abstractions**: PSG, VSL (get/set), AEL (execute), Event Bus  
 **Required Events**: `pipeline_stage`, `graph_update`  
 **Reference Implementation**: `packages/sdk-ts/src/runtime-minimal/index.ts` (75 lines, 5 interfaces, 2 classes, 1 function)

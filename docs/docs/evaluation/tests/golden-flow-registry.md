@@ -12,13 +12,6 @@ title: Golden Flow Registry
 sidebar_label: Flow Registry
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Golden Flow Registry
 
 This registry lists the evaluation flows covered by the Golden Test Suite. For the detailed scenario definitions, refer to [Golden Flows](/docs/evaluation/golden-flows).

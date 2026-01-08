@@ -18,7 +18,6 @@ sidebar_label: Non-Goals
 
 # Enterprise Non-Goals
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 
@@ -131,6 +130,5 @@ While we exclude commercial offerings, enterprise adopters can expect:
 
 ---
 
-**Document Status**: Informative (Explicit Exclusions)  
 **Purpose**: Prevent scope creep and maintain vendor neutrality  
 **Key Principle**: Protocol, not product

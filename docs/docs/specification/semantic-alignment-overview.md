@@ -167,6 +167,5 @@ This alignment approach provides:
 
 ---
 
-**Document Status**: Informative (Methodology Overview)
 **Anchors Defined**: 49
 **Mapping Matrices**: 3

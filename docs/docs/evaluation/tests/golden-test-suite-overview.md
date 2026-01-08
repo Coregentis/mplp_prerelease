@@ -12,13 +12,6 @@ title: Golden Test Suite Overview
 sidebar_label: Test Suite Overview
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Golden Test Suite Overview
 
 ## 1. Philosophy

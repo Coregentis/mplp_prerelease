@@ -59,5 +59,4 @@ vitest run tests/schema-alignment
 
 ---
 
-**Document Status**: Reference (Test Suite Projection)  
 **Source of Truth**: `tests/schema-alignment/`

@@ -18,7 +18,6 @@ sidebar_position: 1
 
 # Single Agent Flow
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 
@@ -257,6 +256,5 @@ Builders are useful for:
 
 ---
 
-**Document Status**: Reference (Example)  
 **API Style**: Function-based (default), Builder (optional)  
 **Location**: `examples/ts-single-agent-basic/`

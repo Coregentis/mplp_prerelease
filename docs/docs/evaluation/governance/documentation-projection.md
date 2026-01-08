@@ -12,13 +12,6 @@ title: Documentation Projection Governance
 sidebar_label: Documentation Projection
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Documentation Projection Governance
 
 ## 1. Authority & Scope

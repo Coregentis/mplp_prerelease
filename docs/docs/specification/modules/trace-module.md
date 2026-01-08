@@ -478,7 +478,6 @@ trace.segments.append(segment)
 
 ---
 
-**Document Status**: Normative (Core Module)  
 **Required Fields**: meta, trace_id, context_id, root_span, status  
 **Status Enum**: pending running completed/failed/cancelled  
 **Key Invariant**: Terminal status traces are immutable (no modifications allowed)

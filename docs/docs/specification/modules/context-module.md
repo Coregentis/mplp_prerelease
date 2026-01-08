@@ -331,7 +331,6 @@ ctx = Context(
 
 ---
 
-**Document Status**: Normative (Core Module)  
 **Required Fields**: meta, context_id, root, title, status  
 **Status Enum**: draft active suspended/archived closed  
 **Key Invariant**: All Plans/Traces MUST reference valid context_id

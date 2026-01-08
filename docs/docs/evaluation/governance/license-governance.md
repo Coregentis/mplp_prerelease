@@ -12,13 +12,6 @@ title: License Governance
 sidebar_label: License
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # License Governance
 
 ## 1. License Summary

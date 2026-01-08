@@ -306,7 +306,6 @@ flowchart LR
 
 ---
 
-**Document Status**: Informative (Overview)  
 **Core Modules**: Core, Context, Plan, Trace, Role (5)  
 **Optional Modules**: Collab, Confirm, Dialog, Extension, Network (5)  
 **Total Modules**: 10

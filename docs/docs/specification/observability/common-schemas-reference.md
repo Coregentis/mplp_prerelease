@@ -204,6 +204,5 @@ Structured format for collecting learning data from MPLP runtime executions.
 }
 ```
 
-**Document Status**: Normative (Common Schemas Reference)  
 **Total Schemas**: 6 foundational schemas  
 **Standards**: UUID v4, CloudEvents v1.0, W3C Trace Context, ISO 8601

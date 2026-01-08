@@ -82,6 +82,5 @@ sidebar_label: Module-Duty Matrix
 
 ---
 
-**Document Status**: Informative (Semantic Mapping)
 **Phase**: D-2 (Cross-Directory Semantic Mapping)
 **Coverage**: 10 Modules × 11 Duties = 110 Cells (mapping declared)

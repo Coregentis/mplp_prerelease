@@ -16,7 +16,6 @@ title: Java SDK Guide
 
 # Java SDK Guide
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 

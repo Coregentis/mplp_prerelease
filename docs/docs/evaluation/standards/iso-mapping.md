@@ -12,13 +12,6 @@ sidebar_label: ISO 42001 Mapping
 sidebar_position: 2
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # ISO 42001 Mapping
 
 ## Normative Status
@@ -136,6 +129,5 @@ Organizations seeking ISO 42001 certification should:
 
 ---
 
-**Document Status**: Informative  
 **Related Standards**: ISO/IEC 42001:2023  
 **See Also**: [NIST AI RMF Mapping](./nist-mapping)

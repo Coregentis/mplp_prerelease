@@ -12,13 +12,6 @@ title: Compatibility Matrix
 sidebar_label: Compatibility Matrix
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Compatibility Matrix
 
 ## 1. Overview

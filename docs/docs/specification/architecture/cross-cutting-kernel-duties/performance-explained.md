@@ -15,7 +15,6 @@ sidebar_position: 14
 
 # Performance — Conceptual Overview
 
-> **Status**: Informative (Non-Normative)
 > **Audience**: Implementers, Architects
 > **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
@@ -59,6 +58,5 @@ This is documented in `docs/00-index/docs-usage-boundary.md`.
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Governance Rule**: DGP-30
 **See Also**: [Performance Anchor](performance.md) (Normative)

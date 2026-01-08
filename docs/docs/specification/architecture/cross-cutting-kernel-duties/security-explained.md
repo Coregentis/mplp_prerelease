@@ -15,7 +15,6 @@ sidebar_position: 18
 
 # Security — Conceptual Overview
 
-> **Status**: Informative (Non-Normative)
 > **Audience**: Implementers, Architects, Security Engineers
 > **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
@@ -86,6 +85,5 @@ To understand security-related normative semantics, read:
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Governance Rule**: DGP-30
 **See Also**: [Security Anchor](security.md) (Normative)

@@ -61,5 +61,4 @@ Refer to repository instructions:
 
 ---
 
-**Document Status**: Reference (Test Suite Projection)  
 **Source of Truth**: `tests/cross-language/`

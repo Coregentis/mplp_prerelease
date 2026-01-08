@@ -104,7 +104,6 @@ The normative definition of the SA Profile is declared in:
 
 ---
 
-**Document Status**: Normative — Constraint Anchor  
 **Profile Type**: Baseline (required for all MPLP implementations)  
 **Required Modules**: Core, Context, Plan, Trace, Role (5)  
 **Invariants**: 9 (defined in sa-invariants.yaml)

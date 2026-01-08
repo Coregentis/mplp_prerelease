@@ -407,7 +407,6 @@ confirm = Confirm(
 
 ---
 
-**Document Status**: Normative (Core Module)  
 **Required Fields**: meta, confirm_id, target_type, target_id, status, requested_by_role, requested_at  
 **Target Types**: context, plan, trace, extension, other  
 **Status Enum**: pending → approved/rejected/cancelled  

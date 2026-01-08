@@ -12,7 +12,6 @@ sidebar_label: Evolution
 
 # Protocol Evolution
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 

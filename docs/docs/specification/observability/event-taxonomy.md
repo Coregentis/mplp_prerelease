@@ -355,7 +355,6 @@ flowchart LR
 
 ---
 
-**Document Status**: Normative (Event Classification)  
 **Total Families**: 12  
 **Required**: pipeline_stage, graph_update  
 **Recommended**: runtime_execution, import_process, intent, cost_budget, external_integration  

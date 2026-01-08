@@ -351,7 +351,6 @@ ext = Extension(
 
 ---
 
-**Document Status**: Normative (L2 Optional Module)  
 **Required Fields**: meta, extension_id, context_id, name, extension_type, version, status  
 **Types**: capability, policy, integration, transformation, validation, other  
 **Status Enum**: registered active inactive deprecated

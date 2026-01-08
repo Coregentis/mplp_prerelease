@@ -13,7 +13,6 @@ title: Learning & Feedback
 
 # Learning & Feedback
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 
@@ -319,7 +318,6 @@ async function calculateQualityMetrics(): Promise<QualityMetrics> {
 
 ## 11. Related Documents
 
-**Document Status**: Optional Feature (RECOMMENDED for production)  
 **Sample Structure**: Input + Output + Feedback  
 **Collection**: Async, non-blocking, PII-anonymized  
 **Privacy**: MUST support opt-out, SHOULD anonymize PII

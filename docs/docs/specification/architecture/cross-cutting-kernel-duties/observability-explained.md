@@ -15,7 +15,6 @@ sidebar_position: 10
 
 # Observability — Conceptual Overview
 
-> **Status**: Informative (Non-Normative)
 > **Audience**: Implementers, Architects, DevOps
 > **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
@@ -68,6 +67,5 @@ graph TD
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Governance Rule**: DGP-30
 **See Also**: [Observability Anchor](observability.md) (Normative)

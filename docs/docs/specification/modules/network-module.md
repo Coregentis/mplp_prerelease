@@ -368,7 +368,6 @@ network.nodes.append(NetworkNode(kind=NodeKind.AGENT, name='Coder'))
 
 ---
 
-**Document Status**: Normative (L2 Optional Module)  
 **Required Fields**: meta, network_id, context_id, name, topology_type, status  
 **Topologies**: single_node, hub_spoke, mesh, hierarchical, hybrid, other  
 **Status Enum**: draft provisioning active degraded/maintenance retired

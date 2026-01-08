@@ -12,13 +12,6 @@ title: Contributing to MPLP
 sidebar_label: Contributing Guide
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Contributing to MPLP
 
 ## Protocol Status: FROZEN
@@ -103,6 +96,5 @@ By contributing, you agree that your contributions will be licensed under the **
 
 ---
 
-**Document Status**: Governance (Contributing Guide)  
 **Repository**: [github.com/Coregentis/MPLP-Protocol](https://github.com/Coregentis/MPLP-Protocol)  
 **RFC Required For**: Schema changes, normative changes, new features

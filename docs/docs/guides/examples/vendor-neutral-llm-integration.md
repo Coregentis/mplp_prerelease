@@ -18,7 +18,6 @@ canonical: /docs/guides/examples/vendor-neutral-llm-integration
 
 # Vendor-Neutral LLM Integration
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 

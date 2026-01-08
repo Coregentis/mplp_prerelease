@@ -13,14 +13,8 @@ sidebar_position: 16
 ---
 
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-
 # Protocol Versioning — Conceptual Overview
 
-> **Status**: Informative (Non-Normative)
 > **Audience**: Implementers, Architects
 > **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
@@ -62,6 +56,5 @@ Protocol Versioning is **not a migration tool**. It is a **conceptual area** for
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Governance Rule**: DGP-30
 **See Also**: [Protocol Versioning Anchor](protocol-versioning.md) (Normative)

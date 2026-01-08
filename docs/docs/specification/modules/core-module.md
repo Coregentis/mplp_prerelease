@@ -56,7 +56,6 @@ The Core Module represents the **protocol-level manifest** of an MPLP instance, 
 
 ---
 
-**Document Status**: Normative (Core Module)  
 **Required Fields**: meta, core_id, protocol_version, status, modules  
 **Available Modules** (10): context, plan, confirm, trace, role, extension, dialog, collab, core, network  
 **Status Enum**: draft → active → deprecated → archived

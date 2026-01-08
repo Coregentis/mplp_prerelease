@@ -18,7 +18,6 @@ sidebar_label: Non-Goals
 
 # Adoption Non-Goals
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 
@@ -122,6 +121,5 @@ Adoption is the **organizational state**, not the technical state.
 
 ---
 
-**Document Status**: Informative (Explicit Exclusions)  
 **Key Principle**: Adoption is self-declared, not certified  
 **Purpose**: Prevent scope creep and maintain neutrality

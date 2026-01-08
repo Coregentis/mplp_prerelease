@@ -12,13 +12,6 @@ title: Semantic Anchor Registry
 sidebar_label: Semantic Anchors
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It provides a semantic coordinate system for navigating MPLP documentation.
-> All normative definitions are in the referenced source documents.
-
 # Semantic Anchor Registry
 
 **Purpose**: Provides a unified semantic coordinate system for the entire MPLP documentation ecosystem.
@@ -189,6 +182,5 @@ This registry is used for:
 
 ---
 
-**Document Status**: Informative (Semantic Index)
 **Phase**: D-1 (Semantic Anchor Definition)
 **Total Anchors**: 49

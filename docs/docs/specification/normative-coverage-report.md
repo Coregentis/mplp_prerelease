@@ -12,13 +12,6 @@ title: Normative Coverage Report
 sidebar_label: Coverage Report
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It reports coverage status without making supplementary claims.
-> **Gap tagging is for Phase F planning, not for content creation.**
-
 # Normative Coverage Report
 
 **Purpose**: Tag gaps only, do not fill them. Provides Phase F work order.
@@ -157,6 +150,5 @@ sidebar_label: Coverage Report
 
 ---
 
-**Document Status**: Informative (Coverage Report)
 **Phase**: D-3 (Normative Coverage & Gap Tagging)
 **Gap Types**: 4 INTENTIONAL, 2 PENDING, 0 UNKNOWN

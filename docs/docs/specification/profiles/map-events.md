@@ -364,7 +364,6 @@ function validateBroadcastReceivers(events: MAPEvent[]): ValidationResult {
 
 ---
 
-**Document Status**: Normative (Event Specification)  
 **Profile**: MAP Profile  
 **Mandatory Events**: 5  
 **Recommended Events**: 5

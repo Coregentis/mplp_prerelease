@@ -18,7 +18,6 @@ canonical: /docs/guides/sdk/implementation-maturity-matrix
 
 # Implementation Maturity Matrix
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 

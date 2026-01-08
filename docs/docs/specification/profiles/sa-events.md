@@ -279,7 +279,6 @@ class SAEventProcessor implements SAEventHandler {
 
 ---
 
-**Document Status**: Normative (Event Specification)  
 **Profile**: SA Profile  
 **Mandatory Events**: 7  
 **Recommended Events**: 1

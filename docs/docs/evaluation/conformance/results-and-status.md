@@ -12,13 +12,6 @@ title: Results & Status
 sidebar_label: Results & Status
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Results & Status
 
 ## 1. Purpose
@@ -194,6 +187,5 @@ Evaluation reports MUST include:
 
 ---
 
-**Document Status**: Informative (Outcome Semantics)  
 **Scope**: Defines 3 primary outcomes, severity levels, result structure  
 **Requirement**: Evaluators MUST use these exact terms

@@ -12,13 +12,6 @@ sidebar_label: Standards Positioning
 sidebar_position: 1
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Standards Positioning
 
 ## Normative Status
@@ -49,5 +42,4 @@ MPLP is designed to be the **implementation layer** for high-level AI governance
 
 ---
 
-**Document Status**: Informative  
 **Related Standards**: ISO 42001, NIST AI RMF

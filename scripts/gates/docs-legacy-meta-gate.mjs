@@ -34,6 +34,14 @@ const FORBIDDEN_PATTERNS = [
 
     // Type C: Bold metadata blocks (in non-Type-D contexts)
     { pattern: /^\*\*Document Type\*\*:.*Authority/gm, type: 'C', desc: 'Inline Document Type + Authority metadata' },
+
+    // Type E: Obsidian/GitHub callouts with Non-Normative meta
+    { pattern: />\s*\*\*Non-Normative Document\*\*/gm, type: 'E', desc: '**Non-Normative Document** in blockquote' },
+    { pattern: />\s*\*\*Non-Normative Guard\*\*/gm, type: 'E', desc: '**Non-Normative Guard** in blockquote' },
+
+    // Type F: Field-style meta lines
+    { pattern: /^\*\*Document Status\*\*:/gm, type: 'F', desc: '**Document Status**: line' },
+    { pattern: /^>\s*\*\*Status\*\*:\s*Informative/gm, type: 'F', desc: '> **Status**: Informative line' },
 ];
 
 // Patterns to allow (Type D - explanation content, not metadata)
@@ -92,7 +100,7 @@ if (violations.length > 0) {
     console.log('\n❌ VIOLATIONS FOUND:\n');
 
     // Group by type
-    const byType = { A: [], B: [], C: [] };
+    const byType = { A: [], B: [], C: [], E: [], F: [] };
     violations.forEach(v => {
         if (byType[v.type]) byType[v.type].push(v);
     });

@@ -49,4 +49,3 @@ This specification does not mandate specific implementation details beyond the d
 
 ---
 
-**Document Status**: Normative (Index)

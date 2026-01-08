@@ -12,13 +12,6 @@ title: Protocol Truth Index
 sidebar_label: Truth Index
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Protocol Truth Index
 
 > [!IMPORTANT]

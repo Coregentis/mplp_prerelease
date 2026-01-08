@@ -11,15 +11,8 @@ title: Learning Overview
 
 > This document mirrors the protocol definition for reference only.
 
-> [!IMPORTANT]
-> **Non-Normative Guard**
->
-> This document is informative. It provides guidance on Learning module concepts.
-> All normative behavior is defined in the referenced schemas and invariants.
-
 # Learning Overview
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 > **Protocol**: MPLP v1.0.0 (Frozen)
@@ -227,7 +220,6 @@ These are **product implementation decisions** for TracePilot, Coregentis, or ot
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Sample Families**: 6 (intent, delta, pipeline, confirm, graph, coordination)
 **Collection Points**: 9 defined triggers
 **Compliance**: OPTIONAL for v1.0, schemas REQUIRED when emitting

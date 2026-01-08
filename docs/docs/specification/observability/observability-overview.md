@@ -64,7 +64,6 @@ See [Event Taxonomy](event-taxonomy.md) for all 12 families.
 
 ---
 
-**Document Status**: Informative (Navigation Index)  
 **Required Events**: pipeline_stage, graph_update  
 **Total Event Families**: 12  
 **Export Formats**: JSON, JSONL, OTLP, Jaeger

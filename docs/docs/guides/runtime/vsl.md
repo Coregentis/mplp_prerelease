@@ -670,7 +670,6 @@ class PostgresVSL implements VSLExtended {
 
 ---
 
-**Document Status**: Specification (Normative interface)  
 **Core Interface**: `get(key): Promise<any>`, `set(key, value): Promise<void>`  
 **Reference Implementation**: InMemoryVSL (4 lines)  
 **Invariants**: Event finality, Acknowledged write durability  

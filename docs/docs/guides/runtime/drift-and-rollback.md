@@ -227,6 +227,5 @@ const compensations: Record<string, string> = {
 
 ---
 
-**Document Status**: Normative (Runtime Drift & Rollback)  
 **Detection**: Passive + Active + Invariant-based (hybrid)  
 **Rollback**: PSG snapshots + compensation logic

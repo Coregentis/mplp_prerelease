@@ -593,7 +593,6 @@ class RetryableAEL implements ActionExecutionLayer {
 
 ---
 
-**Document Status**: Specification (Normative outcomes)  
 **Core Interface**: `execute(action: Action): Promise<ActionResult>`  
 **Reference Implementation**: InMemoryAEL (3 lines)  
 **Required Events**: RuntimeExecutionEvent (start + completion)  

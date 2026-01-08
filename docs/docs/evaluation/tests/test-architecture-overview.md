@@ -11,16 +11,8 @@ title: Test Architecture Overview
 sidebar_label: Test Architecture
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Test Architecture Overview
 
-> **Status**: Informative
 > **Version**: 1.0.0
 > **Authority**: Documentation Governance
 
@@ -156,6 +148,5 @@ Tests map to protocol conformance dimensions:
 
 ---
 
-**Document Status**: Informative (Test Architecture Reference)  
 **Test Categories**: 6  
 **Golden Flows**: 5

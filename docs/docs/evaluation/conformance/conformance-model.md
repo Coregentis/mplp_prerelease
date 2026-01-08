@@ -12,13 +12,6 @@ title: Conformance Model
 sidebar_label: Conformance Model
 ---
 
-> [!IMPORTANT]
-> **Non-Normative Document**
->
-> This document is informative only.
-> It MUST NOT be used as an authoritative specification.
-> All normative requirements are defined in the Specification documents.
-
 # Conformance Model
 
 ## 1. Purpose
@@ -167,6 +160,5 @@ Conformance only guarantees: **The system follows the protocol's structural and 
 
 ---
 
-**Document Status**: Informative (Conformance Definition)  
 **Scope**: Defines conformance objects, classes, outcomes, dimensions  
 **Exclusions**: Certification, legal compliance, quality guarantees

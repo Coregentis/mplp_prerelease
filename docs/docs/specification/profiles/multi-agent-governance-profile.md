@@ -365,7 +365,6 @@ sequenceDiagram
 
 ---
 
-**Document Status**: Normative (Governance Profile)  
 **Governance Models**: Centralized, Federated, Hierarchical, Autonomous  
 **Conflict Strategies**: Hierarchy, Voting, LWW, Escalation  
 **Policy Types**: Resource Limits, Tool Whitelists, Human Gates, Scope Limits

@@ -15,7 +15,6 @@ sidebar_position: 22
 
 # Transaction — Conceptual Overview
 
-> **Status**: Informative (Non-Normative)
 > **Audience**: Implementers, Architects, Runtime Authors
 > **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
@@ -66,6 +65,5 @@ graph TD
 
 ---
 
-**Document Status**: Informative (Non-Normative)
 **Governance Rule**: DGP-30
 **See Also**: [Transaction Anchor](transaction.md) (Normative)

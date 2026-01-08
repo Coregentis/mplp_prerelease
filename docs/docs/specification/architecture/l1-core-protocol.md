@@ -562,7 +562,6 @@ Each schema includes `x-mplp-meta`:
 
 ---
 
-**Document Status**: Normative  
 **Total Rules**: 61 invariants across 5 files  
 **Total Schemas**: 29 JSON Schema files (10+6+6+4+3)  
 **Validation Libraries**: AJV v8.12.0 (TypeScript), Pydantic v2.0+ (Python)
