@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-PERF-001"
 title: Performance
 sidebar_label: Performance
 sidebar_position: 13
+description: "MPLP architecture documentation: Performance. Defines structural requirements and layer responsibilities."
 ---
 
 # Performance

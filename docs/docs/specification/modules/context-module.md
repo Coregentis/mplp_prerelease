@@ -16,6 +16,7 @@ external_standards:
 title: Context Module
 sidebar_label: Context Module
 sidebar_position: 2
+description: "MPLP module specification: Context Module. Defines schema requirements and invariants."
 ---
 
 # Context Module

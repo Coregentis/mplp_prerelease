@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-TXN-001"
 title: Transaction
 sidebar_label: Transaction
 sidebar_position: 21
+description: "MPLP architecture documentation: Transaction. Defines structural requirements and layer responsibilities."
 ---
 
 # Transaction

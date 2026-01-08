@@ -10,6 +10,7 @@ sidebar_position: 1
 # UI metadata (non-normative; excluded from protocol semantics)
 title: MAP Profile
 sidebar_label: MAP Profile
+description: "MPLP profile specification: MAP Profile. Defines conformance requirements for execution profiles."
 ---
 # Multi-Agent (MAP) Profile
 

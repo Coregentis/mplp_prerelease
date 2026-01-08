@@ -13,6 +13,7 @@ external_standards:
 title: Module Interactions
 sidebar_label: Module Interactions
 sidebar_position: 0
+description: "MPLP module specification: Module Interactions. Defines schema requirements and invariants."
 ---
 
 # Module Interactions

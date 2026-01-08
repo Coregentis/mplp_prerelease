@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-GOV-TRUTH-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Protocol Truth Index
 sidebar_label: Truth Index
+description: "MPLP governance documentation: Protocol Truth Index. Governance processes and policies."
 ---
 
 # Protocol Truth Index

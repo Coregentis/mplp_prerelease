@@ -10,6 +10,7 @@ doc_id: "DOC-OBS-PHYS-001"
 title: Physical Schemas Reference
 sidebar_label: Physical Schemas Reference
 sidebar_position: 6
+description: "MPLP observability specification: Physical Schemas Reference. Defines event schemas and trace formats."
 ---
 
 # Physical Schemas Reference

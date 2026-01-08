@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-TEST-REGISTRY-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Golden Flow Registry
 sidebar_label: Flow Registry
+description: "MPLP test documentation: Golden Flow Registry. Test suite structure and fixtures."
 ---
 
 # Golden Flow Registry

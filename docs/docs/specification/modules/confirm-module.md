@@ -16,6 +16,7 @@ external_standards:
 title: Confirm Module
 sidebar_label: Confirm Module
 sidebar_position: 6
+description: "MPLP module specification: Confirm Module. Defines schema requirements and invariants."
 ---
 
 # Confirm Module

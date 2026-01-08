@@ -9,6 +9,7 @@ doc_id: "DOC-SPEC-INDEX-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Protocol Specification
 sidebar_position: 1
+description: "MPLP specification: Protocol Specification. Normative protocol requirements."
 ---
 
 # Protocol Specification

@@ -10,6 +10,7 @@ sidebar_position: 4
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Multi-Agent Governance Profile
 sidebar_label: Multi-Agent Governance
+description: "MPLP profile specification: Multi-Agent Governance Profile. Defines conformance requirements for execution profiles."
 ---
 
 # Multi-Agent Governance Profile

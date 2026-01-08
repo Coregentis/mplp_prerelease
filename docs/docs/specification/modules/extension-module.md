@@ -16,6 +16,7 @@ external_standards:
 title: Extension Module
 sidebar_label: Extension Module
 sidebar_position: 9
+description: "MPLP module specification: Extension Module. Defines schema requirements and invariants."
 ---
 
 # Extension Module

@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-GOV-VERSION-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Versioning Policy
 sidebar_label: Versioning Policy
+description: "MPLP governance documentation: Versioning Policy. Governance processes and policies."
 ---
 
 # Versioning Policy

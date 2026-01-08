@@ -16,6 +16,7 @@ external_standards:
 title: Dialog Module
 sidebar_label: Dialog Module
 sidebar_position: 7
+description: "MPLP module specification: Dialog Module. Defines schema requirements and invariants."
 ---
 
 # Dialog Module

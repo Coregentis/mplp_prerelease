@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-ORCH-INFO-001"
 title: "Orchestration — Conceptual Overview"
 sidebar_label: "Orchestration Explained"
 sidebar_position: 12
+description: "MPLP architecture documentation: Orchestration — Conceptual Overview. Defines structural requirements and layer responsibilities."
 ---
 
 

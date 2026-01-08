@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-SYNC-001"
 title: State Sync
 sidebar_label: State Sync
 sidebar_position: 19
+description: "MPLP architecture documentation: State Sync. Defines structural requirements and layer responsibilities."
 ---
 
 # State Sync

@@ -16,6 +16,7 @@ external_standards:
 title: Schema Conventions
 sidebar_label: Schema Conventions
 sidebar_position: 5
+description: "MPLP architecture documentation: Schema Conventions. Defines structural requirements and layer responsibilities."
 ---
 
 # Schema Conventions

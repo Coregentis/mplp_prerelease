@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-CONF-RESULTS-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Results & Status
 sidebar_label: Results & Status
+description: "MPLP conformance evaluation: Results & Status. Non-normative guidance for protocol conformance assessment."
 ---
 
 # Results & Status

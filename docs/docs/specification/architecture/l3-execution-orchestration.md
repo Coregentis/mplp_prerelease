@@ -16,6 +16,7 @@ external_standards:
 title: L3 Execution & Orchestration
 sidebar_label: L3 Execution & Orchestration
 sidebar_position: 3
+description: "MPLP architecture documentation: L3 Execution & Orchestration. Defines structural requirements and layer responsibilities."
 ---
 
 # L3 Execution & Orchestration

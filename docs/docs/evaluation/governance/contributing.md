@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-GOV-CONTRIB-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Contributing to MPLP
 sidebar_label: Contributing Guide
+description: "MPLP governance documentation: Contributing to MPLP. Governance processes and policies."
 ---
 
 # Contributing to MPLP

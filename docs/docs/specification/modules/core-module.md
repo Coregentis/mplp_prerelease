@@ -16,6 +16,7 @@ external_standards:
 title: Core Module
 sidebar_label: Core Module
 sidebar_position: 1
+description: "MPLP module specification: Core Module. Defines schema requirements and invariants."
 ---
 
 # Core Module

@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-GOV-DOC-PROJ-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Documentation Projection Governance
 sidebar_label: Documentation Projection
+description: "MPLP governance documentation: Documentation Projection Governance. Governance processes and policies."
 ---
 
 # Documentation Projection Governance

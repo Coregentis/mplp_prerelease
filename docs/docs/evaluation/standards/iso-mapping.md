@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-STD-ISO-001"
 title: ISO 42001 Mapping
 sidebar_label: ISO 42001 Mapping
 sidebar_position: 2
+description: "MPLP standards mapping: ISO 42001 Mapping. Relationship to external standards."
 ---
 
 # ISO 42001 Mapping

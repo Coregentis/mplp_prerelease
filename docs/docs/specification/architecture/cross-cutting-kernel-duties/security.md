@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-SEC-001"
 title: Security
 sidebar_label: Security
 sidebar_position: 17
+description: "MPLP architecture documentation: Security. Defines structural requirements and layer responsibilities."
 ---
 
 # Security

@@ -17,6 +17,7 @@ external_standards:
 title: L1 Core Protocol — Specification (v1.0.0 Frozen)
 sidebar_label: L1 Core (State)
 sidebar_position: 1
+description: "MPLP architecture documentation: L1 Core Protocol — Specification (v1.0.0 Frozen). Defines structural requirements and layer responsibilities."
 ---
 
 # L1 Core Protocol

@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-TEST-OVERVIEW-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Golden Test Suite Overview
 sidebar_label: Test Suite Overview
+description: "MPLP test documentation: Golden Test Suite Overview. Test suite structure and fixtures."
 ---
 
 # Golden Test Suite Overview

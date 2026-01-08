@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-COORD-001"
 title: Coordination
 sidebar_label: Coordination
 sidebar_position: 1
+description: "MPLP architecture documentation: Coordination. Defines structural requirements and layer responsibilities."
 ---
 
 # Coordination

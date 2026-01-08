@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-GOV-COMPAT-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Compatibility Matrix
 sidebar_label: Compatibility Matrix
+description: "MPLP governance documentation: Compatibility Matrix. Governance processes and policies."
 ---
 
 # Compatibility Matrix

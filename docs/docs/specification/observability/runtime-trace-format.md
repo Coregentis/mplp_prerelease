@@ -10,6 +10,7 @@ doc_id: "DOC-OBS-TRACE-001"
 title: Runtime Trace Format
 sidebar_label: Runtime Trace Format
 sidebar_position: 4
+description: "MPLP observability specification: Runtime Trace Format. Defines event schemas and trace formats."
 ---
 
 # Runtime Trace Format

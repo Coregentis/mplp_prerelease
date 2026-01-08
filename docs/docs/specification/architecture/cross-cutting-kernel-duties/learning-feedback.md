@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-LEARN-001"
 title: Learning Feedback
 sidebar_label: Learning Feedback
 sidebar_position: 7
+description: "MPLP architecture documentation: Learning Feedback. Defines structural requirements and layer responsibilities."
 ---
 
 # Learning Feedback

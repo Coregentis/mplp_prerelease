@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-DEEP-DIVE-001"
 title: L1-L4 Architecture Deep Dive
 sidebar_label: Architecture Deep Dive
 sidebar_position: 6
+description: "MPLP architecture documentation: L1-L4 Architecture Deep Dive. Defines structural requirements and layer responsibilities."
 ---
 
 # L1-L4 Architecture Deep Dive

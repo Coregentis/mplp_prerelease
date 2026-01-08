@@ -16,6 +16,7 @@ external_standards:
 title: Trace Module
 sidebar_label: Trace Module
 sidebar_position: 4
+description: "MPLP module specification: Trace Module. Defines schema requirements and invariants."
 ---
 
 # Trace Module

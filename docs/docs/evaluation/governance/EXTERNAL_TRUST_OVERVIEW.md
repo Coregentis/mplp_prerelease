@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-GOV-TRUST-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: External Governance & Trust Overview
 sidebar_label: External Trust Overview
+description: "MPLP governance documentation: External Governance & Trust Overview. Governance processes and policies."
 ---
 
 # External Governance & Trust Overview

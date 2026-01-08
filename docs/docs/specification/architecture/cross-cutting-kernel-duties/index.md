@@ -16,6 +16,7 @@ external_standards:
 title: Cross-Cutting Kernel Duties
 sidebar_label: Kernel Duties
 sidebar_position: 0
+description: "MPLP architecture documentation: Cross-Cutting Kernel Duties. Defines structural requirements and layer responsibilities."
 ---
 
 # Cross-Cutting Kernel Duties

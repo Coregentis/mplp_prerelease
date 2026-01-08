@@ -10,6 +10,7 @@ doc_id: "DOC-OBS-COMMON-001"
 title: Common Schemas Reference
 sidebar_label: Common Schemas Reference
 sidebar_position: 5
+description: "MPLP observability specification: Common Schemas Reference. Defines event schemas and trace formats."
 ---
 
 # Common Schemas Reference

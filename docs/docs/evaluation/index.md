@@ -9,6 +9,7 @@ doc_id: "DOC-EVAL-INDEX-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Evaluation & Governance
 sidebar_position: 2
+description: "MPLP evaluation: Evaluation & Governance. Non-normative assessment guidance."
 ---
 
 # Evaluation & Governance

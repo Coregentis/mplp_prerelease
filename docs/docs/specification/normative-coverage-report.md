@@ -10,6 +10,7 @@ doc_id: "DOC-SEMANTIC-COVERAGE-REPORT-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Normative Coverage Report
 sidebar_label: Coverage Report
+description: "MPLP specification: Normative Coverage Report. Normative protocol requirements."
 ---
 
 # Normative Coverage Report

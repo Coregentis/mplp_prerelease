@@ -10,6 +10,7 @@ doc_id: "DOC-OBS-TAXONOMY-001"
 title: Event Taxonomy
 sidebar_label: Event Taxonomy
 sidebar_position: 1
+description: "MPLP observability specification: Event Taxonomy. Defines event schemas and trace formats."
 ---
 
 # Event Taxonomy

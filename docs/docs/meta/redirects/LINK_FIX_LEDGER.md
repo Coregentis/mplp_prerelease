@@ -4,6 +4,7 @@ normativity: informative
 status: active
 authority: Documentation Governance
 sidebar_position: 2
+description: "MPLP meta documentation: LINK_FIX_LEDGER. Release and maintenance information."
 ---
 
 # Link Fix Ledger — B-2

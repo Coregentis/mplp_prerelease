@@ -10,6 +10,7 @@ doc_id: "DOC-OBS-INV-001"
 title: Observability Invariants
 sidebar_label: Observability Invariants
 sidebar_position: 3
+description: "MPLP observability specification: Observability Invariants. Defines event schemas and trace formats."
 ---
 
 # Observability Invariants

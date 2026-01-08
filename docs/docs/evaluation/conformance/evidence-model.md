@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-CONF-EVIDENCE-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Evidence Model
 sidebar_label: Evidence Model
+description: "MPLP conformance evaluation: Evidence Model. Non-normative guidance for protocol conformance assessment."
 ---
 
 # Evidence Model

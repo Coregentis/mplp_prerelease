@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-GOV-SECURITY-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Security Policy
 sidebar_label: Security Policy
+description: "MPLP governance documentation: Security Policy. Governance processes and policies."
 ---
 
 # Security Policy

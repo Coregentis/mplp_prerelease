@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-SYNC-INFO-001"
 title: "State Sync — Conceptual Overview"
 sidebar_label: "State Sync Explained"
 sidebar_position: 20
+description: "MPLP architecture documentation: State Sync — Conceptual Overview. Defines structural requirements and layer responsibilities."
 ---
 
 

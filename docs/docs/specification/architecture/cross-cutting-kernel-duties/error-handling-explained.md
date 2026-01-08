@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-ERROR-INFO-001"
 title: "Error Handling — Conceptual Overview"
 sidebar_label: "Error Handling Explained"
 sidebar_position: 4
+description: "MPLP architecture documentation: Error Handling — Conceptual Overview. Defines structural requirements and layer responsibilities."
 ---
 
 

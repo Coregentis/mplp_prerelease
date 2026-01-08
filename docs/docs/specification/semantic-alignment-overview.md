@@ -10,6 +10,7 @@ doc_id: "DOC-SEMANTIC-ALIGNMENT-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Semantic Alignment Overview
 sidebar_label: Semantic Alignment
+description: "MPLP specification: Semantic Alignment Overview. Normative protocol requirements."
 ---
 
 > Governance: MPGC

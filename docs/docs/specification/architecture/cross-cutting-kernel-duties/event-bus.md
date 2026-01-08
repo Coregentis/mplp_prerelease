@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-EBUS-001"
 title: Event Bus
 sidebar_label: Event Bus
 sidebar_position: 5
+description: "MPLP architecture documentation: Event Bus. Defines structural requirements and layer responsibilities."
 ---
 
 # Event Bus

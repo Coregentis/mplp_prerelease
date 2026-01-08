@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-SEC-INFO-001"
 title: "Security — Conceptual Overview"
 sidebar_label: "Security Explained"
 sidebar_position: 18
+description: "MPLP architecture documentation: Security — Conceptual Overview. Defines structural requirements and layer responsibilities."
 ---
 
 

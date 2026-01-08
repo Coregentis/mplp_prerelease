@@ -10,6 +10,7 @@ doc_id: "DOC-SEMANTIC-ANCHOR-REGISTRY-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Semantic Anchor Registry
 sidebar_label: Semantic Anchors
+description: "MPLP specification: Semantic Anchor Registry. Normative protocol requirements."
 ---
 
 # Semantic Anchor Registry

@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-TEST-FIXTURE-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Golden Fixture Format
 sidebar_label: Fixture Format
+description: "MPLP test documentation: Golden Fixture Format. Test suite structure and fixtures."
 ---
 
 # Golden Fixture Format

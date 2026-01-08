@@ -7,6 +7,7 @@ doc_type: reference
 status: active
 authority: Documentation Governance
 
+description: "MPLP runtime guide: Runtime Capability Matrix. Implementation guidance for runtime components."
 ---
 
 

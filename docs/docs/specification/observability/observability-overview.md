@@ -10,6 +10,7 @@ doc_id: "DOC-OBS-OVERVIEW-001"
 title: Observability Overview
 sidebar_label: Observability Overview
 sidebar_position: 0
+description: "MPLP observability specification: Observability Overview. Defines event schemas and trace formats."
 ---
 
 # Observability Overview

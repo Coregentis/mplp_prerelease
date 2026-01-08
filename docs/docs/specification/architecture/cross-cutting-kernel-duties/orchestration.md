@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-ORCH-001"
 title: Orchestration
 sidebar_label: Orchestration
 sidebar_position: 11
+description: "MPLP architecture documentation: Orchestration. Defines structural requirements and layer responsibilities."
 ---
 
 # Orchestration

@@ -8,6 +8,7 @@ status: frozen
 authority: MPGC
 audience: implementer
 
+description: "MPLP runtime guide: Runtime Authority & Scope. Implementation guidance for runtime components."
 ---
 
 

@@ -4,6 +4,7 @@ normativity: informative
 status: active
 authority: Documentation Governance
 sidebar_position: 1
+description: "MPLP meta documentation: REDIRECT_MANIFEST. Release and maintenance information."
 ---
 
 # Redirect Manifest — Docs IA v1

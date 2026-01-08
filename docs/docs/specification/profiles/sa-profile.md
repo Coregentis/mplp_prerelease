@@ -10,6 +10,7 @@ sidebar_position: 0
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Single-Agent Profile (SA)
 sidebar_label: SA Profile
+description: "MPLP profile specification: Single-Agent Profile (SA). Defines conformance requirements for execution profiles."
 ---
 # Single-Agent Profile (SA)
 

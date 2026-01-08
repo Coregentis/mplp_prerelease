@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-STD-POS-001"
 title: Standards Positioning
 sidebar_label: Standards Positioning
 sidebar_position: 1
+description: "MPLP standards mapping: Standards Positioning. Relationship to external standards."
 ---
 
 # Standards Positioning

@@ -10,6 +10,7 @@ doc_id: "DOC-SEMANTIC-SPEC-EVAL-MATRIX-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Specification to Evaluation Matrix
 sidebar_label: Spec-Eval Matrix
+description: "MPLP specification: Specification to Evaluation Matrix. Normative protocol requirements."
 ---
 
 # Specification to Evaluation Matrix

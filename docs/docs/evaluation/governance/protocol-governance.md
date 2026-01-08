@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-GOV-MIP-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: MIP Process
 sidebar_label: MIP Process
+description: "MPLP governance documentation: MIP Process. Governance processes and policies."
 ---
 
 # MIP Process

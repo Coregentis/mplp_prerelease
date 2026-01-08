@@ -10,6 +10,7 @@ doc_id: "DOC-SEMANTIC-MOD-DUTY-MATRIX-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Module to Kernel Duty Matrix
 sidebar_label: Module-Duty Matrix
+description: "MPLP specification: Module to Kernel Duty Matrix. Normative protocol requirements."
 ---
 
 # Module to Kernel Duty Matrix

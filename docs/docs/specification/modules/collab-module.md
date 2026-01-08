@@ -16,6 +16,7 @@ external_standards:
 title: Collab Module
 sidebar_label: Collab Module
 sidebar_position: 8
+description: "MPLP module specification: Collab Module. Defines schema requirements and invariants."
 ---
 
 # Collab Module

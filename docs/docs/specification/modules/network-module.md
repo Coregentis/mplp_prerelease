@@ -16,6 +16,7 @@ external_standards:
 title: Network Module
 sidebar_label: Network Module
 sidebar_position: 10
+description: "MPLP module specification: Network Module. Defines schema requirements and invariants."
 ---
 
 # Network Module

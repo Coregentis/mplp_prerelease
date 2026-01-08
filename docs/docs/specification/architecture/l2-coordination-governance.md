@@ -17,6 +17,7 @@ external_standards:
 title: L2 Coordination & Governance
 sidebar_label: L2 Coordination & Governance
 sidebar_position: 2
+description: "MPLP architecture documentation: L2 Coordination & Governance. Defines structural requirements and layer responsibilities."
 ---
 
 # L2 Coordination & Governance

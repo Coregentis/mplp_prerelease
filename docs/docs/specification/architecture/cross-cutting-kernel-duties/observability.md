@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-OBS-001"
 title: Observability
 sidebar_label: Observability
 sidebar_position: 9
+description: "MPLP architecture documentation: Observability. Defines structural requirements and layer responsibilities."
 ---
 
 # Observability

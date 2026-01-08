@@ -10,6 +10,7 @@ sidebar_position: 3
 # UI metadata (non-normative; excluded from protocol semantics)
 title: MAP Events
 sidebar_label: MAP Events
+description: "MPLP profile specification: MAP Events. Defines conformance requirements for execution profiles."
 ---
 
 # MAP Events Specification

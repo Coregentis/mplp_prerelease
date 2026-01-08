@@ -16,6 +16,7 @@ external_standards:
 title: Plan Module
 sidebar_label: Plan Module
 sidebar_position: 3
+description: "MPLP module specification: Plan Module. Defines schema requirements and invariants."
 ---
 
 # Plan Module

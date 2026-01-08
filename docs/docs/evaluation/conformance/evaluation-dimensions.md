@@ -10,6 +10,7 @@ doc_id: "DOC-EVAL-CONF-DIM-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Evaluation Dimensions
 sidebar_label: Evaluation Dimensions
+description: "MPLP conformance evaluation: Evaluation Dimensions. Non-normative guidance for protocol conformance assessment."
 ---
 
 # Evaluation Dimensions

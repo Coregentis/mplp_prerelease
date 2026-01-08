@@ -17,6 +17,7 @@ external_standards:
 title: L4 Integration Infrastructure
 sidebar_label: L4 Integration Infrastructure
 sidebar_position: 4
+description: "MPLP architecture documentation: L4 Integration Infrastructure. Defines structural requirements and layer responsibilities."
 ---
 
 # L4 Integration Infrastructure

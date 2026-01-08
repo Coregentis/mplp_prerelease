@@ -10,6 +10,7 @@ sidebar_position: 2
 # UI metadata (non-normative; excluded from protocol semantics)
 title: SA Events
 sidebar_label: SA Events
+description: "MPLP profile specification: SA Events. Defines conformance requirements for execution profiles."
 ---
 
 # SA Events Specification

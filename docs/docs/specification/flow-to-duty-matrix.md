@@ -10,6 +10,7 @@ doc_id: "DOC-SEMANTIC-FLOW-DUTY-MATRIX-001"
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Golden Flow to Kernel Duty Matrix
 sidebar_label: Flow-Duty Matrix
+description: "MPLP specification: Golden Flow to Kernel Duty Matrix. Normative protocol requirements."
 ---
 
 # Golden Flow to Kernel Duty Matrix

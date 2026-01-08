@@ -10,6 +10,7 @@ doc_id: "DOC-ARCH-CCK-VERS-INFO-001"
 title: "Protocol Versioning — Conceptual Overview"
 sidebar_label: "Protocol Versioning Explained"
 sidebar_position: 16
+description: "MPLP architecture documentation: Protocol Versioning — Conceptual Overview. Defines structural requirements and layer responsibilities."
 ---
 
 

@@ -16,6 +16,7 @@ external_standards:
 title: Role Module
 sidebar_label: Role Module
 sidebar_position: 5
+description: "MPLP module specification: Role Module. Defines schema requirements and invariants."
 ---
 
 # Role Module

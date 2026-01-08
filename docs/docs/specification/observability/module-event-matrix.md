@@ -10,6 +10,7 @@ doc_id: "DOC-OBS-MATRIX-001"
 title: Module Event Matrix
 sidebar_label: Module Event Matrix
 sidebar_position: 2
+description: "MPLP observability specification: Module Event Matrix. Defines event schemas and trace formats."
 ---
 
 # Module Event Matrix
