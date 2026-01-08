@@ -55,20 +55,57 @@ if (!fs.existsSync(STATIC_MERMAID_DIR)) {
     console.log(`✓ Created ${STATIC_MERMAID_DIR}`);
 }
 
-// Find all markdown/mdx files
+// Directories to skip during traversal
+const SKIP_DIRS = new Set([
+    'node_modules',
+    '.git',
+    '.docusaurus',
+    'build',
+    'static',
+    'dist',
+    '.next',
+    '.cache',
+]);
+
+// Find all markdown/mdx files recursively
 function findDocsFiles(dir) {
-    let results = [];
-    const list = fs.readdirSync(dir);
+    const results = [];
 
-    for (const file of list) {
-        const filePath = path.join(dir, file);
-        const stat = fs.statSync(filePath);
+    function walk(currentDir) {
+        try {
+            const entries = fs.readdirSync(currentDir, { withFileTypes: true });
 
-        if (stat.isDirectory()) {
-            results = results.concat(findDocsFiles(filePath));
-        } else if (file.match(/\\.(md|mdx)$/)) {
-            results.push(filePath);
+            for (const entry of entries) {
+                const fullPath = path.join(currentDir, entry.name);
+
+                if (entry.isDirectory()) {
+                    // Skip excluded directories
+                    if (SKIP_DIRS.has(entry.name)) continue;
+                    // Skip mermaid output directory
+                    if (entry.name === 'mermaid') continue;
+                    // Recurse into subdirectories
+                    walk(fullPath);
+                } else if (entry.isFile()) {
+                    // Only process .md and .mdx files
+                    if (entry.name.endsWith('.md') || entry.name.endsWith('.mdx')) {
+                        results.push(fullPath);
+                    }
+                }
+            }
+        } catch (error) {
+            console.error(`Warning: Cannot read directory ${currentDir}: ${error.message}`);
         }
+    }
+
+    walk(dir);
+
+    // Hard fail if no files found - prevents silent failures
+    if (results.length === 0) {
+        throw new Error(
+            `Found 0 markdown files in ${dir}\n` +
+            `This indicates a path resolution or traversal bug.\n` +
+            `Check that DOCS_DIR points to the correct location.`
+        );
     }
 
     return results;
@@ -77,7 +114,7 @@ function findDocsFiles(dir) {
 // Extract mermaid blocks from content
 function extractMermaidBlocks(content) {
     const blocks = [];
-    const regex = /```mermaid\\n([\\s\\S]*?)\\n```/g;
+    const regex = /```mermaid\n([\s\S]*?)\n```/g;
     let match;
 
     while ((match = regex.exec(content)) !== null) {
