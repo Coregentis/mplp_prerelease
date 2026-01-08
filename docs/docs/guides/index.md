@@ -1,4 +1,9 @@
 ---
+doc_type: informative
+normativity: informative
+status: active
+authority: Documentation Governance
+description: "Implementation guides and examples for MPLP protocol."
 sidebar_position: 3
 ---
 

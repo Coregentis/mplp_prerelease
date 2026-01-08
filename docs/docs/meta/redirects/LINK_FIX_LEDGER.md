@@ -1,4 +1,8 @@
 ---
+doc_type: informative
+normativity: informative
+status: active
+authority: Documentation Governance
 sidebar_position: 2
 ---
 

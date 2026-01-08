@@ -1,4 +1,9 @@
 ---
+doc_type: informative
+normativity: informative
+status: active
+authority: Documentation Governance
+description: "Meta documentation including release notes and roadmap."
 sidebar_position: 4
 ---
 

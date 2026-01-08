@@ -1,4 +1,9 @@
 ---
+doc_type: reference
+normativity: informative
+status: active
+authority: Documentation Governance
+description: "Three-entry model anchors for Website, Docs, and Repo."
 sidebar_position: 1
 ---
 
