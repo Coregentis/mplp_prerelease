@@ -96,16 +96,145 @@ function processIncludes(config) {
     });
 }
 
+function validateRelease(config) {
+    const distPath = path.join(rootDir, DIST_DIR);
+
+    console.log('\n=== Release Validation ===');
+
+    // Check for forbidden directories that should have been excluded
+    const forbiddenPaths = [
+        'node_modules',
+        'build',
+        '.docusaurus',
+        'dist'
+    ];
+
+    let violations = [];
+
+    function checkDir(dir, relativePath = '') {
+        if (!fs.existsSync(dir)) return;
+
+        const entries = fs.readdirSync(dir, { withFileTypes: true });
+        for (const entry of entries) {
+            const fullPath = path.join(dir, entry.name);
+            const relPath = path.join(relativePath, entry.name);
+
+            if (entry.isDirectory()) {
+                // Check if this is a forbidden directory
+                if (forbiddenPaths.includes(entry.name)) {
+                    violations.push(relPath);
+                }
+                // Recurse
+                checkDir(fullPath, relPath);
+            }
+        }
+    }
+
+    checkDir(distPath);
+
+    if (violations.length > 0) {
+        console.error('❌ HARD FAIL: Forbidden directories found in release package:');
+        violations.forEach(v => console.error(`   - ${v}`));
+        console.error('\nThese directories should have been excluded by release-config.yaml');
+        process.exit(1);
+    }
+
+    console.log('✓ No forbidden directories found');
+
+    // Check that we actually packaged something
+    const fileCount = countFiles(distPath);
+    if (fileCount === 0) {
+        console.error('❌ HARD FAIL: Release package is empty (0 files)');
+        process.exit(1);
+    }
+
+    console.log(`✓ Package contains ${fileCount} files`);
+
+    // Calculate total size
+    const totalSize = calculateSize(distPath);
+    const sizeMB = (totalSize / (1024 * 1024)).toFixed(2);
+    console.log(`✓ Total package size: ${sizeMB} MB`);
+
+    // Warn if size is unexpectedly large
+    if (totalSize > 100 * 1024 * 1024) { // 100 MB
+        console.warn(`⚠ WARNING: Package size (${sizeMB} MB) exceeds 100 MB`);
+        console.warn('   This may indicate build artifacts were not properly excluded');
+    }
+
+    return { fileCount, totalSize };
+}
+
+function countFiles(dir) {
+    let count = 0;
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+    for (const entry of entries) {
+        const fullPath = path.join(dir, entry.name);
+        if (entry.isDirectory()) {
+            count += countFiles(fullPath);
+        } else {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+function calculateSize(dir) {
+    let size = 0;
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+    for (const entry of entries) {
+        const fullPath = path.join(dir, entry.name);
+        if (entry.isDirectory()) {
+            size += calculateSize(fullPath);
+        } else {
+            const stat = fs.statSync(fullPath);
+            size += stat.size;
+        }
+    }
+
+    return size;
+}
+
+function generateManifest(config, stats) {
+    const manifest = {
+        version: config.version || '1.0.0',
+        generated: new Date().toISOString(),
+        fileCount: stats.fileCount,
+        totalSizeBytes: stats.totalSize,
+        totalSizeMB: (stats.totalSize / (1024 * 1024)).toFixed(2),
+        buildInfo: {
+            node: process.version,
+            platform: process.platform,
+            arch: process.arch
+        }
+    };
+
+    const manifestPath = path.join(rootDir, DIST_DIR, 'RELEASE_MANIFEST.json');
+    fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
+    console.log('\n✓ Generated RELEASE_MANIFEST.json');
+
+    return manifest;
+}
+
 function main() {
     try {
-        console.log('Starting MPLP v1.1 Release Build...');
+        console.log('Starting MPLP v1.0 Release Build...');
         const config = loadConfig();
         cleanDist();
         processIncludes(config);
-        console.log('Release build completed successfully!');
+
+        // Validate and generate manifest
+        const stats = validateRelease(config);
+        generateManifest(config, stats);
+
+        console.log('\n=== Release Build Complete ===');
         console.log(`Output directory: ${DIST_DIR}`);
+        console.log(`Files: ${stats.fileCount}`);
+        console.log(`Size: ${(stats.totalSize / (1024 * 1024)).toFixed(2)} MB`);
     } catch (error) {
-        console.error('Build failed:', error);
+        console.error('\n❌ Build failed:', error.message);
         process.exit(1);
     }
 }
