@@ -16,7 +16,6 @@ sidebar_position: 4
 # Error Handling — Conceptual Overview
 
 > **Audience**: Implementers, Architects
-> **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
 
 ## 1. What Error Handling Refers To

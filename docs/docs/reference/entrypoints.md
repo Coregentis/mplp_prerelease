@@ -6,7 +6,6 @@ sidebar_position: 1
 
 > **Document Type**: Non-Normative Reference  
 > **Purpose**: Anchor closure for three-entry model  
-> **Authority**: Documentation Governance
 
 ## Three-Entry Model
 

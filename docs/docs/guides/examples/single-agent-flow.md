@@ -11,15 +11,10 @@ sidebar_position: 1
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/examples/)
-> **Non-Goals**: Inherited (from /docs/guides/examples/)
 
 # Single Agent Flow
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 This document describes the **Single Agent (SA) Flow** example, which demonstrates a complete, runnable implementation of the MPLP Protocol v1.0.0 using the TypeScript SDK.
 

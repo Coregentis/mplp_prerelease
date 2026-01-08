@@ -9,12 +9,9 @@ title: Learning Sample Schema
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 # Learning Sample Schema
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 > **Protocol**: MPLP v1.0.0 (Frozen)
 
 ## 1. Purpose

@@ -16,7 +16,6 @@ sidebar_position: 10
 # Observability — Conceptual Overview
 
 > **Audience**: Implementers, Architects, DevOps
-> **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
 
 ## 1. What Observability Refers To

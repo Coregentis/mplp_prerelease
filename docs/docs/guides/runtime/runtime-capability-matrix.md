@@ -9,7 +9,6 @@ authority: Documentation Governance
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 # Runtime Capability → Schema Matrix
 

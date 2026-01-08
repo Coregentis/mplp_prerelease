@@ -11,15 +11,10 @@ canonical: /docs/guides/examples/vendor-neutral-llm-integration
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/examples/)
-> **Non-Goals**: Inherited (from /docs/guides/examples/)
 
 # Vendor-Neutral LLM Integration
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 **Related Golden Flows**: `flow-04-single-agent-llm-enrichment-single-agent-llm-enrichment`
 

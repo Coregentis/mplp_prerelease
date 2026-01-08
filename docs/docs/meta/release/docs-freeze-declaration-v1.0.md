@@ -15,14 +15,10 @@ This document is normative and frozen. Changes require MPGC governance process.
 :::
 
 
-> **Scope**: Inherited (from /docs/meta/release/mplp-v1.0.0-release-notes)
-> **Non-Goals**: Inherited (from /docs/meta/release/mplp-v1.0.0-release-notes)
 
 # Docs Freeze Declaration v1.0
 
 > **Status**: FROZEN
-> **Version**: 1.0.0
-> **Authority**: MPGC
 > **Date**: 2025-12-27
 
 ## 1. Declaration

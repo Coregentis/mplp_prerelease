@@ -16,7 +16,6 @@ sidebar_position: 22
 # Transaction — Conceptual Overview
 
 > **Audience**: Implementers, Architects, Runtime Authors
-> **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
 
 ## 1. What Transaction Refers To

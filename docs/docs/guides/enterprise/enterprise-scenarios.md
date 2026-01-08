@@ -11,15 +11,10 @@ sidebar_label: Scenarios
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/enterprise/)
-> **Non-Goals**: Inherited (from /docs/guides/enterprise/)
 
 # Enterprise Scenarios
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 ## Purpose
 

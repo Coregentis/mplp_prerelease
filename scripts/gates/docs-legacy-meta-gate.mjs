@@ -42,6 +42,11 @@ const FORBIDDEN_PATTERNS = [
     // Type F: Field-style meta lines
     { pattern: /^\*\*Document Status\*\*:/gm, type: 'F', desc: '**Document Status**: line' },
     { pattern: /^>\s*\*\*Status\*\*:\s*Informative/gm, type: 'F', desc: '> **Status**: Informative line' },
+
+    // Type G: Residual blockquote meta
+    { pattern: /^>\s*\*\*Version\*\*:/gm, type: 'G', desc: '> **Version**: line' },
+    { pattern: /^>\s*\*\*Scope\*\*:/gm, type: 'G', desc: '> **Scope**: line' },
+    { pattern: /^>\s*\*\*Non-Goals\*\*:/gm, type: 'G', desc: '> **Non-Goals**: line' },
 ];
 
 // Patterns to allow (Type D - explanation content, not metadata)
@@ -100,7 +105,7 @@ if (violations.length > 0) {
     console.log('\n❌ VIOLATIONS FOUND:\n');
 
     // Group by type
-    const byType = { A: [], B: [], C: [], E: [], F: [] };
+    const byType = { A: [], B: [], C: [], E: [], F: [], G: [] };
     violations.forEach(v => {
         if (byType[v.type]) byType[v.type].push(v);
     });

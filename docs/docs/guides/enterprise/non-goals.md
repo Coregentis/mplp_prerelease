@@ -11,15 +11,10 @@ sidebar_label: Non-Goals
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/enterprise/)
-> **Non-Goals**: Inherited (from /docs/guides/enterprise/)
 
 # Enterprise Non-Goals
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 ## 1. Purpose
 

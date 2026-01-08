@@ -8,7 +8,6 @@ canonical: /docs/evaluation/governance/HOW_TO_EVALUATE_MPLP
 title: How to Evaluate MPLP
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]
 > **MPLP Protocol v1.0.0 — Frozen Specification**
@@ -19,8 +18,6 @@ title: How to Evaluate MPLP
 > **Note**: Any normative change requires a new protocol version.
 
 
-> **Scope**: Inherited (from /docs/evaluation/governance/)
-> **Non-Goals**: Inherited (from /docs/evaluation/governance/)
 
 # How to Evaluate MPLP
 

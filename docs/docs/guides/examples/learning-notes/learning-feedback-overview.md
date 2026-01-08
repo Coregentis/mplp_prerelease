@@ -9,12 +9,9 @@ title: Learning & Feedback
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 # Learning & Feedback
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 ## 1. Purpose
 

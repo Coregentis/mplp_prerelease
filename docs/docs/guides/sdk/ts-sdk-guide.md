@@ -11,16 +11,12 @@ sidebar_label: TypeScript SDK
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/sdk/)
-> **Non-Goals**: Inherited (from /docs/guides/sdk/)
 
 # TypeScript SDK Guide
 
 > **Protocol Version**: 1.0.0 (Frozen)
 > **SDK Line**: v1.x (evolving)
-> **Authority**: Documentation Governance
 
 ## 1. Purpose
 

@@ -9,15 +9,10 @@ title: Conformance Guide
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/)
-> **Non-Goals**: Inherited (from /docs/guides/)
 
 # Conformance Guide
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 ## 1. Purpose
 

@@ -9,7 +9,6 @@ title: Schema Mapping Standard
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]
 > **MPLP Protocol v1.0.0 — Frozen Specification**
@@ -23,8 +22,6 @@ title: Schema Mapping Standard
 # Schema Mapping Standard
 
 > **Status**: Normative
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 ## 1. Introduction
 

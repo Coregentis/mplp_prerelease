@@ -16,7 +16,6 @@ sidebar_position: 12
 # Orchestration — Conceptual Overview
 
 > **Audience**: Implementers, Architects, SDK Authors
-> **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
 
 ## 1. What Orchestration Refers To

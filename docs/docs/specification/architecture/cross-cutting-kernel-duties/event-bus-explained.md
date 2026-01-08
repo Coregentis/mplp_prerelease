@@ -16,7 +16,6 @@ sidebar_position: 6
 # Event Bus — Conceptual Overview
 
 > **Audience**: Implementers, Architects, Runtime Authors
-> **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
 
 ## 1. What Event Bus Refers To

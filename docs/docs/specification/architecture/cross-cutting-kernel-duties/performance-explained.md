@@ -16,7 +16,6 @@ sidebar_position: 14
 # Performance — Conceptual Overview
 
 > **Audience**: Implementers, Architects
-> **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
 
 ## 1. What Performance Refers To

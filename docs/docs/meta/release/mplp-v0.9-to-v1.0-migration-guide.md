@@ -16,8 +16,6 @@ This document is normative and frozen. Changes require MPGC governance process.
 :::
 
 
-> **Scope**: Inherited (from /docs/meta/release/mplp-v1.0.0-release-notes)
-> **Non-Goals**: Inherited (from /docs/meta/release/mplp-v1.0.0-release-notes)
 
 # MPLP v0.9 to v1.0 Migration Guide
 

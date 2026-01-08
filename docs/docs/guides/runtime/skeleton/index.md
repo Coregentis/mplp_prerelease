@@ -8,7 +8,6 @@ doc_type: normative
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]
 > **MPLP Protocol v1.0.0 — Frozen Specification**

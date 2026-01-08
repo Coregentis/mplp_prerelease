@@ -10,7 +10,6 @@ audience: implementer
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]
 > **MPLP Protocol v1.0.0 — Frozen Specification**
@@ -25,7 +24,6 @@ audience: implementer
 
 > **Status**: Normative | FROZEN  
 > **Profile**: 14-Golden  
-> **Authority**: MPGC
 
 ## Scope
 

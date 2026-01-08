@@ -11,15 +11,10 @@ canonical: /docs/guides/conformance-checklist
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/)
-> **Non-Goals**: Inherited (from /docs/guides/)
 
 # Conformance Checklist
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 ## 1. Core Protocol (L1)
 - [ ] **Schema Validation**: All inputs/outputs validated against `schemas/v2/*.json`.

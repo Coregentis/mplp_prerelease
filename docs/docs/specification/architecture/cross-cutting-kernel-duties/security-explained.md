@@ -16,7 +16,6 @@ sidebar_position: 18
 # Security — Conceptual Overview
 
 > **Audience**: Implementers, Architects, Security Engineers
-> **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
 
 ## 1. What Security Refers To

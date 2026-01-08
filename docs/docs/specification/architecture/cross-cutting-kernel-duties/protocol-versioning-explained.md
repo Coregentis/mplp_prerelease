@@ -16,7 +16,6 @@ sidebar_position: 16
 # Protocol Versioning — Conceptual Overview
 
 > **Audience**: Implementers, Architects
-> **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
 
 ## 1. What Protocol Versioning Refers To

@@ -13,8 +13,6 @@ sidebar_label: Test Architecture
 
 # Test Architecture Overview
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 ## Scope
 

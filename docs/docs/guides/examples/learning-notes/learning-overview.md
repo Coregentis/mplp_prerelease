@@ -9,12 +9,9 @@ title: Learning Overview
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 # Learning Overview
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 > **Protocol**: MPLP v1.0.0 (Frozen)
 >
 > **Normative Statement**: Learning schemas are organized as a schema family under `schemas/v2/learning/`. This is an intentional deviation from root-level module schemas, due to Learning being a cross-cutting evidence subsystem rather than a single protocol object.

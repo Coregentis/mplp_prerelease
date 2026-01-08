@@ -16,7 +16,6 @@ sidebar_position: 8
 # Learning Feedback — Conceptual Overview
 
 > **Audience**: Implementers, ML Engineers
-> **Authority**: Documentation Governance
 > **Governance Rule**: DGP-30
 
 ## 1. What Learning Feedback Refers To

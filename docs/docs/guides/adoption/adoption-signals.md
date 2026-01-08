@@ -11,20 +11,10 @@ sidebar_label: Signals
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/adoption/)
-> **Non-Goals**: Inherited (from /docs/guides/adoption/)
 
 # Adoption Signals
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
-
-> [!CAUTION]
-> **No Endorsement**
-> Adoption signals **do not imply correctness, completeness, or endorsement**.
-> They are neutral indicators only.
 
 ## 1. Purpose
 

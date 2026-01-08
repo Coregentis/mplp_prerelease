@@ -9,15 +9,10 @@ title: Error Recovery Flow
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/examples/)
-> **Non-Goals**: Inherited (from /docs/guides/examples/)
 
 # Error Recovery Flow
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 ## 1. Overview
 

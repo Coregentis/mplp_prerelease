@@ -11,15 +11,10 @@ canonical: /docs/guides/sdk/implementation-maturity-matrix
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
-> **Scope**: Inherited (from /docs/guides/sdk/)
-> **Non-Goals**: Inherited (from /docs/guides/sdk/)
 
 # Implementation Maturity Matrix
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 This document defines the reference support status of MPLP SDKs and language bindings for the v1.0.0 release.
 

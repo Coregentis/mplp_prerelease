@@ -11,8 +11,6 @@ title: FAQ
 
 # FAQ
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 ## General
 

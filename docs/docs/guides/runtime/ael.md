@@ -9,7 +9,6 @@ title: AEL - Action Execution Layer
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]
 > **MPLP Protocol v1.0.0 — Frozen Specification**
@@ -20,14 +19,10 @@ title: AEL - Action Execution Layer
 > **Note**: Any normative change requires a new protocol version.
 
 
-> **Scope**: Inherited (from /docs/guides/runtime/)
-> **Non-Goals**: Inherited (from /docs/guides/runtime/)
 
 # AEL - Action Execution Layer
 
 > **Status**: Normative
-> **Version**: 1.0.0
-> **Authority**: MPGC
 > **Protocol**: MPLP v1.0.0 (Frozen)
 
 ## 1. Scope

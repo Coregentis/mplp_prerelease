@@ -9,12 +9,9 @@ title: Learning Invariants
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 # Learning Invariants
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 > **Protocol**: MPLP v1.0.0 (Frozen)
 
 ## 1. Purpose

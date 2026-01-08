@@ -11,7 +11,6 @@ sidebar_label: PSG - Project Semantic Graph
 
 ---
 
-> This document mirrors the protocol definition for reference only.
 
 > [!FROZEN]
 > **MPLP Protocol v1.0.0 — Frozen Specification**
@@ -22,14 +21,10 @@ sidebar_label: PSG - Project Semantic Graph
 > **Note**: Any normative change requires a new protocol version.
 
 
-> **Scope**: Inherited (from /docs/guides/runtime/)
-> **Non-Goals**: Inherited (from /docs/guides/runtime/)
 
 # PSG – Project Semantic Graph
 
 > **Status**: Normative
-> **Version**: 1.0.0
-> **Authority**: MPGC
 > **Protocol**: MPLP v1.0.0 (Frozen)
 
 ## 1. Scope

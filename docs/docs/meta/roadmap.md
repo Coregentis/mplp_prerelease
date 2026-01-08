@@ -12,8 +12,6 @@ sidebar_label: Evolution
 
 # Protocol Evolution
 
-> **Version**: 1.0.0
-> **Authority**: Documentation Governance
 
 :::warning[Non-Binding Statement]
 This document is **non-binding**, **non-normative**, and **does not represent commitments**.
