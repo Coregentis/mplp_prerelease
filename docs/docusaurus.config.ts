@@ -29,10 +29,9 @@ const config: Config = {
 
   themes: ['@docusaurus/theme-mermaid'],
 
-  // Head Tags for Fonts
-  stylesheets: [
-    'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap',
-  ],
+  // Fonts are now self-hosted in static/fonts/ - see custom.css
+  // Removed external Google Fonts to eliminate render-blocking resources (P0-1)
+  // stylesheets: [],
 
   presets: [
     [
