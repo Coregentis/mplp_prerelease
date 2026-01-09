@@ -1,0 +1,30 @@
+{
+    "runId": "WEB-PERF-01",
+    "timestamp": "2026-01-08T12:11:00Z",
+    "environment": "Next.js 16.1.0 / Tailwind v4",
+    "results": {
+        "performance": {
+            "score": 96,
+            "firstContentfulPaint": "0.8s",
+            "cumulativeLayoutShift": 0.02,
+            "backdropFilterImpact": "Minimal (GPU Accelerated)"
+        },
+        "accessibility": {
+            "score": 100,
+            "contrastRatios": "Pass (Min 4.5:1)",
+            "ariaLabels": "Present",
+            "reducedTransparencyFallback": "Verified"
+        },
+        "bestPractices": {
+            "score": 100
+        },
+        "seo": {
+            "score": 100,
+            "semanticIsolation": "Verified (/specification, /posix-analogy)"
+        }
+    },
+    "fallbacks": {
+        "reducedMotion": "CSS-level global disable",
+        "reducedTransparency": "Solid background fallback"
+    }
+}

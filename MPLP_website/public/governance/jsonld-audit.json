@@ -1,0 +1,42 @@
+{
+    "auditMetadata": {
+        "timestamp": "2026-01-08T12:10:00Z",
+        "tool": "MPLP-Schema-Validator v1.0",
+        "scope": "https://www.mplp.io",
+        "status": "PASS"
+    },
+    "assertions": [
+        {
+            "id": "BOUNDARY-01",
+            "requirement": "CreativeWorkSeries (Spec) mainEntityOfPage must point to docs sub-domain",
+            "observed": "https://docs.mplp.io",
+            "status": "PASS"
+        },
+        {
+            "id": "BOUNDARY-02",
+            "requirement": "SoftwareSourceCode (Repo) codeRepository must point to GitHub",
+            "observed": "https://github.com/Coregentis/MPLP-Protocol",
+            "status": "PASS"
+        },
+        {
+            "id": "AUTH-CHAIN-01",
+            "requirement": "Website description must explicitly mention normative source",
+            "observed": "...Normative definitions live at docs.mplp.io.",
+            "status": "PASS"
+        }
+    ],
+    "graphExtraction": {
+        "entities": 4,
+        "rootNodes": [
+            "WebSite",
+            "Organization",
+            "CreativeWorkSeries",
+            "SoftwareSourceCode"
+        ],
+        "authorityCrossLinks": {
+            "discovery -> normative": true,
+            "discovery -> repo": true,
+            "normative -> repo": true
+        }
+    }
+}

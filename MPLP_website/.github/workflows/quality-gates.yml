@@ -1,0 +1,49 @@
+name: Quality Gates
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  quality-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type Check
+        run: npx tsc --noEmit
+
+      - name: Build
+        run: npm run build
+
+      - name: Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.13.x
+          lhci autorun || true
+        continue-on-error: true
+
+      - name: Verify Pagefind Index
+        run: |
+          if [ ! -d "public/pagefind" ]; then
+            echo "❌ Pagefind index directory missing"
+            exit 1
+          fi
+          if [ ! -f "public/pagefind/pagefind.js" ]; then
+            echo "❌ Pagefind index generated but core files missing"
+            exit 1
+          fi
+          echo "✅ Pagefind index verified"

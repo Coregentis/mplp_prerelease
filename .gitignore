@@ -86,7 +86,6 @@ tools/
 # === OSS Release Exclusions (per release-config.yaml) ===
 
 # Website (separate repository)
-MPLP_website/
 
 # Internal governance artifacts (not for public release)
 governance/03-sdk-release/

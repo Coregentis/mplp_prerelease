@@ -1,0 +1,40 @@
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#F9FAFB"/>
+  
+  <!-- Flow diagram: Spawn -> Idle -> Executing -> Terminated -->
+  <g transform="translate(50, 120)">
+    <!-- States -->
+    <rect x="0" y="0" width="120" height="60" rx="30" fill="#1A73E8"/>
+    <text x="60" y="35" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="600" text-anchor="middle">SPAWNING</text>
+    
+    <rect x="180" y="0" width="120" height="60" rx="30" fill="#22C55E"/>
+    <text x="240" y="35" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="600" text-anchor="middle">IDLE</text>
+    
+    <rect x="360" y="0" width="120" height="60" rx="30" fill="#F97316"/>
+    <text x="420" y="35" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="600" text-anchor="middle">EXECUTING</text>
+    
+    <rect x="540" y="0" width="140" height="60" rx="30" fill="#6B7280"/>
+    <text x="610" y="35" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="600" text-anchor="middle">TERMINATED</text>
+    
+    <!-- Arrows -->
+    <g fill="none" stroke="#0B1020" stroke-width="2">
+      <path d="M120 30 L170 30" marker-end="url(#arrow)"/>
+      <path d="M300 30 L350 30" marker-end="url(#arrow)"/>
+      <path d="M480 30 L530 30" marker-end="url(#arrow)"/>
+      
+      <!-- Loop back from Executing to Idle -->
+      <path d="M420 60 L420 100 L240 100 L240 60" marker-end="url(#arrow)"/>
+    </g>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0B1020"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" fill="#0B1020" font-family="system-ui" font-size="16" font-weight="600" text-anchor="middle">Agent Lifecycle States</text>
+  <text x="400" y="260" fill="#6B7280" font-family="system-ui" font-size="12" text-anchor="middle">Agents transition through these states during their lifecycle</text>
+</svg>

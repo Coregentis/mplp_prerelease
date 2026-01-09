@@ -1,0 +1,11 @@
+[0m[0m
+[0m[4mE:\Coregentis\MPLP\mplp-v1.0\V1.0-release\MPLP_website\app\page.tsx[24m[0m
+[0m  [2m13:5[22m  [33mwarning[39m  'jsonLdDefinedTermSet' is defined but never used      [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m14:5[22m  [33mwarning[39m  'jsonLdWebSiteWithAnchors' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mE:\Coregentis\MPLP\mplp-v1.0\V1.0-release\MPLP_website\app\references\page.tsx[24m[0m
+[0m  [2m169:78[22m  [31merror[39m  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  [2mreact/no-unescaped-entities[22m[0m
+[0m  [2m169:87[22m  [31merror[39m  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  [2mreact/no-unescaped-entities[22m[0m
+[0m[0m
+[0m[31m[1m✖ 4 problems (2 errors, 2 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m

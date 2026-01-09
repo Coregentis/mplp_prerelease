@@ -1,0 +1,37 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#F9FAFB"/>
+  
+  <!-- Layer boxes -->
+  <g transform="translate(50, 30)">
+    <!-- L1 -->
+    <rect x="0" y="0" width="700" height="70" rx="8" fill="#EF4444" opacity="0.1" stroke="#EF4444" stroke-width="2"/>
+    <rect x="10" y="15" width="40" height="40" rx="8" fill="#EF4444"/>
+    <text x="22" y="42" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">L1</text>
+    <text x="70" y="42" fill="#0B1020" font-family="system-ui" font-size="16" font-weight="600">Invariants</text>
+    <text x="180" y="42" fill="#6B7280" font-family="system-ui" font-size="12">Agent Schema • Lifecycle States • Message Contract</text>
+    
+    <!-- L2 -->
+    <rect x="0" y="85" width="700" height="70" rx="8" fill="#F97316" opacity="0.1" stroke="#F97316" stroke-width="2"/>
+    <rect x="10" y="100" width="40" height="40" rx="8" fill="#F97316"/>
+    <text x="22" y="127" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">L2</text>
+    <text x="70" y="127" fill="#0B1020" font-family="system-ui" font-size="16" font-weight="600">Core Modules</text>
+    <text x="200" y="127" fill="#6B7280" font-family="system-ui" font-size="12">Task Execution • State Management • Communication</text>
+    
+    <!-- L3 -->
+    <rect x="0" y="170" width="700" height="70" rx="8" fill="#EAB308" opacity="0.1" stroke="#EAB308" stroke-width="2"/>
+    <rect x="10" y="185" width="40" height="40" rx="8" fill="#EAB308"/>
+    <text x="22" y="212" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">L3</text>
+    <text x="70" y="212" fill="#0B1020" font-family="system-ui" font-size="16" font-weight="600">Optional Modules</text>
+    <text x="220" y="212" fill="#6B7280" font-family="system-ui" font-size="12">Memory • Tool Use • Coordination • Planning</text>
+    
+    <!-- L4 -->
+    <rect x="0" y="255" width="700" height="70" rx="8" fill="#22C55E" opacity="0.1" stroke="#22C55E" stroke-width="2"/>
+    <rect x="10" y="270" width="40" height="40" rx="8" fill="#22C55E"/>
+    <text x="22" y="297" fill="#FFFFFF" font-family="system-ui" font-size="14" font-weight="700">L4</text>
+    <text x="70" y="297" fill="#0B1020" font-family="system-ui" font-size="16" font-weight="600">Extensions</text>
+    <text x="175" y="297" fill="#6B7280" font-family="system-ui" font-size="12">Custom Profiles • Runtime Adapters • Telemetry Exporters</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="380" fill="#0B1020" font-family="system-ui" font-size="14" font-weight="600" text-anchor="middle">MPLP 4-Layer Architecture</text>
+</svg>

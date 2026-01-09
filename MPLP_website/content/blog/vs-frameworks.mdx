@@ -1,0 +1,53 @@
+---
+title: "MPLP vs Agent Frameworks: Understanding the Difference"
+description: "How MPLP relates to LangChain, AutoGen, CrewAI, and why you need both."
+date: "2025-11-28"
+author: "MPLP Team"
+tags:
+  - comparison
+  - frameworks
+  - ecosystem
+draft: false
+slug: "vs-frameworks"
+---
+
+# MPLP vs Agent Frameworks
+
+"Should I use MPLP or LangChain?"
+
+This is the wrong question. It's like asking "Should I use HTTP or Express?" You use both — at different layers.
+
+## Protocol vs Framework
+
+| Aspect | MPLP (Protocol) | Frameworks |
+|--------|-----------------|------------|
+| Defines | What & Why | How |
+| Level | Specification | Implementation |
+| Vendor | Neutral | Specific |
+| Changes | Rarely | Frequently |
+
+## How They Work Together
+
+Think of it this way:
+
+- **MPLP** defines that agents must have lifecycle states (SPAWNING → IDLE → EXECUTING → TERMINATED)
+- **LangChain/AutoGen/CrewAI** implements those states in their runtime
+
+Your LangChain agent can be MPLP-conformant. Your AutoGen conversation can follow MPLP patterns.
+
+## Framework Relationships
+
+### LangChain
+LangChain provides chains, agents, and tools. MPLP defines lifecycle contracts that LangChain agents can implement.
+
+### AutoGen
+AutoGen excels at multi-agent conversations. MPLP's coordination patterns map to AutoGen conversation flows.
+
+### CrewAI
+CrewAI orchestrates role-playing agents. MPLP's Supervisor-Worker flow aligns with CrewAI's crew concept.
+
+## The Bottom Line
+
+Use frameworks for implementation. Use MPLP for interoperability, observability, and governance.
+
+[Learn more about the ecosystem](/ecosystem).

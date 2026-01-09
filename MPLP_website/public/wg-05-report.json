@@ -1,0 +1,15 @@
+{
+  "gate": "WG-05",
+  "version": "1.1.0",
+  "schema_version": "1.0.0",
+  "generatedAt": "2026-01-07T16:14:52.451Z",
+  "runId": "WEB-SEMANTIC-20260107",
+  "mode": "NON_BLOCKING",
+  "summary": {
+    "totalPages": 34,
+    "passed": 34,
+    "warned": 0,
+    "failed": 0
+  },
+  "results": []
+}

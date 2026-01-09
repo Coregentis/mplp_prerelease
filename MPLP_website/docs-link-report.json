@@ -1,0 +1,276 @@
+{
+  "checked": 26,
+  "broken": 0,
+  "redirects": 1,
+  "generated_at": "2026-01-08T21:42:46.630Z",
+  "results": [
+    {
+      "url": "https://docs.mplp.io/docs/evaluation/conformance",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/evaluation/golden-flows",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 56
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/evaluation/governance",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 74
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/evaluation/governance/contributing",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 76
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/evaluation/governance/versioning-policy",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 75
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/evaluation/tests/test-architecture-overview",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 64
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/guides",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 67
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/guides/examples/single-agent-flow",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 68
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/guides/runtime/ael",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/guides/runtime/psg",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 53
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/guides/runtime/runtime-glue-overview",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/guides/runtime/vsl",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 52
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/guides/sdk/ts-sdk-guide",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 71
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/introduction/mplp-v1.0-protocol-overview",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/introduction/posix-analogy-mapping",
+      "status": 200,
+      "refs": [
+        {
+          "file": "app/posix-analogy/page.tsx",
+          "line": 129
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/reference/entrypoints",
+      "status": 200,
+      "refs": [
+        {
+          "file": "app/what-is-mplp/page.tsx",
+          "line": 68
+        },
+        {
+          "file": "app/what-is-mplp/page.tsx",
+          "line": 69
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/architecture",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/architecture/cross-cutting-kernel-duties",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/architecture/l1-core-protocol",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/architecture/l1-l4-architecture-deep-dive",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 38
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/architecture/l4-integration-infra",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 40
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/modules",
+      "status": 301,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 45
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/modules/context-module",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 47
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/modules/module-interactions",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 44
+        },
+        {
+          "file": "lib/site-config.ts",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/profiles/map-profile",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "url": "https://docs.mplp.io/docs/specification/profiles/sa-profile",
+      "status": 200,
+      "refs": [
+        {
+          "file": "lib/site-config.ts",
+          "line": 59
+        }
+      ]
+    }
+  ]
+}
