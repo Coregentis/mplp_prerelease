@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://coregentis.github.io/MPLP-Protocol/sitemap.xml
+Sitemap: https://docs.mplp.io/sitemap.xml

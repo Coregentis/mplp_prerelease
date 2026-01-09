@@ -144,6 +144,10 @@ const config: Config = {
     metadata: [
       { name: 'theme-color', content: '#2563eb' },
       { name: 'og:locale', content: 'en_US' },
+      // Three-Entry Model role signals (not JSON-LD, visible meta tags)
+      { name: 'mplp:entry-role', content: 'Documentation — Specification & Reference' },
+      { name: 'mplp:entrypoints', content: 'website=https://www.mplp.io; repo=https://github.com/Coregentis/MPLP-Protocol' },
+      { name: 'application-name', content: 'MPLP Documentation' },
     ],
     // Table of contents on the right (like Antigravity's "On this Page")
     tableOfContents: {
