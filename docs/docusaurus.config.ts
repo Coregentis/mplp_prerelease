@@ -280,7 +280,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © 2025 Bangshi Beijing Network Technology Co., Ltd.<br/>Licensed under the Apache License 2.0.`,
+      copyright: `Copyright © 2026 Bangshi Beijing Network Technology Co., Ltd.<br/>Licensed under the Apache License 2.0.`,
     },
     prism: {
       theme: prismThemes.github,
