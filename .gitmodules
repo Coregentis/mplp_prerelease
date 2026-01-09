@@ -1,0 +1,6 @@
+[submodule "MPLP_website"]
+	path = MPLP_website
+	url = https://github.com/Coregentis/MPLP-Official-Website
+[submodule "Validation_Lab"]
+	path = Validation_Lab
+	url = https://github.com/Coregentis/MPLP-Validation-Lab
