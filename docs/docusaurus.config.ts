@@ -239,6 +239,12 @@ const config: Config = {
           className: 'button button--outline button--sm',
         },
         {
+          href: 'https://lab.mplp.io',
+          label: 'Validation Lab',
+          position: 'right',
+          className: 'header-lab-link',
+        },
+        {
           href: 'https://github.com/Coregentis/MPLP-Protocol',
           label: 'GitHub',
           position: 'right',
@@ -255,6 +261,7 @@ const config: Config = {
           items: [
             { label: 'Protocol Overview', href: 'https://www.mplp.io' },
             { label: 'Governance', href: 'https://www.mplp.io/governance' },
+            { label: 'Validation Lab', href: 'https://lab.mplp.io' },
             { label: 'FAQ', href: 'https://www.mplp.io/faq' },
             { label: 'References', href: 'https://www.mplp.io/references' },
           ],
