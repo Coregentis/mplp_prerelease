@@ -1,0 +1,141 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://mplp.io/schemas/claim-catalog.schema.json",
+    "title": "MPLP Claim Catalog",
+    "description": "Schema for claim catalog with truth-source closure constraints",
+    "type": "object",
+    "required": [
+        "version",
+        "generated_at",
+        "claims"
+    ],
+    "properties": {
+        "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "generated_at": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "claims": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/claim"
+            }
+        }
+    },
+    "$defs": {
+        "claim": {
+            "type": "object",
+            "required": [
+                "claim_id",
+                "claim_text",
+                "capability_ref",
+                "strength",
+                "status",
+                "truth_source",
+                "projection_allowed"
+            ],
+            "properties": {
+                "claim_id": {
+                    "type": "string",
+                    "pattern": "^CLM-[A-Z0-9]+-\\d{3}$",
+                    "description": "Unique claim identifier"
+                },
+                "claim_text": {
+                    "type": "string",
+                    "minLength": 10
+                },
+                "capability_ref": {
+                    "type": "string",
+                    "pattern": "^CAP-[A-Z0-9]+-\\d{3}$",
+                    "description": "Reference to capability in coverage matrix"
+                },
+                "strength": {
+                    "type": "string",
+                    "enum": [
+                        "S0",
+                        "S1",
+                        "S2",
+                        "S3",
+                        "S4"
+                    ],
+                    "description": "S0=Schema-only, S1=Presence, S2=Semantic, S3=E2E, S4=Equivalence"
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "PROVEN",
+                        "IMPLEMENTED_NOT_PROJECTED",
+                        "SPEC_ONLY",
+                        "ROADMAP"
+                    ]
+                },
+                "truth_source": {
+                    "$ref": "#/$defs/truth_source"
+                },
+                "projection_allowed": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "website",
+                            "docs",
+                            "lab"
+                        ]
+                    },
+                    "minItems": 1
+                },
+                "notes_boundary": {
+                    "type": "string",
+                    "description": "Required for substrate/sensitive claims"
+                }
+            },
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "claim_text": {
+                                "pattern": "([sS]ubstrate|[lL]ang[cC]hain|[aA]2[aA]|[mM][cC][pP]|[fF]ramework)"
+                            }
+                        }
+                    },
+                    "then": {
+                        "required": [
+                            "notes_boundary"
+                        ]
+                    }
+                }
+            ]
+        },
+        "truth_source": {
+            "type": "object",
+            "required": [
+                "type",
+                "path"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "schema",
+                        "test",
+                        "invariant",
+                        "harness",
+                        "gate",
+                        "curated_run"
+                    ]
+                },
+                "path": {
+                    "type": "string",
+                    "description": "Relative path from repo root"
+                },
+                "pointer": {
+                    "type": "string",
+                    "description": "JSON Pointer for schema references"
+                }
+            }
+        }
+    }
+}

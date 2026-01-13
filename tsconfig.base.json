@@ -69,8 +69,10 @@
       ],
       "@mplp/integration-tools-generic/*": [
         "packages/sdk-ts/src/integration/tools-generic/*"
-      ],
-    },
+      ]
+    }
+  },
+  "ts-node": {
     "transpileOnly": true,
     "skipProject": false
   }

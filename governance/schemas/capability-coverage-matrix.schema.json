@@ -1,0 +1,194 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://mplp.io/schemas/capability-coverage-matrix.schema.json",
+    "title": "MPLP Capability Coverage Matrix",
+    "description": "Schema for capability matrix with S0-S4 strength constraints",
+    "type": "object",
+    "required": [
+        "version",
+        "generated_at",
+        "capabilities"
+    ],
+    "properties": {
+        "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "generated_at": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "capabilities": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/capability"
+            }
+        }
+    },
+    "$defs": {
+        "capability": {
+            "type": "object",
+            "required": [
+                "capability_id",
+                "surface",
+                "truth_source",
+                "strength",
+                "status",
+                "projection_allowed"
+            ],
+            "properties": {
+                "capability_id": {
+                    "type": "string",
+                    "pattern": "^CAP-[A-Z0-9]+-\\d{3}$"
+                },
+                "surface": {
+                    "type": "string",
+                    "enum": [
+                        "schema",
+                        "invariant",
+                        "golden_flow",
+                        "cross_language",
+                        "ruleset",
+                        "gate"
+                    ]
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "truth_source": {
+                    "$ref": "#/$defs/truth_source"
+                },
+                "strength": {
+                    "type": "string",
+                    "enum": [
+                        "S0",
+                        "S1",
+                        "S2",
+                        "S3",
+                        "S4"
+                    ]
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "PROVEN",
+                        "IMPLEMENTED_NOT_PROJECTED",
+                        "SPEC_ONLY",
+                        "ROADMAP"
+                    ]
+                },
+                "projection_allowed": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "website",
+                            "docs",
+                            "lab"
+                        ]
+                    }
+                },
+                "equivalence_type": {
+                    "type": "string",
+                    "enum": [
+                        "cross_language",
+                        "cross_substrate"
+                    ],
+                    "description": "Required when strength=S4"
+                },
+                "invariants_ref": {
+                    "type": "string",
+                    "description": "Path to invariants file"
+                },
+                "harness_ref": {
+                    "type": "string",
+                    "description": "Path to harness/expected output"
+                },
+                "expected_ref": {
+                    "type": "string",
+                    "description": "Path to expected output directory"
+                },
+                "note": {
+                    "type": "string"
+                }
+            },
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "strength": {
+                                "const": "S4"
+                            }
+                        }
+                    },
+                    "then": {
+                        "required": [
+                            "equivalence_type"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "strength": {
+                                "enum": [
+                                    "S2",
+                                    "S3",
+                                    "S4"
+                                ]
+                            }
+                        }
+                    },
+                    "then": {
+                        "anyOf": [
+                            {
+                                "required": [
+                                    "invariants_ref"
+                                ]
+                            },
+                            {
+                                "required": [
+                                    "harness_ref"
+                                ]
+                            },
+                            {
+                                "required": [
+                                    "expected_ref"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "truth_source": {
+            "type": "object",
+            "required": [
+                "type",
+                "path"
+            ],
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "enum": [
+                        "schema",
+                        "test",
+                        "invariant",
+                        "harness",
+                        "gate",
+                        "curated_run"
+                    ]
+                },
+                "path": {
+                    "type": "string"
+                },
+                "pointer": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

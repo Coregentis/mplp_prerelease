@@ -1,0 +1,98 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://mplp.io/schemas/equivalence-record.schema.json",
+    "title": "MPLP Cross-Substrate Equivalence Record",
+    "description": "Schema for S4 cross-substrate equivalence records",
+    "type": "object",
+    "required": [
+        "scenario_id",
+        "ruleset_version",
+        "evaluator",
+        "evaluator_version",
+        "equivalence_type",
+        "packs",
+        "evidence_minimums",
+        "verdict_match"
+    ],
+    "properties": {
+        "scenario_id": {
+            "type": "string",
+            "description": "Scenario identifier"
+        },
+        "ruleset_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+$",
+            "description": "Ruleset version used for evaluation"
+        },
+        "evaluator": {
+            "type": "string",
+            "description": "Evaluator identity (must be local-cli)"
+        },
+        "evaluator_version": {
+            "type": "string",
+            "description": "Evaluator version (commit SHA or package version)"
+        },
+        "equivalence_type": {
+            "type": "string",
+            "const": "cross_substrate",
+            "description": "Type of equivalence"
+        },
+        "packs": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+                "type": "object",
+                "required": [
+                    "substrate",
+                    "pack_root_hash",
+                    "verdict_hash"
+                ],
+                "properties": {
+                    "substrate": {
+                        "type": "string",
+                        "description": "Substrate identifier"
+                    },
+                    "pack_root_hash": {
+                        "type": "string",
+                        "description": "Root hash of evidence pack"
+                    },
+                    "verdict_hash": {
+                        "type": "string",
+                        "description": "Verdict hash from evaluator"
+                    }
+                }
+            }
+        },
+        "evidence_minimums": {
+            "type": "object",
+            "required": [
+                "context_present",
+                "plan_present",
+                "trace_present",
+                "timeline_present",
+                "integrity_present"
+            ],
+            "properties": {
+                "context_present": {
+                    "type": "boolean"
+                },
+                "plan_present": {
+                    "type": "boolean"
+                },
+                "trace_present": {
+                    "type": "boolean"
+                },
+                "timeline_present": {
+                    "type": "boolean"
+                },
+                "integrity_present": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "verdict_match": {
+            "type": "boolean",
+            "description": "Whether verdict hashes match"
+        }
+    }
+}
