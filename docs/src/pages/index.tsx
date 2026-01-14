@@ -52,6 +52,7 @@ function HomepageHeader() {
                     <img src="https://img.shields.io/badge/Governance-MPGC_Managed-blue?style=flat-square" alt="Governance" />
                     <img src="https://img.shields.io/badge/License-Apache_2.0-green?style=flat-square" alt="License" />
                     <img src="https://img.shields.io/badge/Schemas-v2_bundle_(Repo)-lightgrey?style=flat-square" alt="Schemas" />
+                    <img src="https://img.shields.io/badge/Validation_Lab-v0.7.3_Evidence_Sealed-green?style=flat-square" alt="Validation Lab" />
                 </div>
 
                 {/* Governance Statement */}
@@ -149,6 +150,15 @@ const FeatureList = [
         description: (
             <>
                 Build faster. Official libraries for <strong>TypeScript</strong>, <strong>Python</strong>, and <strong>Go</strong>.
+            </>
+        ),
+    },
+    {
+        title: 'Validation Lab',
+        link: '/docs/evaluation/conformance/validation-lab-evidence-regime',
+        description: (
+            <>
+                Evidence-based verification. <strong>Type-A/B classification</strong>, reproduction instructions, and <strong>signed seals</strong> (non-certification).
             </>
         ),
     },
