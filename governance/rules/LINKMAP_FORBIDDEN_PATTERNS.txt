@@ -1,0 +1,25 @@
+# Forbidden Patterns for Link Integrity Audit (Gate-LINK-03)
+# Each line is a regex pattern that triggers HARD FAIL
+# Used by: METHOD-LINKMAP-01
+
+# Certification/Endorsement/Ranking (Non-certifying boundary)
+certified
+certification
+endorsed
+endorsement
+official mark
+official compliance
+ranking
+score
+badge
+
+# Authority leakage (Docs should not claim Lab authority)
+Lab is authoritative
+authority resides in Lab
+authority resides in the Lab
+
+# Execution hosting claims (Lab does not host execution)
+upload and run
+hosted execution
+run your code in lab
+run your code in the lab

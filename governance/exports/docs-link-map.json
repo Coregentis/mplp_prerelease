@@ -1,0 +1,59 @@
+{
+    "audit_id": "AUDIT-LINKMAP-2026-01-20",
+    "method": "METHOD-LINKMAP-01",
+    "scope": "docs/docs/evaluation/**",
+    "generated_at": "2026-01-20T18:30:00+08:00",
+    "summary": {
+        "total_links": 101,
+        "by_kind": {
+            "DOCS_INTERNAL": 80,
+            "WEBSITE": 5,
+            "LAB": 10,
+            "REPO": 6,
+            "EXTERNAL": 0
+        },
+        "gates": {
+            "LINK-01": "PASS",
+            "LINK-02": "DEFERRED",
+            "LINK-03": "PASS"
+        }
+    },
+    "links": [
+        {
+            "source_path": "docs/docs/evaluation/validation-lab/index.mdx",
+            "link_text": "Lifecycle Guarantees Reference",
+            "target_url": "./lifecycle-guarantees.mdx",
+            "target_kind": "DOCS_INTERNAL",
+            "check_status": "PASS"
+        },
+        {
+            "source_path": "docs/docs/evaluation/validation-lab/index.mdx",
+            "link_text": "Ruleset Reference",
+            "target_url": "./rulesets.mdx",
+            "target_kind": "DOCS_INTERNAL",
+            "check_status": "PASS"
+        },
+        {
+            "source_path": "docs/docs/evaluation/validation-lab/index.mdx",
+            "link_text": "Evidence Pack Contract",
+            "target_url": "./evidence-pack-contract.mdx",
+            "target_kind": "DOCS_INTERNAL",
+            "check_status": "PASS"
+        },
+        {
+            "source_path": "docs/docs/evaluation/validation-lab/index.mdx",
+            "link_text": "Validation Lab Site",
+            "target_url": "https://lab.mplp.io",
+            "target_kind": "LAB",
+            "check_status": "DEFERRED"
+        },
+        {
+            "source_path": "docs/docs/evaluation/validation-lab/index.mdx",
+            "link_text": "Validation Lab Repository",
+            "target_url": "https://github.com/Coregentis/MPLP-Validation-Lab",
+            "target_kind": "REPO",
+            "check_status": "DEFERRED"
+        }
+    ],
+    "note": "Partial link map for Phase 2A. Full extraction recommended via automation script."
+}

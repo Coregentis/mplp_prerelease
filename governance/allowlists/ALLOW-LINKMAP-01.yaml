@@ -1,0 +1,11 @@
+# ALLOW-LINKMAP-01 — Link Integrity Exceptions
+
+# This file contains approved exceptions for Gate-LINK-02 (external link resolution)
+# Each exception requires: target_url, reason, scope, expires_at
+
+exceptions: []
+# Example entry:
+# - target_url: "https://example.com/rate-limited"
+#   reason: "Rate-limited endpoint, verified manually"
+#   scope: "docs/docs/evaluation"
+#   expires_at: "2026-06-30"
