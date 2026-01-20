@@ -21,7 +21,11 @@
     "test:runtime-compat": "pnpm runtime:dump:single-agent && pnpm test:runtime-compat:py && pnpm test:runtime-compat:compare && vitest run tests/runtime-compat",
     "test:golden": "ts-node --transpile-only tests/golden/harness/ts/golden-runner.ts",
     "examples:ts-single-agent": "ts-node examples/ts-single-agent-basic/index.ts",
-    "build:release": "node ./scripts/build-release.js"
+    "build:release": "node ./scripts/build-release.js",
+    "gate:linkmap": "node ./governance/tools/linkmap/gate-linkmap.mjs --scope docs/docs",
+    "gate:linkmap:2a": "node ./governance/tools/linkmap/gate-linkmap.mjs --scope docs/docs/evaluation",
+    "gate:linkmap:2b": "node ./governance/tools/linkmap/gate-linkmap.mjs --scope docs/docs",
+    "gate:linkmap:external": "node ./governance/tools/linkmap/gate-linkmap.mjs --scope docs/docs --external"
   },
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
