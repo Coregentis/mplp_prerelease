@@ -1,0 +1,74 @@
+# False Positive Filters — Negated Context Patterns
+# Gate-LINK-03 will skip pattern hits if the line contains any of these phrases
+# These represent "boundary declarations" — statements about what MPLP does NOT do
+# Format: one pattern per line, case-insensitive matching
+
+# Direct negations
+Non-certifying
+non-certification
+Non-endorsement
+non-endorsement
+Non-ranking
+Non-Endorsement
+Not a certification
+not a endorsement
+not an endorsement
+NOT provide
+no certification
+no endorsement
+No endorsement
+No certification
+NO certification
+NO endorsement
+NOT a
+
+# Negated verbs
+does not
+is not
+we do not
+We do not
+never
+
+# Exclusion indicators (❌)
+❌
+
+# Partial phrase matches for negated claims
+not certif
+not endorse
+not rank
+
+# Section headers describing what we don't do
+Non-Goals
+non-goals
+Boundary
+boundary
+out-of-scope
+Out-of-scope
+exclusion
+Exclusion
+Exclusions
+
+# Explanation context patterns
+no vendor endorsement
+No tiered
+no tiered
+Not a commercial
+not a commercial
+would make judgments
+Adoption ≠
+Self-declared
+no external
+
+# Negated badge/vendor mentions
+does not issue badges
+No vendor
+no vendor
+Not a partnership
+
+# Table descriptions of what we don't do
+Not a certification body
+No certification authority
+no certification program
+Vendor-neutral
+vendor-neutral
+Not measured

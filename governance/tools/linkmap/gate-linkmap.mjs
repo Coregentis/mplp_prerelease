@@ -139,34 +139,30 @@ if (patterns.length === 0) {
         const output = execSync(grepCmd, { encoding: 'utf-8', maxBuffer: 10 * 1024 * 1024 });
         const lines = output.trim().split('\n').filter(l => l);
 
-        // Filter out negated usage (boundary declarations)
-        const negatedPatterns = [
-            // Direct negations
-            'Non-certifying', 'non-certification', 'Non-endorsement', 'non-endorsement',
-            'Non-ranking', 'Non-Endorsement', 'Not a certification', 'not a endorsement',
-            '❌', 'not certif', 'not endorse', 'not rank', 'NOT provide',
-            'does not', 'is not', 'NO certification', 'NO endorsement', 'No certification',
-            'No endorsement', 'NOT a', 'no certification', 'no endorsement', 'not an endorsement',
-            // Section headers describing what we don't do
-            'Non-Goals', 'non-goals', 'Boundary', 'boundary',
-            'out-of-scope', 'Out-of-scope', 'exclusion', 'Exclusion', 'Exclusions',
-            // Explanation context
-            'we do not', 'We do not', 'never', 'no vendor endorsement',
-            'No tiered', 'no tiered', 'Not a commercial', 'not a commercial',
-            'would make judgments', 'Adoption ≠', 'Self-declared', 'no external',
-            // Negated badge mentions
-            'does not issue badges', 'No vendor', 'no vendor', 'Not a partnership',
-            // Table descriptions of what we don't do
-            'Not a certification body', 'No certification authority', 'no certification program',
-            'Vendor-neutral', 'vendor-neutral', 'Not measured'
-        ];
+        // Load false positive patterns from external governance files
+        const falsePositiveFile = join(ROOT, 'governance/rules/LINKMAP_FALSE_POSITIVE_CONTAINS.txt');
+        const technicalFieldFile = join(ROOT, 'governance/rules/LINKMAP_TECHNICAL_FIELD_ALLOWLIST.txt');
 
+        const loadPatterns = (filePath) => {
+            if (!existsSync(filePath)) return [];
+            return readFileSync(filePath, 'utf-8')
+                .split('\n')
+                .filter(line => line.trim() && !line.startsWith('#'))
+                .map(p => p.trim());
+        };
+
+        const negatedPatterns = loadPatterns(falsePositiveFile);
+        const technicalFieldPatterns = loadPatterns(technicalFieldFile);
+
+        console.log(`  False positive patterns: ${negatedPatterns.length}`);
+        console.log(`  Technical field patterns: ${technicalFieldPatterns.length}`);
+
+        // First filter: remove lines containing negated patterns
         const violations = lines.filter(line => {
             return !negatedPatterns.some(np => line.toLowerCase().includes(np.toLowerCase()));
         });
 
-        // Further filter: check for field names like impact_score, confidence score
-        const technicalFieldPatterns = ['impact_score', 'confidence', 'round_robin', '_score'];
+        // Second filter: remove technical field names
         const realViolations = violations.filter(line => {
             return !technicalFieldPatterns.some(tf => line.toLowerCase().includes(tf.toLowerCase()));
         });

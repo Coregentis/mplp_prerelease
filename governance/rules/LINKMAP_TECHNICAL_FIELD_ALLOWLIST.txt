@@ -1,0 +1,13 @@
+# Technical Field Allowlist
+# Gate-LINK-03 will skip pattern hits containing these technical field names
+# These are legitimate schema/code field names, not semantic violations
+# Format: one pattern per line, case-insensitive matching
+
+# Score-related fields
+impact_score
+confidence_score
+_score
+confidence
+
+# Naming convention examples
+round_robin
