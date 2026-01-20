@@ -1,6 +1,11 @@
 # Technical Field Allowlist
 # Gate-LINK-03 will skip pattern hits containing these technical field names
 # These are legitimate schema/code field names, not semantic violations
+#
+# ⚠️ SCOPE: This allowlist applies to schema fields, code identifiers, and JSON keys.
+# If these terms appear in narrative prose (not code/schema context), they may still
+# warrant manual review. Consider checking if the match is within a code fence.
+#
 # Format: one pattern per line, case-insensitive matching
 
 # Score-related fields

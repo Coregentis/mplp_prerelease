@@ -1,6 +1,12 @@
 # False Positive Filters — Negated Context Patterns
 # Gate-LINK-03 will skip pattern hits if the line contains any of these phrases
 # These represent "boundary declarations" — statements about what MPLP does NOT do
+#
+# ⚠️ IMPORTANT: This file is a "negation context detector", NOT an allowlist.
+# It identifies lines that describe what MPLP explicitly does NOT do.
+# It should NOT be used to mask genuine semantic violations.
+# If a pattern appears in affirmative context, it remains a violation.
+#
 # Format: one pattern per line, case-insensitive matching
 
 # Direct negations
