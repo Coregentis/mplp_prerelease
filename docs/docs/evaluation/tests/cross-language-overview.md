@@ -3,7 +3,7 @@ sidebar_position: 20
 doc_type: reference
 normativity: informative
 status: active
-authority: Documentation Governance
+authority: none
 description: "Cross-language test suite overview and inventory. Projection of Repo tests; non-certification."
 ---
 

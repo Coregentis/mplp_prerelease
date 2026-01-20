@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-TEST-FIXTURE-001"
 title: Golden Fixture Format
 sidebar_label: Fixture Format
 description: "MPLP test documentation: Golden Fixture Format. Test suite structure and fixtures."
-authority: Documentation Governance
+authority: none
 ---
 
 # Golden Fixture Format

@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-GOV-CONTRIB-001"
 title: Contributing to MPLP
 sidebar_label: Contributing Guide
 description: "MPLP governance documentation: Contributing to MPLP. Governance processes and policies."
-authority: Documentation Governance
+authority: none
 ---
 
 # Contributing to MPLP

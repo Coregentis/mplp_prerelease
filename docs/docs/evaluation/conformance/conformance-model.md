@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-CONF-MODEL-001"
 title: Conformance Model
 sidebar_label: Conformance Model
 description: "MPLP conformance evaluation: Conformance Model. Non-normative guidance for protocol conformance assessment."
-authority: Documentation Governance
+authority: none
 ---
 
 # Conformance Model
@@ -134,13 +134,13 @@ Conformance is judged across these dimensions:
 
 | Golden Flow | Validates |
 |:---|:---|
-| GF-01 | Single Agent Lifecycle (L1/L2) |
-| GF-02 | Multi-Agent Coordination (L2) |
-| GF-03 | Human-in-the-Loop Gating (L2) |
-| GF-04 | Drift Detection & Recovery (L3) |
-| GF-05 | External Tool Integration (L3/L4) |
+| FLOW-01 | Single Agent Lifecycle (L1/L2) |
+| FLOW-02 | Multi-Agent Coordination (L2) |
+| FLOW-03 | Human-in-the-Loop Gating (L2) |
+| FLOW-04 | Drift Detection & Recovery (L3) |
+| FLOW-05 | External Tool Integration (L3/L4) |
 
-A system that passes GF-01 through GF-05 is **L3 Conformant**.
+A system that passes FLOW-01 through FLOW-05 is **L3 Conformant**.
 
 ## 8. What Conformance Does NOT Guarantee
 

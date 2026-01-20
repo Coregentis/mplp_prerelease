@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-GOV-TRUST-001"
 title: External Governance & Trust Overview
 sidebar_label: External Trust Overview
 description: "MPLP governance documentation: External Governance & Trust Overview. Governance processes and policies."
-authority: Documentation Governance
+authority: none
 ---
 
 # External Governance & Trust Overview

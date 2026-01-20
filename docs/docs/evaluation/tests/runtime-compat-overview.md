@@ -3,7 +3,7 @@ sidebar_position: 21
 doc_type: reference
 normativity: informative
 status: active
-authority: Documentation Governance
+authority: none
 description: "Runtime compatibility test suite overview and inventory. Projection of Repo tests; non-certification."
 ---
 

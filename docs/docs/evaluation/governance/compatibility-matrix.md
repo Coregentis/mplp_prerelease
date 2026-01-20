@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-GOV-COMPAT-001"
 title: Compatibility Matrix
 sidebar_label: Compatibility Matrix
 description: "MPLP governance documentation: Compatibility Matrix. Governance processes and policies."
-authority: Documentation Governance
+authority: none
 ---
 
 # Compatibility Matrix

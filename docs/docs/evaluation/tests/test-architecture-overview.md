@@ -4,7 +4,7 @@ entry_surface: documentation
 doc_type: informative
 normativity: informative
 status: active
-authority: Documentation Governance
+authority: none
 protocol_version: "1.0.0"
 doc_id: "DOC-EVAL-TEST-ARCH-001"
 description: "Overview of the MPLP testing architecture including test categories, locations, and evidence mapping."
@@ -51,11 +51,11 @@ Golden Flows provide reference evidence artifacts for protocol conformance evalu
 
 | Flow ID | Name | Protocol Layer |
 |:--------|:-----|:---------------|
-| GF-01 | Single-Agent Lifecycle | L1 Core |
-| GF-02 | Multi-Agent Coordination | L2 Coordination |
-| GF-03 | Drift Detection | L3 Runtime |
-| GF-04 | Delta Intent | L2 Coordination |
-| GF-05 | Governance | L2 Coordination |
+| FLOW-01 | Single-Agent Lifecycle | L1 Core |
+| FLOW-02 | Multi-Agent Coordination | L2 Coordination |
+| FLOW-03 | Drift Detection | L3 Runtime |
+| FLOW-04 | Delta Intent | L2 Coordination |
+| FLOW-05 | Governance | L2 Coordination |
 
 **Location**: `tests/golden/flows/`
 
@@ -134,7 +134,7 @@ Tests map to protocol conformance dimensions:
 | Schema Validity | Schema Alignment, SDK Unit |
 | Lifecycle Completeness | Golden Flows, Runtime Compat |
 | Trace Integrity | Golden Flows |
-| Governance Gating | GF-05 |
+| Governance Gating | FLOW-05 |
 
 ---
 

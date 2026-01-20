@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-TEST-OVERVIEW-001"
 title: Golden Test Suite Overview
 sidebar_label: Test Suite Overview
 description: "MPLP test documentation: Golden Test Suite Overview. Test suite structure and fixtures."
-authority: Documentation Governance
+authority: none
 ---
 
 # Golden Test Suite Overview
@@ -28,11 +28,11 @@ The suite provides evidence for the following protocol areas:
 
 | Flow ID | Name | Evidence Focus |
 | :--- | :--- | :--- |
-| **Flow-01** | **Intent to Plan Transition** | L1 Core (Context/Plan) Schema Alignment |
-| **Flow-02** | **Governed Execution** | L1 Core (Trace/Constraints) Invariant Adherence |
-| **Flow-03** | **Multi-Agent Coordination Loop** | L2 Coordination (Collab/Role) Interaction Patterns |
-| **Flow-04** | **Drift Detection & Recovery** | L3 Runtime (Drift/Recovery) Event Emission |
-| **Flow-05** | **Runtime Integration & External I/O** | L4 Integration (Extension/Network) Sandbox Boundaries |
+| **FLOW-01** | **Single Agent – Happy Path** | L1 Core (Context/Plan) Schema Alignment |
+| **FLOW-02** | **Single Agent – Large Plan** | L1 Core (Trace/Constraints) Invariant Adherence |
+| **FLOW-03** | **Single Agent – With Tools** | L2 Coordination (agent_role/Extension) |
+| **FLOW-04** | **Single Agent with LLM Enrichment** | L3 Runtime (AEL) Plan Generation |
+| **FLOW-05** | **Single Agent with Confirm Required** | L2 Coordination (Confirm/Trace) Approval Flow |
 
 ## 3. Artifact Structure
 

@@ -10,7 +10,7 @@ doc_id: "DOC-EVAL-CONF-INDEX-001"
 title: Conformance & Evaluation
 sidebar_label: Conformance
 description: "MPLP conformance evaluation: Conformance & Evaluation. Non-normative guidance for protocol conformance assessment."
-authority: Documentation Governance
+authority: none
 ---
 
 > "Can I prove what the agents did, why they did it, and whether the system stayed within approved lifecycle guarantees?"
@@ -97,14 +97,30 @@ Use this as a quick sanity check before deeper evaluation:
 
 ## 7. Related Documentation
 
-- [Golden Flows](/docs/evaluation/golden-flows) — Lifecycle invariant validation
+- [Golden Flows](/docs/evaluation/golden-flows) — Protocol test scenarios for conformance verification
 - [Versioning Policy](/docs/evaluation/governance/versioning-policy) — Protocol version semantics
 - [Schema Mapping Standard](/docs/guides/sdk/schema-mapping-standard) — Evidence schema definitions
 
-## 8. External References
+## 8. Evidence Adjudication (Validation Lab)
 
-:::info External Reference (Non-Normative)
-[Validation Lab](https://lab.mplp.io) (external) — External reference (non-normative): evidence viewing/export site.
+For evidence-based verdict generation and adjudication, see the **Validation Lab**:
+
+| Resource | Description | Link |
+|:---|:---|:---|
+| **Lifecycle Guarantees** | LG-01~05 adjudication targets | [Docs Reference](/docs/evaluation/validation-lab/lifecycle-guarantees) / [Lab](https://lab.mplp.io/guarantees) |
+| **Rulesets** | Versioned evaluation rules | [Docs Reference](/docs/evaluation/validation-lab/rulesets) / [Lab](https://lab.mplp.io/rulesets) |
+| **Evidence Pack Contract** | Pack structure & format | [Docs Reference](/docs/evaluation/validation-lab/evidence-pack-contract) / [Lab Policy](https://lab.mplp.io/policies/contract) |
+| **Terminology** | Flow vs LG naming conventions | [Docs Reference](/docs/evaluation/validation-lab/terminology) |
+
+:::info Terminology Note
+- **Flow-01~05** = Protocol Test Scenarios (this repository)
+- **LG-01~05** = Lifecycle Guarantees (Lab adjudication targets)
+
+These are distinct naming spaces. See [Terminology Reference](/docs/evaluation/validation-lab/terminology) for details.
+:::
+
+:::warning Non-Certification Boundary
+The Validation Lab provides **evidence-based verdicts**, not certification, badges, or endorsements. Verdicts are reproducible outputs: same evidence + same ruleset = same verdict hash.
 :::
 
 ---

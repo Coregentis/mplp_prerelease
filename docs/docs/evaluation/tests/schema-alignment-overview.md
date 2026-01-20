@@ -3,7 +3,7 @@ sidebar_position: 22
 doc_type: reference
 normativity: informative
 status: active
-authority: Documentation Governance
+authority: none
 description: "Schema alignment test suite overview and inventory. Projection of Repo tests; non-certification."
 ---
 

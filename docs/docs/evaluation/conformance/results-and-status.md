@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-CONF-RESULTS-001"
 title: Results & Status
 sidebar_label: Results & Status
 description: "MPLP conformance evaluation: Results & Status. Non-normative guidance for protocol conformance assessment."
-authority: Documentation Governance
+authority: none
 ---
 
 # Results & Status

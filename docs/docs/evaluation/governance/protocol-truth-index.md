@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-GOV-TRUTH-001"
 title: Protocol Truth Index
 sidebar_label: Truth Index
 description: "MPLP governance documentation: Protocol Truth Index. Governance processes and policies."
-authority: Documentation Governance
+authority: none
 ---
 
 # Protocol Truth Index
@@ -250,7 +250,7 @@ The following terms are **forbidden** in MPLP documentation and website:
 | Core Modules (L2) | 10 | schemas/v2/*.schema.json |
 | Event Families | 12 | observability-invariants.yaml |
 | SA Invariants | 9 | sa-invariants.yaml |
-| Golden Flows | 5 | GF-01 to GF-05 |
+| Golden Flows | 5 | FLOW-01 to FLOW-05 |
 | Kernel Duties | 11 | cross-cutting-kernel-duties/ |
 
 ---

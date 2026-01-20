@@ -10,7 +10,7 @@ doc_id: "DOC-EVAL-INDEX-001"
 title: Evaluation & Governance
 sidebar_position: 2
 description: "MPLP evaluation: Evaluation & Governance. Non-normative assessment guidance."
-authority: Documentation Governance
+authority: none
 ---
 
 # Evaluation & Governance

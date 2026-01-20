@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-CONF-DIM-001"
 title: Evaluation Dimensions
 sidebar_label: Evaluation Dimensions
 description: "MPLP conformance evaluation: Evaluation Dimensions. Non-normative guidance for protocol conformance assessment."
-authority: Documentation Governance
+authority: none
 ---
 
 # Evaluation Dimensions

@@ -11,7 +11,7 @@ doc_id: "DOC-EVAL-GOV-SECURITY-001"
 title: Security Policy
 sidebar_label: Security Policy
 description: "MPLP governance documentation: Security Policy. Governance processes and policies."
-authority: Documentation Governance
+authority: none
 ---
 
 # Security Policy
