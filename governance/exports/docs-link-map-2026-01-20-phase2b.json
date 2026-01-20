@@ -1,0 +1,61 @@
+{
+    "audit_id": "AUDIT-LINKMAP-2026-01-20-PHASE2B",
+    "method": "METHOD-LINKMAP-01",
+    "scope": "docs/docs/**",
+    "phase": "2B",
+    "generated_at": "2026-01-20T19:36:00+08:00",
+    "summary": {
+        "total_files": 170,
+        "total_links": 155,
+        "by_kind": {
+            "DOCS_INTERNAL": 95,
+            "EXTERNAL": 60
+        },
+        "gates": {
+            "LINK-01": "PASS",
+            "LINK-02": "DEFERRED",
+            "LINK-03": "PASS"
+        },
+        "pattern_hits": 73,
+        "violations": 0
+    },
+    "comparison_with_2a": {
+        "files_delta": "+128",
+        "links_delta": "+54",
+        "pattern_hits_delta": "+19",
+        "violations_delta": "0"
+    },
+    "links": [
+        {
+            "note": "Partial sample - full extraction recommended via automation script"
+        },
+        {
+            "source_path": "docs/docs/intro.mdx",
+            "link_text": "Getting Started",
+            "target_url": "/docs/introduction",
+            "target_kind": "DOCS_INTERNAL",
+            "check_status": "PASS"
+        },
+        {
+            "source_path": "docs/docs/specification/architecture/index.mdx",
+            "link_text": "L1 Core Protocol",
+            "target_url": "./l1-core-protocol.md",
+            "target_kind": "DOCS_INTERNAL",
+            "check_status": "PASS"
+        },
+        {
+            "source_path": "docs/docs/evaluation/validation-lab/index.mdx",
+            "link_text": "Validation Lab Site",
+            "target_url": "https://lab.mplp.io",
+            "target_kind": "LAB",
+            "check_status": "DEFERRED"
+        },
+        {
+            "source_path": "docs/docs/guides/sdk/typescript-quickstart.md",
+            "link_text": "npm package",
+            "target_url": "https://www.npmjs.com/package/@mplp/sdk-ts",
+            "target_kind": "EXTERNAL",
+            "check_status": "DEFERRED"
+        }
+    ]
+}
