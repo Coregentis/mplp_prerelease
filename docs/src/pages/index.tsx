@@ -52,7 +52,9 @@ function HomepageHeader() {
                     <img src="https://img.shields.io/badge/Governance-MPGC_Managed-blue?style=flat-square" alt="Governance" />
                     <img src="https://img.shields.io/badge/License-Apache_2.0-green?style=flat-square" alt="License" />
                     <img src="https://img.shields.io/badge/Schemas-v2_bundle_(Repo)-lightgrey?style=flat-square" alt="Schemas" />
-                    <img src="https://img.shields.io/badge/Validation_Lab-v0.7.3_Evidence_Sealed-green?style=flat-square" alt="Validation Lab" />
+                    <a href="https://lab.mplp.io" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                        <img src="https://img.shields.io/badge/Validation_Lab_(External)-Evidence_Sealed-orange?style=flat-square" alt="Validation Lab (External)" />
+                    </a>
                 </div>
 
                 {/* Governance Statement */}
@@ -140,7 +142,8 @@ const FeatureList = [
         link: '/docs/evaluation/tests/golden-test-suite-overview',
         description: (
             <>
-                Validation framework. <strong>Golden Flows</strong> and <strong>Compliance Suites</strong> to ensure protocol adherence.
+                <strong>Golden Flows</strong> and <strong>Compliance Suites</strong> define reproducible scenarios that generate evidence packs.
+                Adjudication is provided externally by the Validation Lab.
             </>
         ),
     },
@@ -155,10 +158,14 @@ const FeatureList = [
     },
     {
         title: 'Validation Lab',
-        link: '/docs/evaluation/conformance/validation-lab-evidence-regime',
+        link: 'https://lab.mplp.io',
+        external: true,
         description: (
             <>
-                Evidence-based verification. <strong>Type-A/B classification</strong>, reproduction instructions, and <strong>signed seals</strong> (non-certification).
+                Evidence-based verdict gateway for lifecycle guarantees. Browse <strong>Coverage</strong>, <strong>Runs</strong>, and <strong>Adjudication</strong>.
+                <span style={{ display: 'block', fontSize: '0.8em', marginTop: '0.5rem', color: '#94a3b8', fontStyle: 'italic' }}>
+                    Not a certification program. Live counts remain in the Lab.
+                </span>
             </>
         ),
     },
@@ -180,15 +187,21 @@ function ReadPathItem({ label, link }) {
     );
 }
 
-function Feature({ title, link, description }) {
+function Feature({ title, link, description, external = false }) {
+    const linkProps = external
+        ? { href: link, target: '_blank', rel: 'noopener noreferrer' }
+        : { to: link };
+    const LinkComponent = external ? 'a' : Link;
     return (
         <div className={clsx('col col--4')}>
-            <Link to={link} className={styles.featureCard}>
+            <LinkComponent {...linkProps} className={styles.featureCard}>
                 <div className="text--left padding--md">
-                    <Heading as="h3" className={styles.featureTitle}>{title} »</Heading>
+                    <Heading as="h3" className={styles.featureTitle}>
+                        {title} {external ? '↗' : '»'}
+                    </Heading>
                     <p className={styles.featureDescription}>{description}</p>
                 </div>
-            </Link>
+            </LinkComponent>
         </div>
     );
 }
@@ -207,6 +220,17 @@ export default function Home(): React.JSX.Element {
                             {FeatureList.map((props, idx) => (
                                 <Feature key={idx} {...props} />
                             ))}
+                        </div>
+                        {/* Evaluation Boundary Disclaimer */}
+                        <div style={{
+                            marginTop: '2rem',
+                            padding: '1rem',
+                            textAlign: 'center',
+                            borderTop: '1px solid rgba(148, 163, 184, 0.2)'
+                        }}>
+                            <p style={{ fontSize: '0.8rem', color: '#94a3b8', fontStyle: 'italic', margin: 0 }}>
+                                Evaluation guidance here is reference-only. Live adjudication data and coverage metrics remain in the Validation Lab.
+                            </p>
                         </div>
                     </div>
                 </section>
