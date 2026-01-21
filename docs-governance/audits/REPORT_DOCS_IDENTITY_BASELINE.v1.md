@@ -1,53 +1,56 @@
 # Docs Identity Baseline Report v1.0
 
-**Generated**: 2026-01-08T13:56:40.962Z
-**Total Pages**: 161
+**Generated**: 2026-01-21T04:08:52.096Z
+**Total Pages**: 179
 
 ## Distribution Statistics
 
 ### Normativity
 | Type | Count | Percentage |
 |------|-------|------------|
-| Normative | 47 | 29.2% |
+| Normative | 47 | 26.3% |
 | Formative | 0 | 0.0% |
-| Non-Normative | 76 | 47.2% |
-| Unknown | 38 | 23.6% |
+| Non-Normative | 132 | 73.7% |
+| Unknown | 0 | 0.0% |
 
 ### Lifecycle Status
 | Status | Count | Percentage |
 |--------|-------|------------|
-| Frozen | 56 | 34.8% |
-| Active | 45 | 28.0% |
-| Draft | 54 | 33.5% |
-| Unknown | 6 | 3.7% |
+| Frozen | 57 | 31.8% |
+| Active | 64 | 35.8% |
+| Draft | 58 | 32.4% |
+| Unknown | 0 | 0.0% |
 
 ## SEO Gaps
 
 | Field | Missing Count | Percentage |
 |-------|---------------|------------|
-| Description | 104 | 64.6% |
-| Normativity | 6 | 3.7% |
-| Lifecycle Status | 6 | 3.7% |
-| Authority | 8 | 5.0% |
+| Description | 0 | 0.0% |
+| Normativity | 0 | 0.0% |
+| Lifecycle Status | 0 | 0.0% |
+| Authority | 9 | 5.0% |
 
 ## Top Missing Fields
 
-**Total pages with missing fields**: 108
+**Total pages with missing fields**: 9
 
 Sample (first 10):
-- `evaluation/conformance/conformance-model.md`: missing description
-- `evaluation/conformance/evaluation-dimensions.md`: missing description
-- `evaluation/conformance/evidence-model.md`: missing description
-- `evaluation/conformance/index.mdx`: missing description
-- `evaluation/conformance/results-and-status.md`: missing description
-- `evaluation/conformance/roadmap.mdx`: missing description
-- `evaluation/golden-flows/gf-01.mdx`: missing description
-- `evaluation/golden-flows/gf-02.mdx`: missing description
-- `evaluation/golden-flows/gf-03.mdx`: missing description
-- `evaluation/golden-flows/gf-04.mdx`: missing description
+- `evaluation/standards/index.mdx`: missing authority
+- `evaluation/tests/index.mdx`: missing authority
+- `guides/examples/index.mdx`: missing authority
+- `guides/runtime/index.mdx`: missing authority
+- `guides/sdk/index.mdx`: missing authority
+- `meta/release/index.mdx`: missing authority
+- `specification/modules/index.mdx`: missing authority
+- `specification/observability/index.mdx`: missing authority
+- `specification/profiles/index.mdx`: missing authority
 
 ## Claim Scan Summary
 
-**High Severity**: 0 findings
-**Medium Severity**: 72 findings
+**High Severity**: 1 findings
+**Medium Severity**: 89 findings
 **Low Severity**: 19 findings
+
+### High Severity Findings (Top 10)
+- **Multi-Perspective License Protocol** in `reference/entrypoints.md:65`
+  > 1. **MPLP = Multi-Agent Lifecycle Protocol** (not "Multi-Perspective License Protocol")

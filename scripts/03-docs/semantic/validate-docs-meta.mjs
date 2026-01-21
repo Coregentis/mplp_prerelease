@@ -94,13 +94,52 @@ if (formativeCount === 0) {
     console.log(`❌ FAIL: ${formativeCount - formativeNoindexCount} formative pages missing noindex\n`);
 }
 
-// WARN: Missing description
-console.log('Gate v1.3: Missing Description (WARN)');
-const missingDesc = manifest.pages.filter(p => !p.description);
-warnCount = missingDesc.length;
+// Gate v1.3: Draft noindex check (NEW - status:draft must have noindex)
+console.log('Gate v1.3: Draft Noindex Check');
+const draftCount = manifest.pages.filter(p =>
+    p.lifecycle_status === 'draft'
+).length;
 
-if (warnCount > 0) {
-    console.log(`⚠ WARN: ${warnCount} pages missing description`);
+const draftNoindexCount = manifest.pages.filter(p => {
+    return p.lifecycle_status === 'draft' && p.robots && p.robots.includes('noindex');
+}).length;
+
+manifest.pages.forEach(page => {
+    if (page.lifecycle_status === 'draft' && (!page.robots || !page.robots.includes('noindex'))) {
+        failures.push({
+            gate: 'v1.3',
+            page: page.path,
+            issue: `Draft page without noindex: robots="${page.robots}"`,
+        });
+        failCount++;
+    }
+});
+
+console.log(`Draft pages: ${draftCount}`);
+console.log(`With noindex: ${draftNoindexCount}`);
+
+if (draftCount === 0) {
+    console.log('✓ PASS: No draft pages (check skipped)\n');
+} else if (draftCount === draftNoindexCount) {
+    console.log('✓ PASS: All draft pages have noindex\n');
+} else {
+    console.log(`❌ FAIL: ${draftCount - draftNoindexCount} draft pages missing noindex\n`);
+}
+
+// Gate v1.4: Missing description (UPGRADED from WARN to FAIL)
+console.log('Gate v1.4: Missing Description (FAIL)');
+const missingDesc = manifest.pages.filter(p => !p.description);
+
+if (missingDesc.length > 0) {
+    missingDesc.forEach(page => {
+        failures.push({
+            gate: 'v1.4',
+            page: page.path,
+            issue: 'Missing description',
+        });
+        failCount++;
+    });
+    console.log(`❌ FAIL: ${missingDesc.length} pages missing description`);
     console.log(`  See: docs-governance/outputs/missing-description.pages.txt\n`);
 } else {
     console.log('✓ PASS: All pages have description\n');

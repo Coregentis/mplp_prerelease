@@ -55,9 +55,12 @@ function calculateDocProfile(normativity, lifecycle_status, authority) {
 
 // Calculate robots directive
 function calculateRobots(doc_profile, lifecycle_status, normativity) {
-    // Formative pages should be noindex
-    if (doc_profile === 'formative' || normativity === 'formative' || lifecycle_status === 'formative') {
-        return 'noindex,follow';
+    // Formative and Draft pages should be noindex (Phase 2.2 governance)
+    if (doc_profile === 'formative' ||
+        normativity === 'formative' ||
+        lifecycle_status === 'formative' ||
+        lifecycle_status === 'draft') {
+        return 'noindex,nofollow';
     }
 
     return 'index,follow';

@@ -6,12 +6,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP conformance evaluation: Conformance Model. Non-normative guidance for protocol conformance assessment.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/conformance/evaluation-dimensions.md",
@@ -20,12 +18,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP conformance evaluation: Evaluation Dimensions. Non-normative guidance for protocol conformance assessment.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/conformance/evidence-model.md",
@@ -34,12 +30,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP conformance evaluation: Evidence Model. Non-normative guidance for protocol conformance assessment.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/conformance/index.mdx",
@@ -48,12 +42,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP conformance evaluation: Conformance & Evaluation. Non-normative guidance for protocol conformance assessment.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/conformance/results-and-status.md",
@@ -62,12 +54,22 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP conformance evaluation: Results & Status. Non-normative guidance for protocol conformance assessment.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/conformance/reviewability.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/conformance/reviewability.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation",
+    "description": "Explains what MPLP Validation Lab guarantees (reviewability) and does not guarantee (reproducibility). Non-normative reference.",
+    "normativity": "non-normative",
+    "lifecycle_status": null,
+    "missing_fields": []
   },
   {
     "path": "evaluation/conformance/roadmap.mdx",
@@ -76,12 +78,22 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP conformance evaluation: Conformance Roadmap. Non-normative guidance for protocol conformance assessment.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/conformance/validation-lab-evidence-regime.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/conformance/validation-lab-evidence-regime.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Validation Lab",
+    "description": "Non-normative reference: Type-A/Type-B evidence classification, reproducibility regime, and cryptographic seals (SIGN).",
+    "normativity": "non-normative",
+    "lifecycle_status": null,
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/gf-01.mdx",
@@ -89,13 +101,11 @@
     "doc_id": "DOC-EVAL-FLOW-01-001",
     "doc_type": "informative",
     "status": "active",
-    "authority": "Documentation Governance",
-    "description": null,
-    "normativity": null,
+    "authority": "none",
+    "description": "MPLP evaluation scenario: FLOW-01: Single Agent – Happy Path. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/gf-02.mdx",
@@ -103,13 +113,11 @@
     "doc_id": "DOC-EVAL-FLOW-02-001",
     "doc_type": "informative",
     "status": "active",
-    "authority": "Documentation Governance",
-    "description": null,
-    "normativity": null,
+    "authority": "none",
+    "description": "MPLP evaluation scenario: FLOW-02: Single Agent – Large Plan. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/gf-03.mdx",
@@ -117,13 +125,11 @@
     "doc_id": "DOC-EVAL-FLOW-03-001",
     "doc_type": "informative",
     "status": "active",
-    "authority": "Documentation Governance",
-    "description": null,
-    "normativity": null,
+    "authority": "none",
+    "description": "MPLP evaluation scenario: FLOW-03: Single Agent – With Tools. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/gf-04.mdx",
@@ -131,13 +137,11 @@
     "doc_id": "DOC-EVAL-FLOW-04-001",
     "doc_type": "informative",
     "status": "active",
-    "authority": "Documentation Governance",
-    "description": null,
-    "normativity": null,
+    "authority": "none",
+    "description": "MPLP evaluation scenario: FLOW-04: Single Agent with LLM Enrichment. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/gf-05.mdx",
@@ -145,13 +149,11 @@
     "doc_id": "DOC-EVAL-FLOW-05-001",
     "doc_type": "informative",
     "status": "active",
-    "authority": "Documentation Governance",
-    "description": null,
-    "normativity": null,
+    "authority": "none",
+    "description": "MPLP evaluation scenario: FLOW-05: Single Agent with Confirm Required. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/index.mdx",
@@ -160,12 +162,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP evaluation scenario: Golden Flows Overview. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/map-flow-01.mdx",
@@ -174,12 +174,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP evaluation scenario: MAP-FLOW-01: MAP Turn-Taking Session. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/map-flow-02.mdx",
@@ -188,12 +186,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP evaluation scenario: MAP-FLOW-02: MAP Broadcast Fan-out. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/sa-flow-01.mdx",
@@ -202,12 +198,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP evaluation scenario: SA-FLOW-01: SA Basic Execution. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/golden-flows/sa-flow-02.mdx",
@@ -216,12 +210,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP evaluation scenario: SA-FLOW-02: SA Multi-Step Evaluation. Reference flow for conformance testing.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
@@ -230,12 +222,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP governance documentation: External Governance & Trust Overview. Governance processes and policies.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/compatibility-matrix.md",
@@ -244,12 +234,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP governance documentation: Compatibility Matrix. Governance processes and policies.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/contributing.md",
@@ -258,12 +246,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP governance documentation: Contributing to MPLP. Governance processes and policies.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/documentation-projection.md",
@@ -272,26 +258,22 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP governance documentation: Documentation Projection Governance. Governance processes and policies.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/index.mdx",
     "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/governance/index.mdx",
     "doc_id": "DOC-EVAL-GOV-INDEX-001",
-    "doc_type": "informative",
-    "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
-    "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "doc_type": "governance",
+    "status": "active",
+    "authority": "MPGC",
+    "description": "Governance Constitution for the MPLP Protocol. Defines the 3-Layer Governance Model, MPGC authority, and governance processes.",
+    "normativity": "non-normative",
+    "lifecycle_status": "active",
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/license-governance.md",
@@ -300,12 +282,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP governance documentation: License Governance. Governance processes and policies.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/protocol-governance.md",
@@ -314,12 +294,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP governance documentation: MIP Process. Governance processes and policies.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/protocol-truth-index.md",
@@ -328,12 +306,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP governance documentation: Protocol Truth Index. Governance processes and policies.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/security-policy.md",
@@ -342,12 +318,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP governance documentation: Security Policy. Governance processes and policies.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/governance/versioning-policy.md",
@@ -356,12 +330,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP governance documentation: Versioning Policy. Governance processes and policies.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/index.md",
@@ -370,11 +342,23 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP evaluation: Evaluation & Governance. Non-normative assessment guidance.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/standards/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/standards/index.mdx",
+    "doc_id": "DOC-EVAL-STANDARDS-INDEX-001",
+    "doc_type": "reference",
+    "status": "active",
+    "authority": null,
+    "description": "MPLP alignment with external standards: ISO/IEC 42001 and NIST AI RMF mapping. This page is informative only.",
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": [
-      "description"
+      "authority"
     ]
   },
   {
@@ -384,12 +368,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP standards mapping: ISO 42001 Mapping. Relationship to external standards.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/standards/nist-mapping.md",
@@ -398,12 +380,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP standards mapping: NIST AI RMF Mapping. Relationship to external standards.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/standards/positioning.md",
@@ -412,12 +392,10 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP standards mapping: Standards Positioning. Relationship to external standards.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/tests/cross-language-overview.md",
@@ -425,9 +403,9 @@
     "doc_id": null,
     "doc_type": "reference",
     "status": "active",
-    "authority": "Documentation Governance",
+    "authority": "none",
     "description": "Cross-language test suite overview and inventory. Projection of Repo tests; non-certification.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -438,26 +416,22 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP test documentation: Golden Fixture Format. Test suite structure and fixtures.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/tests/golden-flow-registry.md",
     "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/tests/golden-flow-registry.md",
     "doc_id": "DOC-EVAL-TEST-REGISTRY-001",
     "doc_type": "informative",
-    "status": "draft",
+    "status": "active",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP test documentation: Golden Flow Registry. Authoritative list of evaluation scenarios.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "evaluation/tests/golden-test-suite-overview.md",
@@ -466,11 +440,23 @@
     "doc_type": "informative",
     "status": "draft",
     "authority": "none",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP test documentation: Golden Test Suite Overview. Test suite structure and fixtures.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/tests/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/tests/index.mdx",
+    "doc_id": "DOC-EVAL-TESTS-INDEX-001",
+    "doc_type": "reference",
+    "status": "active",
+    "authority": null,
+    "description": "Overview of MPLP test architecture: Golden Flows, test suites, and fixture formats. This page is informative only.",
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": [
-      "description"
+      "authority"
     ]
   },
   {
@@ -479,9 +465,9 @@
     "doc_id": null,
     "doc_type": "reference",
     "status": "active",
-    "authority": "Documentation Governance",
+    "authority": "none",
     "description": "Runtime compatibility test suite overview and inventory. Projection of Repo tests; non-certification.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -491,9 +477,9 @@
     "doc_id": null,
     "doc_type": "reference",
     "status": "active",
-    "authority": "Documentation Governance",
+    "authority": "none",
     "description": "Schema alignment test suite overview and inventory. Projection of Repo tests; non-certification.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -503,9 +489,81 @@
     "doc_id": "DOC-EVAL-TEST-ARCH-001",
     "doc_type": "informative",
     "status": "active",
-    "authority": "Documentation Governance",
+    "authority": "none",
     "description": "Overview of the MPLP testing architecture including test categories, locations, and evidence mapping.",
-    "normativity": null,
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/validation-lab/evidence-pack-contract.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/validation-lab/evidence-pack-contract.mdx",
+    "doc_id": "DOC-EVAL-VLAB-PACK-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": "Structure and requirements for evidence packs submitted to the Validation Lab.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/validation-lab/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/validation-lab/index.mdx",
+    "doc_id": "DOC-EVAL-VLAB-INDEX-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": "Evidence-based adjudication for MPLP Lifecycle Guarantees. Non-certifying, non-normative, no execution hosting, deterministic.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/validation-lab/lifecycle-guarantees.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+    "doc_id": "DOC-EVAL-VLAB-LG-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": "LG-01~05 definitions — what the Validation Lab adjudicates against evidence packs.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/validation-lab/rulesets.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/validation-lab/rulesets.mdx",
+    "doc_id": "DOC-EVAL-VLAB-RULESET-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": "Versioned rulesets for deterministic evidence adjudication in the Validation Lab.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/validation-lab/substrates.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/validation-lab/substrates.mdx",
+    "doc_id": "DOC-EVAL-VLAB-SUBSTRATE-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": "Execution substrates recognized by the Validation Lab for curated evidence evaluation.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "evaluation/validation-lab/terminology.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/evaluation/validation-lab/terminology.mdx",
+    "doc_id": "DOC-EVAL-VLAB-TERM-001",
+    "doc_type": "informative",
+    "status": "draft",
+    "authority": "none",
+    "description": "Authoritative terminology mapping for MPLP Protocol and Validation Lab naming conventions.",
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -515,13 +573,11 @@
     "doc_id": "DOC-GOV-EVIDENCE-BASELINE",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP governance: Evidence Baseline. Protocol governance documentation.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "guides/adoption/adoption-signals.md",
@@ -531,7 +587,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Defines signals that indicate MPLP adoption stages.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -543,7 +599,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Defines what MPLP adoption means and the adoption lifecycle stages.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -555,7 +611,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Explicit non-goals for MPLP Adoption.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -567,7 +623,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Self-verification checklist for assessing MPLP v1.0 conformance levels (L1-L3).",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -579,7 +635,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Step-by-step guide for achieving MPLP protocol conformance at L1, L2, and L3 levels.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -591,7 +647,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Evidence-centered enterprise scenario cards showing constraint → evidence → conformance mapping.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -603,7 +659,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Organizational, temporal, and governance constraints that emerge when agent systems operate at scale.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -615,7 +671,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Explicit non-goals for MPLP Enterprise context.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -627,7 +683,7 @@
     "status": "frozen",
     "authority": "Documentation Governance",
     "description": "Guide for evaluating MPLP for enterprise architects and compliance reviewers.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -635,33 +691,25 @@
     "path": "guides/examples/_merged_from_07a/example-01-minimal-sa-lifecycle.mdx",
     "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/_merged_from_07a/example-01-minimal-sa-lifecycle.mdx",
     "doc_id": null,
-    "doc_type": null,
-    "status": null,
-    "authority": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
     "description": "A non-normative example demonstrating a minimal Single-Agent lifecycle.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "normativity",
-      "lifecycle_status",
-      "authority"
-    ]
+    "missing_fields": []
   },
   {
     "path": "guides/examples/_merged_from_07a/index.mdx",
     "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/_merged_from_07a/index.mdx",
     "doc_id": null,
-    "doc_type": null,
-    "status": null,
-    "authority": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
     "description": "Non-normative executable examples demonstrating MPLP protocol semantics.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "normativity",
-      "lifecycle_status",
-      "authority"
-    ]
+    "missing_fields": []
   },
   {
     "path": "guides/examples/error-recovery-flow.md",
@@ -671,9 +719,23 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Example flow demonstrating error handling and recovery patterns in MPLP.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
+  },
+  {
+    "path": "guides/examples/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/examples/index.mdx",
+    "doc_id": "DOC-GUIDES-EXAMPLES-INDEX-001",
+    "doc_type": "guide",
+    "status": "active",
+    "authority": null,
+    "description": "MPLP implementation examples: single-agent flows, multi-agent collaboration, error recovery, and integrations. This page is informative only.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": [
+      "authority"
+    ]
   },
   {
     "path": "guides/examples/learning-notes/learning-collection-points.md",
@@ -683,7 +745,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Defines when and how to generate LearningSamples during MPLP execution.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -695,7 +757,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Overview of the MPLP learning feedback loop including sample collection and training.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -707,7 +769,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Validation rules for LearningSamples, covering core and family-specific invariants.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -719,7 +781,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Overview of MPLP Learning module, covering LearningSample families, collection mechanisms, and compliance boundaries.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -731,7 +793,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Documents the LearningSample schema structure, covering core and family-specific fields.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -743,7 +805,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Example showing multi-agent collaboration patterns using MPLP MAP Profile.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -755,7 +817,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Example flow demonstrating human-in-the-loop confirmation for high-risk actions.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -767,7 +829,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Example showing a complete Single Agent (SA) flow using MPLP TypeScript SDK.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -779,7 +841,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Example showing how agents integrate with external tools via MPLP Extension module.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -791,7 +853,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Example demonstrating vendor-neutral LLM integration through MPLP abstractions.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -799,18 +861,13 @@
     "path": "guides/index.md",
     "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/index.md",
     "doc_id": null,
-    "doc_type": null,
-    "status": null,
-    "authority": null,
-    "description": null,
-    "normativity": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Implementation guides and examples for MPLP protocol.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description",
-      "normativity",
-      "lifecycle_status",
-      "authority"
-    ]
+    "missing_fields": []
   },
   {
     "path": "guides/runtime/ael.md",
@@ -820,7 +877,7 @@
     "status": "frozen",
     "authority": "MPGC",
     "description": "Action Execution Layer (AEL) reference for runtime implementers.",
-    "normativity": null,
+    "normativity": "normative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -832,7 +889,7 @@
     "status": "frozen",
     "authority": "MPGC",
     "description": "Crosscut PSG and Observability Event Binding specification for MPLP runtime.",
-    "normativity": null,
+    "normativity": "normative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -844,9 +901,23 @@
     "status": "frozen",
     "authority": "MPGC",
     "description": "Drift Detection and Rollback Mechanisms for MPLP runtimes.",
-    "normativity": null,
+    "normativity": "normative",
     "lifecycle_status": null,
     "missing_fields": []
+  },
+  {
+    "path": "guides/runtime/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/runtime/index.mdx",
+    "doc_id": "DOC-GUIDES-RUNTIME-INDEX-001",
+    "doc_type": "guide",
+    "status": "active",
+    "authority": null,
+    "description": "MPLP runtime integration guides: PSG, VSL, AEL, and skeleton implementations. This page is informative only.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": [
+      "authority"
+    ]
   },
   {
     "path": "guides/runtime/module-psg-paths.md",
@@ -856,7 +927,7 @@
     "status": "frozen",
     "authority": "MPGC",
     "description": "Module PSG Read/Write Path Matrix defining how each MPLP module interacts with the Protocol State Graph.",
-    "normativity": null,
+    "normativity": "normative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -868,7 +939,7 @@
     "status": "frozen",
     "authority": "MPGC",
     "description": "The Project Semantic Graph (PSG) is the runtime state substrate of MPLP.",
-    "normativity": null,
+    "normativity": "normative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -879,12 +950,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "MPGC",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP runtime guide: Runtime Authority & Scope. Implementation guidance for runtime components.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "guides/runtime/runtime-capability-matrix.md",
@@ -893,12 +962,10 @@
     "doc_type": "reference",
     "status": "active",
     "authority": "Documentation Governance",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP runtime guide: Runtime Capability Matrix. Implementation guidance for runtime components.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "guides/runtime/runtime-glue-overview.md",
@@ -908,7 +975,7 @@
     "status": "frozen",
     "authority": "MPGC",
     "description": "Runtime Glue Overview - L3 specification layer for MPLP.",
-    "normativity": null,
+    "normativity": "normative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -918,13 +985,11 @@
     "doc_id": null,
     "doc_type": "normative",
     "status": "frozen",
-    "authority": null,
+    "authority": "Documentation Governance",
     "description": "Interface-Level Contract for Profile-14-Golden Runtime",
-    "normativity": null,
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "authority"
-    ]
+    "missing_fields": []
   },
   {
     "path": "guides/runtime/vsl.md",
@@ -934,7 +999,7 @@
     "status": "frozen",
     "authority": "MPGC",
     "description": "Value State Layer (VSL) reference for state persistence implementations.",
-    "normativity": null,
+    "normativity": "normative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -946,7 +1011,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Guide for generating type-safe code from MPLP JSON schemas in multiple languages.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -958,7 +1023,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Go SDK guide for MPLP including module installation and usage patterns.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -970,9 +1035,23 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Matrix showing feature implementation status across MPLP SDK implementations (TypeScript, Python, Go, Java).",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
+  },
+  {
+    "path": "guides/sdk/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/guides/sdk/index.mdx",
+    "doc_id": "DOC-GUIDES-SDK-INDEX-001",
+    "doc_type": "guide",
+    "status": "active",
+    "authority": null,
+    "description": "MPLP SDK guides for TypeScript, Python, Go, and Java. This page is informative only.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": [
+      "authority"
+    ]
   },
   {
     "path": "guides/sdk/java-sdk-guide.md",
@@ -982,7 +1061,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Java SDK guide for MPLP including Gradle/Maven setup and core APIs.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -994,7 +1073,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Python SDK guide for mplp package including installation, usage, and API reference.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1006,7 +1085,7 @@
     "status": "frozen",
     "authority": "Documentation Governance",
     "description": "Canonical mapping rules from MPLP JSON Schema v2 to TypeScript and Python models.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1018,7 +1097,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Reference implementation guide for the MPLP TypeScript SDK.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1028,13 +1107,11 @@
     "doc_id": "DOC-INTRO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP documentation: Documentation Overview. Introduction and overview.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "introduction/DOCS_AUTHOR_RULES.md",
@@ -1044,7 +1121,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "This document defines the rules for adding or modifying documentation in the MPLP docs site.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1056,7 +1133,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "This page defines how to read and navigate the MPLP documentation site, with recommended reading paths for different audiences.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1068,7 +1145,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Quick reference for MPLP observability event families and invariant rules.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1080,7 +1157,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Normative definitions for key terms used throughout the MPLP v1.0 specification.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1092,7 +1169,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Quick reference map for all MPLP schemas, modules, events, and invariants with their file locations.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1104,7 +1181,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Comprehensive overview of the Multi-Agent Lifecycle Protocol (MPLP) v1.0, covering architecture, modules, events, and conformance levels.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1114,13 +1191,11 @@
     "doc_id": null,
     "doc_type": "reference",
     "status": "active",
-    "authority": null,
+    "authority": "Documentation Governance",
     "description": "A conceptual mapping (analogy) between POSIX interface ideas and MPLP's schema-defined lifecycle governance. Not a compatibility or certification claim.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "authority"
-    ]
+    "missing_fields": []
   },
   {
     "path": "meta/faq.md",
@@ -1130,7 +1205,7 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Frequently Asked Questions about MPLP Protocol.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1138,52 +1213,37 @@
     "path": "meta/index.md",
     "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/index.md",
     "doc_id": null,
-    "doc_type": null,
-    "status": null,
-    "authority": null,
-    "description": null,
-    "normativity": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Meta documentation including release notes and roadmap.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description",
-      "normativity",
-      "lifecycle_status",
-      "authority"
-    ]
+    "missing_fields": []
   },
   {
     "path": "meta/redirects/LINK_FIX_LEDGER.md",
     "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/redirects/LINK_FIX_LEDGER.md",
     "doc_id": null,
-    "doc_type": null,
-    "status": null,
-    "authority": null,
-    "description": null,
-    "normativity": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "MPLP meta documentation: LINK_FIX_LEDGER. Release and maintenance information.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description",
-      "normativity",
-      "lifecycle_status",
-      "authority"
-    ]
+    "missing_fields": []
   },
   {
     "path": "meta/redirects/REDIRECT_MANIFEST.md",
     "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/redirects/REDIRECT_MANIFEST.md",
     "doc_id": null,
-    "doc_type": null,
-    "status": null,
-    "authority": null,
-    "description": null,
-    "normativity": null,
+    "doc_type": "informative",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "MPLP meta documentation: REDIRECT_MANIFEST. Release and maintenance information.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description",
-      "normativity",
-      "lifecycle_status",
-      "authority"
-    ]
+    "missing_fields": []
   },
   {
     "path": "meta/release/LEARNING_ATTESTATION_v1.0.0.md",
@@ -1193,7 +1253,7 @@
     "status": "active",
     "authority": "MPGC",
     "description": "Formal attestation of Learning Module capabilities for MPLP v1.0.0.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1203,13 +1263,11 @@
     "doc_id": null,
     "doc_type": "governance",
     "status": "frozen",
-    "authority": "MPGC",
-    "description": null,
-    "normativity": null,
-    "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "authority": "Documentation Governance",
+    "description": "Documentation freeze declaration for MPLP v1.0.0. Records compliance audit and governance pivot.",
+    "normativity": "informative",
+    "lifecycle_status": "frozen",
+    "missing_fields": []
   },
   {
     "path": "meta/release/editorial-policy.md",
@@ -1219,9 +1277,23 @@
     "status": "frozen",
     "authority": "Documentation Governance",
     "description": "Editorial standards for MPLP documentation including writing style, formatting, terminology, and review process.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
+  },
+  {
+    "path": "meta/release/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/meta/release/index.mdx",
+    "doc_id": "DOC-META-RELEASE-INDEX-001",
+    "doc_type": "governance",
+    "status": "frozen",
+    "authority": null,
+    "description": "MPLP release notes, migration guides, and governance documentation. v1.0.0 is frozen.",
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": [
+      "authority"
+    ]
   },
   {
     "path": "meta/release/maintainer-guide.md",
@@ -1231,7 +1303,7 @@
     "status": "frozen",
     "authority": "Documentation Governance",
     "description": "Guide for MPLP maintainers covering release process, review guidelines, and frozen specification rules.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1243,7 +1315,7 @@
     "status": "frozen",
     "authority": "Documentation Governance",
     "description": "Migration guide for upgrading from MPLP v0.9 to v1.0, covering breaking changes, schema updates, and checklist.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1255,7 +1327,7 @@
     "status": "frozen",
     "authority": "Documentation Governance",
     "description": "Summary of documentation governance policies for MPLP v1.0 including structure and authority.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1267,7 +1339,7 @@
     "status": "frozen",
     "authority": "Documentation Governance",
     "description": "Known issues and limitations in MPLP v1.0.0 with workarounds and planned fixes.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1279,7 +1351,7 @@
     "status": "frozen",
     "authority": "Documentation Governance",
     "description": "Release notes for MPLP Protocol v1.0.0 including new features, breaking changes, and installation instructions.",
-    "normativity": null,
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1291,7 +1363,19 @@
     "status": "active",
     "authority": "Documentation Governance",
     "description": "Historical record and potential future exploration areas.",
-    "normativity": null,
+    "normativity": "informative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "reference/entrypoints.md",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/reference/entrypoints.md",
+    "doc_id": null,
+    "doc_type": "reference",
+    "status": "active",
+    "authority": "Documentation Governance",
+    "description": "Three-entry model anchors for Website, Docs, and Repo.",
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": []
   },
@@ -1301,13 +1385,11 @@
     "doc_id": "DOC-ARCH-CCK-COORD-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Coordination — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/coordination.md",
@@ -1316,12 +1398,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Coordination. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/error-handling-explained.md",
@@ -1329,13 +1409,11 @@
     "doc_id": "DOC-ARCH-CCK-ERROR-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Error Handling — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/error-handling.md",
@@ -1344,12 +1422,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Error Handling. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/event-bus-explained.md",
@@ -1357,13 +1433,11 @@
     "doc_id": "DOC-ARCH-CCK-EBUS-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Event Bus — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/event-bus.md",
@@ -1372,12 +1446,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Event Bus. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/index.md",
@@ -1386,12 +1458,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Cross-Cutting Kernel Duties. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/learning-feedback-explained.md",
@@ -1399,13 +1469,11 @@
     "doc_id": "DOC-ARCH-CCK-LEARN-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Learning Feedback — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/learning-feedback.md",
@@ -1414,12 +1482,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Learning Feedback. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/observability-explained.md",
@@ -1427,13 +1493,11 @@
     "doc_id": "DOC-ARCH-CCK-OBS-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Observability — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/observability.md",
@@ -1442,12 +1506,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Observability. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/orchestration-explained.md",
@@ -1455,13 +1517,11 @@
     "doc_id": "DOC-ARCH-CCK-ORCH-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Orchestration — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/orchestration.md",
@@ -1470,12 +1530,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Orchestration. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/performance-explained.md",
@@ -1483,13 +1541,11 @@
     "doc_id": "DOC-ARCH-CCK-PERF-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Performance — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/performance.md",
@@ -1498,12 +1554,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Performance. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/protocol-versioning-explained.md",
@@ -1511,13 +1565,11 @@
     "doc_id": "DOC-ARCH-CCK-VERS-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Protocol Versioning — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/protocol-versioning.md",
@@ -1526,12 +1578,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Protocol Versioning. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/security-explained.md",
@@ -1539,13 +1589,11 @@
     "doc_id": "DOC-ARCH-CCK-SEC-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Security — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/security.md",
@@ -1554,12 +1602,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Security. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/state-sync-explained.md",
@@ -1567,13 +1613,11 @@
     "doc_id": "DOC-ARCH-CCK-SYNC-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: State Sync — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/state-sync.md",
@@ -1582,12 +1626,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: State Sync. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/transaction-explained.md",
@@ -1595,13 +1637,11 @@
     "doc_id": "DOC-ARCH-CCK-TXN-INFO-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP architecture documentation: Transaction — Conceptual Overview. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/cross-cutting-kernel-duties/transaction.md",
@@ -1610,12 +1650,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Transaction. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/index.mdx",
@@ -1623,13 +1661,11 @@
     "doc_id": "DOC-ARCH-INDEX-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP architecture documentation: Architecture. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/l1-core-protocol.md",
@@ -1638,12 +1674,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: L1 Core Protocol — Specification (v1.0.0 Frozen). Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/l1-l4-architecture-deep-dive.md",
@@ -1651,13 +1685,11 @@
     "doc_id": "DOC-ARCH-DEEP-DIVE-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP architecture documentation: L1-L4 Architecture Deep Dive. Defines structural requirements and layer responsibilities.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/l2-coordination-governance.md",
@@ -1666,12 +1698,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: L2 Coordination & Governance. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/l3-execution-orchestration.md",
@@ -1680,12 +1710,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: L3 Execution & Orchestration. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/l4-integration-infra.md",
@@ -1694,12 +1722,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: L4 Integration Infrastructure. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/architecture/schema-conventions.md",
@@ -1708,12 +1734,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP architecture documentation: Schema Conventions. Defines structural requirements and layer responsibilities.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/flow-to-duty-matrix.md",
@@ -1721,13 +1745,11 @@
     "doc_id": "DOC-SEMANTIC-FLOW-DUTY-MATRIX-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP specification: Golden Flow to Kernel Duty Matrix. Normative protocol requirements.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/index.md",
@@ -1735,13 +1757,11 @@
     "doc_id": "DOC-SPEC-INDEX-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP specification: Protocol Specification. Normative protocol requirements.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/integration/index.mdx",
@@ -1749,13 +1769,11 @@
     "doc_id": "DOC-INT-INDEX-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP integration specification: Integration. Defines external system integration requirements.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/integration/integration-spec.md",
@@ -1763,13 +1781,11 @@
     "doc_id": "DOC-INT-SPEC-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP integration specification: Integration Spec. Defines external system integration requirements.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/module-to-duty-matrix.md",
@@ -1777,13 +1793,11 @@
     "doc_id": "DOC-SEMANTIC-MOD-DUTY-MATRIX-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP specification: Module to Kernel Duty Matrix. Normative protocol requirements.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/collab-module.md",
@@ -1792,12 +1806,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Collab Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/confirm-module.md",
@@ -1806,12 +1818,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Confirm Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/context-module.md",
@@ -1820,12 +1830,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Context Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/core-module.md",
@@ -1834,12 +1842,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Core Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/dialog-module.md",
@@ -1848,12 +1854,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Dialog Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/extension-module.md",
@@ -1862,11 +1866,23 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Extension Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "specification/modules/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/modules/index.mdx",
+    "doc_id": "DOC-SPEC-MODULES-INDEX-001",
+    "doc_type": "reference",
+    "status": "active",
+    "authority": null,
+    "description": "Overview of MPLP's ten composable modules: Core, Plan, Confirm, Trace, Context, Dialog, Role, Collab, Network, and Extension. This page is informative only.",
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": [
-      "description"
+      "authority"
     ]
   },
   {
@@ -1875,13 +1891,11 @@
     "doc_id": "DOC-MOD-INTERACTIONS-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP module specification: Module Interactions. Defines schema requirements and invariants.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/network-module.md",
@@ -1890,12 +1904,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Network Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/plan-module.md",
@@ -1904,12 +1916,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Plan Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/role-module.md",
@@ -1918,12 +1928,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Role Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/modules/trace-module.md",
@@ -1932,12 +1940,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP module specification: Trace Module. Defines schema requirements and invariants.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/normative-coverage-report.md",
@@ -1945,13 +1951,11 @@
     "doc_id": "DOC-SEMANTIC-COVERAGE-REPORT-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP specification: Normative Coverage Report. Normative protocol requirements.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/observability/common-schemas-reference.md",
@@ -1960,12 +1964,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP observability specification: Common Schemas Reference. Defines event schemas and trace formats.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/observability/event-taxonomy.md",
@@ -1974,11 +1976,23 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP observability specification: Event Taxonomy. Defines event schemas and trace formats.",
+    "normativity": "normative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "specification/observability/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/observability/index.mdx",
+    "doc_id": "DOC-SPEC-OBSERVABILITY-INDEX-001",
+    "doc_type": "reference",
+    "status": "active",
+    "authority": null,
+    "description": "Overview of MPLP observability: event taxonomy, trace formats, and schema references. This page is informative only.",
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": [
-      "description"
+      "authority"
     ]
   },
   {
@@ -1988,12 +2002,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP observability specification: Module Event Matrix. Defines event schemas and trace formats.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/observability/observability-invariants.md",
@@ -2002,12 +2014,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP observability specification: Observability Invariants. Defines event schemas and trace formats.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/observability/observability-overview.md",
@@ -2015,13 +2025,11 @@
     "doc_id": "DOC-OBS-OVERVIEW-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "protocol",
+    "description": "MPLP observability specification: Observability Overview. Defines event schemas and trace formats.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/observability/physical-schemas-reference.md",
@@ -2030,12 +2038,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP observability specification: Physical Schemas Reference. Defines event schemas and trace formats.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/observability/runtime-trace-format.md",
@@ -2044,11 +2050,23 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP observability specification: Runtime Trace Format. Defines event schemas and trace formats.",
+    "normativity": "normative",
+    "lifecycle_status": null,
+    "missing_fields": []
+  },
+  {
+    "path": "specification/profiles/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/specification/profiles/index.mdx",
+    "doc_id": "DOC-SPEC-PROFILES-INDEX-001",
+    "doc_type": "reference",
+    "status": "active",
+    "authority": null,
+    "description": "Overview of MPLP agent profiles: Single-Agent (SA) and Multi-Agent Protocol (MAP). This page is informative only.",
+    "normativity": "informative",
     "lifecycle_status": null,
     "missing_fields": [
-      "description"
+      "authority"
     ]
   },
   {
@@ -2058,12 +2076,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP profile specification: MAP Events. Defines conformance requirements for execution profiles.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/profiles/map-profile.md",
@@ -2072,12 +2088,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP profile specification: MAP Profile. Defines conformance requirements for execution profiles.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/profiles/multi-agent-governance-profile.md",
@@ -2086,12 +2100,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP profile specification: Multi-Agent Governance Profile. Defines conformance requirements for execution profiles.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/profiles/sa-events.md",
@@ -2100,12 +2112,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP profile specification: SA Events. Defines conformance requirements for execution profiles.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/profiles/sa-profile.md",
@@ -2114,12 +2124,10 @@
     "doc_type": "normative",
     "status": "frozen",
     "authority": "protocol",
-    "description": null,
-    "normativity": null,
+    "description": "MPLP profile specification: Single-Agent Profile (SA). Defines conformance requirements for execution profiles.",
+    "normativity": "normative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/semantic-alignment-overview.md",
@@ -2127,13 +2135,11 @@
     "doc_id": "DOC-SEMANTIC-ALIGNMENT-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP specification: Semantic Alignment Overview. Normative protocol requirements.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/semantic-anchor-registry.md",
@@ -2141,13 +2147,11 @@
     "doc_id": "DOC-SEMANTIC-ANCHOR-REGISTRY-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP specification: Semantic Anchor Registry. Normative protocol requirements.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   },
   {
     "path": "specification/spec-to-eval-matrix.md",
@@ -2155,12 +2159,10 @@
     "doc_id": "DOC-SEMANTIC-SPEC-EVAL-MATRIX-001",
     "doc_type": "informative",
     "status": "draft",
-    "authority": "none",
-    "description": null,
-    "normativity": null,
+    "authority": "Documentation Governance",
+    "description": "MPLP specification: Specification to Evaluation Matrix. Normative protocol requirements.",
+    "normativity": "informative",
     "lifecycle_status": null,
-    "missing_fields": [
-      "description"
-    ]
+    "missing_fields": []
   }
 ]

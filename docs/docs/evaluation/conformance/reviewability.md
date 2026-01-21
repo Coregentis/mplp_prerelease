@@ -4,6 +4,7 @@ authority: Documentation
 normativity: non-normative
 status: active
 sidebar_label: Reviewability
+description: "Explains what MPLP Validation Lab guarantees (reviewability) and does not guarantee (reproducibility). Non-normative reference."
 ---
 
 # Reviewability vs Reproducibility (Informative)
