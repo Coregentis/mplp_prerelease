@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-21T04:09:56.362Z",
+  "generated_at": "2026-01-21T04:59:34.407Z",
   "source_commit": "local",
   "protocol_version": "1.0.0",
   "schema_bundle_version": "2.0.0",
@@ -8,7 +8,7 @@
     "docs_anchor": "https://docs.mplp.io/docs/reference/entrypoints",
     "repo_anchor": "https://github.com/Coregentis/MPLP-Protocol"
   },
-  "total_pages": 179,
+  "total_pages": 180,
   "pages": [
     {
       "path": "/docs/evaluation/conformance/conformance-model",
@@ -1171,6 +1171,20 @@
       "lifecycle_status": "active",
       "authority": "Documentation Governance",
       "missing_fields": []
+    },
+    {
+      "path": "/docs/introduction/index",
+      "title": null,
+      "description": "Introduction to the Multi-Agent Lifecycle Protocol (MPLP) — a vendor-neutral, schema-first specification for multi-agent system lifecycle governance.",
+      "canonical": "https://docs.mplp.io/docs/introduction/index",
+      "robots": "index,follow",
+      "doc_profile": "informative",
+      "normativity": "informative",
+      "lifecycle_status": "stable",
+      "authority": null,
+      "missing_fields": [
+        "authority"
+      ]
     },
     {
       "path": "/docs/introduction/mplp-v1.0-docs-map",

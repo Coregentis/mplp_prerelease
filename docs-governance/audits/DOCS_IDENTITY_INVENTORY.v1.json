@@ -1162,6 +1162,20 @@
     "missing_fields": []
   },
   {
+    "path": "introduction/index.mdx",
+    "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/introduction/index.mdx",
+    "doc_id": null,
+    "doc_type": null,
+    "status": null,
+    "authority": null,
+    "description": "Introduction to the Multi-Agent Lifecycle Protocol (MPLP) — a vendor-neutral, schema-first specification for multi-agent system lifecycle governance.",
+    "normativity": "informative",
+    "lifecycle_status": "stable",
+    "missing_fields": [
+      "authority"
+    ]
+  },
+  {
     "path": "introduction/mplp-v1.0-docs-map.md",
     "file": "/Users/jasonwang/Documents/AI_Dev/V1.0_release/docs/docs/introduction/mplp-v1.0-docs-map.md",
     "doc_id": null,
