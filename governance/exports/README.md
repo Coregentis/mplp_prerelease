@@ -9,7 +9,8 @@ This directory contains machine-generated outputs from governance gates and audi
 | `docs-seo-manifest.json` | `generate-docs-seo-manifest.mjs` | Full SEO metadata for all docs pages |
 | `docs-link-map.json` | `audit-crosslinks.mjs` | Cross-surface link topology |
 | `docs-banner-gate.report.json` | `docs-banner-gate.mjs` | Phase 3 banner validation |
-| `docs-sensitive-terms.report.json` | `docs-sensitive-terms-gate.mjs` | Phase 4 sensitive terms |
+| `docs-sensitive-terms.report.json` | `docs-sensitive-terms-gate.mjs` | Phase 4 sensitive terms (JSON) |
+| `docs-sensitive-terms.report.md` | `docs-sensitive-terms-gate.mjs` | Phase 4 sensitive terms (Markdown) |
 
 ## Contract
 

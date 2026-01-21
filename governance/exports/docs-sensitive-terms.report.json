@@ -1,0 +1,936 @@
+{
+  "gate": "DOCS-LINT-01",
+  "version": "1.0.0",
+  "generated_at": "2026-01-21T04:39:11.063Z",
+  "summary": {
+    "files_scanned": 179,
+    "fail_count": 0,
+    "warn_count": 132
+  },
+  "violations": [
+    {
+      "file": "docs/docs/evaluation/conformance/conformance-model.md",
+      "line": 147,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "Conformance to MPLP does **not** guarantee:"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/conformance-model.md",
+      "line": 155,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "Conformance only guarantees: **The system follows the protocol's structural and behavioral contracts"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/conformance-model.md",
+      "line": 166,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "**Exclusions**: Certification, legal compliance, quality guarantees"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/conformance-model.md",
+      "line": 166,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "**Exclusions**: Certification, legal compliance, quality guarantees"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 16,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "> \"Can I prove what the agents did, why they did it, and whether the system stayed within approved l"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 24,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- **Certification**, endorsement, or compliance badges"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 24,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "- **Certification**, endorsement, or compliance badges"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 65,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "### 4.3 Non-Certification"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 68,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- Certification programs"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 72,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "Conformance is a **binary outcome** (conformant / non-conformant / incomplete-evidence), not a score"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 110,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "| **Lifecycle Guarantees** | LG-01~05 adjudication targets | [Docs Reference](/docs/evaluation/valid"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 117,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- **LG-01~05** = Lifecycle Guarantees (Lab adjudication targets)"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 122,
+      "term": "certification",
+      "severity": "WARN",
+      "context": ":::warning Non-Certification Boundary"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 130,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "**Exclusions**: Certification, legal compliance, vendor endorsement"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/index.mdx",
+      "line": 130,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "**Exclusions**: Certification, legal compliance, vendor endorsement"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/reviewability.md",
+      "line": 12,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "This page explains what the MPLP Validation Lab guarantees, and what it does not."
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/reviewability.md",
+      "line": 14,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "## Reviewability (what the Lab guarantees)"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/reviewability.md",
+      "line": 26,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "The Validation Lab does **not** guarantee reproducibility:"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/roadmap.mdx",
+      "line": 48,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "| Certification | ❌ Not planned | Outside scope |"
+    },
+    {
+      "file": "docs/docs/evaluation/conformance/roadmap.mdx",
+      "line": 104,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "| **Certification programs** | MPLP is not a certification body |"
+    },
+    {
+      "file": "docs/docs/evaluation/golden-flows/index.mdx",
+      "line": 22,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- **LG-01~05** = Lifecycle Guarantees (Validation Lab adjudication targets)"
+    },
+    {
+      "file": "docs/docs/evaluation/golden-flows/index.mdx",
+      "line": 26,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "→ See [Lifecycle Guarantees Reference](/docs/evaluation/validation-lab/lifecycle-guarantees) for Lab"
+    },
+    {
+      "file": "docs/docs/evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+      "line": 27,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "| A Certification Body | MPLP does not certify vendors or issue compliance badges |"
+    },
+    {
+      "file": "docs/docs/evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+      "line": 38,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "| Versioned | Semantic versioning with frozen guarantees |"
+    },
+    {
+      "file": "docs/docs/evaluation/governance/EXTERNAL_TRUST_OVERVIEW.md",
+      "line": 52,
+      "term": "certified",
+      "severity": "WARN",
+      "context": "### No \"MPLP Certified\" Claims"
+    },
+    {
+      "file": "docs/docs/evaluation/governance/license-governance.md",
+      "line": 49,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "- ❌ **Claim endorsement** by MPGC or Coregentis"
+    },
+    {
+      "file": "docs/docs/evaluation/governance/license-governance.md",
+      "line": 56,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "Use of these marks does NOT imply endorsement. See [External Trust Overview](./EXTERNAL_TRUST_OVERVI"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/index.mdx",
+      "line": 23,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "This section documents MPLP's **alignment with external governance standards**. These mappings are i"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/index.mdx",
+      "line": 23,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "This section documents MPLP's **alignment with external governance standards**. These mappings are i"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/index.mdx",
+      "line": 53,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "> *Standards mappings here are reference-only. They do not constitute certification or endorsement.*"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/index.mdx",
+      "line": 53,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "> *Standards mappings here are reference-only. They do not constitute certification or endorsement.*"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/iso-mapping.md",
+      "line": 24,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "> All mappings are illustrative only and do not imply certification, endorsement, or compliance with"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/iso-mapping.md",
+      "line": 24,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "> All mappings are illustrative only and do not imply certification, endorsement, or compliance with"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/iso-mapping.md",
+      "line": 29,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "It does **not** claim that MPLP satisfies, implements, or replaces any ISO standard or certification"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/iso-mapping.md",
+      "line": 33,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "> Conformance with MPLP does **not** automatically guarantee Conformance with ISO 42001."
+    },
+    {
+      "file": "docs/docs/evaluation/standards/iso-mapping.md",
+      "line": 125,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "This mapping is provided for **informational purposes only**. It does not constitute legal advice or"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/iso-mapping.md",
+      "line": 127,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "Organizations seeking ISO 42001 certification should:"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/iso-mapping.md",
+      "line": 128,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "1. Consult with accredited certification bodies"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/nist-mapping.md",
+      "line": 24,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "> All mappings are illustrative only and do not imply certification, endorsement, or compliance with"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/nist-mapping.md",
+      "line": 24,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "> All mappings are illustrative only and do not imply certification, endorsement, or compliance with"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/nist-mapping.md",
+      "line": 30,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "> Conformance with MPLP does **not** automatically guarantee Conformance with NIST AI RMF."
+    },
+    {
+      "file": "docs/docs/evaluation/standards/nist-mapping.md",
+      "line": 117,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "This mapping is provided for **informational purposes only**. It does not constitute legal advice or"
+    },
+    {
+      "file": "docs/docs/evaluation/standards/positioning.md",
+      "line": 41,
+      "term": "MPLP provides",
+      "severity": "WARN",
+      "context": "1.  **Mechanism, Not Policy**: MPLP provides the *mechanism* (Confirm, Trace) to enforce policies, b"
+    },
+    {
+      "file": "docs/docs/evaluation/tests/cross-language-overview.md",
+      "line": 7,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "description: \"Cross-language test suite overview and inventory. Projection of Repo tests; non-certif"
+    },
+    {
+      "file": "docs/docs/evaluation/tests/cross-language-overview.md",
+      "line": 24,
+      "term": "ranking",
+      "severity": "WARN",
+      "context": "- **Out-of-scope**: Certification, ranking, endorsement, vendor claims"
+    },
+    {
+      "file": "docs/docs/evaluation/tests/cross-language-overview.md",
+      "line": 24,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- **Out-of-scope**: Certification, ranking, endorsement, vendor claims"
+    },
+    {
+      "file": "docs/docs/evaluation/tests/cross-language-overview.md",
+      "line": 24,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "- **Out-of-scope**: Certification, ranking, endorsement, vendor claims"
+    },
+    {
+      "file": "docs/docs/evaluation/tests/golden-test-suite-overview.md",
+      "line": 23,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "It is **not** a certification tool or a compliance enforcement mechanism. It is a collection of data"
+    },
+    {
+      "file": "docs/docs/evaluation/tests/runtime-compat-overview.md",
+      "line": 7,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "description: \"Runtime compatibility test suite overview and inventory. Projection of Repo tests; non"
+    },
+    {
+      "file": "docs/docs/evaluation/tests/runtime-compat-overview.md",
+      "line": 24,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- **Out-of-scope**: \"Official compatibility\" claims, certification, endorsements"
+    },
+    {
+      "file": "docs/docs/evaluation/tests/schema-alignment-overview.md",
+      "line": 7,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "description: \"Schema alignment test suite overview and inventory. Projection of Repo tests; non-cert"
+    },
+    {
+      "file": "docs/docs/evaluation/tests/schema-alignment-overview.md",
+      "line": 24,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- **Out-of-scope**: Claims of regulatory compliance, certification, endorsements"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/evidence-pack-contract.mdx",
+      "line": 30,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "An **Evidence Pack** is the input to the Validation Lab's adjudication engine. It contains all artif"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/evidence-pack-contract.mdx",
+      "line": 83,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- [Lifecycle Guarantees](./lifecycle-guarantees.mdx) — LG-01~05 definitions"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 14,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "description: \"Evidence-based adjudication for MPLP Lifecycle Guarantees. Non-certifying, non-normati"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 15,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "keywords: [Validation Lab, MPLP, Evidence, Lifecycle Guarantees, Adjudication, Non-certification]"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 15,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "keywords: [Validation Lab, MPLP, Evidence, Lifecycle Guarantees, Adjudication, Non-certification]"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 30,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "The **MPLP Validation Lab** is an evidence-based adjudication system for evaluating MPLP lifecycle g"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 32,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- **Evidence-based verdicts** for Lifecycle Guarantees (LG-01~05)"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 47,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- **LG-01~05** = Lifecycle Guarantees (Lab adjudication targets)"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 54,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "| **Lifecycle Guarantee (LG)** | Adjudication target (LG-01~05) | What the Lab evaluates |"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 93,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "✅ Lifecycle Guarantee (LG-01~05) verdict generation"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 99,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "❌ Official certification or compliance marks"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 103,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "❌ Regulatory or legal guarantees"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/index.mdx",
+      "line": 107,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- [Lifecycle Guarantees Reference](./lifecycle-guarantees.mdx) — LG-01~05 definitions"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 12,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "title: Lifecycle Guarantees Reference"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 13,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "sidebar_label: Lifecycle Guarantees"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 15,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "keywords: [Lifecycle Guarantees, LG-01, LG-02, LG-03, LG-04, LG-05, MPLP, Validation Lab]"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 18,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "# Lifecycle Guarantees Reference"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 28,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "## What are Lifecycle Guarantees?"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 30,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "**Lifecycle Guarantees (LG-01~05)** are the adjudication targets in the Validation Lab. They define "
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 33,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- **LG-01~05** = Lifecycle Guarantees (Lab adjudication targets) — defined in Validation Lab"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 50,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "Under **ruleset-1.0**, all Lifecycle Guarantees perform **presence-level adjudication only**. This m"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 55,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "Each Lifecycle Guarantee has associated evidence hints — files the Lab expects to find in a valid ev"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 67,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "Lifecycle Guarantees are evaluated by versioned rulesets. The current mapping:"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/lifecycle-guarantees.mdx",
+      "line": 80,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- [Lab Site: Guarantees](https://lab.mplp.io/guarantees) — Live reference"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/rulesets.mdx",
+      "line": 39,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "This determinism guarantee ensures reproducible adjudication that can be independently verified."
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/rulesets.mdx",
+      "line": 85,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- [Lifecycle Guarantees](./lifecycle-guarantees.mdx) — LG-01~05 definitions"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/substrates.mdx",
+      "line": 38,
+      "term": "ranking",
+      "severity": "WARN",
+      "context": ":::warning Not a Ranking"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/substrates.mdx",
+      "line": 39,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "Substrate tiers represent **evaluation coverage maturity**, not quality or endorsement. A Tier-0 sub"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/substrates.mdx",
+      "line": 48,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- **LG Coverage** — Which Lifecycle Guarantees have been evaluated"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/substrates.mdx",
+      "line": 64,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- [Lifecycle Guarantees](./lifecycle-guarantees.mdx) — LG-01~05 definitions"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/terminology.mdx",
+      "line": 15,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "keywords: [Terminology, Flow, LG, Lifecycle Guarantees, Golden Flows, MPLP]"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/terminology.mdx",
+      "line": 36,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- **LG-01~05** = Lifecycle Guarantees (Validation Lab adjudication targets)"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/terminology.mdx",
+      "line": 44,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "| **LG-01~05** | Lifecycle Guarantees (adjudication targets) | Validation Lab | Lab UI, Docs Referen"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/terminology.mdx",
+      "line": 64,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "| **Golden Flow** (as Lab term) | Causes collision with main repo Flow | **Lifecycle Guarantee (LG)*"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/terminology.mdx",
+      "line": 66,
+      "term": "certified",
+      "severity": "WARN",
+      "context": "| **Certified** | Lab does not certify | **Evaluated**, **Adjudicated** |"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/terminology.mdx",
+      "line": 68,
+      "term": "ranking",
+      "severity": "WARN",
+      "context": "| **Ranking** | Lab does not rank | **Coverage**, **Status** |"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/terminology.mdx",
+      "line": 81,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "This mapping is derived from [`lib/registry/lifecycle-guarantees.ts`](https://github.com/Coregentis/"
+    },
+    {
+      "file": "docs/docs/evaluation/validation-lab/terminology.mdx",
+      "line": 87,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- [Lifecycle Guarantees](./lifecycle-guarantees.mdx) — LG-01~05 full definitions"
+    },
+    {
+      "file": "docs/docs/guides/adoption/adoption-signals.md",
+      "line": 99,
+      "term": "scored",
+      "severity": "WARN",
+      "context": "| **Metrics** | Not measured or scored |"
+    },
+    {
+      "file": "docs/docs/guides/adoption/index.mdx",
+      "line": 27,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- A certification"
+    },
+    {
+      "file": "docs/docs/guides/adoption/index.mdx",
+      "line": 28,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "- A badge or endorsement"
+    },
+    {
+      "file": "docs/docs/guides/adoption/index.mdx",
+      "line": 104,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "| **Adoption certification** | Self-declared, no authority |"
+    },
+    {
+      "file": "docs/docs/guides/adoption/non-goals.md",
+      "line": 28,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "### 2.1 Adoption Certification"
+    },
+    {
+      "file": "docs/docs/guides/adoption/non-goals.md",
+      "line": 35,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "| **Adoption levels** | No tiered certification |"
+    },
+    {
+      "file": "docs/docs/guides/adoption/non-goals.md",
+      "line": 77,
+      "term": "certified",
+      "severity": "WARN",
+      "context": "If MPLP tracked or certified adoption:"
+    },
+    {
+      "file": "docs/docs/guides/adoption/non-goals.md",
+      "line": 79,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- We would make judgments (certification authority)"
+    },
+    {
+      "file": "docs/docs/guides/adoption/non-goals.md",
+      "line": 109,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "| **Clear boundaries** | Adoption ≠ Conformance ≠ Certification |"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/index.mdx",
+      "line": 109,
+      "term": "MPLP provides",
+      "severity": "WARN",
+      "context": "Enterprise environments **always** need these. MPLP provides the **protocol hooks** (Confirm, Role, "
+    },
+    {
+      "file": "docs/docs/guides/enterprise/index.mdx",
+      "line": 135,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "| **Enterprise certification** | Not a certification body |"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/index.mdx",
+      "line": 136,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "| **Compliance guarantees** | Not a legal authority |"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/index.mdx",
+      "line": 142,
+      "term": "MPLP provides",
+      "severity": "WARN",
+      "context": "MPLP provides the **protocol substrate**. Enterprise vendors build products on top."
+    },
+    {
+      "file": "docs/docs/guides/enterprise/index.mdx",
+      "line": 164,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "**Exclusions**: Certification, compliance guarantees, commercial offerings"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/index.mdx",
+      "line": 164,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "**Exclusions**: Certification, compliance guarantees, commercial offerings"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/non-goals.md",
+      "line": 28,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "### 2.1 Certification Programs"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/non-goals.md",
+      "line": 32,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "| **MPLP Certification** | Not a certification body |"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/non-goals.md",
+      "line": 33,
+      "term": "certified",
+      "severity": "WARN",
+      "context": "| **Certified Vendor** badges | No vendor endorsement |"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/non-goals.md",
+      "line": 33,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "| **Certified Vendor** badges | No vendor endorsement |"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/non-goals.md",
+      "line": 34,
+      "term": "certified",
+      "severity": "WARN",
+      "context": "| **Certified Runtime** lists | Vendor-neutral |"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/non-goals.md",
+      "line": 35,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "| **Certification fees** | Not a commercial program |"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/non-goals.md",
+      "line": 37,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "**Implication**: Third parties may offer certification programs that reference MPLP. These are not e"
+    },
+    {
+      "file": "docs/docs/guides/enterprise/non-goals.md",
+      "line": 88,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- Certification → We pick winners"
+    },
+    {
+      "file": "docs/docs/guides/examples/error-recovery-flow.md",
+      "line": 22,
+      "term": "MPLP provides",
+      "severity": "WARN",
+      "context": "In autonomous systems, failures are inevitable. MPLP provides a structured way to detect, log, and r"
+    },
+    {
+      "file": "docs/docs/guides/examples/learning-notes/learning-overview.md",
+      "line": 21,
+      "term": "MPLP provides",
+      "severity": "WARN",
+      "context": "**Learning** in MPLP provides a structured mechanism for capturing high-value interaction data from "
+    },
+    {
+      "file": "docs/docs/guides/runtime/runtime-authority.md",
+      "line": 52,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- Claim validation, certification, or compliance outcomes."
+    },
+    {
+      "file": "docs/docs/guides/sdk/implementation-maturity-matrix.md",
+      "line": 28,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "| **Experimental** | Minimal code to demonstrate concepts. Not a library. | No stability guarantees."
+    },
+    {
+      "file": "docs/docs/intro.mdx",
+      "line": 65,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- a certification, endorsement, or compliance authority."
+    },
+    {
+      "file": "docs/docs/intro.mdx",
+      "line": 65,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "- a certification, endorsement, or compliance authority."
+    },
+    {
+      "file": "docs/docs/intro.mdx",
+      "line": 67,
+      "term": "guarantee",
+      "severity": "WARN",
+      "context": "This documentation does **not** guarantee:"
+    },
+    {
+      "file": "docs/docs/introduction/mplp-v1.0-protocol-overview.md",
+      "line": 155,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "> Availability does not imply endorsement or completeness."
+    },
+    {
+      "file": "docs/docs/introduction/posix-analogy-mapping.md",
+      "line": 8,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "description: \"A conceptual mapping (analogy) between POSIX interface ideas and MPLP's schema-defined"
+    },
+    {
+      "file": "docs/docs/introduction/posix-analogy-mapping.md",
+      "line": 82,
+      "term": "MPLP provides",
+      "severity": "WARN",
+      "context": "**No.** MPLP is not POSIX and does not implement any POSIX APIs. The POSIX analogy is purely concept"
+    },
+    {
+      "file": "docs/docs/introduction/posix-analogy-mapping.md",
+      "line": 90,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "**No.** MPLP provides evaluation mechanisms (Golden Flows, Validation Lab) but does not offer certif"
+    },
+    {
+      "file": "docs/docs/introduction/posix-analogy-mapping.md",
+      "line": 90,
+      "term": "MPLP provides",
+      "severity": "WARN",
+      "context": "**No.** MPLP provides evaluation mechanisms (Golden Flows, Validation Lab) but does not offer certif"
+    },
+    {
+      "file": "docs/docs/meta/faq.md",
+      "line": 31,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "> These are protocol properties, not guarantees of any specific implementation."
+    },
+    {
+      "file": "docs/docs/meta/faq.md",
+      "line": 78,
+      "term": "endorsement",
+      "severity": "WARN",
+      "context": "> Availability does not imply endorsement or completeness."
+    },
+    {
+      "file": "docs/docs/reference/entrypoints.md",
+      "line": 31,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "**Not**: Normative specifications, certification programs, or authority claims."
+    },
+    {
+      "file": "docs/docs/specification/architecture/cross-cutting-kernel-duties/protocol-versioning-explained.md",
+      "line": 35,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "| **Freeze Status** | Is involved in immutability guarantees |"
+    },
+    {
+      "file": "docs/docs/specification/profiles/sa-profile.md",
+      "line": 39,
+      "term": "guarantees",
+      "severity": "WARN",
+      "context": "- All lifecycle guarantees are enforced locally"
+    },
+    {
+      "file": "docs/docs/specification/semantic-alignment-overview.md",
+      "line": 19,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "> This document does not define protocol requirements, impose obligations, or serve as a compliance "
+    },
+    {
+      "file": "docs/docs/specification/semantic-alignment-overview.md",
+      "line": 145,
+      "term": "certification",
+      "severity": "WARN",
+      "context": "- Neither layer makes compliance or certification claims"
+    }
+  ]
+}
