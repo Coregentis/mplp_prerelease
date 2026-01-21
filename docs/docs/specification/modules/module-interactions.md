@@ -12,7 +12,7 @@ external_standards:
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Module Interactions
 sidebar_label: Module Interactions
-sidebar_position: 0
+sidebar_position: 1
 description: "MPLP module specification: Module Interactions. Defines schema requirements and invariants."
 authority: protocol
 ---

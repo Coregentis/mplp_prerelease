@@ -21,7 +21,7 @@ To provide a rigorous, type-safe definition of the Runtime's **Evidence Emission
 
 ## Scope
 
-*   **Profile**: 14-Golden (GF-01 ~ GF-05)
+*   **Profile**: 14-Golden (FLOW-01 ~ FLOW-05)
 *   **Nature**: Non-Executable (No model calls, no side effects)
 *   **Focus**: Evidence Schema Binding & Event Sinks
 

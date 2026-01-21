@@ -6,7 +6,7 @@ status: frozen
 authority: protocol
 protocol_version: "1.0.0"
 doc_id: "DOC-PROF-SA-001"
-sidebar_position: 0
+sidebar_position: 1
 
 # UI metadata (non-normative; excluded from protocol semantics)
 title: Single-Agent Profile (SA)

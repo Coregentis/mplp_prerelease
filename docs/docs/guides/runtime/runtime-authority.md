@@ -20,7 +20,7 @@ description: "MPLP runtime guide: Runtime Authority & Scope. Implementation guid
 ## Scope
 
 This document defines the **allowed authority and execution boundaries**
-of the MPLP L3 Runtime for **Golden Flow execution only (GF-01 ~ GF-05)**.
+of the MPLP L3 Runtime for **Golden Flow execution only (FLOW-01 ~ FLOW-05)**.
 
 ## Allowed Capabilities
 

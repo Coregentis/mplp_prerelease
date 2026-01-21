@@ -4,7 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "description": "Observability Documentation"
+    "type": "doc",
+    "id": "specification/observability/index"
   }
 }

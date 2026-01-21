@@ -4,7 +4,7 @@
   "collapsible": true,
   "collapsed": true,
   "link": {
-    "type": "generated-index",
-    "description": "Modules Documentation"
+    "type": "doc",
+    "id": "specification/modules/index"
   }
 }
