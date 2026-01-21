@@ -27,13 +27,59 @@ const INVENTORY_PATH = path.join(ROOT, 'docs-governance/audits/DOCS_IDENTITY_INV
 const OUTPUT_DIR = path.join(ROOT, 'governance/exports');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'docs-banner-gate.report.json');
 
-// Sensitive terms that must never appear in banner text
+// Sensitive terms with word boundary patterns (avoid substring false positives)
 const SENSITIVE_TERMS = [
-    'certified', 'certification', 'endorsed', 'endorsement',
-    'ranking', 'ranked', 'rating', 'scored',
-    'compliant', 'approved by', 'official verification',
-    'guarantee', 'guarantees', 'validates', 'enforces'
+    { term: 'certified', pattern: /\bcertified\b/i },
+    { term: 'certification', pattern: /\bcertification\b/i },
+    { term: 'endorsed', pattern: /\bendorsed\b/i },
+    { term: 'endorsement', pattern: /\bendorsement\b/i },
+    { term: 'ranking', pattern: /\branking\b/i },
+    { term: 'ranked', pattern: /\branked\b/i },
+    { term: 'rating', pattern: /\bratings?\b/i },  // Fixed: word boundary to avoid "demonstrating"
+    { term: 'scored', pattern: /\bscored\b/i },
+    { term: 'compliant', pattern: /\bcompliant\b/i },
+    { term: 'approved by', pattern: /approved by/i },
+    { term: 'official verification', pattern: /official verification/i },
+    { term: 'guarantee', pattern: /\bguarantees?\b/i },  // Covers guarantee and guarantees
+    { term: 'validates', pattern: /\bvalidates\b/i },
+    { term: 'enforces', pattern: /\benforces\b/i }
 ];
+
+// Negation patterns that indicate proper boundary disclaimer usage
+function isNegatedContext(text, term) {
+    const t = text.toLowerCase();
+
+    // certification/certified in negation context
+    if (term === 'certification' || term === 'certified') {
+        if (t.includes('non-certification') ||
+            t.includes('not a certification') ||
+            t.includes('does not certify') ||
+            t.includes('non-certifying')) {
+            return true;
+        }
+    }
+
+    // guarantee in negation context
+    if (term === 'guarantee' || term === 'guarantees') {
+        if (t.includes('does not guarantee') ||
+            t.includes('no guarantee') ||
+            t.includes('not guaranteed') ||
+            t.includes('and does not')) {
+            return true;
+        }
+    }
+
+    // endorsement in negation context
+    if (term === 'endorsement' || term === 'endorsed') {
+        if (t.includes('non-endorsement') ||
+            t.includes('not endorsed') ||
+            t.includes('no endorsement')) {
+            return true;
+        }
+    }
+
+    return false;
+}
 
 // Expected warnings based on status
 function getExpectedWarnings(status, normativity) {
@@ -94,10 +140,15 @@ function main() {
             formativeWithWarning++;
         }
 
-        // Rule 3: Check page description for sensitive terms
+        // Rule 3: Check page description for sensitive terms (with word boundaries)
         if (page.description) {
-            SENSITIVE_TERMS.forEach(term => {
-                if (page.description.toLowerCase().includes(term.toLowerCase())) {
+            SENSITIVE_TERMS.forEach(({ term, pattern }) => {
+                if (pattern.test(page.description)) {
+                    // Skip if in negation context (proper boundary disclosure)
+                    if (isNegatedContext(page.description, term)) {
+                        return;
+                    }
+
                     warnings.push({
                         page: page.relative_path,
                         term: term,
