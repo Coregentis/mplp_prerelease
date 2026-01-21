@@ -1,0 +1,85 @@
+{
+  "gate": "DOCS-BANNER-01",
+  "version": "1.0.0",
+  "generated_at": "2026-01-21T04:36:35.287Z",
+  "summary": {
+    "total_pages": 179,
+    "draft_pages": 58,
+    "formative_pages": 0,
+    "failures": 0,
+    "sensitive_term_warnings": 14
+  },
+  "failures": [],
+  "sensitive_term_warnings": [
+    {
+      "term": "guarantee",
+      "context": "description",
+      "snippet": "Explains what MPLP Validation Lab guarantees (reviewability) and does not guarantee (reproducibility"
+    },
+    {
+      "term": "guarantees",
+      "context": "description",
+      "snippet": "Explains what MPLP Validation Lab guarantees (reviewability) and does not guarantee (reproducibility"
+    },
+    {
+      "term": "certification",
+      "context": "description",
+      "snippet": "Cross-language test suite overview and inventory. Projection of Repo tests; non-certification."
+    },
+    {
+      "term": "certification",
+      "context": "description",
+      "snippet": "Runtime compatibility test suite overview and inventory. Projection of Repo tests; non-certification"
+    },
+    {
+      "term": "certification",
+      "context": "description",
+      "snippet": "Schema alignment test suite overview and inventory. Projection of Repo tests; non-certification."
+    },
+    {
+      "term": "guarantee",
+      "context": "description",
+      "snippet": "Evidence-based adjudication for MPLP Lifecycle Guarantees. Non-certifying, non-normative, no executi"
+    },
+    {
+      "term": "guarantees",
+      "context": "description",
+      "snippet": "Evidence-based adjudication for MPLP Lifecycle Guarantees. Non-certifying, non-normative, no executi"
+    },
+    {
+      "term": "rating",
+      "context": "description",
+      "snippet": "A non-normative example demonstrating a minimal Single-Agent lifecycle."
+    },
+    {
+      "term": "rating",
+      "context": "description",
+      "snippet": "Non-normative executable examples demonstrating MPLP protocol semantics."
+    },
+    {
+      "term": "rating",
+      "context": "description",
+      "snippet": "Example flow demonstrating error handling and recovery patterns in MPLP."
+    },
+    {
+      "term": "rating",
+      "context": "description",
+      "snippet": "Example flow demonstrating human-in-the-loop confirmation for high-risk actions."
+    },
+    {
+      "term": "rating",
+      "context": "description",
+      "snippet": "Example demonstrating vendor-neutral LLM integration through MPLP abstractions."
+    },
+    {
+      "term": "rating",
+      "context": "description",
+      "snippet": "Guide for generating type-safe code from MPLP JSON schemas in multiple languages."
+    },
+    {
+      "term": "certification",
+      "context": "description",
+      "snippet": "A conceptual mapping (analogy) between POSIX interface ideas and MPLP's schema-defined lifecycle gov"
+    }
+  ]
+}

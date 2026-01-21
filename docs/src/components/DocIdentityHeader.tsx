@@ -8,9 +8,21 @@ interface DocIdentityHeaderProps {
 
 export default function DocIdentityHeader({ frontMatter }: DocIdentityHeaderProps): React.ReactElement {
     const identity = getDocIdentity(frontMatter);
+    const hasWarnings = identity.warnings.length > 0;
 
     return (
-        <div className={styles.docIdentityHeader}>
+        <div className={`${styles.docIdentityHeader} ${hasWarnings ? styles.hasWarnings : ''}`}>
+            {/* Phase 3: Prominent warnings for draft/formative pages */}
+            {hasWarnings && (
+                <div className={styles.warningsStrip}>
+                    {identity.warnings.map((warning, idx) => (
+                        <div key={idx} className={styles.warning}>
+                            ⚠️ {warning}
+                        </div>
+                    ))}
+                </div>
+            )}
+
             <div className={styles.badges}>
                 <span className={`${styles.badge} ${styles[identity.doc_profile]}`}>
                     {identity.doc_profile.replace(/-/g, ' ').toUpperCase()}
@@ -48,3 +60,4 @@ export default function DocIdentityHeader({ frontMatter }: DocIdentityHeaderProp
         </div>
     );
 }
+
