@@ -2,15 +2,16 @@ import React from 'react';
 import styles from './ThreeEntryBacklink.module.css';
 
 /**
- * Three-Entry Model Backlink Strip
+ * Four-Entry Model Backlink Strip
  * 
  * Provides visible cross-entry navigation for AI crawlers and users.
  * NOT JSON-LD - plain HTML with semantic links.
  * 
- * Three-Entry Model:
+ * Four-Entry Model:
  * - Website: Discovery & Positioning
  * - Docs (this): Specification & Reference  
  * - Repo: Source of Truth
+ * - Lab: Evidence & Adjudication
  */
 export default function ThreeEntryBacklink(): React.ReactElement {
     return (
@@ -40,6 +41,16 @@ export default function ThreeEntryBacklink(): React.ReactElement {
                 >
                     <span className={styles.entryName}>Repository</span>
                     <span className={styles.entryRole}>Truth Source</span>
+                </a>
+                <span className={styles.separator}>•</span>
+                <a
+                    href="https://lab.mplp.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.entry}
+                >
+                    <span className={styles.entryName}>Validation Lab</span>
+                    <span className={styles.entryRole}>Adjudication</span>
                 </a>
             </div>
             <div className={styles.entityCard}>

@@ -1,4 +1,40 @@
-﻿## [docs-meta-hardening] — 2026-01-09
+﻿## [four-entry-seal-v1.2.2] — 2026-01-21
+
+### 🔒 Four-Entry Ecosystem Remediation SEALED
+
+#### Gate-LINK-03 Semantic Boundary Scan
+- **VIOLATION=0**: All 105 pattern hits resolved as negated boundary language
+- Added `@docusaurus/plugin-client-redirects` for `/index` → `/` (Soft 404 fix)
+- Created v1.2.2.2 balanced FP ruleset (~90 patterns)
+- Added `Invariant-LINKMAP-01` governance constraint for FP file integrity
+
+#### GSC Coverage Fixes
+- Removed 4 redirect-source URLs from `sitemap.ts` (P1-1)
+- Verified apex domain redirect: `mplp.io` → `www.mplp.io` (308 single-hop)
+- Confirmed `siteConfig.url` = `https://www.mplp.io` (no host mixing)
+
+#### Performance Optimizations
+- Added Cache-Control headers for static assets (1yr immutable)
+- Added image `deviceSizes`/`imageSizes` configuration
+- Enabled `compiler.removeConsole` in production
+- Added `experimental.optimizePackageImports` for lucide-react, framer-motion
+
+#### Governance Artifacts
+- `AUDIT-4ENTRY-SEO-GEO-LINKMAP-2026-01-21-SEAL.md` — **SEALED**
+- `AUDIT-LINKMAP-2026-01-21-LINK-03-DETAILS.md` — 16 violations → 0
+- `ECOSYSTEM_ANCHORS.json` — golden_flows, validation_lab anchors
+
+#### Definition of Done
+- DoD-01: 0 "Three-Entry" remnants ✅
+- DoD-02: 0 incorrect legal name ✅
+- DoD-03: Docs JSON-LD removed ✅
+- DoD-04: Gate-LINK-03 PASS ✅
+- DoD-05: ECOSYSTEM_ANCHORS.json exists ✅
+
+---
+
+## [docs-meta-hardening] — 2026-01-09
+
 
 ### 📋 Docs Meta Hardening & DocIdentityHeader Single Source
 

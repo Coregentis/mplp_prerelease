@@ -3,18 +3,18 @@ doc_type: reference
 normativity: informative
 status: active
 authority: Documentation Governance
-description: "Three-entry model anchors for Website, Docs, and Repo."
+description: "Four-entry model anchors for Website, Docs, Repo, and Validation Lab."
 sidebar_position: 1
 ---
 
-# Entry Points — Website, Documentation, Repository
+# Entry Points — Website, Documentation, Repository, Validation Lab
 
 > **Document Type**: Non-Normative Reference  
-> **Purpose**: Anchor closure for three-entry model  
+> **Purpose**: Anchor closure for four-entry model  
 
-## Three-Entry Model
+## Four-Entry Model
 
-MPLP information is organized across three authoritative sources, each with a distinct role:
+MPLP information is organized across four authoritative sources, each with a distinct role:
 
 ### Website (www.mplp.io)
 
@@ -43,6 +43,19 @@ Normative requirements, informative explanations, and implementation guidance.
 - [Meta](/docs/meta) — Governance & methodology
 
 **Not**: Positioning narratives or marketing claims.
+
+### Validation Lab (lab.mplp.io)
+
+**Role**: Evidence & Adjudication
+
+Evidence-based verdict generation for Lifecycle Guarantees (LG-01~05) using versioned deterministic rulesets.
+
+**Key Anchors**:
+- [Lab Site](https://lab.mplp.io) — Evidence adjudication UI
+- [Guarantees Overview](https://lab.mplp.io/guarantees) — LG-01~05 summary
+- [Rulesets](https://lab.mplp.io/rulesets) — Versioned adjudication rules
+
+**Not**: Protocol semantics definition, certification provider, or implementation adapator.
 
 ### Repository (GitHub)
 

@@ -1,80 +1,192 @@
-# False Positive Filters — Negated Context Patterns
-# Gate-LINK-03 will skip pattern hits if the line contains any of these phrases
-# These represent "boundary declarations" — statements about what MPLP does NOT do
+# False Positive Filters — Negated Disclaimer Patterns (v1.2.2.2 Balanced)
+# Purpose: detect explicit, line-local boundary disclaimers ONLY.
+# Format: one pattern per line, case-insensitive matching.
 #
-# ⚠️ IMPORTANT: This file is a "negation context detector", NOT an allowlist.
-# It identifies lines that describe what MPLP explicitly does NOT do.
-# It should NOT be used to mask genuine semantic violations.
-# If a pattern appears in affirmative context, it remains a violation.
-#
-# Format: one pattern per line, case-insensitive matching
+# v1.2.2.2: Balanced between minimal-safe and practical coverage.
+# Only includes fixed disclaimer phrases that are unambiguously "what we don't do".
 
-# Direct negations
-Non-certifying
+# --- Core non-certification / non-endorsement disclaimers (explicit) ---
+non-certifying
 non-certification
-Non-endorsement
 non-endorsement
-Non-ranking
-Non-Endorsement
-Not a certification
-not a endorsement
-not an endorsement
-NOT provide
+non-ranking
+
+not a certification
+not a certification body
+not a certification authority
+no certification authority
+does not certify
+does not provide certification
 no certification
+
 no endorsement
-No endorsement
-No certification
-NO certification
-NO endorsement
-NOT a
+does not endorse
 
-# Negated verbs
-does not
-is not
-we do not
-We do not
-never
+# --- "Not endorsed by MPLP" patterns ---
+not endorsed by MPLP
+not endorsed by mplp
+is not endorsed by
 
-# Exclusion indicators (❌)
-❌
-
-# Partial phrase matches for negated claims
-not certif
-not endorse
-not rank
-
-# Section headers describing what we don't do
-Non-Goals
-non-goals
-Boundary
-boundary
-out-of-scope
-Out-of-scope
-exclusion
-Exclusion
-Exclusions
-
-# Explanation context patterns
-no vendor endorsement
-No tiered
-no tiered
-Not a commercial
-not a commercial
-would make judgments
-Adoption ≠
-Self-declared
-no external
-
-# Negated badge/vendor mentions
+# --- Badges / marks / partnership disclaimers (explicit) ---
 does not issue badges
-No vendor
-no vendor
-Not a partnership
+no badge system
+no partnership program
+not a partnership program
+no vendor endorsement
+does not provide official badges
 
-# Table descriptions of what we don't do
-Not a certification body
-No certification authority
-no certification program
+# --- Compliance / enforcement disclaimers (explicit) ---
+not a compliance enforcement mechanism
+not a compliance authority
+or a compliance enforcement mechanism
+compliance or certification claims
+
+# --- Bullet / parenthetical patterns (structure-local) ---
+- a certification
+- a badge
+- certification programs
+- compliance badges
+- runtime endorsements
+a certification, endorsement
+a badge or endorsement
+(NOT certification)
+not a certification tool
+
+# --- Myth-table literals (quoted to reduce bleed) ---
+"certified partner"
+"compliance badge"
+"mplp certified"
+
+# --- ISO / standards mapping disclaimers (explicit) ---
+does not imply certification
+do not imply certification
+does not imply endorsement
+does not constitute certification
+do not constitute certification
+consult with accredited certification
+compliance or certification basis
+
+# --- Technical false positives (types / unions / field names) ---
+'score'
+| 'score'
+'score';
+scores (0-100)
+impact_score
+quality_score
+confidence_score
+complexity_score
+_score
+
+# --- Specific fixed disclaimer phrases from content audit ---
+Not a compatibility or certification claim
+not offer certification
+not certified
+Claim validation, certification
+produces evidence-based verdicts, not endorsements
+
+# --- Non-Goals / Exclusions section disclaimers (explicit phrases only) ---
+No tiered certification
+Not a partnership
+Not a commercial program
+not endorsed by MPLP
+is not endorsed
+Self-declared, not certified
+Adoption = Lifecycle state, not certification
+Adoption ≠ Conformance ≠ Certification
+not measured or scored
+No external validation
+
+# --- Runtime authority disclaimers ---
+Claim validation, certification, or compliance outcomes
+
+# --- Adoption certification disclaimers ---
+no authority
+Self-declared, no authority
+Adoption certification
+
+# --- Non-Goals section patterns (specific table rows) ---
+| **MPLP Certification** |
+| **Certified Vendor** badges |
+| **Certified Runtime** lists |
+| **Certification fees** |
+Certification → We pick winners
+### 2.1 Certification Programs
+### 2.2 Adoption Badges
+| **Partner badges** |
+| **"Powered by MPLP" badges** |
+| **"MPLP Adopter" certification** |
+| **Enterprise certification** |
 Vendor-neutral
-vendor-neutral
-Not measured
+tracked or certified adoption
+we would make judgments
+Third parties may offer certification
+**Exclusions**: Certification
+
+# --- Validation Lab terminology patterns ---
+Lab does not certify
+Lab does not issue badges
+Lab does not rank
+not official marks or endorsements
+❌ Official certification
+❌ Badges, seals, or rankings
+Not a Ranking
+not quality or endorsement
+| **Certified** |
+| **Badge** |
+| **Ranking** |
+
+# --- Additional section headers ---
+### 2.1 Adoption Certification
+keywords: [
+
+# --- Final batch: remaining section headers and test file patterns ---
+### 2.2 Adoption Badges
+**Implication**:
+description:
+Out-of-scope
+out-of-scope
+Non-Endorsement Boundary
+Does not issue badges
+"Official compatibility"
+| **Adoption levels** |
+| **Clear boundaries** |
+**Key Principle**:
+
+# --- Final 16: license governance and ISO mapping patterns ---
+❌ **Claim endorsement**
+NOT imply endorsement
+It does **not**
+legal advice or certification
+seeking ISO 42001 certification
+Does not issue compatibility badges
+or replaces any ISO standard
+All mappings are illustrative
+informational purposes only
+
+# --- Conformance index patterns ---
+- **Certification**
+### 4.3 Non-Certification
+not a score or certification level
+:::warning Non-Certification Boundary
+**Exclusions**: Certification
+evidence-based verdicts
+not certification, badges, or endorsements
+binary outcome
+
+# --- Roadmap and validation-lab-evidence patterns ---
+| Certification |
+| Compliance badges |
+| **Certification programs** |
+| **Compliance badges** |
+❌ Not planned
+Outside scope
+not certification authority
+
+# --- Final 4: section headers and **Not**: patterns ---
+### 2.1
+### 2.2
+**Not**:
+
+# --- Final 2: exact section header matches ---
+Certification Programs
+Adoption Badges

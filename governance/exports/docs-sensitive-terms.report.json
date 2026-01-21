@@ -1,9 +1,9 @@
 {
   "gate": "DOCS-LINT-01",
   "version": "1.0.0",
-  "generated_at": "2026-01-21T04:39:11.063Z",
+  "generated_at": "2026-01-21T07:21:21.138Z",
   "summary": {
-    "files_scanned": 179,
+    "files_scanned": 180,
     "fail_count": 0,
     "warn_count": 132
   },

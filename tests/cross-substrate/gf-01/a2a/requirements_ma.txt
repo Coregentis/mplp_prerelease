@@ -1,2 +1,0 @@
-# A2A MA dependencies (lightweight - no external A2A calls)
-# No external deps required for deterministic pack generation

@@ -1,0 +1,12 @@
+{
+  "gate_id": "GATE-04",
+  "gate_name": "Non-endorsement Language Lint",
+  "status": "PASS",
+  "evaluated_at": "2026-01-21T07:43:17.128Z",
+  "findings": [],
+  "summary": {
+    "files_scanned": 54,
+    "matches": 0,
+    "note": "scope: PUBLIC_SURFACE only (app, components, public)"
+  }
+}

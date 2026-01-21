@@ -13,6 +13,9 @@ impact_score
 confidence_score
 _score
 confidence
+risk_score
+score:
+"score"
 
 # Naming convention examples
 round_robin

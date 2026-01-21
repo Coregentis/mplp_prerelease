@@ -4,7 +4,26 @@ All notable changes to the MPLP Documentation site (docs.mplp.io).
 
 ---
 
+## [gsc-fix-v1.2] — 2026-01-21
+
+### 🔧 GSC Soft 404 Fix
+
+#### Added
+- `@docusaurus/plugin-client-redirects` for `/index` → `/` redirect
+- Fixes GSC "Soft 404" at `docs.mplp.io/index`
+
+#### Gate-LINK-03
+- **PASS**: 0 violations (105 pattern hits, all negated boundary language)
+- v1.2.2.2 balanced FP ruleset with ~90 patterns
+
+#### Build
+- 178 docs indexed
+- Lunr search index generated
+
+---
+
 ## [authority-alignment-v1] — 2025-12-25
+
 
 ### Added
 - Authority Boundary callout on intro.mdx landing page

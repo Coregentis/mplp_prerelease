@@ -1,13 +1,13 @@
 # Docs Sensitive Terms Report
 
-**Generated**: 2026-01-21T04:39:11.064Z  
+**Generated**: 2026-01-21T07:21:21.140Z  
 **Gate**: DOCS-LINT-01 (Phase 4)
 
 ## Summary
 
 | Metric | Count |
 |:---|---:|
-| Files scanned | 179 |
+| Files scanned | 180 |
 | FAIL violations | 0 |
 | WARN violations | 132 |
 | Total violations | 132 |

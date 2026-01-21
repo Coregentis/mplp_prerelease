@@ -1,0 +1,22 @@
+{
+  "run_id": "arb-d1-budget-fail-fixture-v0.3",
+  "scenario_id": "d1-budget-fail-scenario",
+  "admission": "ADMISSIBLE",
+  "topline": "FAIL",
+  "gf_verdicts": [],
+  "domain_verdicts": [
+    {
+      "domain": "D1",
+      "clause_id": "CL-D1-01",
+      "status": "FAIL",
+      "reason_code": "BUNDLE-POINTER-MISSING-RQ-D1-01"
+    }
+  ],
+  "versions": {
+    "protocol": "2025-draft",
+    "schema": "v0.3.0",
+    "ruleset": "ruleset-1.1"
+  },
+  "evaluated_at": "2026-01-21T07:34:55.413Z",
+  "reason_code": "BUNDLE-POINTER-MISSING-RQ-D1-01"
+}

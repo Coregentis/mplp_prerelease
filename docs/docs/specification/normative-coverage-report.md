@@ -54,17 +54,17 @@ authority: Documentation Governance
 
 | Kernel Duty | Anchor | DEFINED | REFERENCED | EVAL-MAPPED | GAP |
 |:---|:---|:---:|:---:|:---:|:---|
-| Coordination | KD-01 | ✅ | ✅ | ✅ (GF-02) | - |
-| Error Handling | KD-02 | ✅ | ✅ | ✅ (GF-03) | - |
-| Event Bus | KD-03 | ✅ | ✅ | ✅ (GF-02) | - |
+| Coordination | KD-01 | ✅ | ✅ | ✅ (FLOW-02) | - |
+| Error Handling | KD-02 | ✅ | ✅ | ✅ (FLOW-03) | - |
+| Event Bus | KD-03 | ✅ | ✅ | ✅ (FLOW-02) | - |
 | Learning & Feedback | KD-04 | ✅ | ✅ | ⚠️ | INTENTIONAL: Not in v1.0 scope |
 | Observability | KD-05 | ✅ | ✅ | ✅ (All GF) | - |
-| Orchestration | KD-06 | ✅ | ✅ | ✅ (GF-01,04,05) | - |
+| Orchestration | KD-06 | ✅ | ✅ | ✅ (FLOW-01,04,05) | - |
 | Performance | KD-07 | ✅ | ✅ | ⚠️ | INTENTIONAL: Non-functional |
 | Protocol Versioning | KD-08 | ✅ | ✅ | ⚠️ | INTENTIONAL: Meta-level |
-| Security | KD-09 | ✅ | ✅ | ✅ (GF-05) | - |
-| State Sync | KD-10 | ✅ | ✅ | ✅ (GF-01,02) | - |
-| Transaction | KD-11 | ✅ | ✅ | ✅ (GF-03,04) | - |
+| Security | KD-09 | ✅ | ✅ | ✅ (FLOW-05) | - |
+| State Sync | KD-10 | ✅ | ✅ | ✅ (FLOW-01,02) | - |
+| Transaction | KD-11 | ✅ | ✅ | ✅ (FLOW-03,04) | - |
 
 **Summary**: 11/11 DEFINED, 11/11 REFERENCED, 8/11 EVAL-MAPPED (3 INTENTIONAL gaps, runtime pending)
 
@@ -87,11 +87,11 @@ authority: Documentation Governance
 
 | Golden Flow | Anchor | DEFINED | REFERENCED | EVALUATED | GAP |
 |:---|:---|:---:|:---:|:---:|:---|
-| GF-01 SA Lifecycle | GF-01 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
-| GF-02 MAP Coordination | GF-02 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
-| GF-03 Drift Detection | GF-03 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
-| GF-04 Delta Intent | GF-04 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
-| GF-05 Governance | GF-05 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
+| FLOW-01 SA Lifecycle | FLOW-01 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
+| FLOW-02 MAP Coordination | FLOW-02 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
+| FLOW-03 Drift Detection | FLOW-03 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
+| FLOW-04 Delta Intent | FLOW-04 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
+| FLOW-05 Governance | FLOW-05 | ✅ | ✅ | ⏳ Phase F | Fixtures pending |
 
 **Summary**: 5/5 DEFINED, 5/5 REFERENCED, 0/5 Fixtures Ready (Phase F scope)
 

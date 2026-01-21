@@ -77,16 +77,18 @@
     },
     "cross_cutting": {
       "type": "array",
-      "description": "Declares cross-cutting concerns enabled for the current object (one of the 9 concerns in Governance Plane).",
+      "description": "Declares cross-cutting concerns enabled for the current object (one of the 11 concerns in Governance Plane).",
       "items": {
         "type": "string",
         "enum": [
           "coordination",
           "error-handling",
           "event-bus",
+          "learning-feedback",
+          "observability",
           "orchestration",
           "performance",
-          "protocol-version",
+          "protocol-versioning",
           "security",
           "state-sync",
           "transaction"

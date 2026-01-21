@@ -40,18 +40,14 @@
         "Coordination",
         "Error Handling",
         "Event Bus",
+        "Learning Feedback",
+        "Observability",
         "Orchestration",
         "Performance",
         "Protocol Versioning",
         "Security",
         "State Sync",
-        "Transaction",
-        "AEL",
-        "VSL"
-    ],
-    "capability_tags": [
-        "Observability",
-        "Learning & Feedback"
+        "Transaction"
     ],
     "golden_flows": {
         "core": [
@@ -79,11 +75,15 @@
     "entrypoints": {
         "website": {
             "primary": "https://www.mplp.io",
-            "anchor": "https://www.mplp.io/what-is-mplp"
+            "anchor": "https://www.mplp.io/definition"
         },
         "docs": {
             "primary": "https://docs.mplp.io",
             "anchor": "https://docs.mplp.io/docs/reference/entrypoints"
+        },
+        "lab": {
+            "primary": "https://lab.mplp.io",
+            "anchor": "https://lab.mplp.io/guarantees"
         },
         "repo": "https://github.com/Coregentis/MPLP-Protocol"
     }

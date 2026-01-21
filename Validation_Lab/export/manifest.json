@@ -1,0 +1,26 @@
+{
+  "export_version": "1.2",
+  "generated_at": "2026-01-19T17:32:52.477Z",
+  "verifier": {
+    "id": "validation-lab-verifier",
+    "version": "1.0.0",
+    "identity_path": "verifier/VERIFIER_IDENTITY.json"
+  },
+  "files": {
+    "release_index": "export/release-index.json",
+    "ruleset_index": "export/ruleset-index.json",
+    "curated_runs": "export/curated-runs.json",
+    "verdict_index": "export/verdict-index.json",
+    "adjudication_index": "export/adjudication-index.json",
+    "sha256sums": "export/sha256sums.txt"
+  },
+  "stats": {
+    "releases": 11,
+    "rulesets": 3,
+    "curated_runs": 27,
+    "verdicts": 8,
+    "reverified_count": 2,
+    "adjudications": 6,
+    "adjudicated_count": 4
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "gate_id": "GATE-REASON-CODES-TAXONOMY",
+  "executed_at": "2026-01-20T06:29:37.360Z",
+  "status": "PASS",
+  "taxonomy_stats": {
+    "common": 18,
+    "d1": 7,
+    "d2": 6,
+    "d3": 8,
+    "d4": 8,
+    "total_enum": 47,
+    "patterns": 6
+  },
+  "runs_checked": 27,
+  "issues": [],
+  "summary": {
+    "total_reason_codes": 39,
+    "enum_codes": 29,
+    "pattern_codes": 10,
+    "unknown_codes": 0,
+    "missing_codes": 0
+  },
+  "duration_ms": 91
+}

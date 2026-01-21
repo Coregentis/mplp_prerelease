@@ -61,7 +61,7 @@ They are distributed across:
 | **L3 Execution & Orchestration** | PSG management, event bus, drift detection, rollback |
 | **SA Invariants** (`sa-invariants.yaml`) | 9 rules for single-agent execution |
 | **MAP Invariants** (`map-invariants.yaml`) | 9 rules for multi-agent coordination |
-| **Golden Flows (GF-01 ~ GF-05)** | Concrete execution scenarios with expected outcomes |
+| **Golden Flows (FLOW-01 ~ FLOW-05)** | Concrete execution scenarios with expected outcomes |
 
 ## 5. Conceptual Relationships
 

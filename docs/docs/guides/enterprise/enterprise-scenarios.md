@@ -56,7 +56,7 @@ Each card follows a strict format:
 | Component | Reference |
 |:---|:---|
 | **Kernel Duties** | `state-sync`, `transaction`, `confirm` |
-| **Golden Flow** | GF-02 (Multi-Agent Coordination) |
+| **Golden Flow** | FLOW-02 (Multi-Agent Coordination) |
 | **Conformance Class** | L3 (Execution) |
 | **Evaluation Dimensions** | Lifecycle Completeness, Governance Gating |
 
@@ -90,7 +90,7 @@ Each card follows a strict format:
 | Component | Reference |
 |:---|:---|
 | **Kernel Duties** | `protocol-version`, `trace`, `transaction` |
-| **Golden Flow** | GF-01 (Single Agent Lifecycle) |
+| **Golden Flow** | FLOW-01 (Single Agent Lifecycle) |
 | **Conformance Class** | L2 (Coordination) |
 | **Evaluation Dimensions** | Version Declaration, Trace Integrity |
 
@@ -125,7 +125,7 @@ Each card follows a strict format:
 | Component | Reference |
 |:---|:---|
 | **Kernel Duties** | `trace`, `error-handling`, `confirm`, `orchestration` |
-| **Golden Flow** | GF-04 (Drift Detection & Recovery) |
+| **Golden Flow** | FLOW-04 (Drift Detection & Recovery) |
 | **Conformance Class** | L3 (Execution) |
 | **Evaluation Dimensions** | Trace Integrity, Failure Bounding, Governance Gating |
 

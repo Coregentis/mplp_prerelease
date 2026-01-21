@@ -40,18 +40,14 @@
         "Coordination",
         "Error Handling",
         "Event Bus",
+        "Learning Feedback",
+        "Observability",
         "Orchestration",
         "Performance",
         "Protocol Versioning",
         "Security",
         "State Sync",
-        "Transaction",
-        "AEL",
-        "VSL"
-    ],
-    "capability_tags": [
-        "Observability",
-        "Learning & Feedback"
+        "Transaction"
     ],
     "golden_flows": {
         "core": [

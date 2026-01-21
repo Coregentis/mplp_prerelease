@@ -43,6 +43,9 @@ jobs:
       - name: Gate v3 - Docs Frontmatter Completeness
         run: node scripts/gates/docs-frontmatter-gate.mjs
 
+      - name: Gate TERM-DOCS - Terminology Compliance
+        run: node scripts/gates/terminology-gate-docs.mjs
+
   docs:
     name: Docs Gates (Build + Header/Entry)
     runs-on: ubuntu-latest

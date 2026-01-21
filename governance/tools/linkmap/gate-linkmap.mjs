@@ -86,24 +86,33 @@ const results = {
 // Gate-LINK-01: Docs Build
 // ============================================================================
 console.log('▶ Gate-LINK-01: Docs Build');
-console.log('  Running: pnpm -C docs build');
-
 try {
+    console.log('  Running: pnpm -C docs build');
     execSync('pnpm -C docs build', {
         cwd: ROOT,
         stdio: 'pipe',
         timeout: 120000
     });
-    results['LINK-01'] = { status: 'PASS', details: 'Build SUCCESS, 0 broken links' };
-    console.log('  ✅ PASS: Build SUCCESS');
 } catch (error) {
-    const output = error.stdout?.toString() || error.stderr?.toString() || '';
-    const brokenLinkMatch = output.match(/Broken link on source page/g);
-    const brokenCount = brokenLinkMatch?.length || 'unknown';
-    results['LINK-01'] = { status: 'FAIL', details: `Build FAILED: ${brokenCount} broken links` };
-    console.log(`  ❌ FAIL: ${brokenCount} broken links detected`);
-    exitCode = 1;
+    console.log('  ⚠️ pnpm failed or not found, trying npm run build');
+    try {
+        execSync('npm run build', {
+            cwd: join(ROOT, 'docs'),
+            stdio: 'pipe',
+            timeout: 120000
+        });
+    } catch (npmError) {
+        const output = npmError.stdout?.toString() || npmError.stderr?.toString() || '';
+        const brokenLinkMatch = output.match(/Broken link on source page/g);
+        const brokenCount = brokenLinkMatch?.length || 'unknown';
+        results['LINK-01'] = { status: 'FAIL', details: `Build FAILED: ${brokenCount} broken links` };
+        console.log(`  ❌ FAIL: ${brokenCount} broken links detected`);
+        exitCode = 1;
+        throw npmError; // Re-throw to skip the rest of the block if it's a real failure
+    }
 }
+results['LINK-01'] = { status: 'PASS', details: 'Build SUCCESS, 0 broken links' };
+console.log('  ✅ PASS: Build SUCCESS');
 console.log('');
 
 // ============================================================================

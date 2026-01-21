@@ -41,10 +41,10 @@ authority: Documentation Governance
 
 | Layer (Specification) | Golden Flow (Evaluation) | Primary Evidence |
 |:---|:---|:---|
-| [L1 Core Protocol](/docs/specification/architecture/l1-core-protocol) AA-01 | All GF-01~05 | Schema Validation |
-| [L2 Coordination](/docs/specification/architecture/l2-coordination-governance) AA-02 | [GF-01](/docs/evaluation/golden-flows/gf-01), [GF-02](/docs/evaluation/golden-flows/gf-02) | Module Lifecycles |
-| [L3 Execution](/docs/specification/architecture/l3-execution-orchestration) AA-03 | [GF-03](/docs/evaluation/golden-flows/gf-03), [GF-04](/docs/evaluation/golden-flows/gf-04) | Trace Segments |
-| [L4 Integration](/docs/specification/architecture/l4-integration-infra) AA-04 | [GF-05](/docs/evaluation/golden-flows/gf-05) | Integration Events |
+| [L1 Core Protocol](/docs/specification/architecture/l1-core-protocol) AA-01 | All FLOW-01~05 | Schema Validation |
+| [L2 Coordination](/docs/specification/architecture/l2-coordination-governance) AA-02 | [FLOW-01](/docs/evaluation/golden-flows/gf-01), [FLOW-02](/docs/evaluation/golden-flows/gf-02) | Module Lifecycles |
+| [L3 Execution](/docs/specification/architecture/l3-execution-orchestration) AA-03 | [FLOW-03](/docs/evaluation/golden-flows/gf-03), [FLOW-04](/docs/evaluation/golden-flows/gf-04) | Trace Segments |
+| [L4 Integration](/docs/specification/architecture/l4-integration-infra) AA-04 | [FLOW-05](/docs/evaluation/golden-flows/gf-05) | Integration Events |
 
 ---
 
@@ -52,8 +52,8 @@ authority: Documentation Governance
 
 | Profile (Specification) | Primary Golden Flow | Secondary Golden Flows |
 |:---|:---|:---|
-| [SA Profile](/docs/specification/profiles/sa-profile) PA-01 | [GF-01: SA Lifecycle](/docs/evaluation/golden-flows/gf-01) | GF-03, GF-04, GF-05 |
-| [MAP Profile](/docs/specification/profiles/map-profile) PA-02 | [GF-02: MAP Coordination](/docs/evaluation/golden-flows/gf-02) | GF-03, GF-05 |
+| [SA Profile](/docs/specification/profiles/sa-profile) PA-01 | [FLOW-01: SA Lifecycle](/docs/evaluation/golden-flows/gf-01) | FLOW-03, FLOW-04, FLOW-05 |
+| [MAP Profile](/docs/specification/profiles/map-profile) PA-02 | [FLOW-02: MAP Coordination](/docs/evaluation/golden-flows/gf-02) | FLOW-03, FLOW-05 |
 
 ---
 
@@ -82,9 +82,9 @@ It does not imply runtime execution, validation, or coverage completion. Verific
 | **Who evaluates Context?** | N/A | conformance-model, evidence-model |
 | **Who adjudicates Context conformance?** | N/A | Validation Lab (Phase F) |
 | **Who defines SA Profile?** | PA-01 sa-profile | N/A |
-| **Who evaluates SA Profile?** | N/A | GF-01, conformance-model |
+| **Who evaluates SA Profile?** | N/A | FLOW-01, conformance-model |
 | **Who defines Governance Gate?** | CA-04 confirm-module | N/A |
-| **Who evaluates Governance Gate?** | N/A | GF-05, evaluation-dimensions |
+| **Who evaluates Governance Gate?** | N/A | FLOW-05, evaluation-dimensions |
 
 ---
 
@@ -93,7 +93,7 @@ It does not imply runtime execution, validation, or coverage completion. Verific
 | Check | Status | Notes |
 |:---|:---:|:---|
 | All Modules have Evaluation mapping | Mapped | Via conformance-model (pending Phase E/F verification) |
-| All Profiles have Golden Flow mapping | Mapped | SA→GF-01, MAP→GF-02 (pending Phase E/F verification) |
+| All Profiles have Golden Flow mapping | Mapped | SA→FLOW-01, MAP→FLOW-02 (pending Phase E/F verification) |
 | All Layers have Evidence mapping | Mapped | Via Golden Flows (not runtime-validated) |
 | All Invariants have Dimension mapping | Declared | 61 rules → 6 dimensions (not runtime-validated) |
 

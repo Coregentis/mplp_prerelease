@@ -43,43 +43,80 @@ It is the **single authoritative location** for:
 
 ---
 
-## Three-Entry Model
+## Four-Entry Model
 
-MPLP uses a three-entry model. Each surface has a strict, non-overlapping role.
+MPLP uses a four-entry model. Each surface has a strict, non-overlapping role.
 
 | Surface | Role | Purpose |
 |---------|------|---------|
 | **Website** | Protocol Legitimacy & Evaluation Entry | Establish MPLP as a defined, governed, evaluable protocol |
 | **Documentation** | Specification & Reference | Explain how the protocol works |
 | **Repository (this)** | Source of Truth | Schemas, code, tests, governance |
+| **Validation Lab** | Evidence Adjudication | Evidence-based verdicts for Lifecycle Guarantees |
 
 **Choose the correct entry:**
 
 - 👉 **New to MPLP?** Start at **[https://www.mplp.io](https://www.mplp.io)**
 - 👉 **Implementing MPLP?** Read **[https://docs.mplp.io](https://docs.mplp.io)**
+- 👉 **Evaluating evidence?** See **[https://lab.mplp.io](https://lab.mplp.io)**
 - 👉 **Auditing or building against MPLP?** You are in the right place
-
-> Note: MPLP Validation Lab (if present) is **evidence-based evaluation** only — it does not host execution and is not certification.
 
 ### Anchor Closure
 
 Each entry point has stable anchors for cross-referencing:
 
 **Website Anchors**:
-- [What is MPLP?](https://www.mplp.io/what-is-mplp) — Definition & disambiguation
+- [What is MPLP?](https://www.mplp.io/definition) — Definition & disambiguation
 - [Entity Card](https://www.mplp.io/assets/geo/mplp-entity.json) — Machine-readable definition
 - [POSIX Analogy](https://www.mplp.io/posix-analogy) — Conceptual lens (not compatibility)
 
 **Documentation Anchors**:
-- [Entry Points Reference](https://docs.mplp.io/docs/reference/entrypoints) — Three-entry model & anchors
+- [Entry Points Reference](https://docs.mplp.io/docs/reference/entrypoints) — Four-entry model & anchors
 - [Specification](https://docs.mplp.io/docs/specification) — Normative requirements
+- [Validation Lab Reference](https://docs.mplp.io/docs/evaluation/validation-lab) — Lab overview & terminology
 
 **Repository Anchors**:
 - [Schemas](./schemas/v2/) — JSON Schema definitions (authoritative)
 - [Tests](./tests/golden/flows/) — Golden flows & validators
 - [Entity Definition](./governance/entity/) — Canonical entity package
 
+**Validation Lab Anchors**:
+- [Lab Site](https://lab.mplp.io) — Evidence adjudication UI
+- [Lab Repository](https://github.com/Coregentis/MPLP-Validation-Lab) — Lab SSOT
+
 **Disambiguation**: MPLP = Multi-Agent Lifecycle Protocol (not a license). MPLP is not POSIX (conceptual lens only).
+
+---
+
+## Validation Lab (Fourth Surface)
+
+The **Validation Lab** is the evidence adjudication projection of MPLP Protocol.
+
+| Property | Value |
+|:---|:---|
+| **Role** | Evidence-based verdict generation for Lifecycle Guarantees (LG-01~05) |
+| **Lab Site** | [https://lab.mplp.io](https://lab.mplp.io) |
+| **Lab Repository** | [https://github.com/Coregentis/MPLP-Validation-Lab](https://github.com/Coregentis/MPLP-Validation-Lab) |
+
+### Four Boundaries (Non-Negotiable)
+
+1. **Non-Certifying** — Verdicts are evidence-based outputs, not official marks or endorsements
+2. **Non-Normative** — Lab does not define protocol semantics; see MPLP Docs for specifications
+3. **No Execution Hosting** — Lab does not accept uploads or run your code; you generate evidence locally
+4. **Deterministic Ruleset** — Same evidence + same ruleset version = same verdict hash
+
+### Authority Chain
+
+> **Authority**: Rulesets and evidence contracts are versioned and governed in the **Validation Lab repository**; this repository only links to them.
+
+### Terminology Partition
+
+| Term | Definition | Owned By |
+|:---|:---|:---|
+| **Flow-01~05** | Protocol Test Scenarios | This repository (`tests/golden/flows/`) |
+| **LG-01~05** | Lifecycle Guarantees (adjudication targets) | Validation Lab |
+
+These are **distinct naming spaces** and should not be conflated.
 
 ---
 

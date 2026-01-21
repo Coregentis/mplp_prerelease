@@ -58,12 +58,12 @@ Lifecycle stages defining temporal state transitions of protocol objects.
 | ID | Lifecycle Stage | Transition | Definition Source | Evaluation Ref | Description |
 |:---|:---|:---|:---|:---|:---|
 | **LA-01** | Intent → Plan | Intent Parsing | [l2-coordination-governance.md](/docs/specification/architecture/l2-coordination-governance) | - | Parse intent into structured plan |
-| **LA-02** | Plan → Confirm | Governance Gate | [confirm-module.md](/docs/specification/modules/confirm-module) | GF-05 | High-risk action approval |
-| **LA-03** | Confirm → Execution | Approval Release | [l3-execution-orchestration.md](/docs/specification/architecture/l3-execution-orchestration) | GF-01 | Execute after approval |
-| **LA-04** | Execution → Trace | Observability | [trace-module.md](/docs/specification/modules/trace-module) | GF-01 | Execution recording |
+| **LA-02** | Plan → Confirm | Governance Gate | [confirm-module.md](/docs/specification/modules/confirm-module) | FLOW-05 | High-risk action approval |
+| **LA-03** | Confirm → Execution | Approval Release | [l3-execution-orchestration.md](/docs/specification/architecture/l3-execution-orchestration) | FLOW-01 | Execute after approval |
+| **LA-04** | Execution → Trace | Observability | [trace-module.md](/docs/specification/modules/trace-module) | FLOW-01 | Execution recording |
 | **LA-05** | Trace → Snapshot | State Capture | [l3-execution-orchestration.md](/docs/specification/architecture/l3-execution-orchestration) | - | State snapshot |
-| **LA-06** | Drift → Recovery | Drift Detection | [l3-execution-orchestration.md](/docs/specification/architecture/l3-execution-orchestration) | GF-03 | Drift detection and recovery |
-| **LA-07** | Delta → Replan | Delta Intent | [l2-coordination-governance.md](/docs/specification/architecture/l2-coordination-governance) | GF-04 | Incremental intent replanning |
+| **LA-06** | Drift → Recovery | Drift Detection | [l3-execution-orchestration.md](/docs/specification/architecture/l3-execution-orchestration) | FLOW-03 | Drift detection and recovery |
+| **LA-07** | Delta → Replan | Delta Intent | [l2-coordination-governance.md](/docs/specification/architecture/l2-coordination-governance) | FLOW-04 | Incremental intent replanning |
 
 ### 2.1 Status Enumerations
 
@@ -150,11 +150,11 @@ Evaluation scenario anchors.
 
 | ID | Golden Flow | Scenario Source | Evidence Focus |
 |:---|:---|:---|:---|
-| **GF-01** | SA Lifecycle | [gf-01.mdx](/docs/evaluation/golden-flows/gf-01) | Context → Plan → Trace |
-| **GF-02** | MAP Coordination | [gf-02.mdx](/docs/evaluation/golden-flows/gf-02) | Multi-agent handoffs |
-| **GF-03** | Drift Detection | [gf-03.mdx](/docs/evaluation/golden-flows/gf-03) | Drift → Recovery |
-| **GF-04** | Delta Intent | [gf-04.mdx](/docs/evaluation/golden-flows/gf-04) | Delta → Replan |
-| **GF-05** | Governance | [gf-05.mdx](/docs/evaluation/golden-flows/gf-05) | Confirm gates |
+| **FLOW-01** | SA Lifecycle | [gf-01.mdx](/docs/evaluation/golden-flows/gf-01) | Context → Plan → Trace |
+| **FLOW-02** | MAP Coordination | [gf-02.mdx](/docs/evaluation/golden-flows/gf-02) | Multi-agent handoffs |
+| **FLOW-03** | Drift Detection | [gf-03.mdx](/docs/evaluation/golden-flows/gf-03) | Drift → Recovery |
+| **FLOW-04** | Delta Intent | [gf-04.mdx](/docs/evaluation/golden-flows/gf-04) | Delta → Replan |
+| **FLOW-05** | Governance | [gf-05.mdx](/docs/evaluation/golden-flows/gf-05) | Confirm gates |
 
 ---
 

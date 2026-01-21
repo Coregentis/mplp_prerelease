@@ -24,11 +24,11 @@ authority: Documentation Governance
 
 | Golden Flow | Primary Duties | Evaluation Focus |
 |:---|:---|:---|
-| GF-01 SA Lifecycle | KD-06, KD-05, KD-10 | Context → Plan → Trace |
-| GF-02 MAP Coordination | KD-01, KD-10, KD-03 | Multi-agent handoffs |
-| GF-03 Drift Detection | KD-05, KD-02, KD-11 | Drift → Recovery |
-| GF-04 Delta Intent | KD-06, KD-11, KD-05 | Delta → Replan |
-| GF-05 Governance | KD-09, KD-06, KD-05 | Confirm gates |
+| FLOW-01 SA Lifecycle | KD-06, KD-05, KD-10 | Context → Plan → Trace |
+| FLOW-02 MAP Coordination | KD-01, KD-10, KD-03 | Multi-agent handoffs |
+| FLOW-03 Drift Detection | KD-05, KD-02, KD-11 | Drift → Recovery |
+| FLOW-04 Delta Intent | KD-06, KD-11, KD-05 | Delta → Replan |
+| FLOW-05 Governance | KD-09, KD-06, KD-05 | Confirm gates |
 
 ---
 
@@ -36,11 +36,11 @@ authority: Documentation Governance
 
 | Golden Flow | KD-01 | KD-02 | KD-03 | KD-04 | KD-05 | KD-06 | KD-07 | KD-08 | KD-09 | KD-10 | KD-11 |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| GF-01 SA Lifecycle | - | ✓ | - | - | **P** | **P** | - | - | - | **P** | - |
-| GF-02 MAP Coordination | **P** | ✓ | **P** | - | ✓ | - | - | - | - | **P** | - |
-| GF-03 Drift Detection | - | **P** | - | - | **P** | - | - | - | - | ✓ | **P** |
-| GF-04 Delta Intent | - | ✓ | - | - | **P** | **P** | - | - | - | - | **P** |
-| GF-05 Governance | - | ✓ | - | - | **P** | **P** | - | - | **P** | - | - |
+| FLOW-01 SA Lifecycle | - | ✓ | - | - | **P** | **P** | - | - | - | **P** | - |
+| FLOW-02 MAP Coordination | **P** | ✓ | **P** | - | ✓ | - | - | - | - | **P** | - |
+| FLOW-03 Drift Detection | - | **P** | - | - | **P** | - | - | - | - | ✓ | **P** |
+| FLOW-04 Delta Intent | - | ✓ | - | - | **P** | **P** | - | - | - | - | **P** |
+| FLOW-05 Governance | - | ✓ | - | - | **P** | **P** | - | - | **P** | - | - |
 
 **Legend**: **P** = Primary, ✓ = Secondary, - = Not Covered
 
@@ -50,17 +50,17 @@ authority: Documentation Governance
 
 | Kernel Duty | Flow Coverage | Primary In |
 |:---|:---:|:---|
-| KD-01 Coordination | 1/5 | GF-02 |
-| KD-02 Error Handling | 5/5 | GF-03 |
-| KD-03 Event Bus | 1/5 | GF-02 |
+| KD-01 Coordination | 1/5 | FLOW-02 |
+| KD-02 Error Handling | 5/5 | FLOW-03 |
+| KD-03 Event Bus | 1/5 | FLOW-02 |
 | KD-04 Learning & Feedback | 0/5 | - |
-| KD-05 Observability | 5/5 | GF-01, GF-03, GF-04, GF-05 |
-| KD-06 Orchestration | 3/5 | GF-01, GF-04, GF-05 |
+| KD-05 Observability | 5/5 | FLOW-01, FLOW-03, FLOW-04, FLOW-05 |
+| KD-06 Orchestration | 3/5 | FLOW-01, FLOW-04, FLOW-05 |
 | KD-07 Performance | 0/5 | - |
 | KD-08 Protocol Versioning | 0/5 | - |
-| KD-09 Security | 1/5 | GF-05 |
-| KD-10 State Sync | 3/5 | GF-01, GF-02 |
-| KD-11 Transaction | 2/5 | GF-03, GF-04 |
+| KD-09 Security | 1/5 | FLOW-05 |
+| KD-10 State Sync | 3/5 | FLOW-01, FLOW-02 |
+| KD-11 Transaction | 2/5 | FLOW-03, FLOW-04 |
 
 ---
 
@@ -78,11 +78,11 @@ authority: Documentation Governance
 
 | Golden Flow | Primary Modules | Primary Duties |
 |:---|:---|:---|
-| GF-01 | CA-01, CA-02, CA-03 | KD-05, KD-06, KD-10 |
-| GF-02 | CA-05, CA-06, CA-09 | KD-01, KD-03, KD-10 |
-| GF-03 | CA-03, CA-02 | KD-02, KD-05, KD-11 |
-| GF-04 | CA-02, CA-03 | KD-05, KD-06, KD-11 |
-| GF-05 | CA-04, CA-02, CA-03 | KD-05, KD-06, KD-09 |
+| FLOW-01 | CA-01, CA-02, CA-03 | KD-05, KD-06, KD-10 |
+| FLOW-02 | CA-05, CA-06, CA-09 | KD-01, KD-03, KD-10 |
+| FLOW-03 | CA-03, CA-02 | KD-02, KD-05, KD-11 |
+| FLOW-04 | CA-02, CA-03 | KD-05, KD-06, KD-11 |
+| FLOW-05 | CA-04, CA-02, CA-03 | KD-05, KD-06, KD-09 |
 
 ---
 

@@ -25,6 +25,16 @@ const config: Config = {
   // Plugins
   plugins: [
     require.resolve('docusaurus-lunr-search'),
+    // P0-1: Fix Soft 404 at /index by redirecting to /
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          { from: '/index', to: '/' },
+          { from: '/index.html', to: '/' },
+        ],
+      },
+    ],
   ],
 
   // Mermaid diagrams are now pre-rendered to SVG at build time (P1-5)
@@ -114,28 +124,7 @@ const config: Config = {
         href: '/fonts/jetbrains-mono-400.woff2',
         as: 'font',
         type: 'font/woff2',
-        crossorigin: 'anonymous',
       },
-    },
-    {
-      tagName: 'script',
-      attributes: {
-        type: 'application/ld+json',
-      },
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org/',
-        '@type': 'SoftwareSourceCode',
-        name: 'MPLP',
-        description: 'Multi-Agent Lifecycle Protocol for building observable, interoperable, and governed AI agent systems',
-        url: 'https://docs.mplp.io',
-        codeRepository: 'https://github.com/Coregentis/MPLP-Protocol',
-        programmingLanguage: ['TypeScript', 'Python'],
-        license: 'https://www.apache.org/licenses/LICENSE-2.0',
-        author: {
-          '@type': 'Organization',
-          name: 'Bangshi Beijing Network Technology Limited Company',
-        },
-      }),
     },
   ],
 
@@ -144,9 +133,10 @@ const config: Config = {
     metadata: [
       { name: 'theme-color', content: '#2563eb' },
       { name: 'og:locale', content: 'en_US' },
-      // Three-Entry Model role signals (not JSON-LD, visible meta tags)
+      // Four-Entry Model role signals (not JSON-LD, visible meta tags)
       { name: 'mplp:entry-role', content: 'Documentation — Specification & Reference' },
-      { name: 'mplp:entrypoints', content: 'website=https://www.mplp.io; repo=https://github.com/Coregentis/MPLP-Protocol' },
+      { name: 'mplp:entrypoints', content: 'website=https://www.mplp.io; docs=https://docs.mplp.io; lab=https://lab.mplp.io; repo=https://github.com/Coregentis/MPLP-Protocol' },
+      { name: 'mplp:entity-manifest', content: 'https://www.mplp.io/assets/geo/mplp-entity.json' },
       { name: 'application-name', content: 'MPLP Documentation' },
     ],
     // Table of contents on the right (like Antigravity's "On this Page")
@@ -287,7 +277,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © 2026 Bangshi Beijing Network Technology Co., Ltd.<br/>Licensed under the Apache License 2.0.`,
+      copyright: `© ${new Date().getFullYear()} Bangshi Beijing Network Technology Co., Ltd. Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">Apache License, Version 2.0</a>. Governed by <a href="https://www.mplp.io/governance/overview" target="_blank" rel="noopener noreferrer">MPGC</a>.`,
     },
     prism: {
       theme: prismThemes.github,
