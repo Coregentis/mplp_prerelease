@@ -4,7 +4,7 @@
     "description": "MPLP Protocol v1.0 - Multi-agent Planning and Learning Protocol (OSS Package)",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Coregentis/mplp_prerelease.git"
+        "url": "https://github.com/Coregentis/MPLP-Protocol.git"
     },
     "author": "Coregentis",
     "license": "Apache-2.0",

@@ -64,6 +64,7 @@ Pages mentioning ISO, NIST, W3C, EU AI Act, OpenTelemetry.
 | Path | Risk | Trigger |
 |:---|:---|:---|
 | `observability/runtime-trace-format.md` | High | W3C Trace Context |
+| `evaluation/standards/eu-ai-act-mapping.md` | High | EU AI Act mapping |
 | Any page with ISO/NIST/EU AI Act | High | Authority inversion risk |
 
 ---

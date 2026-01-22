@@ -31,11 +31,8 @@ include:
   - ".github/ISSUE_TEMPLATE/**"
   - ".github/PULL_REQUEST_TEMPLATE.md"
   - ".github/workflows/deploy-docs.yml"
-  - ".github/workflows/semantic-lint.yml"
-  - ".github/workflows/link-health.yml"
-  - ".github/workflows/ci-release.yml"
-  - ".github/workflows/gates.yml"
   - ".github/workflows/codeql.yml"
+  # NOTE: Only deploy-docs.yml and codeql.yml allowed in OSS package
   - ".eslintrc.json"
   - "scripts/03-docs/**"  # Doc build tools (render-mermaid, etc)
   - "scripts/semantic/**"
@@ -54,6 +51,7 @@ include:
 exclude:
   # External repositories / submodules
   - "MPLP_website/**"
+  - "Validation_Lab/**"
   
   # Build artifacts and caches (match directory names directly)
   - "**/node_modules"

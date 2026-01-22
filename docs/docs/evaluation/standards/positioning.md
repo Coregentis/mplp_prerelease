@@ -35,6 +35,7 @@ MPLP is designed to be the **implementation layer** for high-level AI governance
 |:---|:---|:---|
 | **ISO/IEC 42001** | AI Management System Standard | [ISO Mapping](./iso-mapping) |
 | **NIST AI RMF** | AI Risk Management Framework | [NIST Mapping](./nist-mapping) |
+| **EU AI Act** | EU AI Act High-Risk Requirements (Articles 9–15) | [EU AI Act Mapping](./eu-ai-act-mapping) |
 
 ## 3. Positioning Principles
 
