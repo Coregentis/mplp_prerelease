@@ -14,7 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DOCS_ROOT = path.resolve(__dirname, '../../docs/docs');
-const OUTPUT_DIR = path.resolve(__dirname, '../../docs-governance/audits');
+const OUTPUT_DIR = path.resolve(__dirname, '../../governance/06-operations/docs-audit/audits');
 
 // Ensure output directory exists
 if (!fs.existsSync(OUTPUT_DIR)) {

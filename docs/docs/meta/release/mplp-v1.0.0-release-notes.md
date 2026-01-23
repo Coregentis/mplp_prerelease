@@ -3,7 +3,7 @@ sidebar_position: 1
 
 doc_type: governance
 normativity: informative
-status: frozen
+status: draft
 authority: Documentation Governance
 description: "Release notes for MPLP Protocol v1.0.0 including new features, breaking changes, and installation instructions."
 title: v1.0.0 Release Notes

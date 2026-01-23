@@ -3,7 +3,7 @@ sidebar_position: 7
 
 doc_type: governance
 normativity: informative
-status: frozen
+status: draft
 authority: Documentation Governance
 description: "Summary of documentation governance policies for MPLP v1.0 including structure and authority."
 title: Documentation Governance Summary

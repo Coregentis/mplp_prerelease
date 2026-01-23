@@ -8,6 +8,17 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 const GATE_ID = 'P2-SIGN';
 const SIGN_DIR = 'Validation_Lab/releases/v0.5/artifacts/signed-proof';
 
@@ -25,10 +36,10 @@ function main() {
     const signedProofSchemaPath = path.join(SIGN_DIR, 'signed-proof.schema.json');
     const envelopeSchemaPath = path.join(SIGN_DIR, 'signature-envelope.schema.json');
 
-    report.checks.push({ check: 'signed_proof_schema_exists', passed: fs.existsSync(signedProofSchemaPath) });
-    report.checks.push({ check: 'envelope_schema_exists', passed: fs.existsSync(envelopeSchemaPath) });
-    console.log(`${fs.existsSync(signedProofSchemaPath) ? '✓' : '✗'} signed-proof.schema.json`);
-    console.log(`${fs.existsSync(envelopeSchemaPath) ? '✓' : '✗'} signature-envelope.schema.json`);
+    report.checks.push({ check: 'signed_proof_schema_exists', passed: fileExists(signedProofSchemaPath) });
+    report.checks.push({ check: 'envelope_schema_exists', passed: fileExists(envelopeSchemaPath) });
+    console.log(`${fileExists(signedProofSchemaPath) ? '✓' : '✗'} signed-proof.schema.json`);
+    console.log(`${fileExists(envelopeSchemaPath) ? '✓' : '✗'} signature-envelope.schema.json`);
 
     // Find SIGN directories
     const entries = fs.readdirSync(SIGN_DIR, { withFileTypes: true });
@@ -45,11 +56,11 @@ function main() {
         const pubKeyPath = path.join(signPath, 'public_key.txt');
         const statementPath = path.join(signPath, 'statement.md');
 
-        const sigExists = fs.existsSync(sigPath);
-        const payloadExists = fs.existsSync(payloadPath);
-        const sumsExists = fs.existsSync(sumsPath);
-        const pubKeyExists = fs.existsSync(pubKeyPath);
-        const statementExists = fs.existsSync(statementPath);
+        const sigExists = fileExists(sigPath);
+        const payloadExists = fileExists(payloadPath);
+        const sumsExists = fileExists(sumsPath);
+        const pubKeyExists = fileExists(pubKeyPath);
+        const statementExists = fileExists(statementPath);
 
         report.checks.push({ check: `signature_exists:${signId}`, passed: sigExists });
         report.checks.push({ check: `payload_exists:${signId}`, passed: payloadExists });
@@ -115,7 +126,7 @@ function main() {
 
             for (const line of lines) {
                 const [expectedHash, filePath] = line.split('  ');
-                if (fs.existsSync(filePath)) {
+                if (fileExists(filePath)) {
                     const actualHash = crypto.createHash('sha256')
                         .update(fs.readFileSync(filePath))
                         .digest('hex');

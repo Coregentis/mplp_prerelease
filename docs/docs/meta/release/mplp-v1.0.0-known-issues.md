@@ -3,7 +3,7 @@ sidebar_position: 4
 
 doc_type: governance
 normativity: informative
-status: frozen
+status: draft
 authority: Documentation Governance
 description: "Known issues and limitations in MPLP v1.0.0 with workarounds and planned fixes."
 title: v1.0.0 Known Issues

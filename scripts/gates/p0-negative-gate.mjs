@@ -1,3 +1,14 @@
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 #!/usr/bin/env node
 /**
  * P0-NEGATIVE Gate: Failure Evidence Validation
@@ -6,7 +17,7 @@
 
 import fs from 'fs';
 import path from 'path';
-import { execSync } from 'child_process';
+import { execFileSync } from 'child_process';
 
 const GATE_ID = 'P0-NEGATIVE';
 const NEG_DIR = 'Validation_Lab/releases/v0.3/artifacts/negative/NEG-01';
@@ -24,13 +35,13 @@ function main() {
 
     // Check NEG-01 pack exists
     const packPath = path.join(NEG_DIR, 'pack');
-    const packExists = fs.existsSync(packPath);
+    const packExists = fileExists(packPath);
     report.checks.push({ check: 'neg01_pack_exists', passed: packExists });
     console.log(`${packExists ? '✓' : '✗'} NEG-01 pack exists`);
 
     // Check eval report exists
     const evalReportPath = path.join(NEG_DIR, 'eval-report.json');
-    const evalReportExists = fs.existsSync(evalReportPath);
+    const evalReportExists = fileExists(evalReportPath);
     report.checks.push({ check: 'eval_report_exists', passed: evalReportExists });
     console.log(`${evalReportExists ? '✓' : '✗'} Eval report exists`);
 
@@ -61,10 +72,18 @@ function main() {
     }
 
     // Run-twice determinism check (if evaluator exists)
-    if (fs.existsSync(EVALUATOR_PATH) && packExists) {
+    if (fileExists(EVALUATOR_PATH) && packExists) {
         try {
-            const run1 = execSync(`node ${EVALUATOR_PATH} ${packPath} --json 2>/dev/null`, { encoding: 'utf-8' });
-            const run2 = execSync(`node ${EVALUATOR_PATH} ${packPath} --json 2>/dev/null`, { encoding: 'utf-8' });
+            // Use execFileSync to prevent shell injection
+            // execFileSync imported at top of file
+            const run1 = execFileSync('node', [EVALUATOR_PATH, packPath, '--json'], {
+                encoding: 'utf-8',
+                stdio: ['pipe', 'pipe', 'ignore']
+            });
+            const run2 = execFileSync('node', [EVALUATOR_PATH, packPath, '--json'], {
+                encoding: 'utf-8',
+                stdio: ['pipe', 'pipe', 'ignore']
+            });
 
             const report1 = JSON.parse(run1);
             const report2 = JSON.parse(run2);

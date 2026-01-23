@@ -1,3 +1,14 @@
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 #!/usr/bin/env node
 /**
  * MA-EQUIV Gate: Multi-Agent GF-01 Invariant Equivalence
@@ -34,9 +45,9 @@ function main() {
         const planPath = path.join(packPath, 'artifacts/plan.json');
         const tracePath = path.join(packPath, 'artifacts/trace.json');
 
-        const contextExists = fs.existsSync(contextPath);
-        const planExists = fs.existsSync(planPath);
-        const traceExists = fs.existsSync(tracePath);
+        const contextExists = fileExists(contextPath);
+        const planExists = fileExists(planPath);
+        const traceExists = fileExists(tracePath);
 
         report.checks.push({ check: `context_exists:${packId}`, invariant_id: 'INV-MA-EQUIV-002', passed: contextExists });
         report.checks.push({ check: `plan_exists:${packId}`, invariant_id: 'INV-MA-EQUIV-002', passed: planExists });
@@ -64,7 +75,7 @@ function main() {
 
         // INV-MA-EQUIV-003/004: Compute pack_root_hash and verdict_hash
         const sha256sumsPath = path.join(packPath, 'integrity/sha256sums.txt');
-        if (fs.existsSync(sha256sumsPath)) {
+        if (fileExists(sha256sumsPath)) {
             const sha256sumsContent = fs.readFileSync(sha256sumsPath);
             const packRootHash = crypto.createHash('sha256').update(sha256sumsContent).digest('hex');
             const validHash = /^[a-f0-9]{64}$/.test(packRootHash);

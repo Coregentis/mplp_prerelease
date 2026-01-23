@@ -8,43 +8,80 @@
  * Exit 0 = PASS, Exit 1 = FAIL
  */
 
-import { execSync } from 'child_process';
+import fs from 'fs';
+import path from 'path';
 
 const DOCS_PATH = 'docs/docs/';
 
 const FORBIDDEN_PATTERNS = [
-    { pattern: 'GF-0[1-9]', description: 'GF-xx (use FLOW-xx instead)' }
+    { regex: /GF-0[1-9]/g, description: 'GF-xx (use FLOW-xx instead)' }
 ];
 
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 console.log('GATE-TERM-DOCS: Docs Terminology Gate');
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
-let violations = 0;
-
-for (const { pattern, description } of FORBIDDEN_PATTERNS) {
+// Recursively find all .md and .mdx files
+function findMarkdownFiles(dir) {
+    const results = [];
     try {
-        const result = execSync(
-            `grep -rn "${pattern}" ${DOCS_PATH} --include="*.md" --include="*.mdx" 2>/dev/null || true`,
-            { encoding: 'utf-8' }
-        ).trim();
-
-        if (result) {
-            console.log(`\n❌ VIOLATION: ${description}`);
-            console.log(result);
-            violations++;
-        } else {
-            console.log(`✅ No ${description} found`);
+        const entries = fs.readdirSync(dir, { withFileTypes: true });
+        for (const entry of entries) {
+            const fullPath = path.join(dir, entry.name);
+            if (entry.isDirectory() && !entry.name.startsWith('.') && entry.name !== 'node_modules') {
+                results.push(...findMarkdownFiles(fullPath));
+            } else if (entry.isFile() && (entry.name.endsWith('.md') || entry.name.endsWith('.mdx'))) {
+                results.push(fullPath);
+            }
         }
     } catch (e) {
-        // grep returns exit 1 when no match, which is OK
+        // Skip directories we can't read
+    }
+    return results;
+}
+
+// Search for pattern matches in files
+function searchForPattern(files, regex, description) {
+    const violations = [];
+    for (const file of files) {
+        try {
+            const content = fs.readFileSync(file, 'utf-8');
+            const lines = content.split('\n');
+            lines.forEach((line, index) => {
+                // Reset regex lastIndex for each line
+                regex.lastIndex = 0;
+                if (regex.test(line)) {
+                    violations.push({ file, line: index + 1, content: line.trim() });
+                }
+            });
+        } catch (e) {
+            // Skip files we can't read
+        }
+    }
+    return violations;
+}
+
+let totalViolations = 0;
+const files = findMarkdownFiles(DOCS_PATH);
+
+for (const { regex, description } of FORBIDDEN_PATTERNS) {
+    const violations = searchForPattern(files, regex, description);
+
+    if (violations.length > 0) {
+        console.log(`\n❌ VIOLATION: ${description}`);
+        for (const v of violations) {
+            console.log(`${v.file}:${v.line}: ${v.content}`);
+        }
+        totalViolations += violations.length;
+    } else {
+        console.log(`✅ No ${description} found`);
     }
 }
 
 console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
-if (violations > 0) {
-    console.log(`❌ GATE FAILED: ${violations} terminology violation(s)`);
+if (totalViolations > 0) {
+    console.log(`❌ GATE FAILED: ${totalViolations} terminology violation(s)`);
     process.exit(1);
 } else {
     console.log('✅ GATE PASSED: Docs terminology compliant');

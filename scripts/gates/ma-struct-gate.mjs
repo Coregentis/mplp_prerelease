@@ -1,3 +1,14 @@
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 #!/usr/bin/env node
 /**
  * MA-STRUCT Gate: Multi-Agent Structural Integrity
@@ -30,7 +41,7 @@ function main() {
 
         // Load manifest
         const manifestPath = path.join(packPath, 'manifest.json');
-        if (!fs.existsSync(manifestPath)) {
+        if (!fileExists(manifestPath)) {
             report.checks.push({ check: `manifest_exists:${packId}`, invariant_id: 'INV-GF01-001', passed: false });
             console.log('  ✗ Manifest missing');
             continue;
@@ -40,7 +51,7 @@ function main() {
 
         // Load timeline
         const timelinePath = path.join(packPath, 'timeline/events.ndjson');
-        if (!fs.existsSync(timelinePath)) {
+        if (!fileExists(timelinePath)) {
             report.checks.push({ check: `timeline_exists:${packId}`, invariant_id: 'INV-MA-STRUCT-001', passed: false });
             console.log('  ✗ Timeline missing');
             continue;

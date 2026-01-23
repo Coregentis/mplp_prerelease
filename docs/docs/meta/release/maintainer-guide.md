@@ -3,7 +3,7 @@ sidebar_position: 6
 
 doc_type: governance
 normativity: informative
-status: frozen
+status: draft
 authority: Documentation Governance
 description: "Guide for MPLP maintainers covering release process, review guidelines, and frozen specification rules."
 title: Maintainer Guide

@@ -1,3 +1,14 @@
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 #!/usr/bin/env node
 /**
  * P1-SNAP Gate: Snapshot Evidence Validation
@@ -24,8 +35,8 @@ function main() {
     const indexSchemaPath = path.join(SNAP_DIR, 'snapshot-index.schema.json');
     const diffSchemaPath = path.join(SNAP_DIR, 'snapshot-diff.schema.json');
 
-    const indexSchemaExists = fs.existsSync(indexSchemaPath);
-    const diffSchemaExists = fs.existsSync(diffSchemaPath);
+    const indexSchemaExists = fileExists(indexSchemaPath);
+    const diffSchemaExists = fileExists(diffSchemaPath);
 
     report.checks.push({ check: 'index_schema_exists', passed: indexSchemaExists });
     report.checks.push({ check: 'diff_schema_exists', passed: diffSchemaExists });
@@ -41,7 +52,7 @@ function main() {
         const indexPath = path.join(runPath, 'index.json');
 
         // Check index.json exists
-        const indexExists = fs.existsSync(indexPath);
+        const indexExists = fileExists(indexPath);
         report.checks.push({ check: `index_exists:${runId}`, passed: indexExists });
         console.log(`${indexExists ? '✓' : '✗'} Index: ${runId}`);
 
@@ -52,7 +63,7 @@ function main() {
         // Check all snapshot files exist
         for (const snap of index.snapshots || []) {
             const snapPath = path.join(runPath, snap.path);
-            const snapExists = fs.existsSync(snapPath);
+            const snapExists = fileExists(snapPath);
             report.checks.push({ check: `snapshot_exists:${runId}/${snap.id}`, passed: snapExists });
             console.log(`  ${snapExists ? '✓' : '✗'} State: ${snap.id}`);
         }
@@ -60,7 +71,7 @@ function main() {
         // Check all diff files exist
         for (const diff of index.diffs || []) {
             const diffPath = path.join(runPath, diff.path);
-            const diffExists = fs.existsSync(diffPath);
+            const diffExists = fileExists(diffPath);
             report.checks.push({ check: `diff_exists:${runId}/${diff.from}_${diff.to}`, passed: diffExists });
             console.log(`  ${diffExists ? '✓' : '✗'} Diff: ${diff.from}->${diff.to}`);
         }

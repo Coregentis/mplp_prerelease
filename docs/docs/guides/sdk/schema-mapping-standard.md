@@ -3,7 +3,7 @@ sidebar_position: 5
 
 doc_type: informative
 normativity: informative
-status: frozen
+status: draft
 authority: Documentation Governance
 description: "Canonical mapping rules from MPLP JSON Schema v2 to TypeScript and Python models."
 title: Schema Mapping Standard

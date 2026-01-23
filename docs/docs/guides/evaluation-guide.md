@@ -2,7 +2,7 @@
 sidebar_position: 3
 doc_type: governance
 normativity: informative
-status: frozen
+status: draft
 authority: Documentation Governance
 description: "Guide for evaluating MPLP for enterprise architects and compliance reviewers."
 canonical: /docs/evaluation/governance/HOW_TO_EVALUATE_MPLP

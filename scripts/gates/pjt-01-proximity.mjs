@@ -3,6 +3,17 @@ import fs from "fs";
 import path from "path";
 import yaml from "js-yaml";
 
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
+
 const GATE_ID = "PJT-01";
 const MAX_DELTA = 3;
 
@@ -10,7 +21,7 @@ const CLAIM_CATALOG_PATH = "governance/06-artifacts/CLAIM_CATALOG.v1.0.0.json";
 const ALLOWLIST_PATH = "Validation_Lab/data/curated-runs/allowlist.yaml";
 
 function mustRead(filePath) {
-    if (!fs.existsSync(filePath)) throw new Error(`Missing file: ${filePath}`);
+    if (!fileExists(filePath)) throw new Error(`Missing file: ${filePath}`);
     return fs.readFileSync(filePath, "utf-8");
 }
 

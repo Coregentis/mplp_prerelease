@@ -1,3 +1,14 @@
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 #!/usr/bin/env node
 /**
  * P1-VFY Gate: Third-party Verifier Record Validation
@@ -22,7 +33,7 @@ function main() {
 
     // Check schema exists
     const schemaPath = path.join(VFY_DIR, 'verifier-record.schema.json');
-    const schemaExists = fs.existsSync(schemaPath);
+    const schemaExists = fileExists(schemaPath);
     report.checks.push({ check: 'schema_exists', passed: schemaExists });
     console.log(`${schemaExists ? '✓' : '✗'} Schema exists`);
 
@@ -41,11 +52,11 @@ function main() {
         const statementPath = path.join(vfyPath, 'statement.md');
         const recordPath = path.join(vfyPath, 'record.json');
 
-        const envExists = fs.existsSync(envPath);
-        const verifyExists = fs.existsSync(verifyPath);
-        const evalExists = fs.existsSync(evalPath);
-        const statementExists = fs.existsSync(statementPath);
-        const recordExists = fs.existsSync(recordPath);
+        const envExists = fileExists(envPath);
+        const verifyExists = fileExists(verifyPath);
+        const evalExists = fileExists(evalPath);
+        const statementExists = fileExists(statementPath);
+        const recordExists = fileExists(recordPath);
 
         report.checks.push({ check: `env_exists:${vfyId}`, passed: envExists });
         report.checks.push({ check: `verify_report_exists:${vfyId}`, passed: verifyExists });

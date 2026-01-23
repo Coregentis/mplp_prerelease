@@ -5,7 +5,7 @@ sidebar_label: Authority & Scope
 sidebar_position: 1
 doc_type: normative
 normativity: normative
-status: frozen
+status: draft
 authority: MPGC
 audience: implementer
 

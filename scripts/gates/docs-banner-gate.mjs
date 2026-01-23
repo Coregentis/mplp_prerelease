@@ -23,7 +23,7 @@ const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '../..');
 
 // Paths
-const INVENTORY_PATH = path.join(ROOT, 'docs-governance/audits/DOCS_IDENTITY_INVENTORY.v1.json');
+const INVENTORY_PATH = path.join(ROOT, 'governance/06-operations/docs-audit/audits/DOCS_IDENTITY_INVENTORY.v1.json');
 const OUTPUT_DIR = path.join(ROOT, 'governance/exports');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'docs-banner-gate.report.json');
 
@@ -100,14 +100,15 @@ function getExpectedWarnings(status, normativity) {
 function main() {
     console.log('=== Docs Banner Gate v1.0 (Phase 3) ===\n');
 
-    // Load inventory
-    if (!fs.existsSync(INVENTORY_PATH)) {
-        console.log('❌ FAIL: Inventory file not found');
+    // Load inventory (CodeQL fix: avoid TOCTOU by using try/catch instead of existsSync)
+    let inventory;
+    try {
+        inventory = JSON.parse(fs.readFileSync(INVENTORY_PATH, 'utf8'));
+    } catch (err) {
+        console.log('❌ FAIL: Inventory file not found or invalid');
         console.log(`Expected: ${INVENTORY_PATH}`);
         process.exit(1);
     }
-
-    const inventory = JSON.parse(fs.readFileSync(INVENTORY_PATH, 'utf8'));
     console.log(`Loaded inventory: ${inventory.length} pages\n`);
 
     // Check rules
@@ -192,10 +193,8 @@ function main() {
         console.log('\n');
     }
 
-    // Write report
-    if (!fs.existsSync(OUTPUT_DIR)) {
-        fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-    }
+    // Write report (CodeQL fix: just use mkdirSync with recursive, it handles non-existence)
+    fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 
     const report = {
         gate: 'DOCS-BANNER-01',

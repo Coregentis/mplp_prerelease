@@ -3,7 +3,7 @@ sidebar_position: 5
 
 doc_type: normative
 normativity: normative
-status: frozen
+status: draft
 authority: MPGC
 description: "Drift Detection and Rollback Mechanisms for MPLP runtimes."
 title: Drift and Rollback

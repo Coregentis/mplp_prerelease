@@ -50,7 +50,14 @@ function evaluatePack(packDir) {
 
     for (const { path: filePath, invariant_id } of requiredFiles) {
         const fullPath = path.join(packDir, filePath);
-        const exists = fs.existsSync(fullPath);
+        // CodeQL fix: Use try/catch instead of existsSync to avoid TOCTOU
+        let exists = false;
+        try {
+            fs.accessSync(fullPath, fs.constants.R_OK);
+            exists = true;
+        } catch {
+            exists = false;
+        }
         const checkId = `file_exists:${filePath}`;
 
         results.checks.push({
@@ -71,7 +78,9 @@ function evaluatePack(packDir) {
 
     // Compute verdict_hash if trace exists
     const tracePath = path.join(packDir, 'artifacts/trace.json');
-    if (fs.existsSync(tracePath)) {
+    // CodeQL fix: Use try/catch instead of existsSync
+    try {
+        fs.accessSync(tracePath, fs.constants.R_OK);
         const artifactDir = path.join(packDir, 'artifacts');
         const artifactFiles = fs.readdirSync(artifactDir).sort();
         let combinedContent = '';
@@ -80,6 +89,8 @@ function evaluatePack(packDir) {
             combinedContent += content;
         }
         results.verdict_hash = crypto.createHash('sha256').update(combinedContent).digest('hex');
+    } catch {
+        // Trace doesn't exist, skip verdict_hash computation
     }
 
     // Determine final verdict

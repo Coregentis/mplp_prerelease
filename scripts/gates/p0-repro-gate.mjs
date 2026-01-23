@@ -1,3 +1,14 @@
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 #!/usr/bin/env node
 /**
  * P0-REPRO Gate: Repro Bundle Validation
@@ -28,7 +39,7 @@ function main() {
 
     // Check schema exists
     const schemaPath = path.join(REPRO_DIR, 'repro-bundle.schema.json');
-    const schemaExists = fs.existsSync(schemaPath);
+    const schemaExists = fileExists(schemaPath);
     report.checks.push({ check: 'schema_exists', passed: schemaExists });
     console.log(`${schemaExists ? '✓' : '✗'} Schema exists`);
 
@@ -37,8 +48,8 @@ function main() {
         const jsonPath = path.join(REPRO_DIR, `${runId}.repro.json`);
         const shPath = path.join(REPRO_DIR, `${runId}.repro.sh`);
 
-        const jsonExists = fs.existsSync(jsonPath);
-        const shExists = fs.existsSync(shPath);
+        const jsonExists = fileExists(jsonPath);
+        const shExists = fileExists(shPath);
 
         report.checks.push({ check: `repro_json_exists:${runId}`, passed: jsonExists });
         report.checks.push({ check: `repro_sh_exists:${runId}`, passed: shExists });

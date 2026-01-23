@@ -3,7 +3,8 @@
 **Document ID**: CONST-003  
 **Status**: Constitutional  
 **Authority**: MPGC  
-**Effective**: v1.0.0
+**Effective**: v1.1.0  
+**Supersedes**: v1.0.0
 
 ---
 
@@ -11,7 +12,7 @@
 
 This document defines the semantic meaning of Frozen status in MPLP documentation.
 
-This specification is constitutional. The meaning of Frozen may not be extended, reduced, or reinterpreted by any other document.
+This specification is constitutional. The meaning of Frozen is strictly limited to **Protocol Content** (Normative documentation). All other forms of immutability (Governance, Audit records) are handled via **Sealed Records** standard.
 
 ---
 
@@ -73,6 +74,10 @@ A document may only be frozen if all of the following are true:
 | `status` | `frozen` |
 
 Documents that do not satisfy all preconditions must not have `status: frozen`.
+
+> [!IMPORTANT]
+> **Frozen = Protocol Frozen**  
+> Documentation that is not `authority: protocol` (e.g., Governance methods, release checklists) MUST use `status: draft` in frontmatter and rely on **04-records/Seals** for verifiable immutability.
 
 ---
 
@@ -139,9 +144,11 @@ Informative documents cannot be frozen.
 
 Draft documents may be modified freely.
 
-### 7.3 Website Content
-
 Website content cannot be frozen and may change without governance process.
+
+### 7.4 Governance Documents
+
+Governance documents (methods, SOPs, checklists) cannot be frozen. Their immutability is achieved through **Sealed Records** or **Registry Anchoring**, which preserves historical integrity while maintaining a `status: draft` lifecycle in the repository.
 
 ---
 

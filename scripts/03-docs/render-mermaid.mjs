@@ -12,7 +12,7 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import { fileURLToPath } from 'url';
-import { execSync } from 'child_process';
+import { execFileSync } from 'child_process';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -262,9 +262,14 @@ function renderMermaidToSVG(code, theme, outputPath) {
         fs.writeFileSync(configFile, JSON.stringify(config));
 
         // Run mmdc (may need puppeteer-config for CI)
-        const command = `npx -y @mermaid-js/mermaid-cli@latest -i "${tempInputFile}" -o "${outputPath}" -c "${configFile}" -b transparent`;
-
-        execSync(command, { stdio: 'pipe' });
+        // Use execFileSync to avoid shell injection
+        execFileSync('npx', [
+            '-y', '@mermaid-js/mermaid-cli@latest',
+            '-i', tempInputFile,
+            '-o', outputPath,
+            '-c', configFile,
+            '-b', 'transparent'
+        ], { stdio: 'pipe' });
 
         // Cleanup temp files
         fs.unlinkSync(tempInputFile);
@@ -324,8 +329,13 @@ function processFile(filePath) {
         // Extract caption (optional, for figcaption)
         const caption = extractCaption(block.code, content, block.startIndex, filePath);
 
-        // Preserve source for machine readability (escaped for JSX)
-        const source = block.code.replace(/`/g, '\\`').replace(/\$/g, '\\$');
+        // Preserve source for machine readability (fully escaped for JSX security)
+        const source = block.code
+            .replace(/\\/g, '\\\\')     // Escape backslashes first
+            .replace(/`/g, '\\`')      // Escape backticks
+            .replace(/\$/g, '\\$')     // Escape dollar signs
+            .replace(/\{/g, '\\{')     // Escape curly braces
+            .replace(/\}/g, '\\}');    // Escape closing braces
 
         // Prepare replacement with all semantic layers
         const replacement = caption

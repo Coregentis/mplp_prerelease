@@ -3,7 +3,7 @@ sidebar_position: 6
 
 doc_type: normative
 normativity: normative
-status: frozen
+status: draft
 authority: MPGC
 description: "Module PSG Read/Write Path Matrix defining how each MPLP module interacts with the Protocol State Graph."
 title: Module PSG Paths

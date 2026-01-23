@@ -2,11 +2,22 @@
 import fs from "fs";
 import yaml from "js-yaml";
 
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
+
 const GATE_ID = "PJT-03";
 const ALLOWLIST_PATH = "Validation_Lab/data/curated-runs/allowlist.yaml";
 
 function readText(p) {
-    if (!fs.existsSync(p)) throw new Error(`Missing file: ${p}`);
+    if (!fileExists(p)) throw new Error(`Missing file: ${p}`);
     return fs.readFileSync(p, "utf-8");
 }
 

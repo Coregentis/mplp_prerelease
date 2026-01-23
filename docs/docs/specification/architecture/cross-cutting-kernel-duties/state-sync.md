@@ -2,7 +2,7 @@
 entry_surface: documentation
 doc_type: normative
 normativity: normative
-status: frozen
+status: draft
 authority: protocol
 protocol_version: "1.0.0"
 doc_id: "DOC-ARCH-CCK-SYNC-001"

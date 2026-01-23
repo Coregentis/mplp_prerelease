@@ -2,6 +2,17 @@
 import fs from "fs";
 import yaml from "js-yaml";
 
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
+
 const GATE_ID = "PJT-04";
 
 const ALLOWLIST_PATH = "Validation_Lab/data/curated-runs/allowlist.yaml";
@@ -11,7 +22,7 @@ const REQUIRED_V02 = [
 ];
 
 function readText(p) {
-    if (!fs.existsSync(p)) throw new Error(`Missing file: ${p}`);
+    if (!fileExists(p)) throw new Error(`Missing file: ${p}`);
     return fs.readFileSync(p, "utf-8");
 }
 
@@ -31,7 +42,7 @@ function main() {
 
     // 1) Required v0.2 artifacts exist
     for (const p of REQUIRED_V02) {
-        if (!fs.existsSync(p)) throw new Error(`Missing required v0.2 artifact: ${p}`);
+        if (!fileExists(p)) throw new Error(`Missing required v0.2 artifact: ${p}`);
     }
     console.log("✓ Required v0.2 artifacts exist");
 
@@ -57,7 +68,7 @@ function main() {
     for (const r of runs) {
         if (typeof r.equivalence_ref === "string") {
             const p = r.equivalence_ref.split("#")[0];
-            if (!fs.existsSync(p)) missing.push({ run_id: r.run_id, equivalence_ref: p });
+            if (!fileExists(p)) missing.push({ run_id: r.run_id, equivalence_ref: p });
         }
     }
     if (missing.length > 0) throw new Error(`Missing equivalence_ref targets: ${JSON.stringify(missing, null, 2)}`);

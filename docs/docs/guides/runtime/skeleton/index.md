@@ -3,7 +3,7 @@ sidebar_position: 8
 
 title: Runtime Reference Skeleton
 description: Interface-Level Contract for Profile-14-Golden Runtime
-status: frozen
+status: draft
 doc_type: normative
 normativity: normative
 

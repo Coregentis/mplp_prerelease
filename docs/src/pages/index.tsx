@@ -61,6 +61,7 @@ function HomepageHeader() {
                 <p style={{ fontSize: '0.85rem', color: '#64748b', maxWidth: '600px', margin: '1.5rem auto', lineHeight: '1.6' }}>
                     Governed by MPGC. The specification is frozen at v1.0.0 — no breaking changes permitted.
                     Reference SDKs and Golden Flows enable protocol conformance without vendor certification.
+                    Governance processes and constitutional records are maintained in the Repository <code>governance/</code> directory; this site provides pointers only.
                 </p>
 
                 <div className={styles.buttons}>
@@ -124,7 +125,7 @@ const FeatureList = [
         link: '/docs/specification/profiles/map-profile',
         description: (
             <>
-                Standardized agent capabilities. Define <strong>Role</strong>, <strong>Complexity</strong>, and <strong>Compliance</strong> levels.
+                Standardized agent capabilities. Define <strong>Role</strong>, <strong>Complexity</strong>, and <strong>Conformance</strong> levels.
             </>
         ),
     },
@@ -142,7 +143,7 @@ const FeatureList = [
         link: '/docs/evaluation/tests/golden-test-suite-overview',
         description: (
             <>
-                <strong>Golden Flows</strong> and <strong>Compliance Suites</strong> define reproducible scenarios that generate evidence packs.
+                <strong>Golden Flows</strong> and <strong>Conformance Suites</strong> define reproducible scenarios that generate evidence packs.
                 Adjudication is provided externally by the Validation Lab.
             </>
         ),

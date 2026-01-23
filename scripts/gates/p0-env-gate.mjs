@@ -1,3 +1,14 @@
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 #!/usr/bin/env node
 /**
  * P0-ENV Gate: Environment Fingerprint Validation
@@ -28,14 +39,14 @@ function main() {
     };
 
     // Check schema exists
-    const schemaExists = fs.existsSync(SCHEMA_PATH);
+    const schemaExists = fileExists(SCHEMA_PATH);
     report.checks.push({ check: 'schema_exists', passed: schemaExists });
     console.log(`${schemaExists ? '✓' : '✗'} Schema exists: ${SCHEMA_PATH}`);
 
     // Check each run has env fingerprint
     for (const runId of REQUIRED_RUNS) {
         const envPath = path.join(ENV_DIR, `${runId}.env.json`);
-        const exists = fs.existsSync(envPath);
+        const exists = fileExists(envPath);
         report.checks.push({ check: `env_exists:${runId}`, passed: exists });
         console.log(`${exists ? '✓' : '✗'} Env fingerprint: ${runId}`);
 

@@ -34,16 +34,27 @@ include:
   - ".github/workflows/codeql.yml"
   # NOTE: Only deploy-docs.yml and codeql.yml allowed in OSS package
   - ".eslintrc.json"
-  - "scripts/03-docs/**"  # Doc build tools (render-mermaid, etc)
-  - "scripts/semantic/**"
-  - "scripts/gates/**"  # Governance gates for CI
+  # Docs build dependency - only render-mermaid.mjs needed
+  - "scripts/03-docs/render-mermaid.mjs"
+  # NOTE: other scripts/ excluded from OSS - internal development tools
   - ".codeql/**"  # CodeQL configuration
-  # Public Governance Specifications
-  - "governance/DGP-*.md"
-  - "governance/DGP-*.yaml"
+  # ============================================================================
+  # PUBLIC GOVERNANCE (Layers 01-04) — Part of MPLP's Public Governance Contract
+  # These are normative protocol governance documents, publicly committed and stable.
+  # ============================================================================
   - "governance/README.md"
-  - "governance/public-surface/PSG-CROSSLINK-SSOT.yaml"
-  - "governance/RELEASE_ATTESTATION_*.md"
+  - "governance/EXECUTION_ORDER.md"
+  # Layer 01: Constitutional (full public)
+  - "governance/01-constitutional/**"
+  # Layer 02: Methods (public - governance methods for consistency and auditability)
+  - "governance/02-methods/**"
+  # Layer 03: Distribution (public - version rules, release flow, manifest rules)
+  - "governance/03-distribution/**"
+  # Layer 04: Records (public - ratified/frozen/sealed records and indices)
+  - "governance/04-records/**"
+  # Layer 05: Specialized - selective public (projection, ERCs as governance methods)
+  - "governance/05-specialized/projection/**"
+  - "governance/05-specialized/erc/**"
   # NOTE: .github/workflows/** EXCLUDED - OSS workflows in .github/oss-workflows/ (manual sync)
 
 
@@ -76,13 +87,23 @@ exclude:
   - "reports/**"
   - "scripts/release/**"
   
-  # Internal governance (operational artifacts, not normative)
-  - "governance/archive/**"
-  - "governance/internal-ops/**"
+  # ============================================================================
+  # INTERNAL/OPERATIONAL GOVERNANCE — NOT Part of Public Governance Contract
+  # These are non-normative implementation support, subject to change without notice.
+  # ============================================================================
+  # Layer 06: Operations (tools, rules, allowlists, exports, artifacts)
+  - "governance/06-operations/**"
+  # Layer 05: Specialized - internal parts (entity, scripts, deprecation)
+  - "governance/05-specialized/DEPRECATION_PLAN.md"
+  - "governance/05-specialized/SCRIPT_*.md"
+  - "governance/05-specialized/entity.json"
+  - "governance/05-specialized/website/**"
+  # Layer 99: Archive (legacy, deprecated)
+  - "governance/99-archive/**"
+  # Legacy governance patterns (if any remain at top level)
   - "governance/*_AUDIT_REPORT.*"
   - "governance/*_WAIVERS.yaml"
   - "governance/*_FREEZE_RECORD_*.md"
-  - "governance/freeze/**"  # Internal freeze records
   
   # Deprecated / backup directories
   - "docs-upgrade-kit/**"

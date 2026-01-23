@@ -3,7 +3,7 @@ sidebar_position: 7
 
 doc_type: normative
 normativity: normative
-status: frozen
+status: draft
 authority: MPGC
 description: "Crosscut PSG and Observability Event Binding specification for MPLP runtime."
 title: Crosscut PSG Event Binding

@@ -2,7 +2,7 @@
 sidebar_position: 5
 doc_type: governance
 normativity: informative
-status: frozen
+status: draft
 authority: Documentation Governance
 description: "Editorial standards for MPLP documentation including writing style, formatting, terminology, and review process."
 title: Editorial Policy

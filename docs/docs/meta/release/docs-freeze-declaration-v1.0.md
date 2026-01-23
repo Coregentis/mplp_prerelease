@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
 doc_type: governance
-status: frozen
+status: draft
 authority: Documentation Governance
 normativity: informative
-lifecycle_status: frozen
+lifecycle_status: draft
 protocol_version: "1.0.0"
 description: "Documentation freeze declaration for MPLP v1.0.0. Records compliance audit and governance pivot."
 title: Docs Freeze Declaration v1.0

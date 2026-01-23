@@ -36,7 +36,7 @@ MPLP maintains an Evidence Baseline system that provides machine-verifiable proo
 |:---|:---|
 | Evidence manifests | `schemas/v2/_manifests/` |
 | Governance addendum | `governance/GOV-ADDENDUM-EVID-BASELINE-v1.0.md` |
-| Freeze record | `governance/freeze/FREEZE_EVIDENCE_BASELINE_v1.0.md` |
+| Freeze record | `governance/04-records/FREEZE_EVIDENCE_BASELINE_v1.0.md` |
 | TS Mirror Gate | `scripts/verify-sdk-mirror.sh` |
 | Python Generator | `packages/sources/sdk-py/scripts/generate_literals.py` |
 

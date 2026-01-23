@@ -14,9 +14,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const DOCS_ROOT = path.resolve(__dirname, '../../docs/docs');
-const INVENTORY_PATH = path.resolve(__dirname, '../../docs-governance/audits/DOCS_IDENTITY_INVENTORY.v1.json');
+const INVENTORY_PATH = path.resolve(__dirname, '../../governance/06-operations/docs-audit/audits/DOCS_IDENTITY_INVENTORY.v1.json');
 const ENTITY_PATH = path.resolve(__dirname, '../../governance/entity/entity.json');
-const OUTPUT_AUDIT = path.resolve(__dirname, '../../docs-governance/outputs');
+const OUTPUT_AUDIT = path.resolve(__dirname, '../../governance/06-operations/docs-audit/outputs');
 const OUTPUT_STATIC = path.resolve(__dirname, '../../docs/static/meta');
 
 // Ensure output directories exist

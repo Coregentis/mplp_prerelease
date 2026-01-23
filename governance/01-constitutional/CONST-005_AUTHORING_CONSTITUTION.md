@@ -17,7 +17,7 @@
 > It constrains authoring behavior **within** their boundaries.
 
 **References**:
-- CONST-001: Entry Model Specification (Three-entry model)
+- CONST-001: Entry Model Specification (3+1 entry model: 3 primary + 1 auxiliary)
 - CONST-002: Document Format Specification (Frontmatter, structure)
 - CONST-003: Frozen Header Specification
 - CONST-004: Documentation Audit Methodology (10-dimension framework)
@@ -207,7 +207,7 @@ Allowed JSON-LD types:
 
 ### 7.4 Website (Out of Docs Scope)
 
-Website may use JSON-LD for positioning (Organization, SoftwareApplication) per Entry Model (CONST-001).
+Website and Validation Lab may use JSON-LD for positioning per Entry Model (CONST-001).
 
 ---
 

@@ -1,3 +1,14 @@
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 #!/usr/bin/env node
 /**
  * SUB-GATE-01: Official Substrate Package Verification
@@ -40,7 +51,7 @@ try {
     if (run.substrate === 'langchain') {
       const reqPath = path.join(reproDir, 'requirements.txt');
 
-      if (!fs.existsSync(reqPath)) {
+      if (!fileExists(reqPath)) {
         console.error(`❌ FAIL: ${run.run_id} missing ${reqPath}`);
         process.exit(1);
       }
@@ -64,7 +75,7 @@ try {
     if (run.substrate === 'a2a') {
       const reqPath = path.join(reproDir, 'requirements.txt');
 
-      if (!fs.existsSync(reqPath)) {
+      if (!fileExists(reqPath)) {
         console.error(`❌ FAIL: ${run.run_id} missing ${reqPath}`);
         process.exit(1);
       }
@@ -83,7 +94,7 @@ try {
     if (run.substrate === 'mcp') {
       const pkgPath = path.join(reproDir, 'package.json');
 
-      if (!fs.existsSync(pkgPath)) {
+      if (!fileExists(pkgPath)) {
         console.error(`❌ FAIL: ${run.run_id} missing ${pkgPath}`);
         process.exit(1);
       }

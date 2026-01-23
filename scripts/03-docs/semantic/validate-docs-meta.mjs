@@ -17,7 +17,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const MANIFEST_PATH = path.resolve(__dirname, '../../../docs-governance/outputs/docs-seo-manifest.json');
+const MANIFEST_PATH = path.resolve(__dirname, '../../../governance/06-operations/docs-audit/outputs/docs-seo-manifest.json');
 
 // Load manifest
 if (!fs.existsSync(MANIFEST_PATH)) {
@@ -140,7 +140,7 @@ if (missingDesc.length > 0) {
         failCount++;
     });
     console.log(`❌ FAIL: ${missingDesc.length} pages missing description`);
-    console.log(`  See: docs-governance/outputs/missing-description.pages.txt\n`);
+    console.log(`  See: governance/06-operations/docs-audit/outputs/missing-description.pages.txt\n`);
 } else {
     console.log('✓ PASS: All pages have description\n');
 }

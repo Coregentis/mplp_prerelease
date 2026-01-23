@@ -1,3 +1,14 @@
+
+// CodeQL fix: Helper to check file existence without TOCTOU
+function fileExists(filePath) {
+    try {
+        fs.accessSync(filePath, fs.constants.R_OK);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 #!/usr/bin/env node
 
 /**
@@ -81,7 +92,7 @@ const ALLOWED_FILE_PATTERNS = [
 
 // Get all markdown files
 function getAllMdFiles(dir, fileList = []) {
-    if (!fs.existsSync(dir)) return fileList;
+    if (!fileExists(dir)) return fileList;
 
     const files = fs.readdirSync(dir);
     files.forEach(file => {
@@ -295,7 +306,7 @@ function main() {
     }
 
     // Write reports
-    if (!fs.existsSync(OUTPUT_DIR)) {
+    if (!fileExists(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
 

@@ -42,7 +42,7 @@ Phase 8: Freeze Evidence Baseline (04-records/baselines/)
          Create FREEZE_EVIDENCE_BASELINE_v*.md
               │
               ▼
-Phase 9+: SDK Release (03-sdk-release/)
+Phase 9+: SDK Release (03-distribution/sdk/)
          ├── Execute SDKR-01 through SDKR-07
          ├── Complete CHECKLIST-SDK-RELEASE.md
          └── Obtain MPGC approval
@@ -108,16 +108,16 @@ Record: Phase Completion (04-records/phases/)
 
 | Step | Document |
 |:---|:---|
-| Pipeline | `03-sdk-release/METHOD-SDKR-01_*.md` |
-| Derivation | `03-sdk-release/METHOD-SDKR-02_*.md` |
-| Versioning | `03-sdk-release/METHOD-SDKR-03_*.md` |
-| Package | `03-sdk-release/METHOD-SDKR-04_*.md` |
-| Manifest | `03-sdk-release/METHOD-SDKR-05_*.md` |
-| Verification | `03-sdk-release/METHOD-SDKR-06_*.md` |
-| Incident | `03-sdk-release/METHOD-SDKR-07_*.md` |
-| Multi-Package | `03-sdk-release/METHOD-SDKR-08_*.md` |
-| Checklist | `03-sdk-release/CHECKLIST-SDK-RELEASE.md` |
-| Approval | `03-sdk-release/MPGC_APPROVAL_*.md` |
+| Pipeline | `03-distribution/sdk/METHOD-SDKR-01_*.md` |
+| Derivation | `03-distribution/sdk/METHOD-SDKR-02_*.md` |
+| Versioning | `03-distribution/sdk/METHOD-SDKR-03_*.md` |
+| Package | `03-distribution/sdk/METHOD-SDKR-04_*.md` |
+| Manifest | `03-distribution/sdk/METHOD-SDKR-05_*.md` |
+| Verification | `03-distribution/sdk/METHOD-SDKR-06_*.md` |
+| Incident | `03-distribution/sdk/METHOD-SDKR-07_*.md` |
+| Multi-Package | `03-distribution/sdk/METHOD-SDKR-08_*.md` |
+| Checklist | `03-distribution/sdk/CHECKLIST-SDK-RELEASE.md` |
+| Approval | `03-distribution/sdk/MPGC_APPROVAL_*.md` |
 
 **Output**: Published SDK with manifest and verification report
 
