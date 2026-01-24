@@ -74,5 +74,9 @@ jobs:
       - name: Gate 3 - Docs Identity Header
         run: node scripts/gates/docs-header-gate.mjs
 
+      # P0 Projection Gates (v0.7.2)
+      - name: Docs Non-Normative Pointer-Only Gate (P0-4.2)
+        run: cd docs && npm run gate:docs-nonnormative-pointer-only
+
 # Note: Website Gates (Gate 1B, Gate 2) run in the Website repository CI
 # See: MPLP_website/.github/workflows/gates.yml

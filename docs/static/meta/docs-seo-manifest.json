@@ -8,6 +8,10 @@
     "docs_anchor": "https://docs.mplp.io/docs/reference/entrypoints",
     "repo_anchor": "https://github.com/Coregentis/MPLP-Protocol"
   },
+  "boundaries": [
+    "BOUNDARY-NON-CERTIFICATION",
+    "BOUNDARY-VENDOR-NEUTRAL"
+  ],
   "total_pages": 180,
   "pages": [
     {

@@ -38,7 +38,7 @@ cd mplp_prerelease && git checkout validation-lab/v0.7.2
 ./scripts/repro/run-ma-repro-full.sh
 ```
 
-**Determinism Boundary**: Run-twice hash match is valid under declared **generator + lock + env** conditions only. Does not claim determinism under distributed scheduling or network variance.
+**Determinism Boundary**: The Lab publishes hash-anchored evidence that can be independently rechecked. The precise recheck procedure and determinism verification protocol are defined by the Validation Lab.
 
 ---
 
@@ -52,7 +52,6 @@ Validation Lab classifies evidence by **verification strength**:
 |--------|-------------|
 | Source | Submitted evidence packs |
 | Execution | None (structural checks only) |
-| Determinism | Assumed but not verified |
 | Gates | MA-STRUCT, MA-EQUIV |
 
 Type-A validates that evidence packs conform to schema and maintain referential integrity, but does not re-execute generators.
@@ -63,10 +62,9 @@ Type-A validates that evidence packs conform to schema and maintain referential 
 |--------|-------------|
 | Source | Regenerated via generator scripts |
 | Execution | Generator runs with locked dependencies |
-| Determinism | Run-twice verified (hash match) |
 | Gates | MA-REPRO |
 
-Type-B regenerates evidence packs twice and verifies `pack_root_hash` consistency.
+Type-B regenerates evidence packs and verifies hash consistency. For verification methodology details, see the [Validation Lab](https://lab.mplp.io).
 
 ---
 
