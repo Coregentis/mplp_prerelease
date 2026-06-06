@@ -1,0 +1,22 @@
+[features]
+goals = true
+
+[agentic_harness]
+baseline = "AGENTIC-HARNESS-TWO-LAYER-GOVERNANCE-BASELINE-01"
+operating_contract = "AGENTS.md"
+goal_template = "governance/codex-goals/CODEX-GOAL-TEMPLATE.md"
+preflight_skill = ".agents/skills/agentic-harness-goal-preflight/SKILL.md"
+governance_record = "governance/04-records/AGENTIC-HARNESS-TWO-LAYER-GOVERNANCE-BASELINE-01.md"
+
+[agentic_harness.forbidden_without_owner_authorization]
+publish = true
+upload = true
+tag = true
+seal = true
+merge_pr = true
+delete_branch = true
+access_credentials = true
+change_package_version = true
+change_public_owner_or_copyright = true
+mutate_l0_protocol_truth = true
+direct_patch_l2_without_provenance = true
