@@ -12,6 +12,9 @@
     "scripts": {
         "docs:dev": "cd docs && npm run start",
         "docs:build": "cd docs && npm run build",
+        "package:surface:check": "node scripts/semantic/package-preflight-harness.mjs --mode=surface --no-publish",
+        "package:preflight:research": "node scripts/semantic/package-preflight-harness.mjs --mode=research --no-publish",
+        "package:preflight:verify-plan": "node scripts/semantic/package-preflight-harness.mjs --mode=verify-plan --no-publish",
         "test": "echo 'No root tests configured'",
         "lint": "echo 'No root linting configured'"
     },
