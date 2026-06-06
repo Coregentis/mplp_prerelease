@@ -12,6 +12,33 @@ doc_id: "AGENTS"
 This repository uses a two-layer Agentic Engineering Harness. Every non-trivial
 Codex goal must satisfy this contract before changing files.
 
+## Workspace Freeze / Migration Source
+
+`/Users/jasonwang/Documents/AI_Dev/Coregentis` is the Coregentis canonical
+workspace root for future active MPLP/Coregentis development.
+
+Coregentis canonical workspace root:
+`/Users/jasonwang/Documents/AI_Dev/Coregentis`.
+
+`/Users/jasonwang/Documents/AI_Dev/V1.0_release` is frozen as a
+non-authoritative migration/evidence source. Do not treat V1.0_release as
+global MPLP SOT.
+
+V1.0_release is frozen as migration/evidence source; do not treat V1.0_release as global MPLP SOT.
+
+Use V1.0_release only as a migration/evidence source unless the owner explicitly
+authorizes a new V1-scoped goal. No new active protocol, package, source
+recovery, package preflight, or release-readiness work should start here.
+Content from V1.0_release may enter Coregentis repos only through explicit
+migration, backport, or projection goals with evidence.
+
+MPLP-Protocol-Dev is protocol/package/release Dev truth:
+`/Users/jasonwang/Documents/AI_Dev/Coregentis/MPLP-Protocol-Dev`.
+
+Next Dev-side goals are `DEV-HARNESS-BACKPORT-01` and
+`PACKAGE-DEV-TRUTH-SOURCE-RECOVERY-PLAN-01`. This V1 freeze provides no
+publish, no upload, no tag, no seal, and no merge authorization.
+
 ## 1. Required Repo Truth Check
 
 Before any mutation, inspect and record:
