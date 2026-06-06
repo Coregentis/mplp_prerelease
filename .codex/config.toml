@@ -7,6 +7,7 @@ operating_contract = "AGENTS.md"
 goal_template = "governance/codex-goals/CODEX-GOAL-TEMPLATE.md"
 preflight_skill = ".agents/skills/agentic-harness-goal-preflight/SKILL.md"
 governance_record = "governance/04-records/AGENTIC-HARNESS-TWO-LAYER-GOVERNANCE-BASELINE-01.md"
+repo_remote_authority_record = "governance/04-records/REPO-REMOTE-AUTHORITY-BASELINE-01.md"
 
 [agentic_harness.forbidden_without_owner_authorization]
 publish = true

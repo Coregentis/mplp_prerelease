@@ -54,6 +54,12 @@ Required inputs:
 - exact user request
 - target repository
 - branch, HEAD, working tree, open PR if any
+- target workstream
+- authoritative local repository
+- authoritative remote
+- current tracking remote
+- forbidden remotes
+- cross-repo synchronization scope
 - intended outcome
 - explicit forbidden actions
 
@@ -68,14 +74,69 @@ Steps:
 4. Identify upstream truth.
 5. Identify downstream derivatives.
 6. Define acceptance criteria.
-7. Declare open questions and stop conditions.
+7. Declare repository / remote authority.
+8. Declare open questions and stop conditions.
 
 Required output: goal statement, goal type, target repo, SOT layer, upstream
 SOT, downstream derivatives, acceptance criteria, authorized mutations,
-forbidden mutations, stop conditions.
+forbidden mutations, repository / remote authority, stop conditions.
 
 Must not: infer owner authorization, mutate files during clarification, treat
 product need as protocol authority, or treat green gates as release approval.
+
+## Repository / Remote Authority Preflight
+
+Every non-trivial goal must declare:
+
+| Field | Required Meaning |
+|:---|:---|
+| Workstream | Current workstream, such as package harness, protocol development, public projection, Dev bridge, v2 line, Cognitive OS, SoloCrew, or Validation Lab |
+| Authoritative Local Repo | Local repo path that is allowed to mutate for the declared workstream |
+| Current Local Repo | `git rev-parse --show-toplevel` for the current shell |
+| Authoritative Remote | Remote that is authoritative for the workstream and branch |
+| Current Tracking Remote | Upstream tracking branch, if any |
+| Allowed Push Target | Remote/branch that may receive pushes when the goal permits push |
+| Forbidden Remotes | Remotes that must not be pushed in this goal |
+| Cross-Repo Sync In Scope? | Whether copy/cherry-pick/sync across repositories is explicitly authorized |
+| Owner Authorization Required? | Whether push, sync, publication, public projection, or schema authority requires owner authorization |
+
+Authority matrix:
+
+| Workstream | Authoritative Local Repo | Authoritative Remote | Allowed Default Push | Forbidden Without Owner Authorization |
+|:---|:---|:---|:---|:---|
+| Current Agentic Harness / Package Harness / NPM-PyPI preflight | `/Users/jasonwang/Documents/AI_Dev/V1.0_release` | `origin` on current feature branch | `origin` only | `origin-oss`, `protocol-dev`, `v2` |
+| MPLP protocol development / schemas / invariants / taxonomy / PR #13 / v2 schema intake | `/Users/jasonwang/Documents/AI_Dev/Coregentis/MPLP-Protocol-Dev` | Inspect inside Dev repo; expected Coregentis/MPLP-Protocol-Dev | Dev repo origin only after inspection | `V1.0_release` `origin`, `origin-oss`, `v2` unless authorized |
+| Public OSS projection | Task-specific public projection checkout | `origin-oss` or public projection remote | None by default | Any public push without owner authorization |
+| Dev bridge from `V1.0_release` | `V1.0_release` plus `protocol-dev` remote | `protocol-dev` only for explicit sync goals | None by default | `protocol-dev` push without sync goal |
+| Future v2 line | Task-specific v2 checkout or branch | `v2` only if declared authoritative | None by default | `v2` push without schema/v2 owner authorization |
+| Cognitive OS downstream runtime | `/Users/jasonwang/Documents/AI_Dev/Coregentis/Cognitive_OS` | Inspect inside repo | Repo origin only after inspection | Treating it as MPLP protocol truth |
+| SoloCrew downstream product | `/Users/jasonwang/Documents/AI_Dev/Coregentis/SoloCrew` | Inspect inside repo | Repo origin only after inspection | Treating it as MPLP protocol truth |
+| Validation Lab evidence surface | `/Users/jasonwang/Documents/AI_Dev/Coregentis/MPLP-Validation-Lab` or V2 lab repo | Inspect inside repo | Repo origin only after inspection | Treating it as package publication root |
+
+Repository / remote blocked verdicts:
+
+| Verdict | Definition |
+|:---|:---|
+| `BLOCKED_LOCAL_REPO_AUTHORITY_MISMATCH` | The current local repo does not match the authoritative local repo for the declared workstream. |
+| `BLOCKED_REMOTE_AUTHORITY_MISMATCH` | The current tracking remote does not match the authoritative remote for the declared workstream. |
+| `BLOCKED_TRACKING_BRANCH_UNCLEAR` | The branch has no clear upstream tracking branch, but the goal intends to push. |
+| `BLOCKED_FORBIDDEN_REMOTE_TARGET` | The goal attempts to push to `origin-oss`, `protocol-dev`, `v2`, or another non-authoritative remote without explicit owner authorization. |
+| `BLOCKED_CROSS_REPO_SYNC_NOT_AUTHORIZED` | The goal attempts to copy, cherry-pick, or sync across repos without an explicit cross-repo sync goal. |
+| `BLOCKED_PUBLIC_PROJECTION_AUTHORIZATION_REQUIRED` | The goal attempts to update public OSS or public projection surfaces without owner authorization. |
+| `BLOCKED_PROTOCOL_DEV_REPO_REQUIRED` | The goal attempts protocol schema/source development from the release/projection repo instead of MPLP-Protocol-Dev. |
+| `BLOCKED_PACKAGE_HARNESS_REPO_REQUIRED` | The goal attempts package harness or NPM/PyPI preflight work outside `V1.0_release` without an explicit migration/sync goal. |
+
+Must stop before mutation when:
+
+- current local repo does not match the declared authoritative local repo
+- current tracking remote is unclear and the goal intends to push
+- the goal would push to `origin-oss`, `protocol-dev`, `v2`, or another
+  non-authoritative remote without owner authorization
+- the goal would synchronize repositories without an explicit cross-repo sync
+  scope
+- protocol schema/source development is attempted from `V1.0_release`
+- package harness or NPM/PyPI preflight work is attempted outside
+  `V1.0_release` without an explicit migration/sync goal
 
 ## GLFB: Governance Logic & Feedback Balancing
 
@@ -108,6 +169,9 @@ authority boundaries, and derivation chains before changing anything.
 Topology dimensions:
 
 - repository topology: MPLP, Cognitive OS, SoloCrew, Validation Lab, Website, Docs
+- repository / remote authority topology: workstream, authoritative local repo,
+  current local repo, authoritative remote, tracking branch, forbidden remotes,
+  sync scope
 - truth topology: L0 through L6
 - derivation topology: source-to-dist, source-to-pack, source-to-wheel,
   schema-to-docs, schema-to-validator, schema-to-runtime mapping,
@@ -130,7 +194,8 @@ Steps:
 
 Must not: patch L2 without L1 provenance, inline v2 objects into v1 frozen
 modules, let product semantics pollute protocol truth, treat publication surface
-as source truth, or ignore downstream runtime/product impact.
+as source truth, ignore downstream runtime/product impact, push to forbidden
+remotes, or synchronize repositories without explicit authorization.
 
 ## RBCT: Roadmap-Bounded Change & Tasking
 
@@ -165,12 +230,15 @@ Risk classes:
   pack changed without source, evidence claim without gate
 - credential boundary: npm token, PyPI token, GitHub PAT, deployment token,
   signing key
+- remote authority boundary: `origin-oss`, `protocol-dev`, `v2`, public
+  projection remotes, Dev sync remotes, downstream repo remotes
 - protocol boundary: L0 schema, invariant, taxonomy, kernel duty, v1 frozen spec
 - downstream drift boundary: Cognitive OS, SoloCrew, docs, website, Validation Lab
 
 Must not: access credentials, publish/upload/tag/seal without explicit owner
 authorization, mutate L0 without schema-intake authorization, patch dist without
-`DIST_AS_TRACKED_SOURCE_EXCEPTION`, or claim release-ready from partial evidence.
+`DIST_AS_TRACKED_SOURCE_EXCEPTION`, push to a forbidden remote, cross-sync repos
+without explicit authorization, or claim release-ready from partial evidence.
 
 ## PRM: Post-Run Retrospective & Method Hardening
 

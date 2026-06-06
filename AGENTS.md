@@ -86,7 +86,63 @@ implementation pressure, runtime feedback, product validation, and gap reports,
 but they must not directly back-write L0 MPLP schemas, invariants, taxonomy,
 kernel duties, or protocol definitions.
 
-## 4. SOT Layer Classification
+## 4. Repository / Remote Authority Model
+
+Every non-trivial goal must declare:
+
+- target workstream
+- authoritative local repository
+- current local repository
+- authoritative remote
+- current tracking remote
+- active branch
+- allowed push target
+- forbidden remotes
+- whether cross-repo synchronization is in scope
+- whether owner authorization is required before push, sync, or publication
+
+Repository truth must be checked before any mutation. A clean local worktree,
+green local gate, pushed branch, or existing remote name does not grant authority
+to push to another remote, synchronize another repository, or mutate a public
+projection surface.
+
+### Workstream-To-Repository Matrix
+
+| Workstream | Authoritative Local Repo | Authoritative Remote | Allowed Default Push | Forbidden Without Owner Authorization |
+|:---|:---|:---|:---|:---|
+| Current Agentic Harness / Package Harness / NPM-PyPI preflight | `/Users/jasonwang/Documents/AI_Dev/V1.0_release` | `origin` on current feature branch | `origin` only | `origin-oss`, `protocol-dev`, `v2` |
+| MPLP protocol development / schemas / invariants / taxonomy / PR #13 / v2 schema intake | `/Users/jasonwang/Documents/AI_Dev/Coregentis/MPLP-Protocol-Dev` | Inspect inside Dev repo; expected Coregentis/MPLP-Protocol-Dev | Dev repo origin only after inspection | `V1.0_release` `origin`, `origin-oss`, `v2` unless authorized |
+| Public OSS projection | Task-specific public projection checkout | `origin-oss` or public projection remote | None by default | Any public push without owner authorization |
+| Dev bridge from `V1.0_release` | `V1.0_release` plus `protocol-dev` remote | `protocol-dev` only for explicit sync goals | None by default | `protocol-dev` push without sync goal |
+| Future v2 line | Task-specific v2 checkout or branch | `v2` only if declared authoritative | None by default | `v2` push without schema/v2 owner authorization |
+| Cognitive OS downstream runtime | `/Users/jasonwang/Documents/AI_Dev/Coregentis/Cognitive_OS` | Inspect inside repo | Repo origin only after inspection | Treating it as MPLP protocol truth |
+| SoloCrew downstream product | `/Users/jasonwang/Documents/AI_Dev/Coregentis/SoloCrew` | Inspect inside repo | Repo origin only after inspection | Treating it as MPLP protocol truth |
+| Validation Lab evidence surface | `/Users/jasonwang/Documents/AI_Dev/Coregentis/MPLP-Validation-Lab` or V2 lab repo | Inspect inside repo | Repo origin only after inspection | Treating it as package publication root |
+
+Current package harness and package preflight work is authoritative in
+`/Users/jasonwang/Documents/AI_Dev/V1.0_release` on the current feature branch.
+Do not move it into MPLP-Protocol-Dev unless a future synchronization or
+cherry-pick goal explicitly authorizes that transfer.
+
+Protocol schema/source development must not be performed from
+`/Users/jasonwang/Documents/AI_Dev/V1.0_release` unless the goal explicitly
+defines the work as release projection or public promotion. MPLP protocol
+development, schema changes, invariants, taxonomy, kernel duties, PR #13-style
+Dev work, and MPLP v2 schema intake require
+`/Users/jasonwang/Documents/AI_Dev/Coregentis/MPLP-Protocol-Dev` as the
+authoritative local repo unless the owner declares a different authority.
+
+`origin-oss`, `protocol-dev`, and `v2` are not default push targets for current
+package harness work. Pushes to those remotes require explicit owner
+authorization and a goal that names the remote, workstream, and synchronization
+scope.
+
+Downstream Cognitive OS, SoloCrew, Website, Documentation, and Validation Lab
+repositories may consume or validate protocol projections, but they are not
+package harness authorities and must not be synchronized inside package harness
+goals.
+
+## 5. SOT Layer Classification
 
 Every goal must declare affected SOT layers:
 
@@ -104,7 +160,7 @@ L0 changes require explicit owner/schema-intake authorization and continuous SOT
 traceability. L1-L5 changes require task-start SOT/SOP verification and must
 follow the declared derivation chain.
 
-## 5. Development-Thinking Methods
+## 6. Development-Thinking Methods
 
 The Codex execution methods are:
 
@@ -120,7 +176,7 @@ The Codex execution methods are:
 Use `.agents/skills/agentic-harness-goal-preflight/SKILL.md` for the complete
 callable method specification.
 
-## 6. Pre-Execution Contract
+## 7. Pre-Execution Contract
 
 For every non-trivial goal, Codex must produce or internally satisfy:
 
@@ -130,10 +186,11 @@ For every non-trivial goal, Codex must produce or internally satisfy:
 - `rbct_stage_plan`
 - `vim_risk_register`
 - `applicable_repo_governance_methods`
+- repository / remote authority declaration
 
 Codex must not start by editing files.
 
-## 7. Forbidden Action Baseline
+## 8. Forbidden Action Baseline
 
 Always forbidden unless explicitly authorized by the owner:
 
@@ -154,6 +211,8 @@ Always forbidden unless explicitly authorized by the owner:
 - taxonomy mutation
 - kernel duty mutation
 - direct L2 dist patch without source provenance or `DIST_AS_TRACKED_SOURCE_EXCEPTION`
+- push to a non-authoritative or forbidden remote
+- cross-repo synchronization without an explicit sync goal
 
 Research mode also forbids file mutation, staging, commit, push, generation,
 publish, upload, tag, and seal.
@@ -169,7 +228,7 @@ upload, tag, or seal.
 Release preparation mode permits release evidence generation, package preflight,
 and manifest validation. It does not authorize actual publication.
 
-## 8. Required Post-Execution Contract
+## 9. Required Post-Execution Contract
 
 Every completed goal must report:
 
@@ -177,6 +236,7 @@ Every completed goal must report:
 - evidence integrity statement
 - forbidden-action compliance statement
 - files changed and files intentionally not touched
+- repository / remote authority compliance statement
 - PRM retrospective or hardening recommendation
 - final verdict
 
@@ -188,8 +248,29 @@ Allowed blocked verdicts include:
 - `BLOCKED_GATES_FAILING`
 - `BLOCKED_PATCH_GATE_FAILURE`
 - `BLOCKED_RELEASE_AUTHORIZATION_REQUIRED`
+- `BLOCKED_LOCAL_REPO_AUTHORITY_MISMATCH`
+- `BLOCKED_REMOTE_AUTHORITY_MISMATCH`
+- `BLOCKED_TRACKING_BRANCH_UNCLEAR`
+- `BLOCKED_FORBIDDEN_REMOTE_TARGET`
+- `BLOCKED_CROSS_REPO_SYNC_NOT_AUTHORIZED`
+- `BLOCKED_PUBLIC_PROJECTION_AUTHORIZATION_REQUIRED`
+- `BLOCKED_PROTOCOL_DEV_REPO_REQUIRED`
+- `BLOCKED_PACKAGE_HARNESS_REPO_REQUIRED`
 
-## 9. MPLP 2.0 Derivation Rule
+Repository / remote blocked verdict definitions:
+
+| Verdict | Definition |
+|:---|:---|
+| `BLOCKED_LOCAL_REPO_AUTHORITY_MISMATCH` | The current local repo does not match the authoritative local repo for the declared workstream. |
+| `BLOCKED_REMOTE_AUTHORITY_MISMATCH` | The current tracking remote does not match the authoritative remote for the declared workstream. |
+| `BLOCKED_TRACKING_BRANCH_UNCLEAR` | The branch has no clear upstream tracking branch, but the goal intends to push. |
+| `BLOCKED_FORBIDDEN_REMOTE_TARGET` | The goal attempts to push to `origin-oss`, `protocol-dev`, `v2`, or another non-authoritative remote without explicit owner authorization. |
+| `BLOCKED_CROSS_REPO_SYNC_NOT_AUTHORIZED` | The goal attempts to copy, cherry-pick, or sync across repos without an explicit cross-repo sync goal. |
+| `BLOCKED_PUBLIC_PROJECTION_AUTHORIZATION_REQUIRED` | The goal attempts to update public OSS or public projection surfaces without owner authorization. |
+| `BLOCKED_PROTOCOL_DEV_REPO_REQUIRED` | The goal attempts protocol schema/source development from the release/projection repo instead of MPLP-Protocol-Dev. |
+| `BLOCKED_PACKAGE_HARNESS_REPO_REQUIRED` | The goal attempts package harness or NPM/PyPI preflight work outside `V1.0_release` without an explicit migration/sync goal. |
+
+## 10. MPLP 2.0 Derivation Rule
 
 MPLP 2.0 is not "just schema changes." Any change to the 10 module schemas, v2
 object model, invariants, taxonomy, kernel duties, lifecycle objects, or
