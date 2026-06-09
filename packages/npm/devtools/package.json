@@ -1,6 +1,6 @@
 {
   "name": "@mplp/devtools",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Public developer-tooling convenience package for MPLP v1.0.0. Aggregates schema and conformance utilities and CLI helpers; not a direct protocol object mirror.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,9 +8,9 @@
     "mplp": "dist/cli.js"
   },
   "dependencies": {
-    "@mplp/core": "^1.0.2",
-    "@mplp/schema": "^1.0.2",
-    "@mplp/compliance": "^1.0.2",
+    "@mplp/core": "^1.0.7",
+    "@mplp/schema": "^1.0.7",
+    "@mplp/conformance": "^1.0.1",
     "commander": "^11.0.0",
     "chalk": "^4.1.2"
   },
@@ -32,8 +32,8 @@
     "packageRole": "developer-tooling-convenience",
     "contractMode": "convenience-runtime-alias"
   },
-  "author": "Coregentis AI",
-  "copyright": "© 2026 Bangshi Beijing Network Technology Limited Company",
+  "author": "Jearon Wong",
+  "copyright": "© 2026 Jearon Wong",
   "license": "Apache-2.0",
   "homepage": "https://www.mplp.io/what-is-mplp",
   "bugs": {

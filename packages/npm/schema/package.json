@@ -1,6 +1,6 @@
 {
   "name": "@mplp/schema",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Direct schema/data mirror package for MPLP v1.0.0 JSON Schema definitions, validator helpers, and canonical Kernel Duty baseline.",
   "license": "Apache-2.0",
   "repository": {
@@ -33,8 +33,8 @@
   "devDependencies": {
     "typescript": "^5.0.0"
   },
-  "author": "Coregentis AI",
-  "copyright": "© 2026 Bangshi Beijing Network Technology Limited Company",
+  "author": "Jearon Wong",
+  "copyright": "© 2026 Jearon Wong",
   "mplp": {
     "protocolVersion": "1.0.0",
     "frozen": true,

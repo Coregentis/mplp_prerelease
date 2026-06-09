@@ -2,11 +2,11 @@
 
 ## Footer Short (EN)
 
-© 2026 Bangshi Beijing Network Technology Co., Ltd. Licensed under the Apache License, Version 2.0. Governed by MPGC.
+© 2026 Jearon Wong Licensed under the Apache License, Version 2.0. Governed by MPGC.
 
 ## Footer Long (EN)
 
-© 2026 Bangshi Beijing Network Technology Co., Ltd.
+© 2026 Jearon Wong
 This project is licensed under the Apache License, Version 2.0.
 Governance: MPLP Protocol Governance Committee (MPGC).
 No certification, endorsement, or ranking is provided.

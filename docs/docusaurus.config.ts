@@ -53,7 +53,7 @@ const config: Config = {
           editUrl: 'https://github.com/Coregentis/MPLP-Protocol/tree/main/docs/',
           // Docs at /docs/ to allow Landing Page at /
           routeBasePath: 'docs',
-          showLastUpdateTime: false,
+          showLastUpdateTime: true,
           // Enable breadcrumbs
           breadcrumbs: true,
           // Preserve numeric prefixes in URLs/DocIDs
@@ -277,7 +277,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Bangshi Beijing Network Technology Co., Ltd. Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">Apache License, Version 2.0</a>. Governed by <a href="https://www.mplp.io/governance/overview" target="_blank" rel="noopener noreferrer">MPGC</a>.`,
+      copyright: `© ${new Date().getFullYear()} Jearon Wong Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">Apache License, Version 2.0</a>. Governed by <a href="https://www.mplp.io/governance/overview" target="_blank" rel="noopener noreferrer">MPGC</a>.`,
     },
     prism: {
       theme: prismThemes.github,

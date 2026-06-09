@@ -1,6 +1,6 @@
 {
   "name": "@mplp/integration-tools-generic",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Runtime-level generic tool integration helper for MPLP v1.0.0. Not a direct protocol object mirror.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,6 +15,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE.txt"
+  ],
   "mplp": {
     "protocolVersion": "1.0.0",
     "frozen": true,
@@ -26,8 +31,8 @@
     "packageRole": "integration-helper",
     "contractMode": "convenience-runtime-alias"
   },
-  "author": "Coregentis AI",
-  "copyright": "© 2026 Bangshi Beijing Network Technology Limited Company",
+  "author": "Jearon Wong",
+  "copyright": "© 2026 Jearon Wong",
   "license": "Apache-2.0",
   "homepage": "https://www.mplp.io/what-is-mplp",
   "bugs": {

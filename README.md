@@ -1,4 +1,4 @@
-﻿# MPLP — Multi-Agent Lifecycle Protocol
+# MPLP — Multi-Agent Lifecycle Protocol
 
 > **Repository Role:** Source of Truth  
 > **protocol_version:** `1.0.0` — FROZEN  
@@ -90,8 +90,8 @@ MPLP uses a **3+1 constitutional entry model** and exposes **four public-facing 
 |---------|----------------------|------|---------|
 | **Website** | Primary | Discovery & Positioning | Establish MPLP's public framing and discovery path |
 | **Documentation** | Primary | Specification & Reference | Explain how the protocol works and project normative requirements |
-| **Validation Lab** | Auxiliary | Evidence Adjudication | Evidence-based verdicts under versioned Lab rulesets |
 | **Repository (this)** | Primary | Source of Truth | Schemas, code, tests, governance sources |
+| **Validation Lab** | Auxiliary | Evidence Adjudication | Evidence-based verdicts under versioned Lab rulesets |
 
 Validation Lab is a public-facing surface, but it is **not** a protocol-defining primary surface.
 The Repository alone remains authoritative for protocol truth; the other three
@@ -118,14 +118,14 @@ Each public-facing surface has stable anchors for cross-referencing:
 - [Specification](https://docs.mplp.io/docs/specification) — Normative requirements
 - [Validation Lab Reference](https://docs.mplp.io/docs/evaluation/validation-lab) — Lab overview & terminology
 
-**Validation Lab Anchors**:
-- [Lab Site](https://lab.mplp.io) — Evidence adjudication UI
-- [Coregentis/MPLP-Validation-Lab](https://github.com/Coregentis/MPLP-Validation-Lab) — Separate Validation Lab release-line repository
-
 **Repository Anchors**:
 - [Schemas](./schemas/v2/) — Repository truth-source anchor for JSON Schema definitions
 - [Tests](./tests/golden/flows/) — Golden flows & validators
 - [Entity Definition](./governance/05-specialized/entity.json) — Canonical machine-readable entity package
+
+**Validation Lab Anchors**:
+- [Lab Site](https://lab.mplp.io) — Evidence adjudication UI
+- [Validation_Lab](./Validation_Lab/) — In-repository Lab source and governance surface
 
 **Disambiguation**: MPLP = Multi-Agent Lifecycle Protocol (not a license). MPLP is not POSIX (conceptual lens only).
 
@@ -142,7 +142,7 @@ Validation Lab does not define protocol truth; protocol truth remains anchored i
 | **Constitutional Class** | Auxiliary |
 | **Role** | Evidence-based adjudication under versioned Lab rulesets |
 | **Lab Site** | [https://lab.mplp.io](https://lab.mplp.io) |
-| **Lab Repository** | [Coregentis/MPLP-Validation-Lab](https://github.com/Coregentis/MPLP-Validation-Lab) |
+| **Lab Source Surface** | [Validation_Lab/](./Validation_Lab/) |
 
 ### Four Boundaries (Non-Negotiable)
 
@@ -154,12 +154,11 @@ Validation Lab does not define protocol truth; protocol truth remains anchored i
 ### Bounded Governance Chain
 
 > **Bounded Role**: Validation Lab rulesets, contract surfaces, and evidence
-> adjudication assets are governed in the separate release-line repository
-> [Coregentis/MPLP-Validation-Lab](https://github.com/Coregentis/MPLP-Validation-Lab)
-> and exposed publicly via [https://lab.mplp.io](https://lab.mplp.io). The root
-> MPLP protocol repository links to that Lab surface but does not host it as an
-> in-repository public source surface. This bounded Lab role does not supersede
-> repository authority on protocol truth, schema truth, or invariant truth.
+> adjudication assets are governed in the in-repository
+> [Validation_Lab/](./Validation_Lab/) surface and exposed publicly via
+> [https://lab.mplp.io](https://lab.mplp.io). This bounded Lab role does not
+> supersede repository authority on protocol truth, schema truth, or invariant
+> truth.
 
 ### Terminology Partition
 
@@ -365,7 +364,7 @@ Pull requests that introduce new protocol semantics, schema changes, or complian
 ## License
 
 Apache License 2.0  
-© 2026 Bangshi Beijing Network Technology Limited Company
+© 2026 Jearon Wong
 
 ---
 
