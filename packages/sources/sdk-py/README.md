@@ -96,5 +96,4 @@ Canonical upstream baseline remains in:
 
 Apache License, Version 2.0
 
-© 2026 **Bangshi Beijing Network Technology Limited Company**
-Coregentis AI
+© 2026 **Jearon Wong**

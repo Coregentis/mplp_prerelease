@@ -1,9 +1,9 @@
 {
   "name": "@mplp/core",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Derived L1 core helper package for MPLP v1.0.0 models and validators.",
   "license": "Apache-2.0",
-  "author": "Coregentis AI",
+  "author": "Jearon Wong",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -29,7 +29,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1"
+  },
   "devDependencies": {
     "typescript": "^5.0.0"
   },
@@ -55,5 +58,5 @@
   "scripts": {
     "build": "tsc -p tsconfig.json"
   },
-  "copyright": "© 2026 Bangshi Beijing Network Technology Limited Company"
+  "copyright": "© 2026 Jearon Wong"
 }
