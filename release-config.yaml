@@ -36,7 +36,8 @@ public_oss_projection_policy:
   public_repo_version_policy:
     long_term_branches:
       - "main"
-    temporary_projection_branches: "at most one clean projection PR branch per authorized execution"
+    temporary_projection_branches: "forbidden inside Coregentis/MPLP-Protocol; Public repo itself must show only main"
+    protected_pr_source_branch_policy: "use owner-approved fork or staging/projection repository if a PR source branch is required"
     codex_process_branches_in_public_repo: "forbidden by default"
     retained_public_versions: "owner must choose exact tag/release before cleanup execution"
   package_registry_release_scope:
